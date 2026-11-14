@@ -1,8 +1,10 @@
 # 01 — Visión, mundo e historia
 
+> **Norma de producto:** Unscripted, UE 5.8.4, Blueprint. Todo contenido visible o audible al jugador debe estar en ingl?s. Los ejemplos en espa?ol de este documento son referencias de dise?o que deben adaptarse antes de incorporarse al juego; documentaci?n y comentarios internos pueden seguir en espa?ol.
+
 ## Identidad
 
-**Nombre provisional:** CORTE FINAL (*Whitechapel, 1888*).  
+**Nombre definitivo:** Unscripted (*Whitechapel, 1888*).
 **Tema:** *Director's Cut* entendido como la capacidad de imponer una interpretación de los hechos.  
 **Premisa:** «La historia no pertenece a quien la vivió, sino a quien decide cómo contarla».
 

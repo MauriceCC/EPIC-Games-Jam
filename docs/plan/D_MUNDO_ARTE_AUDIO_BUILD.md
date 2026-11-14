@@ -1,5 +1,7 @@
 # División D — Mundo: nivel, arte, VFX, audio y build (+ integración)
 
+> **Base confirmada:** Unscripted ? UE 5.8.4 ? Blueprint. Todo contenido para el jugador debe estar en ingl?s, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
+
 **Persona:** _(nombre)_ · **Rama:** `d/<tarea>` · **Commits:** `[D] …` (y `[INT] …` como integrador)
 
 ## 1. Misión
@@ -96,7 +98,7 @@ Ver `00_PLAN_GENERAL.md §5.1`. Pedir a tu agente un script de Python del editor
 ## 7. Prompt de arranque para tu agente
 
 ```text
-Trabajo en la División D (Mundo: nivel, arte, VFX, audio y build) del proyecto CORTE FINAL (UE5),
+Trabajo en la División D (Mundo: nivel, arte, VFX, audio y build) del proyecto Unscripted (UE 5.8.4, Blueprint),
 y soy además el integrador del repositorio.
 Lee AGENTS.md, docs/plan/00_PLAN_GENERAL.md, docs/plan/01_CONTRATOS_Y_PROPIEDAD.md,
 docs/plan/D_MUNDO_ARTE_AUDIO_BUILD.md y después docs/02, docs/05, docs/06 y docs/07.

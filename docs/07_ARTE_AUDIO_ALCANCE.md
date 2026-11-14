@@ -1,5 +1,7 @@
 # 07 — Dirección artística, audio, interfaz y alcance
 
+> **Norma de producto:** Unscripted, UE 5.8.4, Blueprint. Todo contenido visible o audible al jugador debe estar en ingl?s. Los ejemplos en espa?ol de este documento son referencias de dise?o que deben adaptarse antes de incorporarse al juego; documentaci?n y comentarios internos pueden seguir en espa?ol.
+
 ## Dirección visual
 
 - **Entorno:** Whitechapel victoriano oscuro; empedrados, faroles de gas, ladrillo, niebla, talleres, callejones, plazas pequeñas.

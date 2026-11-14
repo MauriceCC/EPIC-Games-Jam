@@ -1,5 +1,7 @@
 # División B — Oposición: enemigos, IA, sigilo y Jack
 
+> **Base confirmada:** Unscripted ? UE 5.8.4 ? Blueprint. Todo contenido para el jugador debe estar en ingl?s, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
+
 **Persona:** _(nombre)_ · **Rama:** `b/<tarea>` · **Commits:** `[B] …`
 
 ## 1. Misión
@@ -98,7 +100,7 @@ Balance, legibilidad de telegráficas desde la cámara isométrica, bugs de IA a
 ## 7. Prompt de arranque para tu agente
 
 ```text
-Trabajo en la División B (Oposición: enemigos, IA, sigilo y Jack) del proyecto CORTE FINAL (UE5).
+Trabajo en la División B (Oposición: enemigos, IA, sigilo y Jack) del proyecto Unscripted (UE 5.8.4, Blueprint).
 Lee AGENTS.md, docs/plan/00_PLAN_GENERAL.md, docs/plan/01_CONTRATOS_Y_PROPIEDAD.md,
 docs/plan/B_ENEMIGOS_IA_SIGILO.md y después docs/02, docs/03, docs/04 y docs/06.
 Tarea de hoy: <ID y título del backlog>. Criterio de aceptación: <copiar>.

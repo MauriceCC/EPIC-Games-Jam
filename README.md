@@ -1,9 +1,13 @@
-# CORTE FINAL — Documentación de diseño para agentes de IA
+# Unscripted — Proyecto y documentación de diseño
 
-> **Estado:** propuesta de diseño consolidada, no implementación existente.  
-> **Motor:** Unreal Engine 5, proyecto Blueprint, perspectiva isométrica 3D.  
+> **Estado:** plantilla Top Down existente; esqueleto compartido F0 pendiente de creación y validación.
+> **Motor:** Unreal Engine **5.8.4**, proyecto **Blueprint**, perspectiva isométrica 3D.
 > **Ambientación:** Whitechapel, Londres, 1888, **ficción histórica alternativa**.  
 > **Tema de la Game Jam:** *Director's Cut*.
+
+**Nombre definitivo:** Unscripted (antes CORTE FINAL). **Idioma obligatorio del juego: inglés** para todo contenido visible o audible al jugador. La documentación puede seguir en español; sus textos narrativos son referencias de diseño, no textos listos para publicar. Ver las normas de [AGENTS.md](AGENTS.md).
+
+Abrir el proyecto existente [`Unscripted/Unscripted.uproject`](Unscripted/Unscripted.uproject). No crear otro proyecto. Para preparar el trabajo paralelo, seguir la [lista de arranque F0](docs/plan/02_ARRANQUE_F0.md).
 
 ## Premisa
 
@@ -49,6 +53,8 @@ Esta documentación recopila y consolida dos iteraciones: una versión original 
 
 Los valores de daño, duración y dimensiones son **propuestas iniciales de ajuste**, no resultados de playtesting. Las mecánicas marcadas como ampliación no están comprometidas para la versión mínima.
 
-## Qué no es este paquete
+## Estado observado del repositorio
 
-Todavía no incluye código fuente, assets visuales, mapas ejecutables ni Blueprints `.uasset`: el proyecto de Unreal se crea en la Fase 0 del plan. Los esquemas y pseudocódigo describen la **intención de diseño**, no una implementación verificada. La planificación y la asignación de tareas están en `docs/plan/`.
+La revisión de archivos del 2026-11-14 encontró el proyecto `Unscripted/`, Blueprints y mapa Top Down, maniquíes, animaciones y geometría de prototipado. No encontró `Unscripted/Content/CorteFinal/` ni los sistemas propios descritos por el plan. No se ha validado su funcionamiento en el editor en esta revisión.
+
+Las rutas `Content/`, `Config/` y `Source/` del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. `CorteFinal` en rutas internas es un namespace histórico, no el título del juego. Los esquemas y pseudocódigo siguen describiendo intención de diseño, no implementación verificada.

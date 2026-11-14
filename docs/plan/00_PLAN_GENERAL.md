@@ -28,13 +28,15 @@ Si el integrador no es D, anotarlo aquí: **Integrador = _(nombre)_**.
 
 ## 3. Decisiones que se cierran en el kickoff (antes de crear el proyecto)
 
+**Actualización 2026-11-14:** el proyecto ya existe en `Unscripted/Unscripted.uproject`. Nombre definitivo **Unscripted**, UE **5.8.4**, plantilla **Top Down**, creación **Blueprint**. Todo contenido para el jugador debe estar en inglés (ver `AGENTS.md`). La instalación de cada integrante y la apertura del proyecto deben verificarse en el editor. La preparación actual puede realizarse bajo el rol excepcional de integrador autorizado por el usuario; el responsable permanente sigue pendiente de asignar.
+
 Estas decisiones afectan a todos. Se toman juntos en los primeros minutos y se anotan aquí:
 
 | # | Decisión | Recomendación | Decidido |
 |---|---|---|---|
-| D0.1 | Versión **exacta** de UE5 (ej. 5.x.y) | La más reciente estable que tengan instalada **los 4**. Un asset guardado en una versión mayor no abre en una menor. | |
-| D0.2 | Blueprint puro o Blueprint + C++ ligero | Ver sección 8.2. Recomendado: **Blueprint** si alguien no tiene Visual Studio configurado; **C++ ligero** para lógica pura si los 4 pueden compilar. | |
-| D0.3 | Plantilla | Top Down (Blueprint), como dice `docs/06`. | |
+| D0.1 | Versión exacta de UE5 | Usar la misma instalación/versionado en los cuatro equipos. | **5.8.4**, confirmada por el usuario |
+| D0.2 | Blueprint o Blueprint + C++ | C++ requiere una decisión posterior explícita. | **Blueprint** |
+| D0.3 | Plantilla | Reutilizar el proyecto existente. | **Top Down**, variante por verificar |
 | D0.4 | Herramienta de agente de cada persona | Claude Code, Codex, Cursor… da igual: todos leen `AGENTS.md`. | |
 | D0.5 | Plugin de agente para Unreal (MCP) | Opcional y experimental. Solo si los 4 lo instalan igual; lo añade el integrador. | |
 | D0.6 | Packs de assets externos (Fab, Mixamo, etc.) | Revisar las reglas de la jam sobre assets de terceros. D lleva `CREDITS.md`. | |
@@ -58,7 +60,7 @@ Estas decisiones afectan a todos. Se toman juntos en los primeros minutos y se a
 
 ### 5.1 Integrador (orden recomendado)
 
-1. Crear el proyecto UE (versión D0.1, plantilla D0.3) en la raíz del repo, nombre `CorteFinal`.
+1. Abrir el proyecto existente `Unscripted/Unscripted.uproject` con UE 5.8.4; verificar apertura y Play de la plantilla. No crear otro proyecto. Seguir también `02_ARRANQUE_F0.md`.
 2. Verificar que `.gitignore` y `.gitattributes` del repo están en la raíz **antes del primer commit con `.uasset`**. Ejecutar `git lfs install` una vez.
 3. Crear la estructura de carpetas de `01_CONTRATOS §2` (con un asset o `.gitkeep` en cada una).
 4. Crear **todos los assets de `Core/`** (enums, structs, interfaces) con las firmas exactas de `01_CONTRATOS §3–§4`.
@@ -114,7 +116,7 @@ flowchart LR
   F3 --> F4[F4 Pulido + build]
 ```
 
-Nadie espera a nadie en F1: **cada división fabrica sus propios dobles de prueba** (un muñeco que recibe golpes, un jugador falso, un objetivo falso) en su carpeta `Test/`. El único bloqueo real es el **blockout de D**, por eso es la primera tarea de D.
+Tras validar F0, nadie necesita esperar sistemas completos de otra división para F1: **cada división fabrica sus propios dobles de prueba** en su carpeta `Test/`. El blockout de D es necesario para colocar e integrar el contenido de B/C en el nivel compartido, no para sus pruebas aisladas.
 
 ## 7. Cambios de contrato (cómo pedir algo a otra división)
 
@@ -190,9 +192,9 @@ No se puede fusionar. Se elige la versión del **dueño** (`git checkout --their
 Para los archivos con dueño único no hace falta. Para los compartidos (`Core/`, `L_Whitechapel` persistente, `BP_PlayerCharacter` si alguien más que A debe tocarlo excepcionalmente):
 
 ```text
-git lfs lock Content/CorteFinal/Core/Enums/ECombatState.uasset
+git lfs lock Unscripted/Content/CorteFinal/Core/Enums/ECombatState.uasset
 ... editar, commit, push ...
-git lfs unlock Content/CorteFinal/Core/Enums/ECombatState.uasset
+git lfs unlock Unscripted/Content/CorteFinal/Core/Enums/ECombatState.uasset
 git lfs locks          # ver quién tiene qué
 ```
 
@@ -211,6 +213,7 @@ git lfs locks          # ver quién tiene qué
 - [ ] Ninguna referencia a `Developers/` ni a assets de prueba desde contenido de juego.
 - [ ] `git status` limpio de archivos ajenos.
 - [ ] Tarea marcada en la sección Estado del archivo de división.
+- [ ] Todo contenido visible o audible al jugador está en inglés, incluidos errores, prompts, imágenes con texto, documentos, créditos y audio hablado. Sin debug de desarrollo en la entrega.
 
 ## 11. Riesgos del proyecto y mitigación
 

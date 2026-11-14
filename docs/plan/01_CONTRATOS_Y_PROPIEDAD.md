@@ -17,7 +17,11 @@ Así, A puede rehacer su combate entero, o B su IA, sin que C o D tengan que abr
 
 ## 2. Propiedad de carpetas y archivos
 
-Raíz de contenido: `Content/CorteFinal/`.
+Raíz de contenido documentada: `Content/CorteFinal/`, relativa al proyecto `Unscripted/`; ruta desde el repositorio: `Unscripted/Content/CorteFinal/` y ruta en el editor: `/Game/CorteFinal/`. Es un namespace interno histórico, no el título del juego (**Unscripted**). Se conserva para evitar cambios implícitos de contrato.
+
+`Config/`, `Plugins/` y el eventual `Source/` son relativos a `Unscripted/`. `docs/`, `Scripts/` y `SourceData/` son relativos al repositorio. Los comandos Git se ejecutan desde la raíz del repositorio con la ruta completa. El proyecto es Blueprint; las rutas de C++ son reservas condicionales, no módulos existentes.
+
+**Idioma:** todas las salidas al jugador, incluidos `Text` de interfaces y DataTables, deben estar en inglés. Los ejemplos españoles de este contrato explican la intención; no son textos de publicación. No se cambian firmas ni enums por traducir textos de presentación.
 
 | Ruta | Dueño | Contenido |
 |---|---|---|
@@ -42,7 +46,7 @@ Archivos de texto del repositorio:
 
 | Ruta | Dueño |
 |---|---|
-| `Config/*.ini`, `CorteFinal.uproject`, `Plugins/` | Integrador |
+| `Config/*.ini`, `Unscripted.uproject`, `Plugins/` (dentro de `Unscripted/`) | Integrador |
 | `Source/CorteFinal/Player/` · `Enemies/` · `Narrative/` · `World/` (si D0.2 = C++) | A · B · C · D |
 | `SourceData/A/` … `SourceData/D/` (CSV/JSON fuente de DataTables) | Cada división |
 | `Scripts/A/` … `Scripts/D/`, `Scripts/INT/` (Python del editor) | Cada división / integrador |
@@ -238,3 +242,4 @@ Si alguien necesita otro placeholder, lo pide en "Solicitudes de contrato" de D.
 | Versión | Fecha | Cambio | Pedido por |
 |---|---|---|---|
 | v1.0 | | Contrato inicial (esqueleto F0) | Integrador |
+| v1.0 borrador, aclaración documental | 2026-11-14 | Nombre Unscripted, base de rutas y norma de inglés; sin cambios de firmas ni congelación de F0 | Usuario / integrador temporal |

@@ -1,13 +1,15 @@
 # 06 — Diseño técnico propuesto para Unreal Engine 5
 
+> **Norma de producto:** Unscripted, UE 5.8.4, Blueprint. Todo contenido visible o audible al jugador debe estar en ingl?s. Los ejemplos en espa?ol de este documento son referencias de dise?o que deben adaptarse antes de incorporarse al juego; documentaci?n y comentarios internos pueden seguir en espa?ol.
+
 > **Advertencia:** esta es una arquitectura **sugerida** a partir de la conversación. No describe archivos ya existentes, Blueprints compilados ni componentes comprobados en un proyecto real.
 >
 > **Contratos:** los nombres, firmas, interfaces, dispatchers, carpetas y subniveles que comparten varias divisiones están fijados en [`plan/01_CONTRATOS_Y_PROPIEDAD.md`](plan/01_CONTRATOS_Y_PROPIEDAD.md). Si algo de este documento difiere, **prevalece el contrato**. Este archivo sigue siendo la referencia de *cómo* implementar cada sistema.
 
 ## Proyecto
 
-- Unreal Engine **5**, Desktop.
-- Plantilla inicial recomendada: **Top Down**, proyecto **Blueprint**, variante simple/None.
+- Unreal Engine **5.8.4**, Desktop; proyecto existente `Unscripted/Unscripted.uproject`.
+- Base existente: **Top Down**, proyecto creado como **Blueprint**. No crear un segundo proyecto; variante exacta pendiente de verificar en el editor.
 - Cámara isométrica/elevada; ajustar Pitch -55°, Yaw 45° como punto inicial.
 - Movimiento y habilidades con **Enhanced Input**.
 - Vista isométrica 3D y orientación hacia cursor.

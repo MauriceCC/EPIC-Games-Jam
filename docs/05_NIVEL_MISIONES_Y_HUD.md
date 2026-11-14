@@ -1,5 +1,7 @@
 # 05 — Nivel, progresión, objetivos e interfaz
 
+> **Norma de producto:** Unscripted, UE 5.8.4, Blueprint. Todo contenido visible o audible al jugador debe estar en ingl?s. Los ejemplos en espa?ol de este documento son referencias de dise?o que deben adaptarse antes de incorporarse al juego; documentaci?n y comentarios internos pueden seguir en espa?ol.
+
 ## Estructura espacial
 
 Un solo nivel de Whitechapel, con geometría modular de callejones, plaza, talleres, refugio y archivo. Referencia de dimensiones preliminares: **60 x 40 metros virtuales**, sin compromiso de escala final.

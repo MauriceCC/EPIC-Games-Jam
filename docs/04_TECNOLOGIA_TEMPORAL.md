@@ -1,5 +1,7 @@
 # 04 — Tecnología de la agencia y poderes temporales
 
+> **Norma de producto:** Unscripted, UE 5.8.4, Blueprint. Todo contenido visible o audible al jugador debe estar en ingl?s. Los ejemplos en espa?ol de este documento son referencias de dise?o que deben adaptarse antes de incorporarse al juego; documentaci?n y comentarios internos pueden seguir en espa?ol.
+
 ## Justificación diegética
 
 El **Departamento de Continuidad** desarrolló instrumentos que alteran intervalos pequeños del tiempo para asegurar el desenlace de hechos históricos. La tecnología contrasta con Whitechapel 1888: metal oscuro, latón, componentes retráctiles, pulsos cian/azules y artefactos compactos.

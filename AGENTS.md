@@ -1,4 +1,4 @@
-# AGENTS.md — Contexto persistente del proyecto CORTE FINAL
+# AGENTS.md — Contexto persistente del proyecto Unscripted
 
 Este archivo está pensado para agentes de IA que colaboren con la implementación. Leer primero [`README.md`](README.md), después el plan de equipo (`docs/plan/00_PLAN_GENERAL.md` y `docs/plan/01_CONTRATOS_Y_PROPIEDAD.md`), el archivo de la división con la que trabajas y, por último, los documentos de diseño que ese archivo cite.
 
@@ -13,11 +13,21 @@ El proyecto lo desarrollan **4 personas en paralelo**, cada una con su agente, d
 5. Marca como **[PROPUESTA]** cualquier cosa que no esté en la documentación de diseño.
 6. Nunca recomiendes `git add .`, `git push --force` sobre `main` ni resolver conflictos de binarios "fusionando".
 
+## Decisiones confirmadas y norma de idioma (2026-11-14)
+
+- El nombre definitivo es **Unscripted**. CORTE FINAL fue el título provisional; no debe aparecer como título ante el jugador.
+- Motor acordado: **Unreal Engine 5.8.4**. Proyecto creado como **Blueprint**; C++ no está autorizado por defecto.
+- **TODO contenido visible o audible para el jugador debe estar en inglés**, desde el prototipo: menús, HUD, objetivos, prompts, tutoriales, diálogos, subtítulos, documentos, finales, créditos, carteles y texto integrado en imágenes, además de voces si las hay.
+- La documentación, conversaciones de desarrollo y comentarios internos pueden estar en español. Los ejemplos narrativos españoles de `docs/` son material de diseño: deben adaptarse al inglés antes de incorporarse al juego.
+- Cada división responde por el idioma de su contenido; C coordina la consistencia de términos y D revisa también arte, audio y build. No mostrar nombres internos de enums/assets como sustituto del texto al jugador.
+- El proyecto existente está en `Unscripted/Unscripted.uproject`. Las rutas de contenido/configuración del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. `Content/CorteFinal/` sigue siendo el namespace interno documentado, no el título comercial; no renombrarlo unilateralmente.
+- La autorización excepcional para actuar como integrador en esta preparación no transfiere de forma permanente la propiedad de las otras divisiones.
+
 ## Producto
 
-- **Título provisional:** CORTE FINAL.
+- **Título definitivo:** Unscripted.
 - **Game Jam:** *Director's Cut*.
-- **Plataforma:** PC, Unreal Engine 5, proyecto principalmente **Blueprint**, 3D isométrico.
+- **Plataforma:** PC, Unreal Engine **5.8.4**, proyecto **Blueprint**, 3D isométrico.
 - **Género:** acción isométrica táctica con sigilo, combate cuerpo a cuerpo y manipulación temporal.
 - **Contenido narrativo:** Whitechapel 1888; Departamento de Continuidad; Director; Supervisor; Jack; protagonista agente; mensajes de una versión futura del agente.
 - **Experiencia deseada:** una partida corta, inicialmente estimada en 10–15 minutos; validar duración tras introducir combates.
@@ -63,7 +73,7 @@ El proyecto lo desarrollan **4 personas en paralelo**, cada una con su agente, d
 
 ## Decisiones abiertas (no inventar como requisitos cerrados)
 
-- Versión exacta de UE5, assets disponibles y animaciones definitivas.
+- Assets finales y animaciones definitivas (la plantilla ya aporta contenido provisional).
 - Perspectiva ortográfica o perspectiva con lente larga; altura/encuadre exactos.
 - Balance final de daño, resistencia, salud y cooldowns.
 - Si habrá golpe fuerte cargable, cancelaciones, lock-on o esquivas avanzadas.
