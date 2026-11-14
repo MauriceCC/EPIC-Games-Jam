@@ -313,6 +313,14 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 ## 9. Estado
 
+### Prueba actual de B
+
+En el checkout `codex/unscripted-integration`, abrir `/Game/Unscripted/Maps/Test/L_Test_B` y elegir **Play** en el visor. El mapa usa el controlador Top Down y una cámara ortográfica isométrica fija. **[PROPUESTA]** El jugador de prueba de B usa clic izquierdo para moverse, Espacio para el golpe de corto alcance, F para congelar al primer Perseguidor durante dos segundos, Ctrl izquierdo para activar el multiplicador de sigilo y E cerca de Jack para iniciar los tres puntos del refugio.
+
+Se comprobó en Play la cámara activa, el daño nativo, la neutralización, el máximo de dos ataques simultáneos, el aturdimiento y su recuperación, el recorrido de Jack y la restauración local de un Perseguidor herido. La decisión de prueba para checkpoints conserva las unidades neutralizadas y los objetivos completados.
+
+Las funciones de B están en sus propios Blueprints. Sigue pendiente asignar y cablear `BPI_Damageable`, `BPI_TimeAffectable`, `BPI_Interactable` y `BPI_CheckpointListener` en `BP_GuardBase`. Los grafos locales con nombres que coinciden con una función de interfaz deben migrarse antes de asignarla. `B_ReceiveCombatHit` y `B_ResetAtCheckpoint` contienen la lógica local que deben invocar las implementaciones. Jack tiene `B_StartEscape` y `B_ResetAtCheckpoint`; falta enlazarlos con la fase, la interacción y los eventos de historia. Quedan pendientes el encuentro completo del Supervisor, el disparo narrativo del Interventor y la ruta real de Jack en Whitechapel.
+
 - [ ] Mínimo F1 alcanzado
 - [ ] Vertical slice F2 (parte B) en `main`
 - [ ] F3 completo
