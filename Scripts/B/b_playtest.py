@@ -87,13 +87,34 @@ component = camera.get_editor_property('camera_component')
 component.set_editor_property('projection_mode', u.CameraProjectionMode.ORTHOGRAPHIC)
 component.set_editor_property('ortho_width', 3100.0)
 
-if 'Test_B_Pursuer_3' not in placed:
-    pursuer = actors.spawn_actor_from_class(
-        assets.load_blueprint_class(root + 'Enemies/BP_Pursuer'),
-        u.Vector(-460, 450, 110), u.Rotator(yaw=-45))
-    assert pursuer
-    pursuer.set_actor_label('Test_B_Pursuer_3')
-    if 'BP_PatrolRoute' in placed:
-        pursuer.set_editor_property('PatrolRoute', placed['BP_PatrolRoute'])
+patrol_class = assets.load_blueprint_class(root + 'Enemies/BP_PatrolRoute')
+route = placed.get('Test_B_PatrolRoute')
+if route is None:
+    route = actors.spawn_actor_from_class(patrol_class, u.Vector(0, 0, 50))
+    assert route
+    route.set_actor_label('Test_B_PatrolRoute')
+route.set_editor_property('Waypoints', [
+    u.Vector(-350, 0, 0), u.Vector(350, 0, 0), u.Vector(0, 350, 0),
+])
+
+pursuer_class = assets.load_blueprint_class(root + 'Enemies/BP_Pursuer')
+for label, location in [
+    ('Test_B_Pursuer_1', u.Vector(-200, 100, 110)),
+    ('Test_B_Pursuer_2', u.Vector(200, 100, 110)),
+    ('Test_B_Pursuer_3', u.Vector(-460, 450, 110)),
+]:
+    pursuer = placed.get(label)
+    if pursuer is None:
+        pursuer = actors.spawn_actor_from_class(pursuer_class, location, u.Rotator(yaw=-45))
+        assert pursuer
+        pursuer.set_actor_label(label)
+    pursuer.set_editor_property('PatrolRoute', route)
+
+if 'BP_Jack' not in placed:
+    jack = actors.spawn_actor_from_class(
+        assets.load_blueprint_class(root + 'Enemies/Jack/BP_Jack'),
+        u.Vector(300, -300, 110), u.Rotator(yaw=-45))
+    assert jack
+    jack.set_actor_label('BP_Jack')
 assert levels.save_current_level()
 print('B_PLAYTEST_SAVED')
