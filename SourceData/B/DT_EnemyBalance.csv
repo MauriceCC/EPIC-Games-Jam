@@ -1,0 +1,5 @@
+Name,Health,AttackDamage,PostureDamage,VisionRange,DetectionRange,WalkSpeed,RunSpeed,AlertDelaySeconds,StunDurationSeconds,TemporalFreezeDurationSeconds,NeutralizeWindowSeconds,Priority,Notes
+Pursuer,45,12,8,18,8,130,240,1.2,1.8,0.8,1.6,100,"Basic patrol and chase unit"
+Interventor,80,18,12,20,9,120,220,1.0,2.2,1.2,2.0,120,"Mid-tier combat controller"
+Supervisor,180,26,18,24,10,110,200,0.8,2.5,1.5,2.2,150,"Elite encounter controller"
+Jack,30,0,0,12,6,90,160,0.6,0,0,0,80,"Escape route and narrative trigger"
