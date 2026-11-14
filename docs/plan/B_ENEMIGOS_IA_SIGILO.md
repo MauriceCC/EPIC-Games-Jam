@@ -91,6 +91,200 @@ Balance, legibilidad de telegráficas desde la cámara isométrica, bugs de IA a
 - Jack **no** es un compañero con IA general: puntos predefinidos y condiciones de "tramo despejado".
 - Puertas de C que cambian el NavMesh: probar en F2 juntos.
 
+### Implementación concreta recomendada en Blueprint (sin tocar `.uasset`)
+
+A continuación queda la guía de implementación lista para ejecutar en el editor una vez F0 esté validado. Se mantiene dentro de la división B y sigue el contrato v1.0.
+
+#### B-01 — `BP_GuardBase`
+
+- Variables en la clase:
+  - `CurrentState` (enum `EEnemyAIState`)
+  - `TargetActor` (Actor)
+  - `LastKnownPlayerLocation` (Vector)
+  - `AlertTimer` (float)
+  - `AttackCooldown` (float)
+  - `HealthComponent` (tipo `BP_HealthComponent`)
+  - `PatrolRoute` (tipo `BP_PatrolRoute` o Array de Waypoints)
+  - `bIsTemporalFrozen` (bool)
+  - `bCanAttack` (bool)
+- Eventos:
+  - `BeginPlay`: obtener `HealthComponent`, bind a `OnHealthChanged` y `OnDepleted`, inicializar `CurrentState = Patrol`.
+  - `Tick`: si `CurrentState == Suspicious` o `Investigate`, evaluar `AlertTimer`; si `CurrentState == Chase`, `AI Move To` a `TargetActor` o `LastKnownPlayerLocation`.
+- Dispatchers:
+  - `OnEnemyStateChanged(NewState)`, `OnTelegraphStarted(AttackType, Duration)`
+- Nodo clave:
+  - `Switch on EEnemyAIState` para entrar en cada rama. B-03 y B-06 reparten la lógica de detección y persecución.
+
+#### B-02 — Patrulla por puntos
+
+- Asset: `BP_PatrolRoute` (ruta editable en mapa)
+- Variables:
+  - `Waypoints` (Array de `Actor` o `Transform`)
+  - `CurrentWaypointIndex` (int)
+- Lógica:
+  - En `Patrol`, `AI Move To` hacia `Waypoints[CurrentWaypointIndex]`
+  - Cuando llega al waypoint: `CurrentWaypointIndex = (CurrentWaypointIndex + 1) % Waypoints.Num()`
+  - Si el actor es un `BP_GuardBase` y detecta al jugador, `CurrentState = Suspicious`
+- Para editar en editor:
+  - añadir `BP_PatrolRoute` como actor de mundo y mover 2–3 puntos de ruta; no se requiere abrir el Blueprint.
+
+#### B-03 — Percepción
+
+- Tipo de detección:
+  - `Cone Trace` (ángulo 90–110°) + `Distance` + `Line of Sight`
+  - Si no hay trazado complejo, `AI Perception` con un `PerceptionComponent` local
+- Variables de percepciones:
+  - `VisionRange`
+  - `DetectionRange`
+  - `SightAngle`
+  - `bPlayerHidden`
+  - `StealthMultiplier`
+- Regla de decisión:
+  - `Distance < (VisionRange * VisibilityMultiplier)`
+  - `Angle <= SightAngle`
+  - `LineTraceSingleByChannel` a `Visibility` o `Pawn` sin obstáculos
+- Si el jugador está agachado o escondido, aplicar `BP_StealthComponent.GetVisibilityMultiplier()` al rango.
+- En `DetectionReachesThreshold`, `CurrentState = Investigate` y `LastKnownPlayerLocation = PlayerLocation`.
+
+#### B-04 — Sospecha → investigar → Return
+
+- `Suspicious`:
+  - set `TargetActor = Player`
+  - reiniciar `AlertTimer` y disparar `OnEnemyStateChanged`
+- `Investigate`:
+  - `AI Move To` a `LastKnownPlayerLocation`
+  - si el enemigo llega a la posición y no hay visión, `CurrentState = Return`
+- `Return`:
+  - volver a la ruta del waypoint previo o al punto original
+  - si el jugador reaparece o sale de rango, `CurrentState = Patrol`
+
+#### B-05 — `BP_StealthComponent`
+
+- En `BP_PlayerCharacter` o un componente del jugador, con variables:
+  - `DetectionLevel` (0–1)
+  - `Crouched` (bool)
+  - `Hidden` (bool)
+  - `DetectedBy` (Array de Actor)
+- Funciones del contrato:
+  - `SetCrouched(bool)`
+  - `SetHidden(bool)`
+  - `GetVisibilityMultiplier() -> float`
+  - `ReportDetection(Enemy, Level)`
+- Lógica:
+  - Acumular detección por enemigo + duración del tiempo observado
+  - Resolver en `OnDetectionChanged(Level)` para HUD y narativa
+  - Reducir `DetectionLevel` si se oculta o se mueve fuera del cono
+
+#### B-06 — Persecución y combate básico
+
+- Transición de `Investigate` a `Chase`:
+  - si el jugador sigue visible o la última posición es reciente, mover más rápido y emitir `OnEnemyStateChanged(Chase)`
+- En `Combat`:
+  - para `BP_Pursuer` y `BP_Interventor`, mantener distancia y preparar telegráfica
+- Telegrafía:
+  - `OnTelegraphStarted(AttackType, Duration)`
+  - disparar al inicio del ataque para que la cámara/VFX lo muestren
+- Cuando ataque entra en rango:
+  - `Get World Location` del jugador, `Get Actor Forward Vector`, `Line Trace`/`Sphere` a la zona de ataque
+  - `ApplyDamage` usando `ReceiveHit` del jugador con `ST_HitInfo`
+
+#### B-07 — Reacción a `EHitResult`
+
+- Si `HitResult == Parried`:
+  - activar `Stunned`
+  - incrementar `PostureDamage` o aplicar stagger
+  - `Set Actor Rotation` para reaccionar hacia el atacante
+- Si `HitResult == Blocked`:
+  - reducir el daño, mantener `Combat`, no entrar en stagger completo
+- Si `HitResult == Dodged`:
+  - cancelar ataque, reubicar y mantener `Chase`
+
+#### B-08 — Daño, postura, aturdimiento, remate
+
+- Variables:
+  - `CurrentHealth`, `CurrentPosture`
+  - `MaxPosture`
+  - `StunTimer`
+- Reglas:
+  - daño > `PostureThreshold` => `CurrentState = Stunned`
+  - `CanInteract` devuelve true cuando la unidad está aturdida y el interactor es jugador
+  - `Interact` del enemigo llama `RequestFinisher(self)` y aplica `ST_HitInfo` con `AttackType = Finisher`, `bNonLethal = true` para civiles
+
+#### B-09 — `ApplyTemporalFreeze`
+
+- En `BPI_TimeAffectable`:
+  - `ApplyTemporalFreeze(Duration, PostureDamage) -> float`
+  - si `CanBeTemporalCutTarget == true`, guardar velocidad y animación actual
+  - congelar `AI Move To`, `CharacterMovementComponent` y animación
+  - usar `M_TemporalFrozen_Overlay` como overlay de material
+  - al terminar, reactivar y restaurar el estado previo
+- Evitar un estado bloqueado fijo: si el enemigo ya no debe atacar, reanudar `Combat` o `Return`
+
+#### B-10 — Neutralización no letal
+
+- En `BP_GuardBase` o `BP_Jack`, si `ReceiveHit` llega con daño letal pero el enemigo es civil o no agresor:
+  - set `CurrentState = Defeated`
+  - desactivar el combate
+  - `ReportStoryEvent(EnemyNeutralized, self, EncounterName)`
+  - poner al actor en posición de inconsciencia mediante animación o `SetActorEnableCollision(false)` si es de pruebas
+
+#### B-11 — Coordinador de ataques
+
+- Variables:
+  - `ActiveAttackers` (Array de Actor)
+  - `MaxSimultaneousAttackers` = 1 o 2 según el tipo
+- Regla:
+  - si `ActiveAttackers.Num() >= MaxSimultaneousAttackers`, los demás se quedan en `Chase` o `Flank`
+  - flanqueo: usando waypoint de borde o posición lateral al jugador
+
+#### B-12 — `BP_Pursuer`
+
+- En la subclase de `BP_GuardBase`:
+  - `Health = 45`
+  - `AttackDamage = 12`
+  - `WalkSpeed = 130`, `RunSpeed = 240`
+  - `bShouldFlank = true` cuando el jugador está en cobertura
+- Añadir `BP_Pursuer` en `Content/Unscripted/Enemies/`
+
+#### B-13 — `DT_EnemyBalance` y data-driven config
+
+- Fichero base:
+  - [`SourceData/B/DT_EnemyBalance.csv`](../../SourceData/B/DT_EnemyBalance.csv)
+- Fichero de runtime:
+  - [`SourceData/B/EnemyAIStateMachine.json`](../../SourceData/B/EnemyAIStateMachine.json)
+- Uso recomendado:
+  - crear una DataTable en el editor con columnas `Name`, `Health`, etc.
+  - leer todos los valores desde `DT_EnemyBalance` y no hardcodear números en nodos.
+
+#### B-14 — `BP_Jack`
+
+- Variables:
+  - `Waypoints` (Array de `BP_JackWaypoint`)
+  - `CurrentWaypointIndex`
+  - `bReachedRefuge`
+- Lógica:
+  - estado inicial = `Patrol` idle asustado
+  - si la zona está despejada y `OnStoryPhaseChanged` llega a `ProtectJack`, `BP_Jack` se mueve por la ruta
+  - si `Interact` del jugador: `ReportStoryEvent(JackFound)`
+  - al llegar al último waypoint: `ReportStoryEvent(JackReachedRefuge)`
+- Asegurar condiciones de camino y no hacer IA general; el movimiento debe estar basado en puntos de ruta predefinidos.
+
+### Validación de implementación recomendada en `L_Test_B`
+
+1. Añadir un `PlayerStart` en `L_Test_B`.
+2. Colocar 3 instancias de `BP_Pursuer` y 1 de `BP_Jack`.
+3. Crear un `BP_TestPlayer_B` con movimiento básico WASD y `BPI_Damageable`.
+4. Conectar un `BP_PatrolRoute` con 3 waypoints.
+5. Probar:
+   - patrulla sin detectar
+   - detección del jugador desde el cono de visión
+   - sospecha e investigación por última posición
+   - persecución con velocidad alta
+   - parry y stagger del jugador
+   - corte temporal aplicado a perseguidores
+   - remate sobre enemigo aturdido
+   - paso de Jack a refugio
+
 ## 6. Decisiones abiertas de la división
 
 - ¿Al reaparecer en checkpoint los enemigos de la sección reviven o siguen neutralizados? *(propuesta: los neutralizados siguen fuera; los heridos recuperan salud)*.
@@ -124,4 +318,18 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 - [ ] F3 completo
 - [ ] F4 cerrado
 
+### Estado actual de preparación (2026-11-14)
+
+- [x] Se revisó el inventario actual del proyecto y los assets B existentes (`BP_GuardBase`, `BP_Pursuer`, `BP_Interventor`, `BP_Supervisor`, `BP_Jack`, `BP_StealthComponent`).
+- [x] Se preparó la base de datos de balance B en texto: [`SourceData/B/DT_EnemyBalance.csv`](../../SourceData/B/DT_EnemyBalance.csv).
+- [x] Se añadió la validación de balance en [`Scripts/B/b_enemy_balance.py`](../../Scripts/B/b_enemy_balance.py).
+- [x] Se estructuró y validó la máquina de estados de IA en [`SourceData/B/EnemyAIStateMachine.json`](../../SourceData/B/EnemyAIStateMachine.json) y [`Scripts/B/b_ai_machine.py`](../../Scripts/B/b_ai_machine.py).
+- [x] Se creó y compiló `BP_PatrolRoute` en `Content/Unscripted/Enemies/` con soporte de waypoints editables 3D.
+- [x] Se crearon y asignaron todas las variables de contrato y balance en `BP_GuardBase`, `BP_Pursuer`, `BP_Interventor`, `BP_Supervisor`, `BP_Jack` y `BP_StealthComponent`.
+- [x] Se programó y compiló el grafo de lógica de `BP_StealthComponent` (`SetCrouched`, `SetHidden`, `GetVisibilityMultiplier` con ramificaciones de retorno y `ReportDetection`).
+- [x] Se pobló y guardó `Maps/Test/L_Test_B` con la ruta de patrulla, 2 Perseguidores y Jack configurado.
+- [x] Se pobló y guardó `Maps/L_Whitechapel_AI` con el encuentro de patrulla del Acto I (plaza con 2 Perseguidores).
+- [x] Se redactó la guía completa nodo a nodo de Blueprint para todos los assets de B en [`Scripts/B/B_GUIA_BLUEPRINT.md`](../../Scripts/B/B_GUIA_BLUEPRINT.md).
+
 Notas del día:
+La división B ha sido implementada directamente en el editor de Unreal Engine 5.8.4 mediante la pasarela de automatización: variables creadas, grafos de funciones de sigilo cableados y compilados, balance aplicado a los CDO y actores colocados en los niveles `L_Test_B` y `L_Whitechapel_AI`.

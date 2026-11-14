@@ -18,6 +18,8 @@ Plugins/**/Intermediate/
 # Carpetas personales del editor (borradores, nunca se suben)
 Content/Developers/
 Content/Collections/
+Unscripted/Content/Developers/
+Unscripted/Content/Collections/
 
 # IDEs
 .vs/

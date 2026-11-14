@@ -68,9 +68,9 @@ EAttackType         Light1, Light2, Light3, Heavy, Finisher, Stealth, EnemyBasic
 EHitResult          Hit, Blocked, Parried, Dodged, Ignored
 EStoryPhase         FindJack, OpenEscapeRoute, ProtectJack, DiscoverTruth, FinalChoice, GameEnded
 EStoryEvent         JackFound, EscapeRouteOpened, JackReachedRefuge, EvidenceCollected, TruthRevealed,
-                    InterventorTurnedHostile, SupervisorEncounterStarted, SupervisorDefeated,
+                    InterventorTurnedHostile, SupervisorDefeated,
                     FinalDocumentRegistered, EnemyNeutralized, PlayerDefeated, CheckpointReached,
-                    ContinuityAltered, FutureMessageRead
+                    ContinuityAltered, FutureMessageRead, SupervisorEncounterStarted
 EEvidenceType       NursingRecord, FabricatedReport
 EEndingType         None, OfficialCut, AuthenticRecord
 ESpeaker            Agent, Jack, Supervisor, Director, FutureSelf, Interventor, System
@@ -242,5 +242,6 @@ Si alguien necesita otro placeholder, lo pide en "Solicitudes de contrato" de D.
 | Versión | Fecha | Cambio | Pedido por |
 |---|---|---|---|
 | v1.0 | | Contrato inicial (esqueleto F0) | Integrador |
+| v1.0 borrador, reparación de enum | 2026-11-14 | El asset existente omitía SupervisorEncounterStarted. Se añade al final, sin cambiar índices anteriores, por autorización explícita del usuario. El orden de §3 refleja el asset | Usuario / integrador temporal |
 | v1.0 borrador, aclaración documental | 2026-11-14 | Nombre Unscripted, base de rutas y norma de inglés; sin cambios de firmas ni congelación de F0 | Usuario / integrador temporal |
 | v1.0 borrador, unificación de rutas | 2026-11-14 | Raíz propia `Content/Unscripted/` y reserva condicional `Source/Unscripted/`; guías y planes actualizados. No se encontraron assets guardados bajo la raíz provisional que requirieran migración | Usuario / integrador temporal |
