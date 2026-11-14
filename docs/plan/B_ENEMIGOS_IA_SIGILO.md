@@ -31,7 +31,7 @@ Que los enemigos sean **legibles y justos**: patrullan, sospechan, persiguen, pe
 
 | Consumes | De quién | Mientras no exista… |
 |---|---|---|
-| `ReceiveHit` del jugador (parry/esquiva) | A | `BP_TestPlayer_B` en `Enemies/Test/` que implementa `BPI_Damageable` y se mueve con WASD simple |
+| `ReceiveCombatHit` del jugador (parry/esquiva) | A | `BP_TestPlayer_B` en `Enemies/Test/` que implementa `BPI_Damageable` y se mueve con WASD simple |
 | `BP_HealthComponent` | A | Existe desde F0 (cascarón); si A aún no lo terminó, usa una variable local temporal |
 | `RequestFinisher` | A | Print en test |
 | `OnStoryPhaseChanged`, `OnDialogueFinished` | C | Un actor de prueba que dispare las fases con teclas numéricas |
@@ -48,7 +48,7 @@ Que los enemigos sean **legibles y justos**: patrullan, sospechan, persiguen, pe
 | B-03 | Percepción: cono de visión + distancia + line trace (o AI Perception) con multiplicador de `BP_StealthComponent` | P0 | Cajas bloquean visión; agacharse reduce distancia |
 | B-04 | Sospecha → investigar última posición → Return | P0 | |
 | B-05 | `BP_StealthComponent`: agregar `ReportDetection` de varios enemigos, `OnDetectionChanged`, escondido = invisible | P0 | Barra de prueba sube/baja |
-| B-06 | Persecución y combate básico: acercarse, telegrafiar (`OnTelegraphStarted`), atacar con notify → `ReceiveHit` al jugador | P0 | El test player puede recibir golpes |
+| B-06 | Persecución y combate básico: acercarse, telegrafiar (`OnTelegraphStarted`), atacar con notify → `ReceiveCombatHit` al jugador | P0 | El test player puede recibir golpes |
 | B-07 | Reacción a `EHitResult`: `Parried` → stagger + postura; `Blocked`/`Dodged` | P0 | |
 | B-08 | Recepción de golpes: daño, postura, umbral → `Stunned` → `CanInteract` true para remate | P0 | |
 | B-09 | `ApplyTemporalFreeze`: congelar movimiento + animación, overlay `M_TemporalFrozen_Overlay`, restaurar estado previo | P0 | Tras el Corte, el enemigo retoma exactamente lo que hacía (o queda en Combat) sin quedarse bloqueado |

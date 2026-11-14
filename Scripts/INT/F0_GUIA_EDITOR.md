@@ -106,7 +106,7 @@ Hay dos interfaces que devuelven componentes específicos. Por eso necesitamos c
 
 1. Entrar en `Core/Interfaces` → clic derecho → Blueprints → Blueprint Interface.
 2. Crear `BPI_Damageable` y abrirlo.
-3. En My Blueprint → Functions, renombrar NewFunction a `ReceiveHit`.
+3. En My Blueprint → Functions, renombrar NewFunction a `ReceiveCombatHit`.
 4. Seleccionar la función. En Details → Inputs, pulsar +: nombre `HitInfo`, tipo `ST_HitInfo`.
 5. En Outputs pulsar +: tipo `EHitResult`. **[PROPUESTA]** Nombre de salida `Result`, porque el contrato fija su tipo pero no el nombre de ese pin.
 6. Añadir otra función con + junto a Functions: `IsDefeated`. Sin Inputs, una salida Boolean.
@@ -185,7 +185,7 @@ Para añadir una interface a un Blueprint: abrir → Class Settings → Details 
 
 Los hijos heredan las interfaces; no duplicarlas.
 
-**[PROPUESTA] Valores provisionales seguros:** en las funciones con salida dejar CanInteract y CanBeTemporalCutTarget en false, IsDefeated en false, ApplyTemporalFreeze en 0 y ReceiveHit en Ignored. No simular éxitos de sistemas sin implementar. Funciones sin salida pueden permanecer sin comportamiento en F0.
+**[PROPUESTA] Valores provisionales seguros:** en las funciones con salida dejar CanInteract y CanBeTemporalCutTarget en false, IsDefeated en false, ApplyTemporalFreeze en 0 y ReceiveCombatHit en Ignored. No simular éxitos de sistemas sin implementar. Funciones sin salida pueden permanecer sin comportamiento en F0.
 
 Dos getters deben devolver sus componentes reales para permitir enlazar avisos:
 

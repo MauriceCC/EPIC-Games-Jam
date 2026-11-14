@@ -63,7 +63,7 @@ Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDA
 
 - **Enum:** lista de estados, por ejemplo `Idle` y `Attacking`.
 - **Struct:** paquete de datos, por ejemplo daño, dirección y atacante en `ST_HitInfo`.
-- **Interface:** operaciones comunes. A llama `ReceiveHit`; B decide cómo recibe el golpe.
+- **Interface:** operaciones comunes. A llama `ReceiveCombatHit`; B decide cómo recibe el golpe.
 - **Cascarón:** Blueprint con clase, funciones y eventos declarados, todavía sin lógica.
 - **Dispatcher:** aviso que otros escuchan, por ejemplo `OnHealthChanged` para actualizar el HUD.
 - **Mapa de prueba:** sala aislada para probar una división con dobles de prueba, sin tocar el nivel compartido.
