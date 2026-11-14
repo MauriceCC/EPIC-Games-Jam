@@ -20,7 +20,7 @@
 Una persona (recomendado: **D**, porque ya es dueña del mapa persistente y de la build) asume además:
 
 - Crear el **esqueleto** del proyecto en la Fase 0 (sección 5).
-- Ser la única persona que modifica `Content/CorteFinal/Core/`, `Config/`, el `.uproject` y los plugins.
+- Ser la única persona que modifica `Content/Unscripted/Core/`, `Config/`, el `.uproject` y los plugins.
 - Revisar y fusionar PRs a `main`, y mantener `main` jugable.
 - Aplicar cambios de contrato aprobados (sección 7).
 
@@ -52,7 +52,7 @@ Estas decisiones afectan a todos. Se toman juntos en los primeros minutos y se a
 5. **Experimentos en tu carpeta de pruebas**, no en el mapa principal (`Maps/Test/L_Test_<División>`).
 6. **`main` siempre abre y siempre se juega.** Nada se fusiona si hay errores de compilación de Blueprint.
 7. **Integra pronto y en pequeño:** al menos **2 PR por persona y día**. Una rama que vive 2 días es una rama que va a romper algo.
-8. **El repositorio NO debe estar dentro de OneDrive/Dropbox/Google Drive.** La sincronización bloquea archivos y corrompe `.uasset`/`Intermediate`. Clonar en una ruta corta, ej. `C:\Dev\CorteFinal` (las rutas largas también dan errores en Windows con UE).
+8. **El repositorio NO debe estar dentro de OneDrive/Dropbox/Google Drive.** La sincronización bloquea archivos y corrompe `.uasset`/`Intermediate`. Clonar en una ruta corta, ej. `C:\Dev\Unscripted` (las rutas largas también dan errores en Windows con UE).
 
 ## 5. Fase 0 — Esqueleto (lo hace el integrador, el resto prepara)
 
@@ -192,9 +192,9 @@ No se puede fusionar. Se elige la versión del **dueño** (`git checkout --their
 Para los archivos con dueño único no hace falta. Para los compartidos (`Core/`, `L_Whitechapel` persistente, `BP_PlayerCharacter` si alguien más que A debe tocarlo excepcionalmente):
 
 ```text
-git lfs lock Unscripted/Content/CorteFinal/Core/Enums/ECombatState.uasset
+git lfs lock Unscripted/Content/Unscripted/Core/Enums/ECombatState.uasset
 ... editar, commit, push ...
-git lfs unlock Unscripted/Content/CorteFinal/Core/Enums/ECombatState.uasset
+git lfs unlock Unscripted/Content/Unscripted/Core/Enums/ECombatState.uasset
 git lfs locks          # ver quién tiene qué
 ```
 

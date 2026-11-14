@@ -20,7 +20,7 @@ El proyecto lo desarrollan **4 personas en paralelo**, cada una con su agente, d
 - **TODO contenido visible o audible para el jugador debe estar en inglés**, desde el prototipo: menús, HUD, objetivos, prompts, tutoriales, diálogos, subtítulos, documentos, finales, créditos, carteles y texto integrado en imágenes, además de voces si las hay.
 - La documentación, conversaciones de desarrollo y comentarios internos pueden estar en español. Los ejemplos narrativos españoles de `docs/` son material de diseño: deben adaptarse al inglés antes de incorporarse al juego.
 - Cada división responde por el idioma de su contenido; C coordina la consistencia de términos y D revisa también arte, audio y build. No mostrar nombres internos de enums/assets como sustituto del texto al jugador.
-- El proyecto existente está en `Unscripted/Unscripted.uproject`. Las rutas de contenido/configuración del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. `Content/CorteFinal/` sigue siendo el namespace interno documentado, no el título comercial; no renombrarlo unilateralmente.
+- El proyecto existente está en `Unscripted/Unscripted.uproject`. Las rutas de contenido/configuración del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. La raíz de contenido propia es `Content/Unscripted/` (en el editor: `/Game/Unscripted/`), unificada con el nombre definitivo por autorización del usuario el 2026-11-14.
 - La autorización excepcional para actuar como integrador en esta preparación no transfiere de forma permanente la propiedad de las otras divisiones.
 
 ## Producto

@@ -28,7 +28,7 @@ Acción isométrica con sigilo, combate cuerpo a cuerpo deliberado, parry, esqui
 - División C — [`C_NARRATIVA_INTERACCION_UI.md`](docs/plan/C_NARRATIVA_INTERACCION_UI.md): fases, interacción, diálogos, HUD y finales.
 - División D — [`D_MUNDO_ARTE_AUDIO_BUILD.md`](docs/plan/D_MUNDO_ARTE_AUDIO_BUILD.md): nivel, arte, VFX, audio, build e integración.
 
-> El repositorio **no** debe clonarse dentro de OneDrive u otra carpeta sincronizada. Usar una ruta corta, p. ej. `C:\Dev\CorteFinal`, e instalar Git LFS antes de clonar.
+> El repositorio **no** debe clonarse dentro de OneDrive u otra carpeta sincronizada. Usar una ruta corta, p. ej. `C:\Dev\Unscripted`, e instalar Git LFS antes de clonar.
 
 ## Documentos de diseño
 
@@ -55,6 +55,6 @@ Los valores de daño, duración y dimensiones son **propuestas iniciales de ajus
 
 ## Estado observado del repositorio
 
-La revisión de archivos del 2026-11-14 encontró el proyecto `Unscripted/`, Blueprints y mapa Top Down, maniquíes, animaciones y geometría de prototipado. No encontró `Unscripted/Content/CorteFinal/` ni los sistemas propios descritos por el plan. No se ha validado su funcionamiento en el editor en esta revisión.
+La revisión de archivos del 2026-11-14 encontró el proyecto `Unscripted/`, Blueprints y mapa Top Down, maniquíes, animaciones y geometría de prototipado. No encontró `Unscripted/Content/Unscripted/` ni los sistemas propios descritos por el plan. No se ha validado su funcionamiento en el editor en esta revisión.
 
-Las rutas `Content/`, `Config/` y `Source/` del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. `CorteFinal` en rutas internas es un namespace histórico, no el título del juego. Los esquemas y pseudocódigo siguen describiendo intención de diseño, no implementación verificada.
+Las rutas `Content/`, `Config/` y `Source/` del plan son relativas a `Unscripted/`; `docs/`, `Scripts/` y `SourceData/` son relativas al repositorio. La raíz de contenido propio es `Unscripted/Content/Unscripted/`, visible como `/Game/Unscripted/` en el editor. El título y las rutas internas usan el mismo nombre definitivo. Los esquemas y pseudocódigo siguen describiendo intención de diseño, no implementación verificada.

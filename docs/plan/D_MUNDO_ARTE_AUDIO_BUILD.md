@@ -12,7 +12,7 @@ Construir **Whitechapel 1888** como espacio jugable y legible desde la cámara i
 
 ## 2. Propiedad
 
-- `Content/CorteFinal/World/`, `Art/`, `Materials/`, `VFX/`, `Audio/`
+- `Content/Unscripted/World/`, `Art/`, `Materials/`, `VFX/`, `Audio/`
 - Mapas `L_Whitechapel` (persistente, con `git lfs lock`), `L_Whitechapel_Geo`, `L_Whitechapel_Light`, `Maps/Test/L_Test_D`
 - `SourceData/D/`, `Scripts/D/`, `CREDITS.md`
 - Como integrador: `Core/`, `Config/`, `.uproject`, `Plugins/`, `docs/plan/00_*`, `docs/plan/01_*`, `AGENTS.md`, `README.md`

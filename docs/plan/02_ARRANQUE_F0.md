@@ -10,11 +10,11 @@
 
 ## Estado observado, sin confundir documentación con implementación
 
-La revisión de archivos encontró `Unscripted/Unscripted.uproject`, configuración Enhanced Input, mapa y Blueprints Top Down, maniquíes, animaciones y geometría provisional. No encontró `Unscripted/Content/CorteFinal/` ni los assets de F0. No se abrió el editor ni se probaron Blueprints durante esta revisión.
+La revisión de archivos encontró `Unscripted/Unscripted.uproject`, configuración Enhanced Input, mapa y Blueprints Top Down, maniquíes, animaciones y geometría provisional. No encontró `Unscripted/Content/Unscripted/` ni los assets de F0. No se abrió el editor ni se probaron Blueprints durante esta revisión.
 
 El `.uproject` usa un identificador de instalación para `EngineAssociation`; no prueba por sí solo la versión exacta. El integrador debe comprobar que los cuatro equipos lo abren con 5.8.4 sin convertir assets a otra versión.
 
-No crear un proyecto nuevo ni mover la plantilla. Las rutas `Content/`, `Config/` y `Source/` del plan parten de `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio. `/Game/CorteFinal/` sigue siendo el namespace interno documentado. El título mostrado al jugador es Unscripted.
+No crear un proyecto nuevo ni mover la plantilla. Las rutas `Content/`, `Config/` y `Source/` del plan parten de `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio. La raíz interna acordada es `/Game/Unscripted/`, unificada con el título por autorización del usuario. Crear las nuevas carpetas y assets con este nombre.
 
 ## Qué puede preparar cada división ahora
 
@@ -29,10 +29,12 @@ Los CSV pueden prepararse como texto antes de F0; su importación y validación 
 
 ## Lista del integrador para desbloquear F1
 
+Guía de ejecución para principiantes: [F0 paso a paso en el editor](../../Scripts/INT/F0_GUIA_EDITOR.md). El usuario confirmó apertura del proyecto y Play; la creación de contratos, cascarones, conexiones y mapas sigue pendiente. Crear los componentes vacíos antes de las interfaces que los devuelven evita que falten tipos en sus selectores.
+
 Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDAD.md`. Las casillas siguientes permanecen pendientes hasta comprobarlas en el editor.
 
 1. **Verificar la base.**
-   - [ ] Abrir `Unscripted/Unscripted.uproject` con UE 5.8.4 y ejecutar Play de la plantilla.
+   - [x] Abrir `Unscripted/Unscripted.uproject` con UE 5.8.4 y ejecutar Play de la plantilla (confirmado por el usuario; no implica verificación de los cuatro equipos).
    - [ ] Comprobar Git LFS en los cuatro equipos y que los assets descargados abren.
    - [ ] Revisar `.gitignore`: las reglas actuales `Content/Developers/` y `Content/Collections/` no cubren esas carpetas dentro de `Unscripted/`. Ajustarlas antes de guardar borradores personales en Git.
    - [ ] Revisar plugins/configuración requeridos por el contrato; no asumir que un plugin está desactivado solo por no aparecer explícitamente en el `.uproject`.
@@ -47,7 +49,7 @@ Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDA
    - [ ] Configurar las clases de jugador, controlador, GameState y HUD en el GameMode.
    - [ ] Mantener la lógica de cada división para F1; esta etapa verifica que las referencias existen y compilan.
 4. **Preparar los espacios de trabajo.**
-   - [ ] Crear `L_Test_A`, `L_Test_B`, `L_Test_C` y `L_Test_D` bajo `Content/CorteFinal/Maps/Test/`.
+   - [ ] Crear `L_Test_A`, `L_Test_B`, `L_Test_C` y `L_Test_D` bajo `Content/Unscripted/Maps/Test/`.
    - [ ] Crear `L_Whitechapel` y subniveles según contratos §6, verificando compatibilidad de la configuración del mapa con ese esquema. No asumir que el mapa Top Down existente ya lo usa.
    - [ ] Configurar colisiones, mapas y Enhanced Input según §7. A implementará el comportamiento de las acciones.
    - [ ] Preparar placeholders de D según §8, sin textos españoles visibles.

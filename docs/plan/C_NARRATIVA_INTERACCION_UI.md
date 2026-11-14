@@ -12,9 +12,9 @@ Que el tema *Director's Cut* **se juegue**: las órdenes aparecen, se reescriben
 
 ## 2. Propiedad
 
-- `Content/CorteFinal/Narrative/` y `Content/CorteFinal/UI/` (incluyen `Test/`)
+- `Content/Unscripted/Narrative/` y `Content/Unscripted/UI/` (incluyen `Test/`)
 - Subnivel `Maps/L_Whitechapel_Story` y `Maps/Test/L_Test_C`
-- `SourceData/C/` (diálogos y checklist en CSV), `Scripts/C/`, `Source/CorteFinal/Narrative/` (si hay C++)
+- `SourceData/C/` (diálogos y checklist en CSV), `Scripts/C/`, `Source/Unscripted/Narrative/` (si hay C++)
 - Este archivo.
 
 **No tocas:** `Core/`, jugador, enemigos, Jack, geometría.
@@ -109,7 +109,7 @@ Trabajo en la División C (Relato: narrativa, interacción, objetivos, UI y fina
 Lee AGENTS.md, docs/plan/00_PLAN_GENERAL.md, docs/plan/01_CONTRATOS_Y_PROPIEDAD.md,
 docs/plan/C_NARRATIVA_INTERACCION_UI.md y después docs/01, docs/02, docs/05, docs/06 y docs/07.
 Tarea de hoy: <ID y título del backlog>. Criterio de aceptación: <copiar>.
-Restricciones: solo puedo modificar Content/CorteFinal/Narrative/, Content/CorteFinal/UI/,
+Restricciones: solo puedo modificar Content/Unscripted/Narrative/, Content/Unscripted/UI/,
 Maps/L_Whitechapel_Story, Maps/Test/L_Test_C, SourceData/C/, Scripts/C/ y mi archivo de división.
 Respeta exactamente las firmas del contrato v<versión>.
 Entrégame: (1) los pasos para construirlo en Blueprint/UMG, nodo a nodo, indicando en qué asset va cada cosa;

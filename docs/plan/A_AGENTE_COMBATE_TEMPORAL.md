@@ -1,6 +1,6 @@
 # División A — Agente: jugador, combate y poderes temporales
 
-> **Base confirmada:** Unscripted ? UE 5.8.4 ? Blueprint. Todo contenido para el jugador debe estar en ingl?s, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
+> **Base confirmada:** Unscripted · UE 5.8.4 · Blueprint. Todo contenido para el jugador debe estar en inglés, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
 
 **Persona:** _(nombre)_ · **Rama:** `a/<tarea>` · **Commits:** `[A] …`
 
@@ -12,9 +12,9 @@ Que controlar al agente **se sienta bien**: moverse en isométrico, apuntar con 
 
 ## 2. Propiedad
 
-- `Content/CorteFinal/Player/` (incluye `Input/`, `Animation/`, `Test/`)
+- `Content/Unscripted/Player/` (incluye `Input/`, `Animation/`, `Test/`)
 - `Maps/Test/L_Test_A`
-- `SourceData/A/`, `Scripts/A/`, `Source/CorteFinal/Player/` (si hay C++)
+- `SourceData/A/`, `Scripts/A/`, `Source/Unscripted/Player/` (si hay C++)
 - Este archivo.
 
 **No tocas:** `Core/`, enemigos, interactuables, HUD, mapas de `L_Whitechapel`.
@@ -106,7 +106,7 @@ Trabajo en la División A (Agente: jugador, combate y poderes temporales) del pr
 Lee AGENTS.md, docs/plan/00_PLAN_GENERAL.md, docs/plan/01_CONTRATOS_Y_PROPIEDAD.md,
 docs/plan/A_AGENTE_COMBATE_TEMPORAL.md y después docs/02, docs/03, docs/04 y docs/06.
 Tarea de hoy: <ID y título del backlog>. Criterio de aceptación: <copiar>.
-Restricciones: solo puedo modificar Content/CorteFinal/Player/, Maps/Test/L_Test_A, SourceData/A/, Scripts/A/
+Restricciones: solo puedo modificar Content/Unscripted/Player/, Maps/Test/L_Test_A, SourceData/A/, Scripts/A/
 y mi archivo de división. Respeta exactamente las firmas del contrato v<versión>.
 Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando en qué asset va cada cosa;
 (2) los datos de DataTable en CSV si aplica; (3) cómo probarlo en L_Test_A;
@@ -127,3 +127,7 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 - [ ] F4 cerrado
 
 Notas del día:
+
+- 2026-11-14: A-01 iniciada como guía de implementación: [Input en Blueprint](../../Scripts/A/A01_INPUT_BLUEPRINT.md). Pendiente de crear assets y verificar en Unreal; no se marca terminada.
+- **[PROPUESTA]** Mientras F0 no exista, probar input con `BP_InputTestController_A` y `BP_InputTestGameMode_A` en `Player/Test/`, usando solo `L_Test_A`. No sustituye F0 ni modifica contratos. Tras F0, llevar las conexiones al controlador de A.
+- **[PROPUESTA]** Añadir `IA_Pause` para comprobar Esc; acumulación Cumulative para WASD. Son decisiones locales de A-01; la implementación del menú pertenece a C.

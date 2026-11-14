@@ -12,9 +12,9 @@ Que los enemigos sean **legibles y justos**: patrullan, sospechan, persiguen, pe
 
 ## 2. Propiedad
 
-- `Content/CorteFinal/Enemies/` (incluye `Jack/`, `Animation/`, `Test/`)
+- `Content/Unscripted/Enemies/` (incluye `Jack/`, `Animation/`, `Test/`)
 - Subnivel `Maps/L_Whitechapel_AI` y `Maps/Test/L_Test_B`
-- `SourceData/B/`, `Scripts/B/`, `Source/CorteFinal/Enemies/` (si hay C++)
+- `SourceData/B/`, `Scripts/B/`, `Source/Unscripted/Enemies/` (si hay C++)
 - Este archivo.
 
 **No tocas:** `Core/`, jugador, HUD, interactuables de C, geometría del nivel.
@@ -104,7 +104,7 @@ Trabajo en la División B (Oposición: enemigos, IA, sigilo y Jack) del proyecto
 Lee AGENTS.md, docs/plan/00_PLAN_GENERAL.md, docs/plan/01_CONTRATOS_Y_PROPIEDAD.md,
 docs/plan/B_ENEMIGOS_IA_SIGILO.md y después docs/02, docs/03, docs/04 y docs/06.
 Tarea de hoy: <ID y título del backlog>. Criterio de aceptación: <copiar>.
-Restricciones: solo puedo modificar Content/CorteFinal/Enemies/, Maps/L_Whitechapel_AI, Maps/Test/L_Test_B,
+Restricciones: solo puedo modificar Content/Unscripted/Enemies/, Maps/L_Whitechapel_AI, Maps/Test/L_Test_B,
 SourceData/B/, Scripts/B/ y mi archivo de división. Respeta exactamente las firmas del contrato v<versión>.
 Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando en qué asset va cada cosa;
 (2) los datos de DataTable en CSV si aplica; (3) cómo probarlo en L_Test_B con mis dobles de prueba;

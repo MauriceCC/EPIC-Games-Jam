@@ -17,7 +17,7 @@ Así, A puede rehacer su combate entero, o B su IA, sin que C o D tengan que abr
 
 ## 2. Propiedad de carpetas y archivos
 
-Raíz de contenido documentada: `Content/CorteFinal/`, relativa al proyecto `Unscripted/`; ruta desde el repositorio: `Unscripted/Content/CorteFinal/` y ruta en el editor: `/Game/CorteFinal/`. Es un namespace interno histórico, no el título del juego (**Unscripted**). Se conserva para evitar cambios implícitos de contrato.
+Raíz de contenido documentada: `Content/Unscripted/`, relativa al proyecto `Unscripted/`; ruta desde el repositorio: `Unscripted/Content/Unscripted/` y ruta en el editor: `/Game/Unscripted/`. Nombre interno unificado con el título definitivo por autorización explícita del usuario el 2026-11-14. Esta actualización del borrador reemplaza las rutas provisionales anteriores; no cambia propietarios ni firmas.
 
 `Config/`, `Plugins/` y el eventual `Source/` son relativos a `Unscripted/`. `docs/`, `Scripts/` y `SourceData/` son relativos al repositorio. Los comandos Git se ejecutan desde la raíz del repositorio con la ruta completa. El proyecto es Blueprint; las rutas de C++ son reservas condicionales, no módulos existentes.
 
@@ -47,7 +47,7 @@ Archivos de texto del repositorio:
 | Ruta | Dueño |
 |---|---|
 | `Config/*.ini`, `Unscripted.uproject`, `Plugins/` (dentro de `Unscripted/`) | Integrador |
-| `Source/CorteFinal/Player/` · `Enemies/` · `Narrative/` · `World/` (si D0.2 = C++) | A · B · C · D |
+| `Source/Unscripted/Player/` · `Enemies/` · `Narrative/` · `World/` (si D0.2 = C++) | A · B · C · D |
 | `SourceData/A/` … `SourceData/D/` (CSV/JSON fuente de DataTables) | Cada división |
 | `Scripts/A/` … `Scripts/D/`, `Scripts/INT/` (Python del editor) | Cada división / integrador |
 | `docs/0*.md` (diseño) | Todos, **solo vía PR revisado** por el dueño del área (tabla de `AGENTS.md`) |
@@ -243,3 +243,4 @@ Si alguien necesita otro placeholder, lo pide en "Solicitudes de contrato" de D.
 |---|---|---|---|
 | v1.0 | | Contrato inicial (esqueleto F0) | Integrador |
 | v1.0 borrador, aclaración documental | 2026-11-14 | Nombre Unscripted, base de rutas y norma de inglés; sin cambios de firmas ni congelación de F0 | Usuario / integrador temporal |
+| v1.0 borrador, unificación de rutas | 2026-11-14 | Raíz propia `Content/Unscripted/` y reserva condicional `Source/Unscripted/`; guías y planes actualizados. No se encontraron assets guardados bajo la raíz provisional que requirieran migración | Usuario / integrador temporal |
