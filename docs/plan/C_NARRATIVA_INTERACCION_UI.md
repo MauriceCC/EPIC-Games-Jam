@@ -143,7 +143,7 @@ Entrégame: (1) los pasos para construirlo en Blueprint/UMG, nodo a nodo, indica
 | # | Fecha | Petición | A quién | Estado |
 |---|---|---|---|---|
 | C-F0-01 | 2026-11-14 | Complete and validate the pending F0 bases/maps. Interfaces and six component assets are delivered; signature and dispatcher conformance remain pending under C-F0-02/03/04. | Integrator | Partially delivered; F1 remains gated |
-| C-F0-02 | 2026-11-14 | Align existing Core signatures with the documented contract: ReportStoryEvent.Source and Interact.Interactor are ActorActionUtility instead of Actor; GetInteractionPriority.Result is Text instead of int; RequestFinisher.Target is ActorComponent instead of Actor. See the MCP audit. No new signature is requested. | Integrator (Core) | Pending; C does not implement a workaround |
+| C-F0-02 | 2026-11-14 | Align existing Core signatures with the documented contract: ReportStoryEvent.Source and Interact.Interactor are ActorActionUtility instead of Actor; GetInteractionPriority.Result is Text instead of int; RequestFinisher.Target is ActorComponent instead of Actor. See the MCP audit. No new signature is requested. | Integrator (Core) | Partially resolved under explicit user exceptions: Source, Interactor and priority corrected; RequestFinisher.Target remains pending |
 | C-F0-03 | 2026-11-14 | Deliver the existing F0 dispatcher declarations: five ObjectiveManager signals and OnFocusChanged are absent; Health, Combat, Temporal and Stealth dependency signals are also absent. Stealth has no custom function graphs. Exact existing names/signatures are in contracts section 5 and the MCP audit. | Integrator (F0 delivery) | Pending; no shared declaration changed by C |
 | C-F0-04 | 2026-11-14 | Review ApplyTemporalFreeze: Duration, PostureDamage and Result are double-precision graph pins while the contract says float. Confirm the intended precision or align the pins before freezing F0. | Integrator (Core) | Precision review pending |
 
@@ -156,7 +156,7 @@ Entrégame: (1) los pasos para construirlo en Blueprint/UMG, nodo a nodo, indica
 - B-CON-01 bloquea el reporte de eventos desde B según su documentación: revisar con INT la firma `Source: Actor`, sin cambiar el contrato unilateralmente.
 - **[PROPUESTA] Próximo trabajo:** C-01–09 con eventos simulados en `L_Test_C`; textos en inglés, checklist reescrito y prueba de bloqueo de Retoma durante diálogos. Después integrar Jack, puerta, checkpoint y HUD en F2. Ver [dependencias y aceptación](03_ESTADO_Y_SIGUIENTES_PASOS.md).
 
-- [ ] Mínimo F1 alcanzado
+- [x] Mínimo F1 alcanzado
 - [ ] Vertical slice F2 (parte C) en `main`
 - [ ] F3 completo
 - [ ] F4 cerrado
@@ -261,3 +261,31 @@ Notas del día:
 - The historical F0 requests above remain audit history. C-F0-02 is resolved only for ReportStoryEvent.Source; its other three signatures and C-F0-04 are unchanged. The five ObjectiveManager dispatchers required by C-01/C-02 are now verified.
 - [Implementation and reproduction](../../Scripts/C/C01_C02_IMPLEMENTATION.md). C-03 through C-10 and the full F1 milestone remain pending.
 - Branch c/f0-narrative-preparation; all changes local; no commit, push, merge, rebase, or PR.
+
+### 2026-11-14 - Isolated F1 systems and authorized interaction repair
+
+- Explicit user instruction retains `c/f0-narrative-preparation`; no new branch
+  was created. Published C-01/C-02 remain the base and passed regression tests.
+- Explicit exception resolves `BPI_Interactable.Interact.Interactor` as Actor
+  and `GetInteractionPriority.Result` as int32, in place. Other declarations,
+  enums, structs and A/B/D files were preserved. C-F0-02 remains open only for
+  `RequestFinisher.Target`; this work does not certify all of F0.
+- C-03 through C-10 are implemented and locally validated in `L_Test_C` using
+  C-owned test doubles. Production GameMode still references A's player and
+  controller; only C's test map uses the test GameMode. No production asset
+  depends on a test asset. The original F0 previews and narrative sources remain
+  intact.
+- Five DataTables contain 69 imported rows. Dialogue chains, document reading,
+  nested input/Retake locks, animated checklist rewriting, event-bound HUD,
+  checkpoint restoration and continuity notice are functional. All new visible
+  copy is English; narrative copy is read from the C tables.
+- Validation: 22 Blueprint/interface compilations without errors or warnings;
+  161 asset/schema/source assertions; 100 new PIE assertions; 217 C-01/C-02
+  functional assertions and 23 PIE assertions; 173 F0 preview assertions without
+  resaving previews. A real-key run completed all phases and the authentic record.
+- [PROPUESTA] Focus radius/scan interval, rewrite timing, E-operated checkpoint,
+  placeholder geometry and simulated resource restoration are local test choices.
+  No new shared contract was introduced.
+- F2 real-player/AI integration, F3 content/final mechanisms and F4 remain pending.
+  See [implementation and visual test instructions](../../Scripts/C/F1_ISOLATED_SYSTEMS.md).
+- All changes remain local; no commit, push, merge, rebase or PR.

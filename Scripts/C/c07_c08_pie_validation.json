@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Checklist starts with the three protective directives",
+      "passed": true
+    },
+    {
+      "name": "HUD health and stamina initialized through real dispatchers",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher updates HealthBar",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher updates StaminaBar",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher updates CutCooldownBar",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher updates DetectionBar",
+      "passed": true
+    },
+    {
+      "name": "Retake counter consumes the existing integer width",
+      "passed": true
+    },
+    {
+      "name": "Checklist can be hidden",
+      "passed": true
+    },
+    {
+      "name": "Checklist can be reopened",
+      "passed": true
+    },
+    {
+      "name": "Phase dispatcher changes the objective",
+      "passed": true
+    },
+    {
+      "name": "Completed checklist item has a visible strike",
+      "passed": true
+    },
+    {
+      "name": "Truth phase starts an actual rewrite",
+      "passed": true
+    },
+    {
+      "name": "The original orders fade before replacement",
+      "passed": true
+    },
+    {
+      "name": "Rewrite swaps to four explicit fabricated-case orders",
+      "passed": true
+    },
+    {
+      "name": "The replacement begins faded",
+      "passed": true
+    },
+    {
+      "name": "Animation finishes fully visible",
+      "passed": true
+    },
+    {
+      "name": "Correction_Order emits exactly one completion",
+      "passed": true
+    },
+    {
+      "name": "All queued scene rows finish in order",
+      "passed": true
+    },
+    {
+      "name": "Final objective does not demand incrimination",
+      "passed": true
+    }
+  ],
+  "check_count": 19
+}

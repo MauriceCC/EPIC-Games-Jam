@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Briefing starts from the imported DataTable",
+      "passed": true
+    },
+    {
+      "name": "Dialogue locks gameplay and personal Retake",
+      "passed": true
+    },
+    {
+      "name": "Dialogue hides the world-use prompt",
+      "passed": true
+    },
+    {
+      "name": "NextRow plays all five briefing lines in order",
+      "passed": true
+    },
+    {
+      "name": "Last line restores gameplay and Retake",
+      "passed": true
+    },
+    {
+      "name": "Invalid row cannot create a dangling input lock",
+      "passed": true
+    },
+    {
+      "name": "Queued dialogue keeps Retake blocked 0",
+      "passed": true
+    },
+    {
+      "name": "Queued dialogue keeps Retake blocked 1",
+      "passed": true
+    },
+    {
+      "name": "Queued dialogue keeps Retake blocked 2",
+      "passed": true
+    },
+    {
+      "name": "A queued scene follows the NextRow chain",
+      "passed": true
+    },
+    {
+      "name": "Queue drains and unlocks",
+      "passed": true
+    },
+    {
+      "name": "Contract row is preserved exactly",
+      "passed": true
+    },
+    {
+      "name": "Document keeps the world-use prompt hidden",
+      "passed": true
+    },
+    {
+      "name": "Document prevents accidental dialogue advancement",
+      "passed": true
+    },
+    {
+      "name": "Closing document preserves active dialogue lock",
+      "passed": true
+    },
+    {
+      "name": "Finishing Correction_Order unlocks once",
+      "passed": true
+    },
+    {
+      "name": "Dialogue is collapsed after completion",
+      "passed": true
+    },
+    {
+      "name": "Finishing the modal UI restores the contextual prompt",
+      "passed": true
+    }
+  ],
+  "check_count": 18
+}

@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Existing story event displays the continuity notice",
+      "passed": true
+    },
+    {
+      "name": "Notice changes neither phase nor input locks",
+      "passed": true
+    },
+    {
+      "name": "Missing pawn is recreated through the existing GameMode defaults",
+      "passed": true
+    },
+    {
+      "name": "Replacement receives the checkpoint listener call",
+      "passed": true
+    },
+    {
+      "name": "HUD view is preserved across replacement",
+      "passed": true
+    },
+    {
+      "name": "Native possession notification rebinds the HUD to the new components",
+      "passed": true
+    },
+    {
+      "name": "Replacement player can enter a hideout",
+      "passed": true
+    },
+    {
+      "name": "Test navigation respects the hideout movement lock",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint releases reversible C hideout occupancy",
+      "passed": true
+    },
+    {
+      "name": "Restore clears the hideout focus and Retake lock",
+      "passed": true
+    },
+    {
+      "name": "Restore during a conversation preserves narrative locks",
+      "passed": true
+    },
+    {
+      "name": "Dialogue completion after restore releases movement exactly once",
+      "passed": true
+    },
+    {
+      "name": "Repeated restores preserve the single progression manager",
+      "passed": true
+    }
+  ],
+  "check_count": 13
+}

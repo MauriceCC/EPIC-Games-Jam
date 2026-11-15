@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "C-owned test player is possessed",
+      "passed": true
+    },
+    {
+      "name": "C GameState is active",
+      "passed": true
+    },
+    {
+      "name": "Priority 100 beats the closer priority 40 door",
+      "passed": true
+    },
+    {
+      "name": "Stable focus does not duplicate notifications",
+      "passed": true
+    },
+    {
+      "name": "Single interaction accepted",
+      "passed": true
+    },
+    {
+      "name": "Only the selected target was used",
+      "passed": true
+    },
+    {
+      "name": "Consumed target is excluded",
+      "passed": true
+    },
+    {
+      "name": "Equal priorities select the shorter distance",
+      "passed": true
+    },
+    {
+      "name": "Out-of-range target is excluded",
+      "passed": true
+    },
+    {
+      "name": "Disabled targets clear the focus",
+      "passed": true
+    },
+    {
+      "name": "Disabled interaction rejects use",
+      "passed": true
+    },
+    {
+      "name": "Story door cannot be consumed before Jack is found",
+      "passed": true
+    },
+    {
+      "name": "Found Jack unlocks the route door",
+      "passed": true
+    },
+    {
+      "name": "Door opens once and reports the route",
+      "passed": true
+    },
+    {
+      "name": "Persistent door clears personal Retake history",
+      "passed": true
+    },
+    {
+      "name": "Open door no longer has collision",
+      "passed": true
+    },
+    {
+      "name": "Open door cannot be activated again",
+      "passed": true
+    },
+    {
+      "name": "Hideout is interactable",
+      "passed": true
+    },
+    {
+      "name": "Entering calls the stealth contract",
+      "passed": true
+    },
+    {
+      "name": "Hidden agent cannot Retake",
+      "passed": true
+    },
+    {
+      "name": "Prompt changes to leave",
+      "passed": true
+    },
+    {
+      "name": "Occupied hideout retains its exit focus",
+      "passed": true
+    },
+    {
+      "name": "Leaving clears hidden state and Retake block",
+      "passed": true
+    },
+    {
+      "name": "Leaving releases the focus lock",
+      "passed": true
+    },
+    {
+      "name": "Both SetHidden calls reached the component",
+      "passed": true
+    }
+  ],
+  "check_count": 25
+}

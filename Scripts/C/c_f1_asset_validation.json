@@ -1,0 +1,765 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Interact.Interactor is exactly Actor",
+      "passed": true
+    },
+    {
+      "name": "CanInteract.Interactor is exactly Actor",
+      "passed": true
+    },
+    {
+      "name": "GetInteractionText.Interactor is exactly Actor",
+      "passed": true
+    },
+    {
+      "name": "GetInteractionPriority.Result is int32",
+      "passed": true
+    },
+    {
+      "name": "UI/BP_HUD has no connected Tick",
+      "passed": true
+    },
+    {
+      "name": "UI/BP_HUD has no cast to A or B",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_HUD has no connected Tick",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_HUD has no cast to A or B",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Dialogue has no connected Tick",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Dialogue has no cast to A or B",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Checklist has no connected Tick",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Checklist has no cast to A or B",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Document has no connected Tick",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Document has no cast to A or B",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_InteractionComponent does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_InteractableBase does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_Door does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_Hideout does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_Evidence does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_ObjectiveManager does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_GameState does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_GameMode does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "Narrative/BP_Checkpoint does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "UI/BP_HUD does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_HUD does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Dialogue does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Checklist does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "UI/WBP_Document does not depend on a test asset",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue preserves all source row names",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Briefing_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow Briefing_01",
+      "passed": true
+    },
+    {
+      "name": "Duration Briefing_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Briefing_02",
+      "passed": true
+    },
+    {
+      "name": "NextRow Briefing_02",
+      "passed": true
+    },
+    {
+      "name": "Duration Briefing_02",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Briefing_03",
+      "passed": true
+    },
+    {
+      "name": "NextRow Briefing_03",
+      "passed": true
+    },
+    {
+      "name": "Duration Briefing_03",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Briefing_04",
+      "passed": true
+    },
+    {
+      "name": "NextRow Briefing_04",
+      "passed": true
+    },
+    {
+      "name": "Duration Briefing_04",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Briefing_05",
+      "passed": true
+    },
+    {
+      "name": "NextRow Briefing_05",
+      "passed": true
+    },
+    {
+      "name": "Duration Briefing_05",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text JackFound_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow JackFound_01",
+      "passed": true
+    },
+    {
+      "name": "Duration JackFound_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text JackFound_02",
+      "passed": true
+    },
+    {
+      "name": "NextRow JackFound_02",
+      "passed": true
+    },
+    {
+      "name": "Duration JackFound_02",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text JackFound_03",
+      "passed": true
+    },
+    {
+      "name": "NextRow JackFound_03",
+      "passed": true
+    },
+    {
+      "name": "Duration JackFound_03",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text FutureMessage_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow FutureMessage_01",
+      "passed": true
+    },
+    {
+      "name": "Duration FutureMessage_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Truth_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow Truth_01",
+      "passed": true
+    },
+    {
+      "name": "Duration Truth_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Truth_02",
+      "passed": true
+    },
+    {
+      "name": "NextRow Truth_02",
+      "passed": true
+    },
+    {
+      "name": "Duration Truth_02",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Truth_03",
+      "passed": true
+    },
+    {
+      "name": "NextRow Truth_03",
+      "passed": true
+    },
+    {
+      "name": "Duration Truth_03",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Truth_04",
+      "passed": true
+    },
+    {
+      "name": "NextRow Truth_04",
+      "passed": true
+    },
+    {
+      "name": "Duration Truth_04",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Truth_05",
+      "passed": true
+    },
+    {
+      "name": "NextRow Truth_05",
+      "passed": true
+    },
+    {
+      "name": "Duration Truth_05",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text Correction_Order",
+      "passed": true
+    },
+    {
+      "name": "NextRow Correction_Order",
+      "passed": true
+    },
+    {
+      "name": "Duration Correction_Order",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text SupervisorEncounter_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow SupervisorEncounter_01",
+      "passed": true
+    },
+    {
+      "name": "Duration SupervisorEncounter_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text SupervisorEncounter_02",
+      "passed": true
+    },
+    {
+      "name": "NextRow SupervisorEncounter_02",
+      "passed": true
+    },
+    {
+      "name": "Duration SupervisorEncounter_02",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text SupervisorEncounter_03",
+      "passed": true
+    },
+    {
+      "name": "NextRow SupervisorEncounter_03",
+      "passed": true
+    },
+    {
+      "name": "Duration SupervisorEncounter_03",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text SupervisorEncounter_04",
+      "passed": true
+    },
+    {
+      "name": "NextRow SupervisorEncounter_04",
+      "passed": true
+    },
+    {
+      "name": "Duration SupervisorEncounter_04",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text EndingOfficial_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow EndingOfficial_01",
+      "passed": true
+    },
+    {
+      "name": "Duration EndingOfficial_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text EndingAuthentic_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow EndingAuthentic_01",
+      "passed": true
+    },
+    {
+      "name": "Duration EndingAuthentic_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text EndingAuthentic_02",
+      "passed": true
+    },
+    {
+      "name": "NextRow EndingAuthentic_02",
+      "passed": true
+    },
+    {
+      "name": "Duration EndingAuthentic_02",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text ContinuityAltered_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow ContinuityAltered_01",
+      "passed": true
+    },
+    {
+      "name": "Duration ContinuityAltered_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Dialogue source text CombatWarning_01",
+      "passed": true
+    },
+    {
+      "name": "NextRow CombatWarning_01",
+      "passed": true
+    },
+    {
+      "name": "Duration CombatWarning_01",
+      "passed": true
+    },
+    {
+      "name": "DT_Checklist preserves all source row names",
+      "passed": true
+    },
+    {
+      "name": "Checklist text FindJack",
+      "passed": true
+    },
+    {
+      "name": "Checklist mask FindJack",
+      "passed": true
+    },
+    {
+      "name": "Checklist text OpenEscapeRoute",
+      "passed": true
+    },
+    {
+      "name": "Checklist mask OpenEscapeRoute",
+      "passed": true
+    },
+    {
+      "name": "Checklist text ProtectJack",
+      "passed": true
+    },
+    {
+      "name": "Checklist mask ProtectJack",
+      "passed": true
+    },
+    {
+      "name": "Checklist text DiscoverTruth",
+      "passed": true
+    },
+    {
+      "name": "Checklist mask DiscoverTruth",
+      "passed": true
+    },
+    {
+      "name": "Checklist text FinalChoice",
+      "passed": true
+    },
+    {
+      "name": "Checklist mask FinalChoice",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText preserves all source row names",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text NursingRecord_Title",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text NursingRecord_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text FabricatedReport_Title",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text FabricatedReport_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text OfficialFile_Title",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text OfficialFile_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text AuthenticFile_Title",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text AuthenticFile_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text OfficialEnding_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text AuthenticEnding_Summary",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text ContinuityAltered_Title",
+      "passed": true
+    },
+    {
+      "name": "DT_NarrativeText source text ContinuityAltered_Body",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings preserves all source row names",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text OperationTitle",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text ChecklistTitle",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text ChecklistRewriteTitle",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text DialogueContinue",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text DialogueFinished",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text PreviewInitialOrders",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text PreviewRewrittenOrders",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_Agent",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_Jack",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_Supervisor",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_Director",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_FutureSelf",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_Interventor",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text Speaker_System",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text NarrativeMotto",
+      "passed": true
+    },
+    {
+      "name": "DT_UIStrings source text FinalChoiceObjective",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText preserves all source row names",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text FindJack",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text OpenEscapeRoute",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text ProtectJack",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text DiscoverTruth",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text FinalChoice",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text GameEnded",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text RetakePrefix",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text DoorPrompt",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text HideoutEnterPrompt",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text HideoutLeavePrompt",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text EvidencePrompt",
+      "passed": true
+    },
+    {
+      "name": "DT_HUDText source text CheckpointPrompt",
+      "passed": true
+    },
+    {
+      "name": "Production GameMode keeps A's player",
+      "passed": true
+    },
+    {
+      "name": "Production GameMode keeps A's controller",
+      "passed": true
+    },
+    {
+      "name": "Only L_Test_C is open",
+      "passed": true
+    },
+    {
+      "name": "C test GameMode override stays in the C map",
+      "passed": true
+    },
+    {
+      "name": "All assets are explicitly saved",
+      "passed": true
+    },
+    {
+      "name": "Test map is explicitly saved",
+      "passed": true
+    }
+  ],
+  "compilation": [
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_InteractionComponent.BP_InteractionComponent",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_InteractableBase.BP_InteractableBase",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_Door.BP_Door",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_Hideout.BP_Hideout",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_Evidence.BP_Evidence",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_GameState.BP_GameState",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_GameMode.BP_GameMode",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_Checkpoint.BP_Checkpoint",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/UI/BP_HUD.BP_HUD",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/UI/WBP_HUD.WBP_HUD",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/UI/WBP_Dialogue.WBP_Dialogue",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/UI/WBP_Checklist.WBP_Checklist",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/UI/WBP_Document.WBP_Document",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_TestPlayer_C.BP_TestPlayer_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_TestStealth_C.BP_TestStealth_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_TestGameMode_C.BP_TestGameMode_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_TestInteractable_C.BP_TestInteractable_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_StoryEventTestSource_C.BP_StoryEventTestSource_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/Test/BP_StoryProgressionObserver_C.BP_StoryProgressionObserver_C",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Core/Interfaces/BPI_Interactable.BPI_Interactable",
+      "passed": true
+    },
+    {
+      "asset": "/Game/Unscripted/Core/Interfaces/BPI_StoryEvents.BPI_StoryEvents",
+      "passed": true
+    }
+  ],
+  "tables": [
+    {
+      "asset": "/Game/Unscripted/Narrative/DT_Dialogue.DT_Dialogue",
+      "rows": 24
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/DT_Checklist.DT_Checklist",
+      "rows": 5
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/DT_NarrativeText.DT_NarrativeText",
+      "rows": 12
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/DT_UIStrings.DT_UIStrings",
+      "rows": 16
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/DT_HUDText.DT_HUDText",
+      "rows": 12
+    }
+  ],
+  "asset_saves_performed": false,
+  "check_count": 161,
+  "dirty_content": [],
+  "dirty_maps": []
+}
