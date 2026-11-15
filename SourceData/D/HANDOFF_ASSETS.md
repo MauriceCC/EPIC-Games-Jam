@@ -18,7 +18,7 @@
 
 ## Personajes (para A, B y C)
 
-Todos en `/Game/Unscripted/Art/Characters/SK_<Nombre>/`: malla esquelética (~25k vértices, pivote en los pies, mirando a +X), `SK_<Nombre>_Skeleton`, `SK_<Nombre>_PhysicsAsset`, material `M_<Nombre>` (PBR 4K: base color, normal y rugosidad) y en `Anims/` dos bucles: `A_SK_<Nombre>_Walk` y `A_SK_<Nombre>_Run` (~1 s cada uno).
+Todos en `/Game/Unscripted/Art/Characters/SK_<Nombre>/`: malla esquelética (~25k vértices, pivote en los pies, mirando a +X), `SK_<Nombre>_Skeleton`, `SK_<Nombre>_PhysicsAsset`, material `M_<Nombre>` (PBR 4K: base color, normal y rugosidad) y en `Anims/` tres bucles: `A_SK_<Nombre>_Idle` (4 s), `A_SK_<Nombre>_Walk` y `A_SK_<Nombre>_Run` (~1 s cada uno).
 
 | Malla | Personaje | Altura | División que lo usa |
 |---|---|---|---|
@@ -33,9 +33,9 @@ Notas:
 
 - El esqueleto es el de Meshy (25 huesos: `Hips`, `Spine`…`Head`, brazos, piernas y `LeftToeBase`/`RightToeBase`; **sin dedos ni huesos IK**). Es el mismo en los 9, pero cada uno tiene su propio asset de esqueleto.
 - Para golpes, parry o muerte, **[PROPUESTA]**: crear un IK Rig de este esqueleto y otro de `SKM_Manny` y usar un IK Retargeter para pasar animaciones del maniquí de la plantilla. Alternativa: marcar los esqueletos como compatibles para compartir las animaciones de uno.
-- En `BP_` del personaje: asignar la malla al `Mesh` del Character con Z ≈ −90 y Yaw −90 (Unreal mira a +X; comprobar en la vista previa), y un Blend Space 1D Walk/Run para la locomoción.
+- En `BP_` del personaje: asignar la malla al `Mesh` del Character con Z ≈ −90 y Yaw −90 (Unreal mira a +X; comprobar en la vista previa), y un Blend Space 1D Idle/Walk/Run (velocidad 0 / ~150 / ~450) para la locomoción.
 - Para los NPCs con diálogo (C), la conversación es **[PROPUESTA]** de C: D solo entrega la malla y las animaciones.
-- No hay animación de reposo (idle). Si hace falta, se puede pedir a Meshy (3 créditos por acción) o retargetear la del maniquí.
+- Más animaciones (golpes, esquivar, sentado, etc.): Meshy tiene una biblioteca de presets (3 créditos por acción y personaje); pedírselas a D.
 
 ## Para D (colocación en `_Geo` / `_Light`)
 
