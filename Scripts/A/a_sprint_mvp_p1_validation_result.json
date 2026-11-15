@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "All 59 Unscripted Blueprints compile",
+      "passed": true
+    },
+    {
+      "name": "Player recompiles for the in-memory test",
+      "passed": true
+    },
+    {
+      "name": "Player and Combat component available",
+      "passed": true
+    },
+    {
+      "name": "Retake spends one charge",
+      "passed": true
+    },
+    {
+      "name": "Retake restores the oldest stamina sample (40 -> 70)",
+      "passed": true
+    },
+    {
+      "name": "Retake clears the stamina samples",
+      "passed": true
+    },
+    {
+      "name": "Misaligned stamina history is not restored",
+      "passed": true
+    },
+    {
+      "name": "Retake still works with misaligned stamina",
+      "passed": true
+    },
+    {
+      "name": "ClearRetakeHistory also clears stamina samples",
+      "passed": true
+    },
+    {
+      "name": "Respawn empties the retake history",
+      "passed": true
+    },
+    {
+      "name": "Respawn refills stamina",
+      "passed": true
+    },
+    {
+      "name": "R right after respawn spends no charge (nothing to rewind)",
+      "passed": true
+    },
+    {
+      "name": "Cut freezes a visible guard",
+      "passed": true
+    },
+    {
+      "name": "Cut does not freeze a guard behind a wall",
+      "passed": true
+    },
+    {
+      "name": "Blocked Cut does not start the cooldown",
+      "passed": true
+    }
+  ],
+  "notes": [
+    "before retake: stam=[70.0, 55.0] pos=2 hp=2 cur=40.0 upd=False",
+    "after retake: stamina=70.0 charges=1 hist=[]",
+    "Guard eligible for B (CanBeTemporalCutTarget) in editor world: True",
+    "python trace through wall: blocking=True actor=StaticMeshActor_0"
+  ],
+  "compile_failures": [],
+  "mode": "commandlet; editor world; not PIE"
+}
