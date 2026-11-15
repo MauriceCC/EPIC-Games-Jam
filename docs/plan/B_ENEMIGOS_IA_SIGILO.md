@@ -321,8 +321,6 @@ La prueba descrita abajo procede de la revisión de B; ahora el checkout revisad
 
 **[PROPUESTA] Prioridad inmediata:** resolver B-CON-01 con INT/C y enlazar las interfaces de GuardBase/Jack con la lógica local existente. Después repetir el mínimo F1 con tres perseguidores y Jack 10/10; validar con A parry/Corte/remate y con C eventos/checkpoint. Jefe, hostilidad narrativa del Interventor y ruta real de Jack siguen pendientes según el reporte de B. Ver [informe conjunto](03_ESTADO_Y_SIGUIENTES_PASOS.md).
 
-**Git LFS (2026-11-14):** se liberó el bloqueo de `L_Whitechapel.umap`. La consulta posterior a `origin` confirmó que el repositorio no tenía bloqueos activos. D/Integración puede volver a bloquear el mapa persistente cuando vaya a editarlo.
-
 ### Auditoría de integración (2026-11-14)
 
 Verificación posterior con UnrealEditor-Cmd, sin guardar mapas: L_Whitechapel_AI y L_Whitechapel solo contienen 2 Perseguidores y 1 ruta de B, cerca del origen y fuera de la Plaza propuesta por D. Jack solo está en L_Test_B. Faltan colocación de Jack/ruta real, patrullas de Callejón/Patio, 3 Perseguidores del Paso central, Interventor y Supervisor. Evidencia: `SourceData/B/placement_audit.json`. Carga terminada con 0 errores y warning de RecastNavMesh; no equivale a Play validado.
