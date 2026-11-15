@@ -14,10 +14,11 @@
     "expected_level_name": "L_Whitechapel_Geo",
     "mesh": "/Engine/BasicShapes/Cube.Cube",
     "materials": {
-      "floor": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray.MI_PrototypeGrid_Gray",
-      "wall_low": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.MI_PrototypeGrid_Gray_02",
-      "wall_high": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.MI_PrototypeGrid_TopDark",
-      "partition": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.MI_PrototypeGrid_Gray_02",
+      "floor": "/Game/Unscripted/Materials/Blockout/MI_Cobble_Wet.MI_Cobble_Wet",
+      "floor_interior": "/Game/Unscripted/Materials/Blockout/MI_WoodPlanks_Old.MI_WoodPlanks_Old",
+      "wall_low": "/Game/Unscripted/Materials/Blockout/MI_Brick_Dirty.MI_Brick_Dirty",
+      "wall_high": "/Game/Unscripted/Materials/Blockout/MI_Brick_Dirty.MI_Brick_Dirty",
+      "partition": "/Game/Unscripted/Materials/Blockout/MI_Brick_Dirty.MI_Brick_Dirty",
       "gate": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.MI_PrototypeGrid_TopDark",
       "cover": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_Round.MI_PrototypeGrid_Gray_Round",
       "fallback": "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
@@ -30,10 +31,10 @@
     { "id": "Z_Alley",        "name": "Alley",          "u": [26, 46], "v": [14, 18] },
     { "id": "Z_AlleyNook",    "name": "Alley Nook",     "u": [34, 38], "v": [10, 14] },
     { "id": "Z_WorkshopYard", "name": "Workshop Yard",  "u": [46, 58], "v": [8, 22] },
-    { "id": "Z_Workshop",     "name": "Workshop",       "u": [46, 58], "v": [22, 34] },
+    { "id": "Z_Workshop",     "name": "Workshop",       "u": [46, 58], "v": [22, 34], "floor": "floor_interior" },
     { "id": "Z_CentralPass",  "name": "Central Pass",   "u": [26, 46], "v": [22, 36] },
     { "id": "Z_RefugePath",   "name": "Refuge Path",    "u": [14, 26], "v": [24, 32] },
-    { "id": "Z_Refuge",       "name": "Refuge",         "u": [2, 14],  "v": [22, 36] },
+    { "id": "Z_Refuge",       "name": "Refuge",         "u": [2, 14],  "v": [22, 36], "floor": "floor_interior" },
     { "id": "Z_Archive",      "name": "Archive",        "u": [18, 42], "v": [36, 48] },
     { "id": "Z_RecordsRoom",  "name": "Records Room",   "u": [24, 36], "v": [48, 54] }
   ],

@@ -456,9 +456,11 @@ def spawn_in_unreal(geo):
             eas.destroy_actors(old)
         with unreal.ScopedSlowTask(total, "Generando blockout") as task:
             task.make_dialog(True)
+            floor_key = {z["id"]: z.get("floor", "floor") for z in geo["zones"]}
             for zid, u0, v0, u1, v1 in geo["floors"]:
                 task.enter_progress_frame(1)
-                box("BO_Floor_" + zid, "Floors", u0, v0, u1, v1, -ft, 0, "floor")
+                key = floor_key.get(zid, "floor")
+                box("BO_Floor_" + zid, "Floors", u0, v0, u1, v1, -ft, 0, key if key in mats else "floor")
             for k, (u0, v0, u1, v1) in enumerate(geo["walls_low"]):
                 task.enter_progress_frame(1)
                 box("BO_WallLow_%02d" % k, "Walls", u0, v0, u1, v1, 0, s["wall_low_height_m"], "wall_low")
