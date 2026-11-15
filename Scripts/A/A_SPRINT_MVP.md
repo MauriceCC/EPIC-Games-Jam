@@ -25,7 +25,7 @@ A6 ya se cumplía en parte: `DoRetake` exige muestras (`PosHistory > 0`), así q
 
 | Tarea | Cambio |
 |---|---|
-| **A6** | La Retoma también rebobina la **resistencia**. El Tick guarda `CurrentStamina` en `StaminaHistory`, junto a posición y salud (cada 0,1 s, máximo 30 muestras). `DoRetake` aplica `SetStamina(StaminaHistory[0])` si el historial está alineado con `PosHistory` y luego lo vacía. `ClearRetakeHistory` también lo vacía. R sin muestras ya no gastaba carga |
+| **A6** | La Retoma también rebobina la **resistencia**. El Tick guarda `CurrentStamina` en `StaminaHistory`, junto a posición y salud (cada 0,1 s; desde el ajuste posterior, máximo 50 muestras = 5 s). `DoRetake` aplica `SetStamina(StaminaHistory[0])` si el historial está alineado con `PosHistory` y luego lo vacía. `ClearRetakeHistory` también lo vacía. R sin muestras ya no gastaba carga |
 | **A6, corrección** | `B_ResumePlayerAtCheckpoint` no vaciaba el historial, así que **R justo después de reaparecer devolvía al jugador a un punto anterior a su muerte**, con la salud de entonces. Ahora, al reaparecer, se vacían los historiales y la resistencia vuelve al máximo. Las cargas no se tocan |
 | **A7** | El Corte (F) exige **línea de visión**: en el bucle de candidatos, después de `CanBeTemporalCutTarget` de B (que ya descarta derrotados y congelados), se traza una línea en el canal Visibility del agente al enemigo. Si choca con algo que no es un Pawn (muro, prop), ese enemigo no es elegible. Otros personajes en medio no bloquean. Si no queda ningún candidato, no se gasta el cooldown |
 
@@ -61,9 +61,17 @@ Límites: no es una sesión de Play. Falta la prueba manual de abajo.
 1. Play. Mover el ratón y pulsar E, Ctrl y Tab: **no** aparece texto cian de depuración.
 2. Plaza: Q justo antes de que un Perseguidor golpee → chispa de parry y el enemigo queda en *stagger*. Esquivar a tiempo (Espacio) no quita salud.
 3. Hablar con Jack: durante el diálogo WASD, clic, F y R no hacen nada; al terminar vuelven a funcionar.
-4. Esc → aparece *Press Esc again to quit*; esperar 3 s y pulsar Esc otra vez → vuelve a pedir confirmación; dos Esc seguidos → se cierra la sesión de Play.
-5. Registros: registrar un expediente y pulsar R → nada, y el contador de cargas del HUD no cambia.
+4. **En Standalone Game o en build** (en PIE, Unreal reserva Esc para detener la sesión): Esc → aparece *Press Esc again to quit*; esperar 3 s y pulsar Esc otra vez → vuelve a pedir confirmación; dos Esc seguidos → se cierra el juego.
+5. Registros (final): confirmar uno de los dos expedientes y pulsar R → nada, y el contador de cargas del HUD no cambia.
 6. A6: gastar resistencia con esquivas, esperar ~1 s y pulsar R → la resistencia vuelve al valor de hace unos 3 s.
 7. A6: morir, reaparecer y pulsar R enseguida → no pasa nada (no se rebobina a antes de morir) y no se gasta carga.
 8. A7: con un enemigo detrás de una esquina o un muro, pulsar F → no se congela y el Corte sigue disponible. Con el enemigo a la vista, se congela.
 9. A8: golpear a un Perseguidor → se nota un microparón en él (no en el jugador). Recibir un golpe → sacudida corta de cámara; con parry o esquiva, no hay sacudida. Si resulta excesivo, bajar la amplitud en `CS_PlayerHit_A`.
+
+## Resultado de la prueba en Play (Mauricio, 2026-11-15)
+
+- Pasos 1–3 y 6–9: correctos.
+- Paso 4: en PIE, una sola pulsación de Esc detiene la sesión. Es el atajo *Stop* del editor, no el juego; repetirlo en Standalone o en build.
+- Paso 5: se probó con Jack en lugar del expediente final. Es correcto que R no reabra el diálogo (docs/04: la Retoma no revierte diálogos). Falta repetirlo en Registros.
+- R al inicio gasta una carga: decisión de Mauricio, se mantiene (docs/04: con historial, R restaura y consume).
+- **Ajuste aprobado:** historial de la Retoma de 30 a **50 muestras (5 s)**, como pide docs/04. [Parche](patch_retake_buffer_5s.py) → [resultado](retake_buffer_5s_result.json); A1–A4 siguen 27/27.
