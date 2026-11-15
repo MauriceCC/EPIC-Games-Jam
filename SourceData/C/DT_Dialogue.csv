@@ -3,7 +3,7 @@
 "Briefing_02","System","Locate the subject known as Jack.","0","Briefing_03"
 "Briefing_03","System","Prevent the crowd from capturing him.","0","Briefing_04"
 "Briefing_04","System","Ensure that his identity remains unknown.","0","Briefing_05"
-"Briefing_05","System","Any deviation will be corrected.","0","None"
+"Briefing_05","Director","Any deviation will be corrected.","0","None"
 "JackFound_01","Jack","Are you looking for me too?","0","JackFound_02"
 "JackFound_02","Agent","I'm here to get you out.","0","JackFound_03"
 "JackFound_03","Jack","Then tell me this: if everyone thinks I'm a monster, why is someone keeping me alive?","0","None"
