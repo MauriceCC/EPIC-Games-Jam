@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "interface_actions": [
+    "Clase|BPGameState|ReportStoryEvent",
+    "Clase|BPIStoryEvents|ReportStoryEvent",
+    "Clase|BPIStoryEvents|ReportStoryEvent(Mensaje)"
+  ]
+}
