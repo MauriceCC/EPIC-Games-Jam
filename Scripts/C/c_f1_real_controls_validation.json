@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Actual Tab hides the checklist",
+      "passed": true
+    },
+    {
+      "name": "Actual Tab reopens the checklist",
+      "passed": true
+    },
+    {
+      "name": "Actual key updates HealthBar",
+      "passed": true
+    },
+    {
+      "name": "Actual key updates StaminaBar",
+      "passed": true
+    },
+    {
+      "name": "Actual key updates CutCooldownBar",
+      "passed": true
+    },
+    {
+      "name": "Actual key updates DetectionBar",
+      "passed": true
+    },
+    {
+      "name": "Actual key updates Retake",
+      "passed": true
+    },
+    {
+      "name": "Actual X shows the notice",
+      "passed": true
+    },
+    {
+      "name": "Real notice timer expires",
+      "passed": true
+    }
+  ],
+  "check_count": 9
+}

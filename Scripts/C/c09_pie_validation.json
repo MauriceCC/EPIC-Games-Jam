@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "GameMode captures an initial fallback checkpoint",
+      "passed": true
+    },
+    {
+      "name": "Physical checkpoint saves its raised respawn marker",
+      "passed": true
+    },
+    {
+      "name": "Story facts exist before restore",
+      "passed": true
+    },
+    {
+      "name": "Defeat routes through GameState to GameMode",
+      "passed": true
+    },
+    {
+      "name": "The player receives the published listener call",
+      "passed": true
+    },
+    {
+      "name": "Every actor listener is notified",
+      "passed": true
+    },
+    {
+      "name": "Player is moved to the respawn marker",
+      "passed": true
+    },
+    {
+      "name": "The C double restores two Retake charges",
+      "passed": true
+    },
+    {
+      "name": "Resource dispatchers update the existing HUD after restore",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint never resets the story phase or evidence facts",
+      "passed": true
+    },
+    {
+      "name": "Persistent world interactions stay consumed",
+      "passed": true
+    },
+    {
+      "name": "Empty checkpoint identifiers are rejected",
+      "passed": true
+    },
+    {
+      "name": "Subsequent restores remain usable",
+      "passed": true
+    }
+  ],
+  "check_count": 13
+}

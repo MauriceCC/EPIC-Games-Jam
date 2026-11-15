@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "phase": 5,
+  "ending": 2,
+  "completed_rows": [
+    "Briefing_01",
+    "Briefing_02",
+    "Briefing_03",
+    "Briefing_04",
+    "Briefing_05",
+    "JackFound_01",
+    "JackFound_02",
+    "JackFound_03",
+    "FutureMessage_01",
+    "Truth_01",
+    "Truth_02",
+    "Truth_03",
+    "Truth_04",
+    "Truth_05",
+    "Correction_Order",
+    "SupervisorEncounter_01",
+    "SupervisorEncounter_02",
+    "SupervisorEncounter_03",
+    "SupervisorEncounter_04"
+  ],
+  "actual_keys": true,
+  "actual_button_click": true
+}

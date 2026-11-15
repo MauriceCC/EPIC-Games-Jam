@@ -12,7 +12,7 @@ try:
     check("PIE uses L_Test_C","L_Test_C" in world.get_path_name())
     state=unreal.GameplayStatics.get_game_state(world)
     mode=unreal.GameplayStatics.get_game_mode(world)
-    check("Existing C GameMode",mode.get_class().get_name()=="BP_GameMode_C")
+    check("Existing C GameMode",mode.get_class().get_path_name() in ("/Game/Unscripted/Narrative/BP_GameMode.BP_GameMode_C","/Game/Unscripted/Narrative/Test/BP_TestGameMode_C.BP_TestGameMode_C_C"))
     check("Existing C GameState",state.get_class().get_name()=="BP_GameState_C")
     manager=state.call_method("GetObjectiveManager")
     check("Existing ObjectiveManager component",manager and manager.get_outer()==state)

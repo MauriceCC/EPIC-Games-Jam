@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Real HUD has been added to the viewport",
+      "passed": true
+    },
+    {
+      "name": "Document starts closed",
+      "passed": true
+    },
+    {
+      "name": "Evidence cannot be lost before its phase",
+      "passed": true
+    },
+    {
+      "name": "Nursing record is registered once",
+      "passed": true
+    },
+    {
+      "name": "One evidence does not reveal truth",
+      "passed": true
+    },
+    {
+      "name": "Document is visibly readable",
+      "passed": true
+    },
+    {
+      "name": "Document locks gameplay and Retake",
+      "passed": true
+    },
+    {
+      "name": "E action closes the document and restores gameplay",
+      "passed": true
+    },
+    {
+      "name": "A duplicate type cannot satisfy both evidence guards",
+      "passed": true
+    },
+    {
+      "name": "Two distinct records trigger guarded TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Fabrication text remains English and names innocent Jack",
+      "passed": true
+    },
+    {
+      "name": "Consumed evidence cannot fire twice",
+      "passed": true
+    }
+  ],
+  "check_count": 12
+}

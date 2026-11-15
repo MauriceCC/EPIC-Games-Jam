@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Preserved dispatcher signature OnStoryPhaseChanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Preserved dispatcher signature OnChecklistUpdated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Preserved dispatcher signature OnDialogueStarted",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Preserved dispatcher signature OnDialogueFinished",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Preserved dispatcher signature OnEndingTriggered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Source persists as Actor",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Event type unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Param type unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Public phase getter available to consumers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private CurrentPhase",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private Ending",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bJackFound",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bEscapeRouteOpen",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bJackSafe",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bEvidenceFound",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bFalseReportFound",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bSupervisorEncountered",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bSupervisorDefeated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No external setter for private bIsProcessingStoryEvent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Private commit is not externally callable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "GameMode preserves GameState class",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "L_Test_C exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Persisted functional tests pass",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "compilation": [
+    {
+      "asset": "Core/Interfaces/BPI_StoryEvents",
+      "passed": true
+    },
+    {
+      "asset": "Narrative/BP_ObjectiveManager",
+      "passed": true
+    },
+    {
+      "asset": "Narrative/BP_GameState",
+      "passed": true
+    },
+    {
+      "asset": "Narrative/BP_GameMode",
+      "passed": true
+    },
+    {
+      "asset": "Narrative/Test/BP_StoryEventTestSource_C",
+      "passed": true
+    },
+    {
+      "asset": "Narrative/Test/BP_StoryProgressionObserver_C",
+      "passed": true
+    }
+  ],
+  "after_editor_restart": true,
+  "asset_saves_performed": false,
+  "unit_result": {
+    "passed": true,
+    "check_count": 217,
+    "failed": [],
+    "error": null
+  },
+  "dirty_content": [],
+  "dirty_maps": []
+}
