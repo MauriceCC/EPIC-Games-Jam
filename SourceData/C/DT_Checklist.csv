@@ -1,0 +1,6 @@
+"Name","Phase","Items","CompletedMask","bIsRewritten"
+"FindJack","FindJack","(""Locate Jack."",""Protect Jack from capture."",""Keep Jack's identity secret."")","(False,False,False)","False"
+"OpenEscapeRoute","OpenEscapeRoute","(""Locate Jack."",""Protect Jack from capture."",""Keep Jack's identity secret."")","(True,False,False)","False"
+"ProtectJack","ProtectJack","(""Locate Jack."",""Protect Jack from capture."",""Keep Jack's identity secret."")","(True,False,False)","False"
+"DiscoverTruth","DiscoverTruth","(""Locate Jack."",""Protect Jack from capture."",""Keep Jack's identity secret."")","(True,True,False)","False"
+"FinalChoice","FinalChoice","(""Locate Jack."",""Protect Jack from capture."",""Frame Jack as Jack the Ripper."",""Eliminate Jack without revealing his identity."")","(True,True,False,False)","True"

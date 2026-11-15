@@ -1,0 +1,216 @@
+{
+    "status":  "F0 source preparation; not an Unreal schema or runtime asset",
+    "source_document":  "docs/01_VISION_Y_NARRATIVA.md",
+    "review_date":  "2026-11-14",
+    "review_scope":  "English adaptations reviewed against the definitive premise for innocence, temporary protection, authorship and archival choice. Four rows carry editorial notes; source anchors are retained. Timing and proposed attributions remain open.",
+    "sequences":  [
+                      {
+                          "id":  "Briefing",
+                          "source_section":  "Initial transmission",
+                          "entry":  "Briefing_01",
+                          "rows":  [
+                                       {
+                                           "row":  "Briefing_01",
+                                           "source_quote_ordinal":  1,
+                                           "source_quote_sha256":  "9647cdd4e3ddc93e732de2a66cf5f1bbc62c509eaddc4f1e424e1038c13fc8a2"
+                                       },
+                                       {
+                                           "row":  "Briefing_02",
+                                           "source_quote_ordinal":  2,
+                                           "source_quote_sha256":  "c4d90af22a15ea17c3eb68d18e9b30449a8563fb5022cc17acbf74b1f47106c1"
+                                       },
+                                       {
+                                           "row":  "Briefing_03",
+                                           "source_quote_ordinal":  3,
+                                           "source_quote_sha256":  "77ef490c6310b036306df48041edd83aa9c1b06891adad2e28764fea7f6c6073"
+                                       },
+                                       {
+                                           "row":  "Briefing_04",
+                                           "source_quote_ordinal":  4,
+                                           "source_quote_sha256":  "8f66cf43f7d1564f331493a3ce3ba54eec3b24bba1d982cb7de609660e6d2ce0"
+                                       },
+                                       {
+                                           "row":  "Briefing_05",
+                                           "source_quote_ordinal":  5,
+                                           "source_quote_sha256":  "9caefee50bc51ecd9319c88f69ddc3f673d5a4a6ea654d8198c11bb49c39d5d4"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "JackMeeting",
+                          "source_section":  "Meeting Jack",
+                          "entry":  "JackFound_01",
+                          "rows":  [
+                                       {
+                                           "row":  "JackFound_01",
+                                           "source_quote_ordinal":  6,
+                                           "source_quote_sha256":  "dddb4392de6e091a9abc631896f43156d1c4c87faf5127aac9452f2380af7ace"
+                                       },
+                                       {
+                                           "row":  "JackFound_02",
+                                           "source_quote_ordinal":  7,
+                                           "source_quote_sha256":  "164f6932ec0a892496a26081255632bb93f80fd7393b3b8ee6f635c4d295266e"
+                                       },
+                                       {
+                                           "row":  "JackFound_03",
+                                           "source_quote_ordinal":  8,
+                                           "source_quote_sha256":  "c5ed95e9d9ad349799c20603108b257c32a5be0ad6a318a689c18f36cc4bd9bd"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "FutureMessage",
+                          "source_section":  "Future-self message",
+                          "entry":  "FutureMessage_01",
+                          "rows":  [
+                                       {
+                                           "row":  "FutureMessage_01",
+                                           "source_quote_ordinal":  9,
+                                           "source_quote_sha256":  "969b27cfd7ec8250ff7484b6a2b1d381ed683c9ca64eb4e3112cbe47562b1eb1"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "TruthRevelation",
+                          "source_section":  "Supervisor revelation",
+                          "entry":  "Truth_01",
+                          "rows":  [
+                                       {
+                                           "row":  "Truth_01",
+                                           "source_quote_ordinal":  10,
+                                           "source_quote_sha256":  "2bd95f152d7a49993a6ac2f1e862cc7b038729359b1d1f1f22e5bdacf7951237"
+                                       },
+                                       {
+                                           "row":  "Truth_02",
+                                           "source_quote_ordinal":  11,
+                                           "source_quote_sha256":  "741682422e38f0741021af5870e06ea4050a8d4973513dd7a6789c8a04180604"
+                                       },
+                                       {
+                                           "row":  "Truth_03",
+                                           "source_quote_ordinal":  12,
+                                           "source_quote_sha256":  "4e08347cb7662fa6683bbbdd958328898043470be589ada22eb1cf9b2f806e5c"
+                                       },
+                                       {
+                                           "row":  "Truth_04",
+                                           "source_quote_ordinal":  13,
+                                           "source_quote_sha256":  "7ec31879d999ba2cefa4963980048199a2d5b3da8ca242d12ae635a813a6a332"
+                                       },
+                                       {
+                                           "row":  "Truth_05",
+                                           "source_quote_ordinal":  14,
+                                           "source_quote_sha256":  "0d4dfea2d7ec445f1544ada4472087e04d1587d38d4583a02424c9fb1d39e35c"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "Correction",
+                          "source_section":  "Correction transmission",
+                          "entry":  "Correction_Order",
+                          "rows":  [
+                                       {
+                                           "row":  "Correction_Order",
+                                           "source_quote_ordinal":  15,
+                                           "source_quote_sha256":  "ea58558074c6e9c3f8fb87f53f17074509b94111179a2f8edfc184dd8a96eeaa"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "SupervisorEncounter",
+                          "source_section":  "Before the Supervisor fight",
+                          "entry":  "SupervisorEncounter_01",
+                          "rows":  [
+                                       {
+                                           "row":  "SupervisorEncounter_01",
+                                           "source_quote_ordinal":  16,
+                                           "source_quote_sha256":  "424e1e4df466dcdab875e279d7ca2e7e1c04f586f5463afffac494b3b6ffb5a9"
+                                       },
+                                       {
+                                           "row":  "SupervisorEncounter_02",
+                                           "source_quote_ordinal":  17,
+                                           "source_quote_sha256":  "8490925ce21deacefdcdfcb42bf832a23a335f6349457efe88cba1cfcb6c5de4"
+                                       },
+                                       {
+                                           "row":  "SupervisorEncounter_03",
+                                           "source_quote_ordinal":  18,
+                                           "source_quote_sha256":  "6f9e34eb1ecdb872ae5dece2f9995401dbdade5c330def3041a2a4fb0a7cca0b"
+                                       },
+                                       {
+                                           "row":  "SupervisorEncounter_04",
+                                           "source_quote_ordinal":  19,
+                                           "source_quote_sha256":  "0fb4d18cad712701cf1b2ca96cf1aa6c3ff9b99c441506eab138a1143c058b35"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "OfficialEnding",
+                          "source_section":  "Official ending quotation",
+                          "entry":  "EndingOfficial_01",
+                          "rows":  [
+                                       {
+                                           "row":  "EndingOfficial_01",
+                                           "source_quote_ordinal":  20,
+                                           "source_quote_sha256":  "cebcbd01e39d482d09f7b71215e5cb518b5e41e32988ad6614449f1408a67add"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "AuthenticEnding",
+                          "source_section":  "Authentic ending message",
+                          "entry":  "EndingAuthentic_01",
+                          "rows":  [
+                                       {
+                                           "row":  "EndingAuthentic_01",
+                                           "source_quote_ordinal":  21,
+                                           "source_quote_sha256":  "08faf8f36449def1a115b14e438211f49b095fda01ae84fbfa17c8e6ee162f7e"
+                                       },
+                                       {
+                                           "row":  "EndingAuthentic_02",
+                                           "source_quote_ordinal":  22,
+                                           "source_quote_sha256":  "c88ccbbef7b41711439de4228912502dec1e54a76f5e842a0bde4059975c89ea"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "ContinuityNotice",
+                          "source_section":  "Continuity notice",
+                          "entry":  "ContinuityAltered_01",
+                          "rows":  [
+                                       {
+                                           "row":  "ContinuityAltered_01",
+                                           "source_quote_ordinal":  23,
+                                           "source_quote_sha256":  "30e40e3435ef8c2141da6350406e7fdbadd591ebdc5bea020d9f9cde375c361f"
+                                       }
+                                   ]
+                      },
+                      {
+                          "id":  "CombatWarning",
+                          "source_section":  "Combat warning",
+                          "entry":  "CombatWarning_01",
+                          "rows":  [
+                                       {
+                                           "row":  "CombatWarning_01",
+                                           "source_quote_ordinal":  24,
+                                           "source_quote_sha256":  "b0af1cb5830400f26b045c3cca0ea180e66b04900341dd32091d14f755077f12"
+                                       }
+                                   ]
+                      }
+                  ],
+    "adaptation_notes":  [
+                             {
+                                 "reason":  "Natural, direct phrasing retains the question about why Jack is being kept alive.",
+                                 "row":  "JackFound_03"
+                             },
+                             {
+                                 "reason":  "Condensed reveal preserves the false case, temporary protection, disappearance and identity secrecy; the report/checklist retain the explicit Ripper framing.",
+                                 "row":  "Truth_05"
+                             },
+                             {
+                                 "reason":  "Present-progressive framing keeps the archive decision pending while making innocence explicit.",
+                                 "row":  "SupervisorEncounter_02"
+                             },
+                             {
+                                 "reason":  "Challenges the Director\u0027s control of the account, without introducing a new goal of replacing him.",
+                                 "row":  "SupervisorEncounter_04"
+                             }
+                         ]
+}

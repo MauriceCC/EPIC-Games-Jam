@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-14",
+  "engine": "5.8.4",
+  "branch": "c/f0-narrative-preparation",
+  "asset": "/Game/Unscripted/Narrative/Test/BP_MCPConnectionTest_C",
+  "parent": "/Script/Engine.Actor",
+  "member": {
+    "name": "bMCPVerified",
+    "type": "bool"
+  },
+  "graph": {
+    "name": "EventGraph",
+    "connection": "ReceiveBeginPlay.then -> Set bMCPVerified.execute",
+    "value": true
+  },
+  "checks": {
+    "created_via_mcp": true,
+    "initial_compile_passed": true,
+    "modified_via_mcp": true,
+    "pin_connection_readback_passed": true,
+    "final_compile_warnings_as_errors_passed": true,
+    "saved_via_mcp": true,
+    "dirty_after_save": false,
+    "pie_executed": false
+  },
+  "phase": "F0",
+  "f1_gate_complete": false
+}
