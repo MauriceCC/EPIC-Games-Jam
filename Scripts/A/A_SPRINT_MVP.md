@@ -33,6 +33,18 @@ A6 ya se cumplía en parte: `DoRetake` exige muestras (`PosHistory > 0`), así q
 - [Parche](patch_a6_retake_condition.py) → [resultado](a6_patch_result.json): se retiró una condición `> 0` redundante. Ya está aplicado; no repetir.
 - [Validación](validate_a_sprint_mvp_p1.py) → [resultado](a_sprint_mvp_p1_validation_result.json): **15 comprobaciones**, ejecutadas con el editor completo ([runner](run_validate_a_sprint_mvp_p1_editor.py)). El commandlet no tiene colisión para actores transitorios, así que la prueba con pared necesita el editor completo. Casos: Retoma 40 → 70 de resistencia; historial desalineado sin restauración; respawn que vacía el historial, rellena la resistencia y deja R sin gastar carga; Corte que congela a un guardia visible; Corte con un muro en medio que no congela ni gasta el cooldown.
 
+## P2: A8 **[PROPUESTA]** (tercera migración)
+
+| Cambio | Asset |
+|---|---|
+| **Hit-stop:** en `AttackHit`, cada enemigo dañado pasa a `CustomTimeDilation = 0,05` y se guarda en `A_HitStopTargets`. Un temporizador de 0,06 s llama a `A_EndHitStop`, que devuelve 1,0 a los actores que sigan siendo válidos. Afecta solo al golpeado; el jugador y el mundo siguen a velocidad normal. B no usa `CustomTimeDilation` (el Corte congela por su cuenta), así que no hay conflicto | `BP_PlayerCharacter` |
+| **Sacudida de cámara:** `TakeHit` (daño realmente recibido; no en parry ni esquiva) lanza `CS_PlayerHit_A` con `ClientStartCameraShake` en el controlador 0. Dura 0,18 s, con ±4 uu de posición y 0,6° de roll. Sin controlador, la omite y aplica el daño igualmente | `BP_PlayerCharacter`, `CS_PlayerHit_A` (nuevo, `LegacyCameraShake`) |
+
+Para ajustarlo: los valores del hit-stop son literales en `AttackHit` (0,05) y en el temporizador (0,06 s). La intensidad de la sacudida está en los Class Defaults de `CS_PlayerHit_A`.
+
+- [Migración](implement_a_sprint_mvp_a8.py) → [resultado](a_sprint_mvp_a8_implementation_result.json): 38 comprobaciones.
+- [Validación](validate_a_sprint_mvp_a8.py) ([runner](run_validate_a_sprint_mvp_a8_editor.py)) → [resultado](a_sprint_mvp_a8_validation_result.json): **15 comprobaciones**, entre ellas: solo se ralentiza el enemigo en rango; nunca el jugador; sin duplicados; restauración a 1,0; un objetivo destruido se ignora sin error; `TakeHit` aplica daño sin controlador. Las validaciones de A1–A4 (27, con 59 Blueprints compilando) y de A6–A7 (15) siguen correctas.
+
 ## Evidencia
 
 - [Migración](implement_a_sprint_mvp.py) (una sola ejecución; rechaza un proyecto ya migrado) → [resultado](a_sprint_mvp_implementation_result.json). Comprueba que cada nodo, valor y enlace previo se conserva salvo las aristas de entrada desviadas, los 4 literales de `Result` y los prints borrados. Copia de seguridad: ruta `backup` del resultado.
@@ -54,3 +66,4 @@ Límites: no es una sesión de Play. Falta la prueba manual de abajo.
 6. A6: gastar resistencia con esquivas, esperar ~1 s y pulsar R → la resistencia vuelve al valor de hace unos 3 s.
 7. A6: morir, reaparecer y pulsar R enseguida → no pasa nada (no se rebobina a antes de morir) y no se gasta carga.
 8. A7: con un enemigo detrás de una esquina o un muro, pulsar F → no se congela y el Corte sigue disponible. Con el enemigo a la vista, se congela.
+9. A8: golpear a un Perseguidor → se nota un microparón en él (no en el jugador). Recibir un golpe → sacudida corta de cámara; con parry o esquiva, no hay sacudida. Si resulta excesivo, bajar la amplitud en `CS_PlayerHit_A`.

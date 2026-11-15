@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "All 59 Unscripted Blueprints compile",
+      "passed": true
+    },
+    {
+      "name": "Shake is a LegacyCameraShake",
+      "passed": true
+    },
+    {
+      "name": "Shake duration saved (0.18 s)",
+      "passed": true
+    },
+    {
+      "name": "Shake location amplitude saved",
+      "passed": true
+    },
+    {
+      "name": "TakeHit starts CS_PlayerHit_A",
+      "passed": true
+    },
+    {
+      "name": "Player recompiles for the in-memory test",
+      "passed": true
+    },
+    {
+      "name": "Hit enemy slows to 0.05",
+      "passed": true
+    },
+    {
+      "name": "Enemy out of range is not slowed",
+      "passed": true
+    },
+    {
+      "name": "Player itself is not slowed (no global hit-stop)",
+      "passed": true
+    },
+    {
+      "name": "Hit enemy remembered once",
+      "passed": true
+    },
+    {
+      "name": "A second hit does not duplicate the target",
+      "passed": true
+    },
+    {
+      "name": "A_EndHitStop restores 1.0",
+      "passed": true
+    },
+    {
+      "name": "A_EndHitStop forgets the targets",
+      "passed": true
+    },
+    {
+      "name": "A destroyed target is skipped safely",
+      "passed": true
+    },
+    {
+      "name": "TakeHit still applies damage with no player controller (shake skipped)",
+      "passed": true
+    }
+  ],
+  "notes": [
+    "guard health 45 -> 45"
+  ],
+  "compile_failures": [],
+  "mode": "full editor; editor world; not PIE"
+}
