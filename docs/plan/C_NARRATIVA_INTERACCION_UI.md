@@ -86,10 +86,10 @@ Only BP_ObjectiveManager owns phase changes through the existing contract.
 
 | Current phase | Reported event and guard | Next phase | Narrative effects |
 |---|---|---|---|
-| FindJack | `JackFound` - Current phase is FindJack; ignore a duplicate JackFound. | OpenEscapeRoute | Record bJackFound; queue Jack dialogue and the future-self message. |
+| FindJack | `JackFound` - Current phase is FindJack; ignore a duplicate JackFound. | OpenEscapeRoute | Record bJackFound; queue Jack dialogue. The Workshop interaction then queues the future-self message once. |
 | OpenEscapeRoute | `EscapeRouteOpened` - Jack has been found and the route-opening report is valid for this phase. | ProtectJack | Record bEscapeRouteOpen; show the protection/escort objective. |
 | ProtectJack | `JackReachedRefuge` - Jack was found and the route was opened before the refuge report. | DiscoverTruth | Record bJackSafe; show the truth-discovery objective. |
-| DiscoverTruth | `TruthRevealed` - Jack has reached the refuge; both distinct evidence records have been registered. | FinalChoice | Reveal the Director's fabrication and why innocent Jack was protected until the false case was ready; queue the Supervisor revelation, checklist rewrite and Correction_Order. |
+| DiscoverTruth | `TruthRevealed` - Jack has reached the refuge; both distinct evidence records have been registered; the final Supervisor revelation line has been confirmed. | FinalChoice | The Supervisor exposes the fabrication before this event. Rewrite the checklist, queue Correction_Order and report ContinuityAltered once. |
 | FinalChoice | `SupervisorDefeated` - Current phase is FinalChoice; do not select an ending. | FinalChoice | Unlock the two final files; Ending remains None. |
 | FinalChoice | `FinalDocumentRegistered` - Supervisor gate satisfied; confirm one valid file; ignore repeated registration. | GameEnded | Record one ending: OfficialCut preserves the Director's false version; AuthenticRecord preserves the truth. Block Retake; trigger OnEndingTriggered. |
 
