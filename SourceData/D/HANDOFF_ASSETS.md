@@ -43,6 +43,16 @@ Notas:
 - Componente `Art/Characters/Shared/BP_LocomotionAnim`: reproduce Idle/Walk/Run según la velocidad (umbrales 15 y 320 cm/s). Para una acción puntual (golpe, muerte…) llamar `PlayOneShot(Anim)`: reproduce la animación una vez y vuelve a la locomoción.
 - **[PROPUESTA] para B:** para el segundo Perseguidor con otro aspecto, cambiar en la instancia del nivel la malla a `SK_Pursuer_B` y las tres animaciones de su `LocomotionAnim` a las de `SK_Pursuer_B`.
 
+## Jugador (A) — versión mínima jugable (2026-11-15, hecha desde D por acuerdo del equipo)
+
+- `BP_PlayerController`: las acciones del contrato llaman al personaje (antes solo imprimían texto). WASD mover, clic izq. golpe, clic der. golpe fuerte (de momento = ligero), Espacio esquiva, Q parry, F Corte de Fotograma, R Retoma.
+- `BP_PlayerCharacter`: cámara isométrica (brazo de 17 m, Pitch −55°, Yaw 45°, FOV 40), movimiento relativo a la cámara (340 cm/s, gira hacia donde camina), golpe hacia el cursor que alterna dos animaciones y hace 25 de daño nativo a los `BP_GuardBase` a ≤1,7 m delante, esquiva con impulso e invulnerabilidad 0,45 s, parry con ventana 0,25 s.
+- `ReceiveCombatHit` (contrato): devuelve `Dodged` durante la esquiva, `Parried` en la ventana de parry si el golpe es parryable (chispas y sonido), y si no, aplica el daño y devuelve `Hit`.
+- Salud en `BP_HealthComponent` (`MaxHealth` 100, `ApplyHealthDamage`, `SetHealth`, dispatchers del contrato). Al llegar a 0: animación de muerte, `ReportStoryEvent(PlayerDefeated)` y recarga del nivel a los 3 s **[PROPUESTA provisional]** hasta que C conecte los checkpoints.
+- Corte de Fotograma: congela al enemigo más cercano a ≤15 m con `ApplyTemporalFreeze(1.2, 10)`, `NS_TemporalCut` y 10 s de recarga (`OnTemporalCutCooldown`).
+- Retoma: guarda posición y salud cada 0,1 s (3 s); R devuelve al jugador a hace 3 s con su salud de entonces, `NS_RetakeTrail`, 2 cargas (`OnRetakeChargesChanged`, `OnRetakePerformed`). Los enemigos no se rebobinan.
+- Pendiente de A: golpe fuerte propio, resistencia, combo con ventanas por notify, `DT_PlayerBalance`, remates.
+
 ## Nivel `L_Whitechapel` (2026-11-15)
 
 - `_Geo`: blockout de las 11 zonas generado desde `SourceData/D/blockout_layout.json` (82 piezas con etiqueta `D_Blockout`) y 37 props de vestido (etiqueta `D_Dressing`). Origen (0,0) en la esquina suroeste; el nivel ocupa X −100…5500 y Y 100…5900 cm.
