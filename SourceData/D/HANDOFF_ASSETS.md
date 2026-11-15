@@ -36,5 +36,13 @@ Tanda P1 (vestir el nivel):
 ## Audio y VFX disponibles
 
 - Sonidos (`Audio/`): `SC_StaffHit`, `SC_ParrySuccess`, `SC_TemporalCut`, `SC_Retake`, `SC_ChecklistRewrite`, `SC_EvidencePickup`, `SC_Footstep_Cobble` (aleatorio), `SC_Rain_Loop`, `SC_Wind_Loop`.
-- VFX (`VFX/`): `NS_ParrySpark`, `NS_TemporalCut` (adjuntar al pecho del enemigo), `NS_HitImpact`, `NS_EnemyTelegraph` (rojo, para `OnTelegraphStarted`), `NS_Rain` (seguir a la cámara).
-- Placeholders aún vacíos: `NS_RetakeTrail`, `NS_ContinuityGlitch`, `NS_FinalRegister`, `MS_Ambience_Whitechapel`.
+- VFX (`VFX/`), todos de un solo disparo salvo la lluvia:
+  - `NS_ParrySpark` (A): chispas blanco-doradas + pulso cian.
+  - `NS_TemporalCut` (A/B): fragmentos cian flotando ~0,8 s; adjuntar al pecho del enemigo.
+  - `NS_HitImpact` (A/B): polvo y astillas, sin sangre.
+  - `NS_EnemyTelegraph` (B): destello rojo anaranjado para `OnTelegraphStarted`.
+  - `NS_RetakeTrail` (A): posimagen cian + motas que suben; generarlo en la posición **antigua** del agente al hacer Retoma.
+  - `NS_ContinuityGlitch` (C): destellos cian/magenta ~0,3 s junto al aviso de continuidad alterada.
+  - `NS_FinalRegister` (C): pulso cian tipo sello + chispas al registrar el expediente; generarlo sobre la estación elegida.
+  - `NS_Rain` (D): lluvia en bucle; adjuntar a la cámara o al jugador.
+- Placeholder aún vacío: `MS_Ambience_Whitechapel` (para el ambiente se usan `SC_Rain_Loop` y `SC_Wind_Loop`).
