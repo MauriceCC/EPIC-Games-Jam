@@ -1,6 +1,6 @@
 # F0 en el editor — Unscripted, guía para principiantes
 
-Estado: instrucciones preparadas, no ejecución automática. El usuario confirmó que abrió el proyecto con UE 5.8.4 y que Play funciona. El resto requiere comprobación en el editor. Trabajamos excepcionalmente como integrador.
+Estado: guía ejecutada parcialmente con UE 5.8.4 y el worker Python local. Hay assets creados y comprobaciones del editor registradas; F0 sigue abierto por las tareas anotadas al final. No recrear assets existentes.
 
 Fuente de nombres, campos y firmas: [contratos](../../docs/plan/01_CONTRATOS_Y_PROPIEDAD.md). No cambiar los nombres por traducciones. Todo texto para el jugador debe estar en inglés.
 
@@ -106,7 +106,7 @@ Hay dos interfaces que devuelven componentes específicos. Por eso necesitamos c
 
 1. Entrar en `Core/Interfaces` → clic derecho → Blueprints → Blueprint Interface.
 2. Crear `BPI_Damageable` y abrirlo.
-3. En My Blueprint → Functions, renombrar NewFunction a `ReceiveHit`.
+3. En My Blueprint → Functions, renombrar NewFunction a `ReceiveCombatHit`.
 4. Seleccionar la función. En Details → Inputs, pulsar +: nombre `HitInfo`, tipo `ST_HitInfo`.
 5. En Outputs pulsar +: tipo `EHitResult`. **[PROPUESTA]** Nombre de salida `Result`, porque el contrato fija su tipo pero no el nombre de ese pin.
 6. Añadir otra función con + junto a Functions: `IsDefeated`. Sin Inputs, una salida Boolean.
@@ -185,7 +185,7 @@ Para añadir una interface a un Blueprint: abrir → Class Settings → Details 
 
 Los hijos heredan las interfaces; no duplicarlas.
 
-**[PROPUESTA] Valores provisionales seguros:** en las funciones con salida dejar CanInteract y CanBeTemporalCutTarget en false, IsDefeated en false, ApplyTemporalFreeze en 0 y ReceiveHit en Ignored. No simular éxitos de sistemas sin implementar. Funciones sin salida pueden permanecer sin comportamiento en F0.
+**[PROPUESTA] Valores provisionales seguros:** en las funciones con salida dejar CanInteract y CanBeTemporalCutTarget en false, IsDefeated en false, ApplyTemporalFreeze en 0 y ReceiveCombatHit en Ignored. No simular éxitos de sistemas sin implementar. Funciones sin salida pueden permanecer sin comportamiento en F0.
 
 Dos getters deben devolver sus componentes reales para permitir enlazar avisos:
 
@@ -228,20 +228,22 @@ Para inspeccionar la escena antes de que A añada cámara y controles, usar el v
 
 - Edit → Plugins: verificar Enhanced Input, Niagara y Python Editor Script Plugin conforme al plan. Reiniciar si el editor lo solicita, guardando primero el trabajo. No instalar MCP sin decisión del equipo.
 - Project Settings → Navigation Mesh → Runtime Generation = Dynamic. P en el viewport muestra la navegación cuando exista geometría navegable y volumen que la cubra.
-- Project Settings → Collision → New Trace Channel: `Interaction`, Default Response Ignore.
-- **Aclaración pendiente:** el contrato pide `Combat` con respuesta Overlap para Pawn, pero no especifica la respuesta global del canal. **[PROPUESTA]** Ignore por defecto y Overlap para cápsulas relevantes; acordar el comportamiento de obstáculos con A/B antes de verificar impactos. No declarar esta parte resuelta solo por crear un nombre de canal.
+- `DefaultEngine.ini` ahora declara `Interaction` y `Combat` como Trace Channels con respuesta global Ignore. La configuración aún no se ha recargado para verificarla en Project Settings.
+- **Pendiente:** el contrato pide que `Combat` responda Overlap en Pawn, pero no especifica el perfil global. La respuesta global Ignore no satisface por sí sola ese requisito. Definirlo en los perfiles de colisión y comprobar que el mundo sigue bloqueando las trazas; no darlo por resuelto por crear los nombres.
 - El canal de objeto Enemy es condicional: no crearlo sin necesidad acordada con B.
 - Enhanced Input se configura con la guía [A-01](../A/A01_INPUT_BLUEPRINT.md), usando el BP_PlayerController definitivo al existir F0; omitir sus cascarones exclusivos de prueba. La comprobación de input corresponde a A-01, no a combate implementado.
 - Placeholders de audio, VFX y materiales de contratos §8 siguen siendo trabajo F0/F1 de D: no crear archivos de otro tipo con el mismo nombre para aparentar que están listos. Registrar su estado antes de que A/B/C los referencien.
 
 ## 12. Verificación y entrega
 
-- Compile y Save en todos los Blueprints; corregir errores antes de compartir.
-- Reabrir el proyecto y los cinco mapas. Revisar Message Log y Output Log por errores de referencias.
+- `BP_PlayerController` se compiló y guardó tras completar el registro seguro del IMC; no se ha compilado nuevamente el conjunto completo de cascarones.
+- Se cargó `L_Whitechapel` en el editor y se comprobó que contiene los cuatro subniveles (Geo, Light, AI, Story), iluminación, NavMeshBoundsVolume, suelo y PlayerStart.
+- **Pendiente:** asignar interfaces en Class Settings, completar retornos/getters, recargar configuración, abrir cada mapa de prueba, confirmar plugins/colisiones/NavMesh y ejecutar Play desde el GameMode nuevo.
 - En Play, revisar World Outliner: aparecen PlayerCharacter, PlayerController, GameMode, GameState y HUD correctos. La ausencia de combate, movimiento o UI terminados es esperable.
-- Confirmar getters de componentes y todas las firmas del contrato. Registrar propuestas de nombres de salida y clases padre aceptadas antes de congelar v1.0.
-- Registrar pendientes de colisiones/placeholders; no declarar F0 completamente terminado con comprobaciones pendientes.
+- La auditoría confirma los assets esperados y las funciones de las seis interfaces, pero aún no ha comprobado todos los tipos/firma de pines ni los valores de retorno.
+- El log mostró que el adaptador solo soporta SM5 y que se solicitó SM6; Unreal intentó fallback a D3D11/SM5. La compilación de assets siguió pese a una estimación de 4608 MiB contra ~483 MiB disponibles, y Recast avisó del límite de tiles. Reevaluar tras reiniciar.
+- No declarar F0 terminado mientras queden validaciones pendientes.
 - Cerrar Unreal antes de operaciones Git que cambien los archivos. Revisar rutas modificadas; agregar solo archivos concretos. Seguir la ventana de integración, sin forzar main.
 - Los cuatro integrantes deben abrir y compilar la misma revisión. Solo entonces cada uno desarrolla su carpeta.
 
-Referencias oficiales consultadas: [Blueprint Interfaces](https://dev.epicgames.com/documentation/unreal-engine/blueprint-interface-in-unreal-engine?lang=en-US), [Event Dispatchers](https://dev.epicgames.com/documentation/unreal-engine/event-dispatchers-in-unreal-engine?lang=en-US), [gestión de niveles](https://dev.epicgames.com/documentation/en-us/unreal-engine/managing-multiple-levels-in-unreal-engine). Esta guía no ha sido ejecutada por el agente en el editor.
+Referencias oficiales consultadas: [Blueprint Interfaces](https://dev.epicgames.com/documentation/unreal-engine/blueprint-interface-in-unreal-engine?lang=en-US), [Event Dispatchers](https://dev.epicgames.com/documentation/unreal-engine/event-dispatchers-in-unreal-engine?lang=en-US), [gestión de niveles](https://dev.epicgames.com/documentation/en-us/unreal-engine/managing-multiple-levels-in-unreal-engine). La guía fue ejecutada parcialmente; esta nota no acredita cierre de F0.

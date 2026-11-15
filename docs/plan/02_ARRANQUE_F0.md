@@ -10,7 +10,7 @@
 
 ## Estado observado, sin confundir documentación con implementación
 
-La revisión de archivos encontró `Unscripted/Unscripted.uproject`, configuración Enhanced Input, mapa y Blueprints Top Down, maniquíes, animaciones y geometría provisional. No encontró `Unscripted/Content/Unscripted/` ni los assets de F0. No se abrió el editor ni se probaron Blueprints durante esta revisión.
+La revisión inicial encontró la plantilla Top Down y no encontró los assets de F0. **Actualización 2026-11-14:** el proyecto se abrió en UE 5.8.4 y se generó la mayoría de los assets F0. El inventario del editor confirma todos los assets listados en este plan, las seis interfaces con sus nombres de funciones, los cinco componentes requeridos en el jugador y las clases del GameMode. Esto no implica que F0 esté cerrado: faltan asignaciones de interfaces, getters/retornos seguros, validación de colisiones y una prueba de arranque/Play con la configuración nueva.
 
 El `.uproject` usa un identificador de instalación para `EngineAssociation`; no prueba por sí solo la versión exacta. El integrador debe comprobar que los cuatro equipos lo abren con 5.8.4 sin convertir assets a otra versión.
 
@@ -29,7 +29,7 @@ Los CSV pueden prepararse como texto antes de F0; su importación y validación 
 
 ## Lista del integrador para desbloquear F1
 
-Guía de ejecución para principiantes: [F0 paso a paso en el editor](../../Scripts/INT/F0_GUIA_EDITOR.md). El usuario confirmó apertura del proyecto y Play; la creación de contratos, cascarones, conexiones y mapas sigue pendiente. Crear los componentes vacíos antes de las interfaces que los devuelven evita que falten tipos en sus selectores.
+Guía de ejecución para principiantes: [F0 paso a paso en el editor](../../Scripts/INT/F0_GUIA_EDITOR.md). La guía se ejecutó parcialmente con el worker Python del editor. No volver a crear assets ya presentes; completar y validar solo los puntos pendientes.
 
 Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDAD.md`. Las casillas siguientes permanecen pendientes hasta comprobarlas en el editor.
 
@@ -39,23 +39,26 @@ Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDA
    - [ ] Revisar `.gitignore`: las reglas actuales `Content/Developers/` y `Content/Collections/` no cubren esas carpetas dentro de `Unscripted/`. Ajustarlas antes de guardar borradores personales en Git.
    - [ ] Revisar plugins/configuración requeridos por el contrato; no asumir que un plugin está desactivado solo por no aparecer explícitamente en el `.uproject`.
 2. **Crear el vocabulario compartido.**
-   - [ ] Crear carpetas de propiedad y todos los enums de contratos §3.
-   - [ ] Crear `ST_HitInfo`, `ST_DialogueLine` y `ST_ChecklistRow` con sus campos exactos.
-   - [ ] Crear las seis interfaces de §4 y sus entradas/salidas exactas.
-   - [ ] Compilar y guardar. No añadir firmas inventadas para resolver dudas: documentarlas y acordarlas.
+   - [x] Los nueve enums, tres structs y seis assets de interfaz existen.
+   - [ ] Auditar todos los campos y pines contra §3–§4, incluidos tipos y valores; la presencia de los assets no acredita firmas exactas.
+   - [ ] Compilar y guardar todos los contratos sin errores.
 3. **Crear las piezas vacías.**
-   - [ ] Crear los cascarones de §5, incluidos componentes y dispatchers con parámetros exactos.
-   - [ ] Conectar Health, Combat, Temporal, Interaction y Stealth al personaje.
-   - [ ] Configurar las clases de jugador, controlador, GameState y HUD en el GameMode.
-   - [ ] Mantener la lógica de cada división para F1; esta etapa verifica que las referencias existen y compilan.
+   - [x] Los cascarones de §5 y las clases derivadas de enemigos existen.
+   - [x] Health, Combat, Temporal, Interaction y Stealth están añadidos al jugador; Health al GuardBase; ObjectiveManager al GameState.
+   - [x] El GameMode referencia PlayerCharacter, PlayerController, GameState y HUD.
+   - [ ] Asignar las interfaces a PlayerCharacter, GuardBase, Jack, InteractableBase y GameState. La auditoría actual confirma que aún faltan.
+   - [ ] Completar retornos seguros y getters de componentes; después compilar y guardar todos los cascarones.
 4. **Preparar los espacios de trabajo.**
-   - [ ] Crear `L_Test_A`, `L_Test_B`, `L_Test_C` y `L_Test_D` bajo `Content/Unscripted/Maps/Test/`.
-   - [ ] Crear `L_Whitechapel` y subniveles según contratos §6, verificando compatibilidad de la configuración del mapa con ese esquema. No asumir que el mapa Top Down existente ya lo usa.
-   - [ ] Configurar colisiones, mapas y Enhanced Input según §7. A implementará el comportamiento de las acciones.
-   - [ ] Preparar placeholders de D según §8, sin textos españoles visibles.
+   - [x] Los mapas de prueba A–D, `L_Whitechapel` y sus cuatro subniveles existen; el editor informa los cuatro subniveles cargados en el persistente.
+   - [x] El persistente contiene iluminación y NavMeshBoundsVolume; Geo contiene suelo; Story contiene PlayerStart.
+   - [x] Placeholders tipados de VFX, audio y materiales están creados.
+   - [x] `DefaultEngine.ini` apunta al mapa y GameMode nuevos; se añadieron los canales de traza Interaction y Combat con respuesta global Ignore.
+   - [ ] Recargar el proyecto y comprobar Mapas & Modes y los canales en Project Settings. Combat aún no tiene verificada la respuesta Overlap de Pawn; no inventar un perfil hasta resolverlo.
+   - [ ] Verificar Enhanced Input, generación dinámica de NavMesh y la navegación efectiva en los mapas de prueba.
 5. **Entregar una base comprobada.**
-   - [ ] Abrir mapas, compilar cascarones y comprobar que no hay referencias rotas.
-   - [ ] Cada integrante abre la misma revisión en su equipo y encuentra sus assets.
+   - [ ] Reabrir el proyecto con la configuración nueva; compilar Blueprints, cargar mapas y ejecutar Play. Aún no se ha hecho esta prueba tras cambiar el mapa por defecto.
+   - [ ] Revisar Output/Message Log y eliminar errores de compilación atribuibles a los Blueprints; no confundir errores de diagnóstico Python del worker con compilaciones de BP.
+   - [ ] Cada integrante abre la misma revisión en su equipo; Git LFS y validación de los cuatro equipos no se han comprobado.
    - [ ] Publicar el esqueleto siguiendo el flujo de integración del equipo; registrar revisión y responsable.
    - [ ] Solo entonces marcar F0 terminado y congelar el contrato v1.0.
 
@@ -63,7 +66,7 @@ Seguir `00_PLAN_GENERAL.md §5` y las firmas exactas de `01_CONTRATOS_Y_PROPIEDA
 
 - **Enum:** lista de estados, por ejemplo `Idle` y `Attacking`.
 - **Struct:** paquete de datos, por ejemplo daño, dirección y atacante en `ST_HitInfo`.
-- **Interface:** operaciones comunes. A llama `ReceiveHit`; B decide cómo recibe el golpe.
+- **Interface:** operaciones comunes. A llama `ReceiveCombatHit`; B decide cómo recibe el golpe.
 - **Cascarón:** Blueprint con clase, funciones y eventos declarados, todavía sin lógica.
 - **Dispatcher:** aviso que otros escuchan, por ejemplo `OnHealthChanged` para actualizar el HUD.
 - **Mapa de prueba:** sala aislada para probar una división con dobles de prueba, sin tocar el nivel compartido.
@@ -78,9 +81,8 @@ Cada división revisa sus salidas al jugador. C coordina vocabulario y traducci�
 
 ## Estado de esta preparación
 
-- [x] Nombre, versión, modalidad Blueprint e idioma registrados en Markdown.
-- [x] Rutas reales y contenido provisional contrastados con el repositorio.
-- [ ] Assets compartidos creados y validados en Unreal.
-- [ ] Esqueleto publicado y abierto por los cuatro integrantes.
-
-La actualización documental no acredita implementación ni pruebas del juego.
+- [x] UE 5.8.4 detectado en el editor; proyecto y assets compartidos presentes.
+- [x] El grafo de `BP_PlayerController` registra IMC_Default en BeginPlay, con guarda `IsLocalController`, comprobación `IsValid` del subsistema, compilación exitosa y guardado.
+- [ ] F0 no está cerrado: faltan interfaces en cinco clases, retornos/getters, verificación de Combat/Pawn, recarga de configuración y prueba de Play.
+- [ ] Git LFS y apertura por los cuatro integrantes sin validar; no se ha publicado una base compartida.
+- **Limitaciones de la máquina observadas en `Unscripted/Saved/Logs/Unscripted.log`:** el adaptador solo declara SM5 aunque se pidió SM6; Unreal intentó fallback a D3D11/SM5. La compilación de assets avisó de un requisito estimado de 4608 MiB frente a un límite de ~483 MiB y continuó. También hubo un aviso de límite de tiles del RecastNavMesh. Volver a comprobarlo tras el reinicio y revisar navegación; no cambiar el renderer como solución sin una decisión explícita.

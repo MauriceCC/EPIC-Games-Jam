@@ -1,6 +1,6 @@
 # Unscripted — Proyecto y documentación de diseño
 
-> **Estado:** plantilla Top Down existente; esqueleto compartido F0 pendiente de creación y validación.
+> **Estado (2026-11-14):** esqueleto F0 creado parcialmente en Unreal 5.8.4; no cerrado. Faltan asignaciones de interfaces, retornos/getters, validación de colisiones, recarga de configuración y prueba de Play. Ver [estado detallado de F0](docs/plan/02_ARRANQUE_F0.md).
 > **Motor:** Unreal Engine **5.8.4**, proyecto **Blueprint**, perspectiva isométrica 3D.
 > **Ambientación:** Whitechapel, Londres, 1888, **ficción histórica alternativa**.  
 > **Tema de la Game Jam:** *Director's Cut*.

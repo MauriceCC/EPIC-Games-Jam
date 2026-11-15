@@ -26,7 +26,7 @@ Que controlar al agente **se sienta bien**: moverse en isométrico, apuntar con 
 | `BP_PlayerCharacter` implementando `BPI_Damageable`, `BPI_PlayerControl`, `BPI_CheckpointListener` | B, C |
 | Dispatchers de `BP_HealthComponent`, `BP_CombatComponent`, `BP_TemporalComponent` | C (HUD), D (post-proceso) |
 | `BP_HealthComponent` reutilizable (lo usan los enemigos) | B |
-| Llamadas a `ReceiveHit` y `ApplyTemporalFreeze` sobre objetivos | B |
+| Llamadas a `ReceiveCombatHit` y `ApplyTemporalFreeze` sobre objetivos | B |
 
 | Consumes | De quién | Mientras no exista… |
 |---|---|---|
@@ -50,10 +50,10 @@ Prioridad: **P0** = versión mínima (`docs/07`), **P1** = mejora importante, **
 | A-05 | Resistencia en `BP_CombatComponent` (costes, regeneración 30/s tras pausa) | P0 | Sin resistencia no se puede atacar/esquivar; HUD de prueba la muestra |
 | A-06 | `ECombatState` del jugador y tabla de transiciones permitidas | P0 | Ninguna acción se inicia desde un estado no permitido; siempre vuelve a `Idle` |
 | A-07 | Combo ligero x3 con montages + notifies (ventana de combo, ventana de impacto) | P0 | Golpe 3 empuja; clicks fuera de ventana no encadenan |
-| A-08 | Detección de impacto: trazas en arco frontal en la ventana, set de actores ya golpeados | P0 | Cada actor recibe **un** `ReceiveHit` por golpe |
+| A-08 | Detección de impacto: trazas en arco frontal en la ventana, set de actores ya golpeados | P0 | Cada actor recibe **un** `ReceiveCombatHit` por golpe |
 | A-09 | Ataque fuerte (daño 28, rompe bloqueo) | P0 | Contra un dummy que bloquea, el fuerte entra |
 | A-10 | Esquiva con i-frames parciales (`Dodged`) | P0 | Golpe que llega en i-frames devuelve `Dodged` |
-| A-11 | Parry: ventana ~0,2 s por notify; `ReceiveHit` devuelve `Parried` | P0 | Un dummy que ataca cada 2 s puede ser parryado consistentemente |
+| A-11 | Parry: ventana ~0,2 s por notify; `ReceiveCombatHit` devuelve `Parried` | P0 | Un dummy que ataca cada 2 s puede ser parryado consistentemente |
 | A-12 | `DT_PlayerBalance` + CSV en `SourceData/A/` con todos los valores de `docs/03` | P0 | Cambiar el CSV y reimportar cambia el juego sin tocar nodos |
 | A-13 | Corte de Fotograma: selección de objetivo, `ApplyTemporalFreeze`, cooldown 10 s, dispatcher | P0 | El dummy se congela 0,8 s; cooldown visible en HUD de prueba |
 | A-14 | Retoma: buffer circular de 50 snapshots cada 0,1 s (`ST_RewindSnapshot`) | P0 | Debug draw de la estela de posiciones |
@@ -117,7 +117,9 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 | # | Fecha | Petición | A quién | Estado |
 |---|---|---|---|---|
-| | | | | |
+| A-CON-01 | 2026-11-14 | Renombrar `BPI_Damageable.ReceiveHit` a `ReceiveCombatHit`, conservando entrada `HitInfo: ST_HitInfo` y salida `Result: EHitResult`. El nombre anterior colisiona con `AActor.ReceiveHit` (DisplayName Hit, parámetro MyComp), impidiendo compilar PlayerCharacter. Actualizar contrato, guías y consumidores A/B; reconstruir la implementación afectada en el editor si conserva la firma nativa. | Integrador y B | Aprobado por el usuario; documentación actualizada. Migración y compilación en Unreal pendientes |
+
+Evidencia A-CON-01: capturas del usuario muestran `ReceiveHit` en la interfaz y `Hit` en PlayerCharacter, con error de firma diferente y parámetro `MyComp`. La [API oficial de AActor::ReceiveHit](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/AActor/ReceiveHit) confirma ese nombre nativo y sus parámetros. La causa no es un parámetro MyComp añadido por el usuario. No editar binarios como texto ni renombrar únicamente la implementación local.
 
 ## 9. Estado
 

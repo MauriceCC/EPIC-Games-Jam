@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "enemyKinds": {
+    "Pursuer": {
+      "health": 45,
+      "walkSpeed": 130,
+      "runSpeed": 240,
+      "visionRange": 18.0,
+      "detectionRange": 8.0,
+      "alertDelaySeconds": 1.2,
+      "stunDurationSeconds": 1.8,
+      "temporalFreezeDurationSeconds": 0.8,
+      "neutralizeWindowSeconds": 1.6,
+      "priority": 100,
+      "stateFlow": [
+        "Patrol",
+        "Suspicious",
+        "Investigate",
+        "Chase",
+        "Combat",
+        "Return",
+        "Stunned",
+        "Defeated"
+      ]
+    },
+    "Interventor": {
+      "health": 80,
+      "walkSpeed": 120,
+      "runSpeed": 220,
+      "visionRange": 20.0,
+      "detectionRange": 9.0,
+      "alertDelaySeconds": 1.0,
+      "stunDurationSeconds": 2.2,
+      "temporalFreezeDurationSeconds": 1.2,
+      "neutralizeWindowSeconds": 2.0,
+      "priority": 120,
+      "stateFlow": [
+        "Patrol",
+        "Suspicious",
+        "Investigate",
+        "Chase",
+        "Combat",
+        "Return",
+        "Stunned",
+        "Defeated"
+      ]
+    },
+    "Supervisor": {
+      "health": 180,
+      "walkSpeed": 110,
+      "runSpeed": 200,
+      "visionRange": 24.0,
+      "detectionRange": 10.0,
+      "alertDelaySeconds": 0.8,
+      "stunDurationSeconds": 2.5,
+      "temporalFreezeDurationSeconds": 1.5,
+      "neutralizeWindowSeconds": 2.2,
+      "priority": 150,
+      "stateFlow": [
+        "Patrol",
+        "Suspicious",
+        "Investigate",
+        "Chase",
+        "Combat",
+        "Return",
+        "Stunned",
+        "Defeated"
+      ]
+    },
+    "Jack": {
+      "health": 30,
+      "walkSpeed": 90,
+      "runSpeed": 160,
+      "visionRange": 12.0,
+      "detectionRange": 6.0,
+      "alertDelaySeconds": 0.6,
+      "stunDurationSeconds": 0.0,
+      "temporalFreezeDurationSeconds": 0.0,
+      "neutralizeWindowSeconds": 0.0,
+      "priority": 80,
+      "stateFlow": [
+        "Patrol",
+        "Suspicious",
+        "Investigate",
+        "Return",
+        "Defeated"
+      ]
+    }
+  },
+  "stateTransitions": {
+    "Patrol": [
+      "Suspicious",
+      "Return"
+    ],
+    "Suspicious": [
+      "Investigate",
+      "Chase",
+      "Return"
+    ],
+    "Investigate": [
+      "Chase",
+      "Return",
+      "Patrol"
+    ],
+    "Chase": [
+      "Combat",
+      "Return",
+      "Stunned"
+    ],
+    "Combat": [
+      "Chase",
+      "Return",
+      "Stunned",
+      "Defeated"
+    ],
+    "Return": [
+      "Patrol",
+      "Combat",
+      "Defeated"
+    ],
+    "Stunned": [
+      "Combat",
+      "Return",
+      "Defeated"
+    ],
+    "Defeated": []
+  },
+  "transitionConditions": {
+    "Patrol->Suspicious": "Player enters sight cone or detection radius",
+    "Suspicious->Investigate": "Last seen position registered and alert timer completes",
+    "Investigate->Chase": "Target still inside vision and line-of-sight valid",
+    "Chase->Combat": "Close enough to attack or line-of-sight is stable",
+    "Combat->Return": "Target escaped or encounter ended",
+    "Combat->Stunned": "Received valid parry or posture break",
+    "Stunned->Combat": "Enemy recovered from stun window",
+    "Return->Patrol": "Route restored or no threat remains"
+  }
+}

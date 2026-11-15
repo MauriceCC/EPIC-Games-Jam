@@ -68,9 +68,9 @@ EAttackType         Light1, Light2, Light3, Heavy, Finisher, Stealth, EnemyBasic
 EHitResult          Hit, Blocked, Parried, Dodged, Ignored
 EStoryPhase         FindJack, OpenEscapeRoute, ProtectJack, DiscoverTruth, FinalChoice, GameEnded
 EStoryEvent         JackFound, EscapeRouteOpened, JackReachedRefuge, EvidenceCollected, TruthRevealed,
-                    InterventorTurnedHostile, SupervisorEncounterStarted, SupervisorDefeated,
+                    InterventorTurnedHostile, SupervisorDefeated,
                     FinalDocumentRegistered, EnemyNeutralized, PlayerDefeated, CheckpointReached,
-                    ContinuityAltered, FutureMessageRead
+                    ContinuityAltered, FutureMessageRead, SupervisorEncounterStarted
 EEvidenceType       NursingRecord, FabricatedReport
 EEndingType         None, OfficialCut, AuthenticRecord
 ESpeaker            Agent, Jack, Supervisor, Director, FutureSelf, Interventor, System
@@ -106,9 +106,11 @@ ST_ChecklistRow     (fila de DT_Checklist, dueño de datos: C)
 
 ### `BPI_Damageable` — implementan: `BP_PlayerCharacter` (A), `BP_GuardBase` (B), dobles de prueba
 
+**Corrección aprobada A-CON-01 (2026-11-14):** usar `ReceiveCombatHit`, nunca el nombre anterior `ReceiveHit`, que colisiona con el evento nativo de Actor mostrado como `Hit` (incluye `MyComp`). La entrada sigue siendo `HitInfo: ST_HitInfo` y la salida se denomina `Result: EHitResult`. Migrar también llamadas e implementaciones de A/B ya creadas en el editor; no modificar el evento nativo de colisión. Ver [guía de migración](../../Scripts/INT/A_CON_01_RECEIVE_COMBAT_HIT.md).
+
 | Función | Firma | Notas |
 |---|---|---|
-| `ReceiveHit` | `(HitInfo: ST_HitInfo) → EHitResult` | El **receptor** decide: esquiva activa → `Dodged`; parry en ventana → `Parried`; bloqueo → `Blocked`. El atacante reacciona al resultado (p. ej. B entra en stagger si recibe `Parried`) |
+| `ReceiveCombatHit` | `(HitInfo: ST_HitInfo) → EHitResult` | El **receptor** decide: esquiva activa → `Dodged`; parry en ventana → `Parried`; bloqueo → `Blocked`. El atacante reacciona al resultado (p. ej. B entra en stagger si recibe `Parried`) |
 | `IsDefeated` | `() → bool` | |
 
 ### `BPI_TimeAffectable` — implementan: `BP_GuardBase` (B), dobles de prueba
@@ -173,9 +175,9 @@ Los dispatchers se **declaran en F0** con esta firma exacta para que otros pueda
 
 ### Flujos acordados (quién hace qué)
 
-**Golpe del jugador:** A traza el arco → por cada actor nuevo con `BPI_Damageable` llama `ReceiveHit` → B aplica salud/postura en el enemigo y devuelve el resultado → A reacciona (rebote si `Blocked`).
+**Golpe del jugador:** A traza el arco → por cada actor nuevo con `BPI_Damageable` llama `ReceiveCombatHit` → B aplica salud/postura en el enemigo y devuelve el resultado → A reacciona (rebote si `Blocked`).
 
-**Golpe enemigo y parry:** B, en su notify de impacto, llama `ReceiveHit` al jugador → A decide `Parried`/`Dodged`/`Hit` → si `Parried`, B aplica stagger y postura al propio enemigo.
+**Golpe enemigo y parry:** B, en su notify de impacto, llama `ReceiveCombatHit` al jugador → A decide `Parried`/`Dodged`/`Hit` → si `Parried`, B aplica stagger y postura al propio enemigo.
 
 **Corte de Fotograma:** A elige objetivo (cercano, visible, `CanBeTemporalCutTarget`) → `ApplyTemporalFreeze(0.8, 10)` → B congela movimiento/animación y restaura → A inicia cooldown con la duración devuelta → `OnTemporalCutCooldown`.
 
@@ -242,5 +244,7 @@ Si alguien necesita otro placeholder, lo pide en "Solicitudes de contrato" de D.
 | Versión | Fecha | Cambio | Pedido por |
 |---|---|---|---|
 | v1.0 | | Contrato inicial (esqueleto F0) | Integrador |
+| v1.0 borrador, reparación de enum | 2026-11-14 | El asset existente omitía SupervisorEncounterStarted. Se añade al final, sin cambiar índices anteriores, por autorización explícita del usuario. El orden de §3 refleja el asset | Usuario / integrador temporal |
 | v1.0 borrador, aclaración documental | 2026-11-14 | Nombre Unscripted, base de rutas y norma de inglés; sin cambios de firmas ni congelación de F0 | Usuario / integrador temporal |
 | v1.0 borrador, unificación de rutas | 2026-11-14 | Raíz propia `Content/Unscripted/` y reserva condicional `Source/Unscripted/`; guías y planes actualizados. No se encontraron assets guardados bajo la raíz provisional que requirieran migración | Usuario / integrador temporal |
+| v1.0 borrador, A-CON-01 | 2026-11-14 | Renombrar operación de daño a `ReceiveCombatHit` para evitar colisión con Actor; entrada HitInfo y salida Result conservadas. Aprobado por el usuario; validación de assets pendiente | Usuario / integrador temporal |
