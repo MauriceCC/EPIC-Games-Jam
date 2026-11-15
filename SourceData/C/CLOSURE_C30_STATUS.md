@@ -2,6 +2,8 @@
 
 Local only on `c/hud-hideout-polish`. Scope: closure plan Block 2.4, after the three Block 2.1 doors. No C-31/C-32 final-choice actors, final screens or shared contracts were changed.
 
+Subsequent C-31/C-32 work is now implemented locally; see `CLOSURE_ENDINGS_STATUS.md`. The statements below record the original C-30 boundary. Its saved inspector now also checks that only the two authorized final stations extend Story.
+
 ## Saved production changes
 
 | C package | Change |

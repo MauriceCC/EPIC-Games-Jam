@@ -22,7 +22,7 @@ try:
   check(name+' starts available for its guarded interaction',not a.get_editor_property('bConsumed'))
  check('Both distinct evidence kinds persist',actors['C_NursingRecord'].get_editor_property('EvidenceType').value==0 and actors['C_FabricatedReport'].get_editor_property('EvidenceType').value==1)
  check('Previous checkpoints, hideout and all three doors remain',all(n in actors for n in ('C_Closure_CP0','C_Closure_CP1','C_Closure_AlleyHideout','C_SideDoor','C_ArchiveGate','C_RecordsDoor')))
- check('No final-choice actor was added',not any('BP_FinalChoice' in a.get_class().get_path_name() for a in actors.values()))
+ check('Only the two authorized C-31 stations extend the C-30 Story content',{a.get_actor_label() for a in actors.values() if 'BP_FinalChoice' in a.get_class().get_path_name()}=={'C_OfficialRecord','C_AuthenticRecord'})
  manager=h.asset('Narrative/BP_ObjectiveManager');cdo=unreal.get_default_object(manager.generated_class())
  check('Revelation and message completion start false',all(not cdo.get_editor_property(n) for n in ('bFutureMessageQueued','bFutureMessageRead','bTruthRevelationStarted','bTruthRevelationComplete','bTruthNoticeReported')))
  write_graphs=[g.get_name() for g in unreal.BlueprintEditorLibrary.list_graphs(manager) for n in unreal.BlueprintGraphEditor.get_graph_editor(g).list_all_nodes() if n.get_class().get_name()=='K2Node_VariableSet' and 'CurrentPhase' in {str(p.get_pin_name()) for p in n.list_all_pins()}]

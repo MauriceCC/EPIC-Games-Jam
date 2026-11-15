@@ -79,6 +79,8 @@ Que el tema *Director's Cut* **se juegue**: las órdenes aparecen, se reescriben
 
 Textos revisados (ortografía), legibilidad a 1080p, ritmo de diálogos, comprobar que nunca se puede quedar bloqueada la historia.
 
+**Local closure update (Daniel / C):** C-31/C-32 are implemented on `c/hud-hideout-polish`: two guarded record stations, explicit confirmation, one immutable registration and the two cinematic ending presentations. Native real-player E tests cover both outcomes. A-16 snapshot-history clearing and the natural B escort/boss event flow still require owner integration. See [the ending handoff](../../SourceData/C/CLOSURE_ENDINGS_STATUS.md). No additional team integration or publication is implied.
+
 ## 5. Phase transition table (C-02 preparation)
 
 Status: C-01/C-02 Blueprint state progression implemented and locally validated; full F1 remains incomplete.
