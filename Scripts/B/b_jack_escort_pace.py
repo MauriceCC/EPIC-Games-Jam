@@ -1,4 +1,4 @@
-"""Use Jack's run speed only while the escort detects a nearby guard."""
+"""Match Jack's escort sprint to the player's current movement speed."""
 import csv
 from pathlib import Path
 import sys
@@ -23,18 +23,26 @@ if pace is None:
 else:
     h.clear_body(pace)
 target = h.get(pace, 'CharacterMovement')
-speed = h.call(pace, '/Script/Engine.KismetMathLibrary:SelectFloat',
-               A=run, B=walk, bPickA=h.param(pace, 'InDanger')).find_result_pin()
-h.setvar(pace, pace.find_graph_entry_pin(), 'MaxWalkSpeed', speed, target=target,
-         cls=u.CharacterMovementComponent.static_class())
+movement_class = u.CharacterMovementComponent.static_class()
+in_danger, safe = h.branch(pace, pace.find_graph_entry_pin(), h.param(pace, 'InDanger'))
+player = h.call(pace, '/Script/Engine.GameplayStatics:GetPlayerCharacter').find_result_pin()
+has_player, missing = h.branch(pace, in_danger, h.is_valid(pace, player))
+player_movement = h.call(pace, '/Script/Engine.Pawn:GetMovementComponent', target=player).find_result_pin()
+player_speed = h.call(pace, '/Script/Engine.MovementComponent:GetMaxSpeed', target=player_movement).find_result_pin()
+sprint = h.math(pace, 'Multiply_DoubleDouble', player_speed, 0.97)
+h.setvar(pace, has_player, 'MaxWalkSpeed', sprint, target=target, cls=movement_class)
+normal = h.setvar(pace, safe, 'MaxWalkSpeed', walk, target=target, cls=movement_class)
+h.connect(missing, normal.get_owning_node().find_execute_pin())
 h.layout(jack, {name})
 assert u.BlueprintEditorLibrary.compile_blueprint(jack)
 
 
-def insert_pace(graph, source, in_danger):
+def insert_pace(graph, source, in_danger=None):
     successor, = source.list_connected_pins()
     if str(successor.get_owning_node().get_node_title()) == name:
         return
+    if in_danger is None:
+        in_danger = h.is_valid(graph, h.get(graph, 'B_ClosestEscortThreat'))
     source.break_pin_links()
     change = h.invoke(graph, source, jack, name, InDanger=in_danger)
     h.connect(change.find_then_pin(), successor)
@@ -42,12 +50,11 @@ def insert_pace(graph, source, in_danger):
 
 movement = h.edit(jack, 'B_UpdateEscortMovement')
 scan = next(node for node in movement.list_all_nodes() if str(node.get_node_title()) == 'B_FindEscortThreat')
-threat = h.get(movement, 'B_ClosestEscortThreat')
-insert_pace(movement, scan.find_then_pin(), h.is_valid(movement, threat))
+insert_pace(movement, scan.find_then_pin())
 
 events = h.edit(jack, 'EventGraph')
 arrived = next(node for node in events.list_all_nodes() if node.get_name() == 'K2Node_VariableSet_2')
 assert 'bReachedRefuge' in str(arrived.get_node_title())
 insert_pace(events, arrived.find_then_pin(), False)
 h.save(jack)
-u.log(f'B_JACK_ESCORT_PACE_SAVED walk={walk:g} run={run:g}')
+u.log(f'B_JACK_ESCORT_PACE_SAVED walk={walk:g}, danger pace=97% of player max speed')
