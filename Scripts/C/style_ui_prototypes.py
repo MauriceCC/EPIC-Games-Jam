@@ -13,7 +13,7 @@ from toolset_registry.helpers import compile_blueprint
 
 ROOT = "/Game/Unscripted/UI/Test/"
 NAMES = ("WBP_DialoguePrototype_C", "WBP_ChecklistPrototype_C", "EUW_NarrativeTestLauncher_C")
-REPORT = Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())) / "Content/Unscripted/Narrative/Test/ui_style_validation.json"
+REPORT = Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())).parent / "Scripts/C/ui_style_validation.json"
 
 def color(code):
     code = code.lstrip("#")

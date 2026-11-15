@@ -7,7 +7,7 @@ from pathlib import Path
 from toolset_registry.helpers import compile_blueprint
 ROOT = "/Game/Unscripted/UI/Test/"
 project = Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir()))
-report_path = project / "Content/Unscripted/Narrative/Test/ui_preview_validation.json"
+report_path = project.parent / "Scripts/C/ui_preview_validation.json"
 source = project.parent / "SourceData/C"
 report = {"scope": ROOT, "checks": [], "assets": [], "passed": False}
 def check(name, condition):
