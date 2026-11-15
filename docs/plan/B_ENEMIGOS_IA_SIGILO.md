@@ -313,6 +313,8 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 ## 9. Estado
 
+**Git LFS (2026-11-14):** se liberó el bloqueo de `L_Whitechapel.umap`. La consulta posterior a `origin` confirmó que el repositorio no tenía bloqueos activos. D/Integración puede volver a bloquear el mapa persistente cuando vaya a editarlo.
+
 ### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
 
 La prueba descrita abajo procede de la revisión de B; ahora el checkout revisado es `main`. Se conservan sus resultados como pruebas reportadas, pendientes de repetición después de los merges. Existen CSV, scripts y assets; no se localizó `DT_EnemyBalance.uasset`, por lo que B-13 no se cierra solo con valores aplicados a los Blueprints.
