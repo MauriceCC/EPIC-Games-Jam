@@ -1,0 +1,11783 @@
+{
+ "tag": "MP240",
+ "offset_cm": [
+  0.0,
+  12000.0
+ ],
+ "count": 407,
+ "items": [
+  {
+   "label": "MP_Ground",
+   "folder": "MP240/Ground",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Ground",
+   "xform": {
+    "location": {
+     "x": 9000.0,
+     "y": 24000.0,
+     "z": -10.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 180,
+     "y": 240,
+     "z": 0.2
+    }
+   },
+   "kind": "ground",
+   "rect": [
+    0,
+    0,
+    240,
+    180
+   ]
+  },
+  {
+   "label": "MP_Floor_SAV",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 800.0,
+     "y": 22400.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 40,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    84,
+    2,
+    124,
+    14
+   ]
+  },
+  {
+   "label": "MP_Floor_Z01",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 1200.0,
+     "y": 22400.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 24,
+     "y": 10,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    99,
+    0,
+    109,
+    24
+   ]
+  },
+  {
+   "label": "MP_Floor_PS1",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 21700.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 4,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    95,
+    14,
+    99,
+    24
+   ]
+  },
+  {
+   "label": "MP_Floor_PL",
+   "folder": "MP240/Floors/plaza",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 4800.0,
+     "y": 19500.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 48,
+     "y": 68,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    41,
+    24,
+    109,
+    72
+   ]
+  },
+  {
+   "label": "MP_Floor_STE",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 4800.0,
+     "y": 24450.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 31,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    109,
+    44,
+    140,
+    52
+   ]
+  },
+  {
+   "label": "MP_Floor_PN",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 8900.0,
+     "y": 20800.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 34,
+     "y": 8,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    84,
+    72,
+    92,
+    106
+   ]
+  },
+  {
+   "label": "MP_Floor_ALA1",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 9425.0,
+     "y": 23100.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 38,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    92,
+    92,
+    130,
+    96.5
+   ]
+  },
+  {
+   "label": "MP_Floor_PTCP",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 9700.0,
+     "y": 25600.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 12,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    130,
+    92,
+    142,
+    102
+   ]
+  },
+  {
+   "label": "MP_Floor_ARCP",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 10700.0,
+     "y": 25600.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 3.5,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    134.25,
+    102,
+    137.75,
+    112
+   ]
+  },
+  {
+   "label": "MP_Floor_ALA3",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 10025.0,
+     "y": 27400.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 24,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    142,
+    98,
+    166,
+    102.5
+   ]
+  },
+  {
+   "label": "MP_Floor_STCP",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 11500.0,
+     "y": 26400.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 64,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    112,
+    112,
+    176,
+    118
+   ]
+  },
+  {
+   "label": "MP_Floor_FC",
+   "folder": "MP240/Floors/arena-court",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 12150.0,
+     "y": 21400.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 31,
+     "y": 36,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    76,
+    106,
+    112,
+    137
+   ]
+  },
+  {
+   "label": "MP_Floor_AC",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 13500.0,
+     "y": 24100.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 22,
+     "y": 18,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    112,
+    124,
+    130,
+    146
+   ]
+  },
+  {
+   "label": "MP_Floor_PAS",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 4900.0,
+     "y": 27800.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 18,
+     "y": 4,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    156,
+    40,
+    160,
+    58
+   ]
+  },
+  {
+   "label": "MP_Floor_PTW",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 6450.0,
+     "y": 27300.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 14,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    146,
+    58,
+    160,
+    71
+   ]
+  },
+  {
+   "label": "MP_Floor_STX",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 6350.0,
+     "y": 28950.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 19,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    160,
+    60,
+    179,
+    67
+   ]
+  },
+  {
+   "label": "MP_Floor_ESC1",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 7200.0,
+     "y": 29550.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 24,
+     "y": 7,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    172,
+    60,
+    179,
+    84
+   ]
+  },
+  {
+   "label": "MP_Floor_NK1",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 8750.0,
+     "y": 29625.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 4.5,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    174,
+    84,
+    178.5,
+    91
+   ]
+  },
+  {
+   "label": "MP_Floor_ESCW",
+   "folder": "MP240/Floors/arena-court",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 9850.0,
+     "y": 29450.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 15,
+     "y": 17,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    166,
+    91,
+    183,
+    106
+   ]
+  },
+  {
+   "label": "MP_Floor_NK2",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 10950.0,
+     "y": 29825.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 4.5,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    176,
+    106,
+    180.5,
+    113
+   ]
+  },
+  {
+   "label": "MP_Floor_ESC2",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 12600.0,
+     "y": 29950.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 26,
+     "y": 7,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    176,
+    113,
+    183,
+    139
+   ]
+  },
+  {
+   "label": "MP_Floor_NI1",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 7500.0,
+     "y": 30100.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 4,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    179,
+    72,
+    183,
+    78
+   ]
+  },
+  {
+   "label": "MP_Floor_NI2",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 30500.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 4,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    183,
+    118,
+    187,
+    124
+   ]
+  },
+  {
+   "label": "MP_Floor_SV1",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 8550.0,
+     "y": 30075.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 3.5,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    179,
+    80,
+    182.5,
+    91
+   ]
+  },
+  {
+   "label": "MP_Floor_TR",
+   "folder": "MP240/Floors/street",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 14200.0,
+     "y": 31300.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 34,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    176,
+    139,
+    210,
+    145
+   ]
+  },
+  {
+   "label": "MP_Floor_REFP",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 15400.0,
+     "y": 33200.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 17.0,
+     "y": 20,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    202,
+    145.5,
+    222,
+    162.5
+   ]
+  },
+  {
+   "label": "MP_Floor_REFY",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 14775.0,
+     "y": 34850.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 13,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    222,
+    145.5,
+    235,
+    150
+   ]
+  },
+  {
+   "label": "MP_Floor_STEV",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 10450.0,
+     "y": 34625.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 81,
+     "y": 4.5,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    224,
+    64,
+    228.5,
+    145
+   ]
+  },
+  {
+   "label": "MP_Floor_ALB1",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 6600.0,
+     "y": 32150.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4,
+     "y": 45,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    179,
+    64,
+    224,
+    68
+   ]
+  },
+  {
+   "label": "MP_Floor_ALB2",
+   "folder": "MP240/Floors/alley",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 9875.0,
+     "y": 31750.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 29,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    183,
+    97,
+    212,
+    100.5
+   ]
+  },
+  {
+   "label": "MP_Floor_PTRP",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 10100.0,
+     "y": 33800.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 12,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    212,
+    96,
+    224,
+    106
+   ]
+  },
+  {
+   "label": "MP_Floor_INFP",
+   "folder": "MP240/Floors/patio",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Flag",
+   "xform": {
+    "location": {
+     "x": 13750.0,
+     "y": 33850.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 11,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    213,
+    133,
+    224,
+    142
+   ]
+  },
+  {
+   "label": "MP_Floor_SW",
+   "folder": "MP240/Floors/scenic",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Cobble",
+   "xform": {
+    "location": {
+     "x": 5700.0,
+     "y": 14600.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 86,
+     "y": 6,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    23,
+    14,
+    29,
+    100
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4020.0000000000005,
+     "y": 26800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 16,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    140,
+    40,
+    156,
+    40.4
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4220.0,
+     "y": 26020.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.6,
+     "y": 0.4,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    140,
+    40.4,
+    140.4,
+    44
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4420.0,
+     "y": 27580.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7.6,
+     "y": 0.4,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    155.6,
+    40.4,
+    156,
+    48
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5205.0,
+     "y": 26020.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.1,
+     "y": 0.4,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    140,
+    46.5,
+    140.4,
+    57.6
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5405.0,
+     "y": 27580.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7.1,
+     "y": 0.4,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    155.6,
+    50.5,
+    156,
+    57.6
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S05",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5780.0,
+     "y": 26390.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 7.8,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    140,
+    57.6,
+    147.8,
+    58
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_S06",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5780.0,
+     "y": 27340.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 5.2,
+     "z": 6.5
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    150.8,
+    57.6,
+    156,
+    58
+   ]
+  },
+  {
+   "label": "MP_SP-TALLER_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 4900.0,
+     "y": 26800.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 17.2,
+     "y": 15.2,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    140.4,
+    40.4,
+    155.6,
+    57.6
+   ]
+  },
+  {
+   "label": "MP_Taller_Lintel_W",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4525.0,
+     "y": 26020.0,
+     "z": 455.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.5,
+     "y": 0.4,
+     "z": 3.9
+    }
+   },
+   "kind": "lintel",
+   "rect": null
+  },
+  {
+   "label": "MP_Taller_Lintel_N",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5780.0,
+     "y": 26930.0,
+     "z": 475.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 3.0,
+     "z": 3.5
+    }
+   },
+   "kind": "lintel",
+   "rect": null
+  },
+  {
+   "label": "MP_Taller_Lintel_E",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4925.0,
+     "y": 27580.0,
+     "z": 455.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.5,
+     "y": 0.4,
+     "z": 3.9
+    }
+   },
+   "kind": "lintel",
+   "rect": null
+  },
+  {
+   "label": "MP_SP-ANEXO",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 4500.0,
+     "y": 28400.0,
+     "z": 187.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 8,
+     "z": 3.75
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    40,
+    168,
+    50
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15019.999999999998,
+     "y": 34850.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    222,
+    150,
+    235,
+    150.4
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15219.999999999998,
+     "y": 34220.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.6,
+     "y": 0.4,
+     "z": 8.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    222,
+    150.4,
+    222.4,
+    154
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15600.0,
+     "y": 35480.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.2,
+     "y": 0.4,
+     "z": 8.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    234.6,
+    150.4,
+    235,
+    161.6
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15910.0,
+     "y": 34220.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.0,
+     "y": 0.4,
+     "z": 8.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    222,
+    156.6,
+    222.4,
+    161.6
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 16180.000000000002,
+     "y": 34850.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    222,
+    161.6,
+    235,
+    162
+   ]
+  },
+  {
+   "label": "MP_SP-REFUGIO_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 15600.0,
+     "y": 34850.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.2,
+     "y": 12.2,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    222.4,
+    150.4,
+    234.6,
+    161.6
+   ]
+  },
+  {
+   "label": "MP_SP-COBERTIZO",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 14950.0,
+     "y": 31950.0,
+     "z": 187.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 5,
+     "z": 3.75
+    }
+   },
+   "kind": "building",
+   "rect": [
+    197,
+    146,
+    202,
+    153
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 11550.0,
+     "y": 33500.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5,
+     "y": 18,
+     "z": 10.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    113,
+    224,
+    118
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 12250.0,
+     "y": 32650.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 1,
+     "z": 10.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    118,
+    207,
+    127
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 11900.0,
+     "y": 33950.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2,
+     "y": 9,
+     "z": 10.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    215,
+    118,
+    224,
+    120
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 12480.0,
+     "y": 33950.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.4,
+     "y": 9,
+     "z": 10.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    215,
+    122.6,
+    224,
+    127
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 13000.0,
+     "y": 33500.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 18,
+     "z": 10.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    127,
+    224,
+    133
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12250.0,
+     "y": 33100.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 8,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    207,
+    118,
+    215,
+    127
+   ]
+  },
+  {
+   "label": "MP_SP-ENFERMERIA_Floor1",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12130.0,
+     "y": 33930.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.6,
+     "y": 8.6,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    215,
+    120,
+    223.6,
+    122.6
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8100.0,
+     "y": 33300.0,
+     "z": 437.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 14,
+     "z": 8.75
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    78,
+    220,
+    84
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8900.0,
+     "y": 32700.0,
+     "z": 437.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 2,
+     "z": 8.75
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    84,
+    208,
+    94
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8900.0,
+     "y": 33850.0,
+     "z": 437.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 3,
+     "z": 8.75
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    217,
+    84,
+    220,
+    94
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9500.0,
+     "y": 32950.0,
+     "z": 437.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2,
+     "y": 7,
+     "z": 8.75
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    206,
+    94,
+    213,
+    96
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9500.0,
+     "y": 33780.0,
+     "z": 437.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2,
+     "y": 4.4,
+     "z": 8.75
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    215.6,
+    94,
+    220,
+    96
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 8900.0,
+     "y": 33250.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 9,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    208,
+    84,
+    217,
+    94
+   ]
+  },
+  {
+   "label": "MP_SP-INFORME_Floor1",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 9480.0,
+     "y": 33430.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.6,
+     "y": 2.6,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    213,
+    94,
+    215.6,
+    95.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14619.999999999998,
+     "y": 19300.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 34,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    56,
+    146,
+    90,
+    146.4
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14869.999999999998,
+     "y": 19020.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.6,
+     "y": 28.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    56,
+    146.4,
+    84.4,
+    151
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14750.0,
+     "y": 21380.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.8,
+     "y": 0.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    93.6,
+    146.6,
+    94,
+    148.4
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15950.0,
+     "y": 18050.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 17,
+     "y": 9,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    56,
+    151,
+    65,
+    168
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15130.000000000002,
+     "y": 21120.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.6,
+     "y": 4.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    89,
+    151,
+    93.4,
+    151.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S05",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15980.000000000002,
+     "y": 21150.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 16.4,
+     "y": 5,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    89,
+    151.6,
+    94,
+    168
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_S06",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 16900.0,
+     "y": 19500.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2,
+     "y": 38,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    56,
+    168,
+    94,
+    170
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 14869.999999999998,
+     "y": 20900.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.6,
+     "y": 9.2,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    84.4,
+    146.4,
+    93.6,
+    151
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-CENTRAL_Floor1",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 15950.0,
+     "y": 19700.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 17,
+     "y": 24,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    65,
+    151,
+    89,
+    168
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-O",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15700.0,
+     "y": 16650.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 22,
+     "y": 19,
+     "z": 14.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    37,
+    146,
+    56,
+    168
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14619.999999999998,
+     "y": 22675.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 13.5,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    100,
+    146,
+    113.5,
+    146.4
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14619.999999999998,
+     "y": 23725.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 1.5,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    116.5,
+    146,
+    118,
+    146.4
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14740.0,
+     "y": 22020.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.0,
+     "y": 0.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    100,
+    146.4,
+    100.4,
+    148.4
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14919.999999999998,
+     "y": 23780.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.6,
+     "y": 0.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    117.6,
+    146.4,
+    118,
+    152
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15180.000000000002,
+     "y": 22020.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 0.4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    100,
+    151.6,
+    100.4,
+    152
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_S05",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15900.0,
+     "y": 22900.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 14,
+     "y": 18,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    100,
+    152,
+    118,
+    166
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-ALA-E_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 14919.999999999998,
+     "y": 22900.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.6,
+     "y": 17.2,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    100.4,
+    146.4,
+    117.6,
+    152
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S00",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 13730.000000000002,
+     "y": 20600.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.6,
+     "y": 4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    84,
+    137,
+    88,
+    137.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S01",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 13730.000000000002,
+     "y": 21800.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.6,
+     "y": 4,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    96,
+    137,
+    100,
+    137.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S02",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14160.0,
+     "y": 20500.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8.0,
+     "y": 2,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    84,
+    137.6,
+    86,
+    145.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S03",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14160.0,
+     "y": 21900.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8.0,
+     "y": 2,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    98,
+    137.6,
+    100,
+    145.6
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S04",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14580.000000000002,
+     "y": 20700.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 6,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    84,
+    145.6,
+    90,
+    146
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_S05",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14580.000000000002,
+     "y": 21725.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 5.5,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    94.5,
+    145.6,
+    100,
+    146
+   ]
+  },
+  {
+   "label": "MP_SP-ARCH-PORTICO_Floor0",
+   "folder": "MP240/Buildings/HITO",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 14160.0,
+     "y": 21200.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8.0,
+     "y": 12,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    86,
+    137.6,
+    98,
+    145.6
+   ]
+  },
+  {
+   "label": "MP_CX-ARCH-GALERIA_S00",
+   "folder": "MP240/Buildings/CONECTOR",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14819.999999999998,
+     "y": 21700.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 6,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    94,
+    148,
+    100,
+    148.4
+   ]
+  },
+  {
+   "label": "MP_CX-ARCH-GALERIA_S01",
+   "folder": "MP240/Buildings/CONECTOR",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 15180.000000000002,
+     "y": 21700.0,
+     "z": 700.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.4,
+     "y": 6,
+     "z": 14.0
+    }
+   },
+   "kind": "shell",
+   "rect": [
+    94,
+    151.6,
+    100,
+    152
+   ]
+  },
+  {
+   "label": "MP_CX-ARCH-GALERIA_Floor0",
+   "folder": "MP240/Buildings/CONECTOR",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 15000.0,
+     "y": 21700.0,
+     "z": 1.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.2,
+     "y": 7.2,
+     "z": 0.02
+    }
+   },
+   "kind": "floor",
+   "rect": [
+    93.4,
+    148.4,
+    100.6,
+    151.6
+   ]
+  },
+  {
+   "label": "MP_MA-01",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 2700.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    24,
+    41,
+    30
+   ]
+  },
+  {
+   "label": "MP_MA-02",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3300.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    30,
+    41,
+    36
+   ]
+  },
+  {
+   "label": "MP_MA-03",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3900.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    36,
+    41,
+    42
+   ]
+  },
+  {
+   "label": "MP_MA-04",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4500.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    42,
+    41,
+    48
+   ]
+  },
+  {
+   "label": "MP_MA-05",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5100.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    48,
+    41,
+    54
+   ]
+  },
+  {
+   "label": "MP_MA-06",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5700.0,
+     "y": 15550.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    30,
+    54,
+    41,
+    60
+   ]
+  },
+  {
+   "label": "MP_MA-07",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6400.0,
+     "y": 15500.0,
+     "z": 425.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 12,
+     "z": 8.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    29,
+    60,
+    41,
+    68
+   ]
+  },
+  {
+   "label": "MP_MA-08",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7200.0,
+     "y": 15500.0,
+     "z": 350.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 12,
+     "z": 7.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    29,
+    68,
+    41,
+    76
+   ]
+  },
+  {
+   "label": "MP_MA-N01",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9000.0,
+     "y": 19800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    72,
+    87,
+    84,
+    93
+   ]
+  },
+  {
+   "label": "MP_MA-N02",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9600.0,
+     "y": 19800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    72,
+    93,
+    84,
+    99
+   ]
+  },
+  {
+   "label": "MP_MA-N03",
+   "folder": "MP240/Buildings/M-A",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10200.0,
+     "y": 19800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    72,
+    99,
+    84,
+    105
+   ]
+  },
+  {
+   "label": "MP_MB-01",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7950.0,
+     "y": 16700.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 15,
+     "y": 12,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    41,
+    72,
+    53,
+    87
+   ]
+  },
+  {
+   "label": "MP_MB-02",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 17750.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 9,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    53,
+    72,
+    62,
+    85
+   ]
+  },
+  {
+   "label": "MP_MB-R01",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 18600.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 8,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    62,
+    72,
+    70,
+    85
+   ]
+  },
+  {
+   "label": "MP_MB-R02",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 19400.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 8,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    70,
+    72,
+    78,
+    85
+   ]
+  },
+  {
+   "label": "MP_MB-05",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 20100.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    78,
+    72,
+    84,
+    85
+   ]
+  },
+  {
+   "label": "MP_MB-E01",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 21600.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 8,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    92,
+    72,
+    100,
+    85
+   ]
+  },
+  {
+   "label": "MP_MB-E02",
+   "folder": "MP240/Buildings/M-B",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7850.0,
+     "y": 22400.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 8,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    100,
+    72,
+    108,
+    85
+   ]
+  },
+  {
+   "label": "MP_MC-S01",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 16400.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    41,
+    14,
+    47,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S02",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 17000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    47,
+    14,
+    53,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S03",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 17600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    53,
+    14,
+    59,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S04",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 18200.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    59,
+    14,
+    65,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S05",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 18800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    65,
+    14,
+    71,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S06",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 19400.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    71,
+    14,
+    77,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S07",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 20000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    77,
+    14,
+    83,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S08",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 20600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    83,
+    14,
+    89,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-S09",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 21200.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    89,
+    14,
+    95,
+    24
+   ]
+  },
+  {
+   "label": "MP_MC-E01",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 1700.0,
+     "y": 23400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    14,
+    119,
+    20
+   ]
+  },
+  {
+   "label": "MP_MC-E02",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 2300.0,
+     "y": 23400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    20,
+    119,
+    26
+   ]
+  },
+  {
+   "label": "MP_MC-E03",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 2900.0,
+     "y": 23400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    26,
+    119,
+    32
+   ]
+  },
+  {
+   "label": "MP_MC-E04",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3500.0,
+     "y": 23400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    32,
+    119,
+    38
+   ]
+  },
+  {
+   "label": "MP_MC-E05",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4100.0,
+     "y": 23400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    38,
+    119,
+    44
+   ]
+  },
+  {
+   "label": "MP_MC-P",
+   "folder": "MP240/Buildings/M-C",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6800.0,
+     "y": 23500.0,
+     "z": 550.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 12,
+     "z": 11.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    64,
+    121,
+    72
+   ]
+  },
+  {
+   "label": "MP_MD-S01",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3800.0,
+     "y": 24500.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    122,
+    32,
+    128,
+    44
+   ]
+  },
+  {
+   "label": "MP_MD-S02",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3800.0,
+     "y": 25100.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    128,
+    32,
+    134,
+    44
+   ]
+  },
+  {
+   "label": "MP_MD-S03",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3800.0,
+     "y": 25700.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    134,
+    32,
+    140,
+    44
+   ]
+  },
+  {
+   "label": "MP_MD-N01",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 23200.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    109,
+    52,
+    115,
+    64
+   ]
+  },
+  {
+   "label": "MP_MD-N02",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 23800.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    115,
+    52,
+    121,
+    64
+   ]
+  },
+  {
+   "label": "MP_MD-N03",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 24400.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    121,
+    52,
+    127,
+    64
+   ]
+  },
+  {
+   "label": "MP_MD-N04",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 25000.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    127,
+    52,
+    133,
+    64
+   ]
+  },
+  {
+   "label": "MP_MD-N05",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 25600.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    133,
+    52,
+    139,
+    64
+   ]
+  },
+  {
+   "label": "MP_MD-W",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 2150.0,
+     "y": 25150.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 15,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    124,
+    16,
+    139,
+    27
+   ]
+  },
+  {
+   "label": "MP_MD-T",
+   "folder": "MP240/Buildings/M-D",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3400.0,
+     "y": 26300.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    140,
+    28,
+    146,
+    40
+   ]
+  },
+  {
+   "label": "MP_ME-S01",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 23075.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    108,
+    81,
+    113.5,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-S02",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 23625.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    113.5,
+    81,
+    119.0,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-S03",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 24175.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    119.0,
+    81,
+    124.5,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-S04",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 24725.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    124.5,
+    81,
+    130.0,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-S05",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 25275.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130.0,
+    81,
+    135.5,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-S06",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8650.0,
+     "y": 25825.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11,
+     "y": 5.5,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    135.5,
+    81,
+    141.0,
+    92
+   ]
+  },
+  {
+   "label": "MP_ME-N01",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10100.0,
+     "y": 21500.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.0,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    92,
+    96.5,
+    98,
+    105.5
+   ]
+  },
+  {
+   "label": "MP_ME-N02",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10100.0,
+     "y": 22100.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.0,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    98,
+    96.5,
+    104,
+    105.5
+   ]
+  },
+  {
+   "label": "MP_ME-N03",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10100.0,
+     "y": 22700.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.0,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    104,
+    96.5,
+    110,
+    105.5
+   ]
+  },
+  {
+   "label": "MP_ME-M01",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10200.0,
+     "y": 23475.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.0,
+     "y": 5.5,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    112,
+    96.5,
+    117.5,
+    107.5
+   ]
+  },
+  {
+   "label": "MP_ME-M02",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10200.0,
+     "y": 24025.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.0,
+     "y": 5.5,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    117.5,
+    96.5,
+    123.0,
+    107.5
+   ]
+  },
+  {
+   "label": "MP_ME-M03",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10200.0,
+     "y": 24575.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 11.0,
+     "y": 5.5,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    123.0,
+    96.5,
+    128.5,
+    107.5
+   ]
+  },
+  {
+   "label": "MP_ME-A1",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 10700.0,
+     "y": 25212.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 4.25,
+     "z": 3.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130,
+    102,
+    134.25,
+    112
+   ]
+  },
+  {
+   "label": "MP_ME-A01",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10725.0,
+     "y": 26075.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.5,
+     "y": 6.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    137.75,
+    102.5,
+    143.75,
+    112
+   ]
+  },
+  {
+   "label": "MP_ME-A02",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10725.0,
+     "y": 26675.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.5,
+     "y": 6.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    143.75,
+    102.5,
+    149.75,
+    112
+   ]
+  },
+  {
+   "label": "MP_ME-A03",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10725.0,
+     "y": 27275.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.5,
+     "y": 6.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    149.75,
+    102.5,
+    155.75,
+    112
+   ]
+  },
+  {
+   "label": "MP_ME-A04",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10725.0,
+     "y": 27875.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.5,
+     "y": 6.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    155.75,
+    102.5,
+    161.75,
+    112
+   ]
+  },
+  {
+   "label": "MP_ME-B01",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9300.0,
+     "y": 26500.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    142,
+    88,
+    148,
+    98
+   ]
+  },
+  {
+   "label": "MP_ME-B02",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9300.0,
+     "y": 27100.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    148,
+    88,
+    154,
+    98
+   ]
+  },
+  {
+   "label": "MP_ME-B03",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9300.0,
+     "y": 27700.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    154,
+    88,
+    160,
+    98
+   ]
+  },
+  {
+   "label": "MP_ME-C",
+   "folder": "MP240/Buildings/M-E",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9450.0,
+     "y": 28300.0,
+     "z": 350.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 6,
+     "z": 7.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    91,
+    166,
+    98
+   ]
+  },
+  {
+   "label": "MP_MF-W01",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7000.0,
+     "y": 28600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    67,
+    172,
+    73
+   ]
+  },
+  {
+   "label": "MP_MF-W02",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7600.0,
+     "y": 28600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    73,
+    172,
+    79
+   ]
+  },
+  {
+   "label": "MP_MF-W03",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8200.0,
+     "y": 28600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    79,
+    172,
+    85
+   ]
+  },
+  {
+   "label": "MP_MF-W04",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8800.0,
+     "y": 28600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    85,
+    172,
+    91
+   ]
+  },
+  {
+   "label": "MP_MF-X01",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5500.0,
+     "y": 28300.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    50,
+    166,
+    60
+   ]
+  },
+  {
+   "label": "MP_MF-X02",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5500.0,
+     "y": 28900.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    166,
+    50,
+    172,
+    60
+   ]
+  },
+  {
+   "label": "MP_MF-X03",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5500.0,
+     "y": 29500.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    172,
+    50,
+    178,
+    60
+   ]
+  },
+  {
+   "label": "MP_MF-E01",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7100.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    68,
+    195,
+    74
+   ]
+  },
+  {
+   "label": "MP_MF-E02",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7700.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    74,
+    195,
+    80
+   ]
+  },
+  {
+   "label": "MP_MF-E03",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8300.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    80,
+    195,
+    86
+   ]
+  },
+  {
+   "label": "MP_MF-E04",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8900.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    86,
+    195,
+    92
+   ]
+  },
+  {
+   "label": "MP_MF-D1",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9050.0,
+     "y": 32000.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 10,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    195,
+    84,
+    205,
+    97
+   ]
+  },
+  {
+   "label": "MP_MF-N01",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10550.0,
+     "y": 30600.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10.0,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    100.5,
+    189,
+    110.5
+   ]
+  },
+  {
+   "label": "MP_MF-N02",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10550.0,
+     "y": 31200.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10.0,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    189,
+    100.5,
+    195,
+    110.5
+   ]
+  },
+  {
+   "label": "MP_MF-D2",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10550.0,
+     "y": 32550.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10.0,
+     "y": 13,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    199,
+    100.5,
+    212,
+    110.5
+   ]
+  },
+  {
+   "label": "MP_MF-R01",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12700.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    124,
+    195,
+    130
+   ]
+  },
+  {
+   "label": "MP_MF-R02",
+   "folder": "MP240/Buildings/M-F",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 13300.0,
+     "y": 30900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    130,
+    195,
+    136
+   ]
+  },
+  {
+   "label": "MP_MG-S01",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7300.0,
+     "y": 32900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    206,
+    68,
+    212,
+    78
+   ]
+  },
+  {
+   "label": "MP_MG-S02",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7300.0,
+     "y": 33500.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    212,
+    68,
+    218,
+    78
+   ]
+  },
+  {
+   "label": "MP_MG-S03",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7300.0,
+     "y": 34100.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    218,
+    68,
+    224,
+    78
+   ]
+  },
+  {
+   "label": "MP_MG-B01",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 30200.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    179,
+    52,
+    185,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B02",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 30800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    185,
+    52,
+    191,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B03",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 31400.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    191,
+    52,
+    197,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B04",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 32000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    197,
+    52,
+    203,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B05",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 32600.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    203,
+    52,
+    209,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B06",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 33200.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    209,
+    52,
+    215,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-B07",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 33800.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    215,
+    52,
+    221,
+    64
+   ]
+  },
+  {
+   "label": "MP_MG-E01",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 6700.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    64,
+    238.5,
+    70
+   ]
+  },
+  {
+   "label": "MP_MG-E02",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7300.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    70,
+    238.5,
+    76
+   ]
+  },
+  {
+   "label": "MP_MG-E03",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 7900.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    76,
+    238.5,
+    82
+   ]
+  },
+  {
+   "label": "MP_MG-E04",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 8500.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    82,
+    238.5,
+    88
+   ]
+  },
+  {
+   "label": "MP_MG-E05",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 9100.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    88,
+    238.5,
+    94
+   ]
+  },
+  {
+   "label": "MP_MG-F01",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10050.0,
+     "y": 35350.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 10.0,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    94,
+    238.5,
+    107
+   ]
+  },
+  {
+   "label": "MP_MG-F02",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11350.0,
+     "y": 35350.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 10.0,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    107,
+    238.5,
+    120
+   ]
+  },
+  {
+   "label": "MP_MG-F03",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 12600.0,
+     "y": 35350.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 10.0,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    120,
+    238.5,
+    132
+   ]
+  },
+  {
+   "label": "MP_MG-G01",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 13500.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    132,
+    238.5,
+    138
+   ]
+  },
+  {
+   "label": "MP_MG-G02",
+   "folder": "MP240/Buildings/M-G",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 14100.0,
+     "y": 35350.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 10.0,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    228.5,
+    138,
+    238.5,
+    144
+   ]
+  },
+  {
+   "label": "MP_MH-01",
+   "folder": "MP240/Buildings/M-H",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15200.0,
+     "y": 29950.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 7,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    176,
+    146,
+    183,
+    158
+   ]
+  },
+  {
+   "label": "MP_MH-02",
+   "folder": "MP240/Buildings/M-H",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15200.0,
+     "y": 30650.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 7,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    183,
+    146,
+    190,
+    158
+   ]
+  },
+  {
+   "label": "MP_MH-03",
+   "folder": "MP240/Buildings/M-H",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15200.0,
+     "y": 31350.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 7,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    190,
+    146,
+    197,
+    158
+   ]
+  },
+  {
+   "label": "MP_MH-04",
+   "folder": "MP240/Buildings/M-H",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 13300.0,
+     "y": 31950.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 7,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    196,
+    127,
+    203,
+    139
+   ]
+  },
+  {
+   "label": "MP_MI-W01",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 14050.0,
+     "y": 15050.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    24,
+    137,
+    37,
+    144
+   ]
+  },
+  {
+   "label": "MP_MI-W02",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 14750.0,
+     "y": 15050.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    24,
+    144,
+    37,
+    151
+   ]
+  },
+  {
+   "label": "MP_MI-W03",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 15450.0,
+     "y": 15050.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    24,
+    151,
+    37,
+    158
+   ]
+  },
+  {
+   "label": "MP_MI-W04",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 16150.0,
+     "y": 15050.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    24,
+    158,
+    37,
+    165
+   ]
+  },
+  {
+   "label": "MP_MI-W05",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 16850.0,
+     "y": 15050.0,
+     "z": 400.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 13,
+     "z": 8.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    24,
+    165,
+    37,
+    172
+   ]
+  },
+  {
+   "label": "MP_MI-F01",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 10900.0,
+     "y": 19000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    106,
+    76,
+    112
+   ]
+  },
+  {
+   "label": "MP_MI-F02",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 11500.0,
+     "y": 19000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    112,
+    76,
+    118
+   ]
+  },
+  {
+   "label": "MP_MI-F03",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 19000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    118,
+    76,
+    124
+   ]
+  },
+  {
+   "label": "MP_MI-F04",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12700.0,
+     "y": 19000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    124,
+    76,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-F05",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 13300.0,
+     "y": 19000.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 12,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    130,
+    76,
+    136
+   ]
+  },
+  {
+   "label": "MP_MI-C01",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 23500.0,
+     "z": 225.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 6,
+     "z": 4.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    112,
+    118,
+    118,
+    124
+   ]
+  },
+  {
+   "label": "MP_MI-C02",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 24100.0,
+     "z": 225.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 6,
+     "z": 4.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    118,
+    118,
+    124,
+    124
+   ]
+  },
+  {
+   "label": "MP_MI-C03",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 24700.0,
+     "z": 225.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 6,
+     "z": 4.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    124,
+    118,
+    130,
+    124
+   ]
+  },
+  {
+   "label": "MP_MI-P01",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 25300.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130,
+    118,
+    136,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P02",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 25900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    136,
+    118,
+    142,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P03",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 26500.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    142,
+    118,
+    148,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P04",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 27100.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    148,
+    118,
+    154,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P05",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 27700.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    154,
+    118,
+    160,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P06",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 28300.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    160,
+    118,
+    166,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-P07",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 12400.0,
+     "y": 28900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    166,
+    118,
+    172,
+    130
+   ]
+  },
+  {
+   "label": "MP_MI-A01",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 13400.0,
+     "y": 25650.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 13,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130,
+    130,
+    143,
+    138
+   ]
+  },
+  {
+   "label": "MP_MI-A02",
+   "folder": "MP240/Buildings/M-I",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 14200.0,
+     "y": 25650.0,
+     "z": 500.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8,
+     "y": 13,
+     "z": 10.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130,
+    138,
+    143,
+    146
+   ]
+  },
+  {
+   "label": "MP_MJ-W01",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3100.0,
+     "y": 13750.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    12,
+    28,
+    23,
+    34
+   ]
+  },
+  {
+   "label": "MP_MJ-W02",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3700.0,
+     "y": 13750.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    12,
+    34,
+    23,
+    40
+   ]
+  },
+  {
+   "label": "MP_MJ-W03",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4300.0,
+     "y": 13750.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    12,
+    40,
+    23,
+    46
+   ]
+  },
+  {
+   "label": "MP_MJ-W04",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 4900.0,
+     "y": 13750.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 11,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    12,
+    46,
+    23,
+    52
+   ]
+  },
+  {
+   "label": "MP_MJ-N01",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 17450.0,
+     "y": 18100.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    58,
+    170,
+    64,
+    179
+   ]
+  },
+  {
+   "label": "MP_MJ-N02",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 17450.0,
+     "y": 18700.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    64,
+    170,
+    70,
+    179
+   ]
+  },
+  {
+   "label": "MP_MJ-N03",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 17450.0,
+     "y": 19300.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    70,
+    170,
+    76,
+    179
+   ]
+  },
+  {
+   "label": "MP_MJ-N04",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 17450.0,
+     "y": 19900.0,
+     "z": 375.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 6,
+     "z": 7.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    76,
+    170,
+    82,
+    179
+   ]
+  },
+  {
+   "label": "MP_MJ-S01",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3500.0,
+     "y": 26900.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    146,
+    30,
+    152,
+    40
+   ]
+  },
+  {
+   "label": "MP_MJ-S02",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3500.0,
+     "y": 27500.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    152,
+    30,
+    158,
+    40
+   ]
+  },
+  {
+   "label": "MP_MJ-S03",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3500.0,
+     "y": 28100.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    158,
+    30,
+    164,
+    40
+   ]
+  },
+  {
+   "label": "MP_MJ-S04",
+   "folder": "MP240/Buildings/M-J",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Brick",
+   "xform": {
+    "location": {
+     "x": 3500.0,
+     "y": 28700.0,
+     "z": 325.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 6,
+     "z": 6.5
+    }
+   },
+   "kind": "building",
+   "rect": [
+    164,
+    30,
+    170,
+    40
+   ]
+  },
+  {
+   "label": "MP_SIL-01",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 2550.0,
+     "y": 32000.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 15,
+     "y": 60,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    170,
+    18,
+    230,
+    33
+   ]
+  },
+  {
+   "label": "MP_SIL-02",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13800.0,
+     "y": 13100.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 76,
+     "y": 22,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    0,
+    100,
+    22,
+    176
+   ]
+  },
+  {
+   "label": "MP_SIL-03",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 17100.0,
+     "y": 28300.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 16,
+     "y": 66,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    130,
+    163,
+    196,
+    179
+   ]
+  },
+  {
+   "label": "MP_SIL-04",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 17300.0,
+     "y": 24400.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 12,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    118,
+    167,
+    130,
+    179
+   ]
+  },
+  {
+   "label": "MP_SIL-05",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 12550.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 84,
+     "y": 11,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    0,
+    16,
+    11,
+    100
+   ]
+  },
+  {
+   "label": "MP_SIL-06",
+   "folder": "MP240/Buildings/SIL",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9600.0,
+     "y": 35850.0,
+     "z": 450.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 160,
+     "y": 3,
+     "z": 9.0
+    }
+   },
+   "kind": "building",
+   "rect": [
+    237,
+    16,
+    240,
+    176
+   ]
+  },
+  {
+   "label": "MP_WL-REF-S1",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14525.0,
+     "y": 32050.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 7,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    197,
+    145,
+    204,
+    145.5
+   ]
+  },
+  {
+   "label": "MP_WL-REF-S2",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14525.0,
+     "y": 33575.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 17.5,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    207,
+    145,
+    224.5,
+    145.5
+   ]
+  },
+  {
+   "label": "MP_WL-REF-S3",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14525.0,
+     "y": 35175.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 7.5,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    228,
+    145,
+    235.5,
+    145.5
+   ]
+  },
+  {
+   "label": "MP_WL-REF-W",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 15950.0,
+     "y": 31675.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 29,
+     "y": 0.5,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    196.5,
+    145,
+    197,
+    174
+   ]
+  },
+  {
+   "label": "MP_WL-REF-N",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 17375.0,
+     "y": 33600.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 39.0,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    196.5,
+    173.5,
+    235.5,
+    174
+   ]
+  },
+  {
+   "label": "MP_WL-REF-E",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 15950.0,
+     "y": 35525.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 29,
+     "y": 0.5,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    235,
+    145,
+    235.5,
+    174
+   ]
+  },
+  {
+   "label": "MP_WL-REF-I",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 16275.0,
+     "y": 33200.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 20,
+     "z": 2.6
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    202,
+    162.5,
+    222,
+    163
+   ]
+  },
+  {
+   "label": "MP_WL-FC-E1",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 12600.0,
+     "y": 23200.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4,
+     "y": 0.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    111.75,
+    124,
+    112.25,
+    128
+   ]
+  },
+  {
+   "label": "MP_WL-FC-E2",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13475.0,
+     "y": 23200.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 0.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    111.75,
+    132.5,
+    112.25,
+    137
+   ]
+  },
+  {
+   "label": "MP_WL-FC-STEP",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14150.0,
+     "y": 22600.0,
+     "z": 40.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 12,
+     "z": 0.8
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    100,
+    137,
+    112,
+    146
+   ]
+  },
+  {
+   "label": "MP_WL-FC-SW",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14150.0,
+     "y": 20000.0,
+     "z": 40.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9,
+     "y": 8,
+     "z": 0.8
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    76,
+    137,
+    84,
+    146
+   ]
+  },
+  {
+   "label": "MP_WL-PTW-W",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6450.0,
+     "y": 26575.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 13,
+     "y": 0.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    145.5,
+    58,
+    146,
+    71
+   ]
+  },
+  {
+   "label": "MP_WL-PTW-N",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7125.0,
+     "y": 27300.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 14,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    146,
+    71,
+    160,
+    71.5
+   ]
+  },
+  {
+   "label": "MP_WL-PTW-E1",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6025.0,
+     "y": 28000.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 0.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    159.75,
+    58,
+    160.25,
+    62.5
+   ]
+  },
+  {
+   "label": "MP_WL-PTW-E2",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6825.0,
+     "y": 28000.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.5,
+     "y": 0.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    159.75,
+    65.5,
+    160.25,
+    71
+   ]
+  },
+  {
+   "label": "MP_WL-SAV-W",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 800.0,
+     "y": 20375.0,
+     "z": 125.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 0.5,
+     "z": 2.5
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    83.5,
+    2,
+    84,
+    14
+   ]
+  },
+  {
+   "label": "MP_WL-SAV-E",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 800.0,
+     "y": 24425.0,
+     "z": 125.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 12,
+     "y": 0.5,
+     "z": 2.5
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    124,
+    2,
+    124.5,
+    14
+   ]
+  },
+  {
+   "label": "MP_WL-ESC-A",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7000.0,
+     "y": 30100.0,
+     "z": 60.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4,
+     "y": 4,
+     "z": 1.2
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    179,
+    68,
+    183,
+    72
+   ]
+  },
+  {
+   "label": "MP_WL-ESC-B",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7900.0,
+     "y": 30100.0,
+     "z": 60.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2,
+     "y": 4,
+     "z": 1.2
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    179,
+    78,
+    183,
+    80
+   ]
+  },
+  {
+   "label": "MP_WL-ESC-C",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8750.0,
+     "y": 30275.0,
+     "z": 60.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 7,
+     "y": 0.5,
+     "z": 1.2
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    182.5,
+    84,
+    183,
+    91
+   ]
+  },
+  {
+   "label": "MP_WL-SW-S",
+   "folder": "MP240/Walls",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 1900.0,
+     "y": 14950.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 10,
+     "y": 1,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    29,
+    14,
+    30,
+    24
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-07",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 6400.0,
+     "y": 28000.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.0,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    159.75,
+    62.5,
+    160.25,
+    65.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-PN-S",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 8425.0,
+     "y": 20800.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 8,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    84,
+    84,
+    92,
+    84.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-PN-N",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 10575.0,
+     "y": 20800.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 8,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    84,
+    105.5,
+    92,
+    106
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-CP",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 11500.0,
+     "y": 23225.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    112,
+    112,
+    112.5,
+    118
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-AC",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 13025.0,
+     "y": 23200.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    111.75,
+    128,
+    112.25,
+    132.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-ARCH",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14565.0,
+     "y": 21225.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 4.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    90,
+    145.4,
+    94.5,
+    145.9
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-WING",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14585.0,
+     "y": 23500.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 3.0,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    113.5,
+    145.6,
+    116.5,
+    146.1
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-REF-M",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14525.0,
+     "y": 32550.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 3,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    204,
+    145,
+    207,
+    145.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-REF-S",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 14525.0,
+     "y": 34625.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.5,
+     "y": 3.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    224.5,
+    145,
+    228,
+    145.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-A3",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 10025.0,
+     "y": 28575.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    165.5,
+    98,
+    166,
+    102.5
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-B1",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 6600.0,
+     "y": 29925.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    179,
+    64,
+    179.5,
+    68
+   ]
+  },
+  {
+   "label": "MP_GateMark_G-B2",
+   "folder": "MP240/Gates",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 9875.0,
+     "y": 30325.0,
+     "z": 3.5000000000000004
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 0.5,
+     "z": 0.03
+    }
+   },
+   "kind": "gatemark",
+   "rect": [
+    183,
+    97,
+    183.5,
+    100.5
+   ]
+  },
+  {
+   "label": "MP_Cierre_000_W-SAVS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 185.0,
+     "y": 21150.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 15.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    84.0,
+    1.7,
+    99.0,
+    2
+   ]
+  },
+  {
+   "label": "MP_Cierre_001_W-SAVS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 185.0,
+     "y": 23662.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 14.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    109.25,
+    1.7,
+    124.0,
+    2
+   ]
+  },
+  {
+   "label": "MP_Cierre_002_W-SAVN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 1415.0,
+     "y": 24162.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 4.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    119.25,
+    14,
+    124.0,
+    14.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_003_W-Z01W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 100.0,
+     "y": 21885.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    98.7,
+    0.0,
+    99,
+    2.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_004_W-Z01E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 100.0,
+     "y": 22915.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    109,
+    0.0,
+    109.3,
+    2.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_005_W-PLN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 7215.000000000001,
+     "y": 22862.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    108.25,
+    72,
+    109.0,
+    72.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_006_W-STES",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 4385.0,
+     "y": 24062.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 2.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    119.25,
+    43.7,
+    122.0,
+    44
+   ]
+  },
+  {
+   "label": "MP_Cierre_007_W-STEN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 5215.0,
+     "y": 25962.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    139.25,
+    52,
+    140.0,
+    52.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_008_W-PNW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8612.5,
+     "y": 20385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    83.7,
+    85.25,
+    84,
+    87.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_009_W-PNW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10562.5,
+     "y": 20385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    83.7,
+    105.25,
+    84,
+    106.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_010_W-PNE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8862.5,
+     "y": 21215.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    92,
+    85.25,
+    92.3,
+    92.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_011_W-PNE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10587.5,
+     "y": 21215.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    92,
+    105.75,
+    92.3,
+    106.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_012_W-ALA1S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9185.0,
+     "y": 22012.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 15.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    92.25,
+    91.7,
+    108.0,
+    92
+   ]
+  },
+  {
+   "label": "MP_Cierre_013_W-ALA1N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9665.0,
+     "y": 23112.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 1.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    110.25,
+    96.5,
+    112.0,
+    96.8
+   ]
+  },
+  {
+   "label": "MP_Cierre_014_W-ALA1N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9665.0,
+     "y": 24937.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 1.25,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    128.75,
+    96.5,
+    130.0,
+    96.8
+   ]
+  },
+  {
+   "label": "MP_Cierre_015_W-PTCPS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9185.0,
+     "y": 26162.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    141.25,
+    91.7,
+    142.0,
+    92
+   ]
+  },
+  {
+   "label": "MP_Cierre_016_W-PTCPN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10215.0,
+     "y": 26000.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 4.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    138.0,
+    102,
+    142.0,
+    102.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_017_W-PTCPW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9937.5,
+     "y": 24985.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    129.7,
+    96.75,
+    130,
+    102.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_018_W-ARCPE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10237.5,
+     "y": 25790.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    137.75,
+    102.25,
+    138.05,
+    102.5
+   ]
+  },
+  {
+   "label": "MP_Cierre_019_W-ALA3N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10265.0,
+     "y": 28400.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 4.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    162.0,
+    102.5,
+    166.0,
+    102.8
+   ]
+  },
+  {
+   "label": "MP_Cierre_020_W-ALA3W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10237.5,
+     "y": 26185.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    141.7,
+    102.25,
+    142,
+    102.5
+   ]
+  },
+  {
+   "label": "MP_Cierre_021_W-STCPS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11185.0,
+     "y": 24112.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 17.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    112.25,
+    111.7,
+    130.0,
+    112
+   ]
+  },
+  {
+   "label": "MP_Cierre_022_W-STCPS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11185.0,
+     "y": 28900.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 14.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    162.0,
+    111.7,
+    176.0,
+    112
+   ]
+  },
+  {
+   "label": "MP_Cierre_023_W-STCPN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11815.0,
+     "y": 29412.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 3.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    172.25,
+    118,
+    176.0,
+    118.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_024_W-FCS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10585.0,
+     "y": 20000.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 8.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    76.0,
+    105.7,
+    84.0,
+    106
+   ]
+  },
+  {
+   "label": "MP_Cierre_025_W-FCS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10585.0,
+     "y": 22212.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 19.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    92.25,
+    105.7,
+    112.0,
+    106
+   ]
+  },
+  {
+   "label": "MP_Cierre_026_W-FCW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13662.5,
+     "y": 19585.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    75.7,
+    136.25,
+    76,
+    137.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_027_W-FCE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10987.5,
+     "y": 23215.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    112,
+    107.75,
+    112.3,
+    112.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_028_W-ACN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14615.0,
+     "y": 24412.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 11.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    118.25,
+    146,
+    130.0,
+    146.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_029_W-STXS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 5985.0,
+     "y": 29862.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.25,
+    59.7,
+    179.0,
+    60
+   ]
+  },
+  {
+   "label": "MP_Cierre_030_W-ESC1S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 5985.0,
+     "y": 29862.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.25,
+    59.7,
+    179.0,
+    60
+   ]
+  },
+  {
+   "label": "MP_Cierre_031_W-ESC1N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8415.0,
+     "y": 29312.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 1.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    172.25,
+    84,
+    174.0,
+    84.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_032_W-ESC1N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8415.0,
+     "y": 29887.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.25,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.75,
+    84,
+    179.0,
+    84.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_033_W-NK1W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8762.5,
+     "y": 29385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    173.7,
+    84.25,
+    174,
+    91.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_034_W-NK1E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8762.5,
+     "y": 29865.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.5,
+    84.25,
+    178.8,
+    91.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_035_W-ESCWS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9085.0,
+     "y": 29312.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 1.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    172.25,
+    90.7,
+    174.0,
+    91
+   ]
+  },
+  {
+   "label": "MP_Cierre_036_W-ESCWS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9085.0,
+     "y": 29887.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 0.25,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.75,
+    90.7,
+    179.0,
+    91
+   ]
+  },
+  {
+   "label": "MP_Cierre_037_W-ESCWN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10615.0,
+     "y": 29100.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 10.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    166.0,
+    106,
+    176.0,
+    106.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_038_W-ESCWN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10615.0,
+     "y": 30187.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 2.25,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    180.75,
+    106,
+    183.0,
+    106.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_039_W-ESCWW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10437.5,
+     "y": 28585.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    165.7,
+    102.75,
+    166,
+    106.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_040_W-ESCWE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9462.5,
+     "y": 30315.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183,
+    92.25,
+    183.3,
+    97.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_041_W-NK2W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10912.5,
+     "y": 29585.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    175.7,
+    106.25,
+    176,
+    112.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_042_W-NK2E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10962.5,
+     "y": 30065.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    180.5,
+    106.25,
+    180.8,
+    113.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_043_W-ESC2S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11285.0,
+     "y": 30187.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 2.25,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    180.75,
+    112.7,
+    183.0,
+    113
+   ]
+  },
+  {
+   "label": "MP_Cierre_044_W-ESC2W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 12862.5,
+     "y": 29585.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 20.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    175.7,
+    118.25,
+    176,
+    139.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_045_W-ESC2E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11550.0,
+     "y": 30315.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183,
+    113.0,
+    183.3,
+    118.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_046_W-ESC2E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13762.5,
+     "y": 30315.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183,
+    136.25,
+    183.3,
+    139.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_047_W-NI2S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 11785.0,
+     "y": 30512.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 3.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183.25,
+    117.7,
+    187.0,
+    118
+   ]
+  },
+  {
+   "label": "MP_Cierre_048_W-NI2E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 30715.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    187,
+    118.0,
+    187.3,
+    124.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_049_W-SV1W",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8762.5,
+     "y": 29885.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    178.7,
+    84.25,
+    179,
+    91.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_050_W-SV1E",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8212.5,
+     "y": 30265.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    182.5,
+    80.25,
+    182.8,
+    84.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_051_W-TRS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13885.0,
+     "y": 30962.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 12.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183.25,
+    138.7,
+    196.0,
+    139
+   ]
+  },
+  {
+   "label": "MP_Cierre_052_W-TRS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13885.0,
+     "y": 32662.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 6.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    203.25,
+    138.7,
+    210.0,
+    139
+   ]
+  },
+  {
+   "label": "MP_Cierre_053_W-TRN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14515.0,
+     "y": 30625.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 20.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    176.0,
+    145,
+    196.5,
+    145.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_054_W-TRW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14200.0,
+     "y": 29585.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    175.7,
+    139.0,
+    176,
+    145.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_055_W-TRE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14200.0,
+     "y": 33015.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.0,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    210,
+    139.0,
+    210.3,
+    145.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_056_W-REFPW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14587.5,
+     "y": 32185.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    201.7,
+    145.75,
+    202,
+    146.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_057_W-REFPW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 15787.5,
+     "y": 32185.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 9.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    201.7,
+    153.25,
+    202,
+    162.5
+   ]
+  },
+  {
+   "label": "MP_Cierre_058_W-REFPE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 16237.5,
+     "y": 34215.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.25,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    222,
+    162.25,
+    222.3,
+    162.5
+   ]
+  },
+  {
+   "label": "MP_Cierre_059_W-STEVS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6385.0,
+     "y": 34625.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 4.5,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    224.0,
+    63.7,
+    228.5,
+    64
+   ]
+  },
+  {
+   "label": "MP_Cierre_060_W-STEVW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 8712.5,
+     "y": 34385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 17.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    223.7,
+    78.25,
+    224,
+    96.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_061_W-STEVW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10962.5,
+     "y": 34385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 6.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    223.7,
+    106.25,
+    224,
+    113.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_062_W-STEVW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14362.5,
+     "y": 34385.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 2.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    223.7,
+    142.25,
+    224,
+    145.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_063_W-STEVE",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14462.5,
+     "y": 34865.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    228.5,
+    144.25,
+    228.8,
+    145.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_064_W-ALB1S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6385.0,
+     "y": 34262.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 2.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    221.25,
+    63.7,
+    224.0,
+    64
+   ]
+  },
+  {
+   "label": "MP_Cierre_065_W-ALB1N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 6815.000000000001,
+     "y": 32062.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 10.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    195.25,
+    68,
+    206.0,
+    68.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_066_W-ALB2S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9685.0,
+     "y": 30912.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 11.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    183.25,
+    96.7,
+    195.0,
+    97
+   ]
+  },
+  {
+   "label": "MP_Cierre_067_W-ALB2S",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9685.0,
+     "y": 32862.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 6.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    205.25,
+    96.7,
+    212.0,
+    97
+   ]
+  },
+  {
+   "label": "MP_Cierre_068_W-ALB2N",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10065.0,
+     "y": 31712.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 3.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    195.25,
+    100.5,
+    199.0,
+    100.8
+   ]
+  },
+  {
+   "label": "MP_Cierre_069_W-PTRPS",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9585.0,
+     "y": 34212.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 3.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    220.25,
+    95.7,
+    224.0,
+    96
+   ]
+  },
+  {
+   "label": "MP_Cierre_070_W-PTRPN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 10615.0,
+     "y": 33812.5,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 11.75,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    212.25,
+    106,
+    224.0,
+    106.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_071_W-PTRPW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 9662.5,
+     "y": 33185.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    211.7,
+    96.25,
+    212,
+    97.0
+   ]
+  },
+  {
+   "label": "MP_Cierre_072_W-INFPN",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 14215.0,
+     "y": 33850.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.3,
+     "y": 11.0,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    213.0,
+    142,
+    224.0,
+    142.3
+   ]
+  },
+  {
+   "label": "MP_Cierre_073_W-INFPW",
+   "folder": "MP240/Walls/Cierres",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_BrickDark",
+   "xform": {
+    "location": {
+     "x": 13762.5,
+     "y": 33285.0,
+     "z": 150.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 8.75,
+     "y": 0.3,
+     "z": 3.0
+    }
+   },
+   "kind": "wall",
+   "rect": [
+    212.7,
+    133.25,
+    213,
+    142.0
+   ]
+  },
+  {
+   "label": "MP_Fountain_Base",
+   "folder": "MP240/Props",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 4800.0,
+     "y": 19500.0,
+     "z": 30.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 5.0,
+     "y": 5.0,
+     "z": 0.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    72.5,
+    45.5,
+    77.5,
+    50.5
+   ]
+  },
+  {
+   "label": "MP_Fountain_Basin",
+   "folder": "MP240/Props",
+   "asset": "/Game/Unscripted/Art/Props/SM_Fountain_Square/SM_Fountain_Square",
+   "xform": {
+    "location": {
+     "x": 4800.0,
+     "y": 19500.0,
+     "z": 60.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": null
+  },
+  {
+   "label": "MP_PR-STALL-N1",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 6875.0,
+     "y": 16950.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    47.0,
+    67.0,
+    52.0,
+    70.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-N2",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 6875.0,
+     "y": 17750.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    55.0,
+    67.0,
+    60.0,
+    70.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-N3",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 6875.0,
+     "y": 18550.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    63.0,
+    67.0,
+    68.0,
+    70.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-S1",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 2775.0,
+     "y": 16950.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    47.0,
+    26.0,
+    52.0,
+    29.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-S2",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 2775.0,
+     "y": 17750.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    55.0,
+    26.0,
+    60.0,
+    29.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-S3",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 2775.0,
+     "y": 18550.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    63.0,
+    26.0,
+    68.0,
+    29.5
+   ]
+  },
+  {
+   "label": "MP_PR-STALL-S4",
+   "folder": "MP240/Props/Puestos",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 2775.0,
+     "y": 19350.0,
+     "z": 130.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 3.5,
+     "y": 5.0,
+     "z": 2.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    71.0,
+    26.0,
+    76.0,
+    29.5
+   ]
+  },
+  {
+   "label": "MP_PR-CART-PL",
+   "folder": "MP240/Props",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 4425.0,
+     "y": 16290.0,
+     "z": 80.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 4.5,
+     "y": 2.2,
+     "z": 1.6
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    41.8,
+    42.0,
+    44.0,
+    46.5
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-01",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 3300.0,
+     "y": 16350.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    43.2,
+    32.7,
+    43.8,
+    33.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-02",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 6400.0,
+     "y": 16350.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    43.2,
+    63.7,
+    43.8,
+    64.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-03",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 2700.0,
+     "y": 22650.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    106.2,
+    26.7,
+    106.8,
+    27.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-04",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 6900.0,
+     "y": 22650.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    106.2,
+    68.7,
+    106.8,
+    69.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-05",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 1200.0,
+     "y": 22050.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    100.2,
+    11.7,
+    100.8,
+    12.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-06",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 5140.0,
+     "y": 24000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    119.7,
+    51.1,
+    120.3,
+    51.699999999999996
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-07",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 8200.0,
+     "y": 29260.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    172.29999999999998,
+    81.7,
+    172.9,
+    82.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-08",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 11650.0,
+     "y": 30240.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    182.1,
+    116.2,
+    182.70000000000002,
+    116.8
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-09",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 13500.0,
+     "y": 29660.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    176.29999999999998,
+    134.7,
+    176.9,
+    135.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-10",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 14440.0,
+     "y": 30600.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    185.7,
+    144.1,
+    186.3,
+    144.70000000000002
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-11",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 11240.0,
+     "y": 25000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    129.7,
+    112.10000000000001,
+    130.3,
+    112.7
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-12",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 11760.0,
+     "y": 27000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    149.7,
+    117.3,
+    150.3,
+    117.89999999999999
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-13",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 10800.0,
+     "y": 19700.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    76.7,
+    107.7,
+    77.3,
+    108.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-14",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 13550.0,
+     "y": 23050.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    110.2,
+    135.2,
+    110.8,
+    135.8
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-15",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 16150.0,
+     "y": 32400.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    203.7,
+    161.2,
+    204.3,
+    161.8
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-16",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 10400.0,
+     "y": 34340.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    223.1,
+    103.7,
+    223.70000000000002,
+    104.3
+   ]
+  },
+  {
+   "label": "MP_PR-LAMP-17",
+   "folder": "MP240/Props/Farolas",
+   "asset": "/Game/Unscripted/World/BP_GasLamp",
+   "xform": {
+    "location": {
+     "x": 7900.0,
+     "y": 20440.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    84.10000000000001,
+    78.7,
+    84.7,
+    79.3
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL1",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 3700.0,
+     "y": 16260.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    42.0,
+    36.4,
+    43.2,
+    37.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL2",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 5800.0,
+     "y": 16260.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    42.0,
+    57.4,
+    43.2,
+    58.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL3",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 3800.0,
+     "y": 22740.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    107.0,
+    37.6,
+    107.80000000000001,
+    38.4
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL4",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 6000.0,
+     "y": 22740.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    106.80000000000001,
+    59.4,
+    108.0,
+    60.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL5",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 2520.0,
+     "y": 20000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    79.4,
+    24.599999999999998,
+    80.6,
+    25.8
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL6",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 2500.0,
+     "y": 21200.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    91.6,
+    24.6,
+    92.4,
+    25.4
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL7",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 7100.0,
+     "y": 19500.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    74.4,
+    70.4,
+    75.6,
+    71.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-PL8",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 7120.0,
+     "y": 22000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    99.6,
+    70.8,
+    100.4,
+    71.60000000000001
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES1",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 7400.0,
+     "y": 29270.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    172.1,
+    73.4,
+    173.29999999999998,
+    74.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES2",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 6250.0,
+     "y": 29850.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    178.1,
+    62.1,
+    178.9,
+    62.9
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES3",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 7500.0,
+     "y": 30150.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    180.9,
+    74.4,
+    182.1,
+    75.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES4",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 7300.0,
+     "y": 30160.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    181.2,
+    72.6,
+    182.0,
+    73.4
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES5",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 12100.0,
+     "y": 30500.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    184.4,
+    120.4,
+    185.6,
+    121.6
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES6",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 13000.0,
+     "y": 30250.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    182.1,
+    129.6,
+    182.9,
+    130.4
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES7",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 9590.0,
+     "y": 22000.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    99.4,
+    95.30000000000001,
+    100.6,
+    96.5
+   ]
+  },
+  {
+   "label": "MP_PR-COV-ES8",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 9250.0,
+     "y": 24800.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    127.6,
+    92.1,
+    128.4,
+    92.9
+   ]
+  },
+  {
+   "label": "MP_PR-COV-RF1",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 16050.0,
+     "y": 32320.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    202.6,
+    159.9,
+    203.79999999999998,
+    161.1
+   ]
+  },
+  {
+   "label": "MP_PR-COV-RF2",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "xform": {
+    "location": {
+     "x": 15850.0,
+     "y": 32320.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    202.79999999999998,
+    158.1,
+    203.6,
+    158.9
+   ]
+  },
+  {
+   "label": "MP_PR-COV-RF3",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "xform": {
+    "location": {
+     "x": 14660.0,
+     "y": 34120.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    220.6,
+    146.0,
+    221.79999999999998,
+    147.2
+   ]
+  },
+  {
+   "label": "MP_PR-COV-RF4",
+   "folder": "MP240/Props/Cobertura",
+   "asset": "/Game/Unscripted/Art/Props/SM_Handcart_A/SM_Handcart_A",
+   "xform": {
+    "location": {
+     "x": 16050.0,
+     "y": 34050.0,
+     "z": 0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.65,
+     "y": 0.65,
+     "z": 0.65
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    219.95,
+    159.6,
+    221.05,
+    161.4
+   ]
+  },
+  {
+   "label": "MP_PR-PILLAR-1",
+   "folder": "MP240/Props/Pilares",
+   "asset": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A",
+   "xform": {
+    "location": {
+     "x": 11300.0,
+     "y": 19850.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    77.5,
+    112.0,
+    79.5,
+    114.0
+   ]
+  },
+  {
+   "label": "MP_PR-PILLAR-2",
+   "folder": "MP240/Props/Pilares",
+   "asset": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A",
+   "xform": {
+    "location": {
+     "x": 13100.0,
+     "y": 19850.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    77.5,
+    130.0,
+    79.5,
+    132.0
+   ]
+  },
+  {
+   "label": "MP_PR-PILLAR-3",
+   "folder": "MP240/Props/Pilares",
+   "asset": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A",
+   "xform": {
+    "location": {
+     "x": 11300.0,
+     "y": 22950.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    108.5,
+    112.0,
+    110.5,
+    114.0
+   ]
+  },
+  {
+   "label": "MP_PR-PILLAR-4",
+   "folder": "MP240/Props/Pilares",
+   "asset": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A",
+   "xform": {
+    "location": {
+     "x": 13100.0,
+     "y": 22950.0,
+     "z": 0.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0.0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    108.5,
+    130.0,
+    110.5,
+    132.0
+   ]
+  },
+  {
+   "label": "MP_PR-TABLE-W",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Props/SM_WorkshopTable_A/SM_WorkshopTable_A",
+   "xform": {
+    "location": {
+     "x": 5550.0,
+     "y": 26300.0,
+     "z": 2.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 90,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    142.0,
+    55.05,
+    144.0,
+    55.95
+   ]
+  },
+  {
+   "label": "MP_PR-SHELF-W1",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Props/SM_Shelf_A/SM_Shelf_A",
+   "xform": {
+    "location": {
+     "x": 4350.0,
+     "y": 27530.0,
+     "z": 2.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    155.05,
+    42.5,
+    155.55,
+    44.5
+   ]
+  },
+  {
+   "label": "MP_PR-SHELF-W2",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Props/SM_Shelf_A/SM_Shelf_A",
+   "xform": {
+    "location": {
+     "x": 5350.0,
+     "y": 27530.0,
+     "z": 2.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    155.05,
+    52.5,
+    155.55,
+    54.5
+   ]
+  },
+  {
+   "label": "MP_PR-DESK-INF",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 12550.0,
+     "y": 33000.0,
+     "z": 41.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.85,
+     "y": 1.8,
+     "z": 0.78
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    209.1,
+    125.075,
+    210.9,
+    125.925
+   ]
+  },
+  {
+   "label": "MP_PR-DESK-RPT",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Wood",
+   "xform": {
+    "location": {
+     "x": 9250.0,
+     "y": 33200.0,
+     "z": 41.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 0.8,
+     "y": 1.6,
+     "z": 0.78
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    211.2,
+    92.1,
+    212.8,
+    92.9
+   ]
+  },
+  {
+   "label": "MP_PR-ST-OFF_Base",
+   "folder": "MP240/Interiores/Estaciones",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 16350.0,
+     "y": 19450.0,
+     "z": 9.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.4,
+     "y": 2.0,
+     "z": 0.15
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    73.5,
+    162.8,
+    75.5,
+    164.2
+   ]
+  },
+  {
+   "label": "MP_PR-ST-OFF",
+   "folder": "MP240/Interiores/Estaciones",
+   "asset": "/Game/Unscripted/Art/Props/SM_RecordStation_Official/SM_RecordStation_Official",
+   "xform": {
+    "location": {
+     "x": 16350.0,
+     "y": 19450.0,
+     "z": 17.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 90,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": null
+  },
+  {
+   "label": "MP_PR-ST-AUT_Base",
+   "folder": "MP240/Interiores/Estaciones",
+   "asset": "/Game/Unscripted/Art/Blockout/SM_BO_Kerb",
+   "xform": {
+    "location": {
+     "x": 16350.0,
+     "y": 19950.0,
+     "z": 9.5
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.4,
+     "y": 2.0,
+     "z": 0.15
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    78.5,
+    162.8,
+    80.5,
+    164.2
+   ]
+  },
+  {
+   "label": "MP_PR-ST-AUT",
+   "folder": "MP240/Interiores/Estaciones",
+   "asset": "/Game/Unscripted/Art/Props/SM_RecordStation_Authentic/SM_RecordStation_Authentic",
+   "xform": {
+    "location": {
+     "x": 16350.0,
+     "y": 19950.0,
+     "z": 17.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 90,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": null
+  },
+  {
+   "label": "MP_PR-COT",
+   "folder": "MP240/Interiores",
+   "asset": "/Game/Unscripted/Art/Props/SM_Cot_A/SM_Cot_A",
+   "xform": {
+    "location": {
+     "x": 15850.0,
+     "y": 35250.0,
+     "z": 2.0
+    },
+    "rotation": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    },
+    "scale": {
+     "x": 1.0,
+     "y": 1.0,
+     "z": 1.0
+    }
+   },
+   "kind": "prop",
+   "rect": [
+    231.775,
+    157.275,
+    233.225,
+    159.725
+   ]
+  }
+ ]
+}

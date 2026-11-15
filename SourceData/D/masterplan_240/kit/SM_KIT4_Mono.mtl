@@ -1,0 +1,5 @@
+newmtl Roof
+Kd 0.7 0.7 0.7
+
+newmtl Wall
+Kd 0.7 0.7 0.7
