@@ -67,6 +67,22 @@ Rellenar **todo el espacio fuera de las zonas** con bloques de edificio, de modo
 
 **Aplicado:** 11 tramos de acera de losa (`MI_Flagstone_York`, 2,6 m × 15 cm) con bordillo de granito (`MI_Kerb_Granite`) delante de las fachadas de calle, y 6 bolardos de hierro. El Callejón y el Patio quedan sin acera, como los *courts* de la época. La acera de 15 cm es transitable (el personaje sube escalones de hasta 45 cm), así que no cambia el NavMesh ni las rutas.
 
+### S6 — Primer pase de `REFERENCIA_LONDRES_1888.md` (15-nov)
+
+Documento de investigación aportado por Yizens: [REFERENCIA_LONDRES_1888.md](REFERENCIA_LONDRES_1888.md). Se aplica su **§36 "Primer pase"** con assets existentes:
+
+| Instrucción del documento | Aplicado |
+|---|---|
+| Silueta de tejados con chimeneas (§4.3, P0-08) | ✅ 110 tejados a dos aguas de pizarra (30°) y 55 chimeneas con dos sombreretes de barro; pizarra oscurecida (losa de 80 cm) |
+| Separar calzada, acera, bordillo y canal (§2.2–2.3, P0-01) | ✅ Aceras de losa y bordillo de granito (S5) |
+| Sumideros en puntos bajos y charcos con lógica (§2.3, P0-02) | ✅ 11 sumideros de hierro junto al bordillo + 21 charcos reflectantes (`MI_Puddle_Wet`) junto a sumideros, en pasajes y zonas hundidas; no en todas partes |
+| Bolsas de props por oficio (§8, §20) | ✅ Puesto de verduras frente a la tienda de la Plaza (mesa, cajas, barril), carro de mano con cajas en Start, mercancía junto a la tienda del Paso central y el Tramo; el patio de carga ya existía |
+| Bolardos y faroles en el bordillo (imágenes de referencia) | ✅ 17 bolardos a lo largo del bordillo + 6 en entradas de pasaje |
+| Humo localizado, no en cada chimenea (§4.3, §35) | ✅ Vapor reducido a 4 focos tenues (alfa 0,025) |
+| Cian solo para la agencia (§5) | ✅ Ya se cumple: solo el Archivo y Registros |
+
+**Pendiente del documento (necesita assets nuevos):** toldos de lona, rótulos colgantes con soporte de hierro, puesto de verduras con fruta, sacos, verjas de hierro de sótano, bancos, ropa tendida, carteles de pared (ver §4, V6–V7, y la propuesta de tanda de assets).
+
 ## 4. Más vida — siguiente tanda (por orden de impacto)
 
 | # | Idea | Cómo | Coste |
