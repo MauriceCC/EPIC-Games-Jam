@@ -38,3 +38,7 @@ Releases/
 *.zip
 _Backup_Local/
 
+
+# Caché de Python generada al ejecutar scripts del editor
+__pycache__/
+*.pyc
