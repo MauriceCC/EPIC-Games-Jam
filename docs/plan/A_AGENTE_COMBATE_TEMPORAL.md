@@ -123,6 +123,14 @@ Evidencia A-CON-01: capturas del usuario muestran `ReceiveHit` en la interfaz y 
 
 ## 9. Estado
 
+### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
+
+- A-01–03: Input Actions e `IMC_Default` ya presentes; el historial registra movimiento base (`8b0c65f`), mensajes (`8e6dd52`) e integración. El log local muestra Play en `L_Test_A`. Falta verificar cada criterio de input, cámara y orientación; la nota antigua «pendiente de crear assets» ya no describe el inventario actual.
+- Health, Combat y Temporal existen. No se localizaron DataTable de jugador, snapshot ni montages propios bajo `Content/Unscripted/`; revisar grafos antes de completar A-04–18. No está acreditado el mínimo F1.
+- Próximo trabajo **[PROPUESTA]**: validar movimiento y A-CON-01, después cerrar salud/resistencia/combate y Corte/Retoma con dummies; integrar con B/C para remate, muerte y checkpoint. Ver [secuencia y criterios](03_ESTADO_Y_SIGUIENTES_PASOS.md).
+
+Las notas del día que siguen son historial de preparación.
+
 - [ ] Mínimo F1 alcanzado
 - [ ] Vertical slice F2 (parte A) en `main`
 - [ ] F3 completo

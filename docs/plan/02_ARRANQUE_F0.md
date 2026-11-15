@@ -1,5 +1,16 @@
 # Arranque del equipo — Unscripted
 
+## Actualización de seguimiento — 2026-11-14, revisión `4afcd57`
+
+La creación inicial ya dio paso a F1. Ver [informe actual y próximos pasos](03_ESTADO_Y_SIGUIENTES_PASOS.md) para no repetir trabajo. Las secciones posteriores conservan el registro de la preparación inicial; sus frases «aún no se ha hecho» se refieren a esa revisión anterior, no certifican el estado presente.
+
+- **Presente:** contratos, componentes, cascarones, mapas, Input Actions, placeholders y nuevas entregas de D. El historial ya contiene integraciones en `main`.
+- **Corregido en archivos:** `.gitignore` incluye `Unscripted/Content/Developers/` y `Unscripted/Content/Collections/`; la advertencia antigua sobre esas reglas queda resuelta.
+- **Pruebas posteriores localizadas:** el log existente registra Play en `L_Test_A` y `L_Test_B`; B documenta pruebas funcionales locales. Falta acreditar Play completo de Whitechapel y apertura por los cuatro integrantes.
+- **Sigue pendiente de cierre:** firmas/retornos/dispatchers, migración A-CON-01, solicitud B-CON-01 e interfaces de B. No afirmar que siguen faltando exactamente las mismas interfaces en las cinco clases sin una auditoría nueva.
+- **Configuración a revisar:** Combat/Pawn sin prueba efectiva; NavMesh usa `DynamicModifiersOnly` frente a `Dynamic` del contrato. No se alteró configuración en esta revisión.
+- **F0 no cerrado:** publicar o fusionar assets no sustituye la aceptación conjunta ni congela por sí solo el contrato.
+
 ## Decisiones confirmadas el 2026-11-14
 
 - Nombre definitivo: **Unscripted**.

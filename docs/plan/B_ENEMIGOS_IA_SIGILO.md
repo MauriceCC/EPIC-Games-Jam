@@ -313,6 +313,12 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 ## 9. Estado
 
+### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
+
+La prueba descrita abajo procede de la revisión de B; ahora el checkout revisado es `main`. Se conservan sus resultados como pruebas reportadas, pendientes de repetición después de los merges. Existen CSV, scripts y assets; no se localizó `DT_EnemyBalance.uasset`, por lo que B-13 no se cierra solo con valores aplicados a los Blueprints.
+
+**[PROPUESTA] Prioridad inmediata:** resolver B-CON-01 con INT/C y enlazar las interfaces de GuardBase/Jack con la lógica local existente. Después repetir el mínimo F1 con tres perseguidores y Jack 10/10; validar con A parry/Corte/remate y con C eventos/checkpoint. Jefe, hostilidad narrativa del Interventor y ruta real de Jack siguen pendientes según el reporte de B. Ver [informe conjunto](03_ESTADO_Y_SIGUIENTES_PASOS.md).
+
 ### Prueba actual de B
 
 En el checkout `codex/unscripted-integration`, abrir `/Game/Unscripted/Maps/Test/L_Test_B` y elegir **Play** en el visor. El mapa usa el controlador Top Down y una cámara ortográfica isométrica fija. **[PROPUESTA]** El jugador de prueba de B usa clic izquierdo para moverse, Espacio para el golpe de corto alcance, F para congelar al primer Perseguidor durante dos segundos, Ctrl izquierdo para activar el multiplicador de sigilo y E cerca de Jack para iniciar los tres puntos del refugio.

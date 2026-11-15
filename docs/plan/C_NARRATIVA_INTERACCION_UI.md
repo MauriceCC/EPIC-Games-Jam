@@ -149,6 +149,13 @@ Entrégame: (1) los pasos para construirlo en Blueprint/UMG, nodo a nodo, indica
 
 ## 10. Estado
 
+### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
+
+- Presentes GameMode, GameState, ObjectiveManager, Interaction, interactuables y `BP_HUD`; los commits `463d325`, `8323e63` y `5d54d01` registran creación/configuración. No se ha verificado su lógica en esta revisión.
+- No se localizaron `WBP_*`, `DT_Dialogue`, `DT_Checklist` ni fuentes en `SourceData/C/`. C-06–08 y los finales carecen de evidencia de cierre; los meshes entregados por D no sustituyen interacción, texto o UI.
+- B-CON-01 bloquea el reporte de eventos desde B según su documentación: revisar con INT la firma `Source: Actor`, sin cambiar el contrato unilateralmente.
+- **[PROPUESTA] Próximo trabajo:** C-01–09 con eventos simulados en `L_Test_C`; textos en inglés, checklist reescrito y prueba de bloqueo de Retoma durante diálogos. Después integrar Jack, puerta, checkpoint y HUD en F2. Ver [dependencias y aceptación](03_ESTADO_Y_SIGUIENTES_PASOS.md).
+
 - [ ] Mínimo F1 alcanzado
 - [ ] Vertical slice F2 (parte C) en `main`
 - [ ] F3 completo

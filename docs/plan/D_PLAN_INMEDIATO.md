@@ -6,6 +6,10 @@
 
 ## 0. Situación de partida
 
+**Registro histórico de preparación, sustituido para seguimiento por la revisión de `main` @ `4afcd57` (2026-11-14):** ya existen cascarones, mapas, configuración, placeholders, props, audio y VFX; hay commits de blockout/navegación. Las cruces de la tabla inferior y la espera por creación de mapas describen el punto de partida, no el estado actual. No recrear esos assets ni volver a ejecutar scripts en lote sin revisar su contenido actual.
+
+El trabajo inmediato pasa a validar recorrido, NavMesh, cobertura y cámara, integrar assets disponibles y preparar la build de prueba. Consultar [estado de D](D_MUNDO_ARTE_AUDIO_BUILD.md#9-estado) y [plan actualizado conjunto](03_ESTADO_Y_SIGUIENTES_PASOS.md). El plazo citado más abajo queda como referencia histórica pendiente de confirmación oficial; esta revisión no lo verificó.
+
 | Elemento | Estado en `main` |
 |---|---|
 | Enums, structs e interfaces (`Core/`) | ✅ Hechos por Mauricio |
