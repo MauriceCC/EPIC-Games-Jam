@@ -1,0 +1,188 @@
+{
+    "status":  "F0 decision-table preparation only; not a substitute ObjectiveManager",
+    "authority":  "docs/plan/C_NARRATIVA_INTERACCION_UI.md section 5; shared token spellings from docs/plan/01_CONTRATOS_Y_PROPIEDAD.md",
+    "initial_phase":  "FindJack",
+    "terminal_phase":  "GameEnded",
+    "phases":  [
+                   "FindJack",
+                   "OpenEscapeRoute",
+                   "ProtectJack",
+                   "DiscoverTruth",
+                   "FinalChoice",
+                   "GameEnded"
+               ],
+    "evidence_types":  [
+                           "NursingRecord",
+                           "FabricatedReport"
+                       ],
+    "transitions":  [
+                        {
+                            "phase":  "FindJack",
+                            "event":  "JackFound",
+                            "next_phase":  "OpenEscapeRoute",
+                            "required_flags":  [
+
+                                               ],
+                            "requires_supervisor_defeat":  false,
+                            "allowed_endings":  [
+
+                                                ],
+                            "guard":  "Current phase is FindJack; ignore a duplicate JackFound.",
+                            "effects":  "Record bJackFound; queue Jack dialogue and the future-self message."
+                        },
+                        {
+                            "phase":  "OpenEscapeRoute",
+                            "event":  "EscapeRouteOpened",
+                            "next_phase":  "ProtectJack",
+                            "required_flags":  [
+                                                   "bJackFound"
+                                               ],
+                            "requires_supervisor_defeat":  false,
+                            "allowed_endings":  [
+
+                                                ],
+                            "guard":  "Jack has been found and the route-opening report is valid for this phase.",
+                            "effects":  "Record bEscapeRouteOpen; show the protection/escort objective."
+                        },
+                        {
+                            "phase":  "ProtectJack",
+                            "event":  "JackReachedRefuge",
+                            "next_phase":  "DiscoverTruth",
+                            "required_flags":  [
+                                                   "bJackFound",
+                                                   "bEscapeRouteOpen"
+                                               ],
+                            "requires_supervisor_defeat":  false,
+                            "allowed_endings":  [
+
+                                                ],
+                            "guard":  "Jack was found and the route was opened before the refuge report.",
+                            "effects":  "Record bJackSafe; show the truth-discovery objective."
+                        },
+                        {
+                            "phase":  "DiscoverTruth",
+                            "event":  "TruthRevealed",
+                            "next_phase":  "FinalChoice",
+                            "required_flags":  [
+                                                   "bJackSafe",
+                                                   "bEvidenceFound",
+                                                   "bFalseReportFound"
+                                               ],
+                            "requires_supervisor_defeat":  false,
+                            "allowed_endings":  [
+
+                                                ],
+                            "guard":  "Jack has reached the refuge; both distinct evidence records have been registered.",
+                            "effects":  "Reveal the Director\u0027s fabrication and why innocent Jack was protected until the false case was ready; queue the Supervisor revelation, checklist rewrite and Correction_Order."
+                        },
+                        {
+                            "phase":  "FinalChoice",
+                            "event":  "SupervisorDefeated",
+                            "next_phase":  "FinalChoice",
+                            "required_flags":  [
+
+                                               ],
+                            "requires_supervisor_defeat":  false,
+                            "allowed_endings":  [
+
+                                                ],
+                            "guard":  "Current phase is FinalChoice; do not select an ending.",
+                            "effects":  "Unlock the two final files; Ending remains None."
+                        },
+                        {
+                            "phase":  "FinalChoice",
+                            "event":  "FinalDocumentRegistered",
+                            "next_phase":  "GameEnded",
+                            "required_flags":  [
+
+                                               ],
+                            "requires_supervisor_defeat":  true,
+                            "allowed_endings":  [
+                                                    "OfficialCut",
+                                                    "AuthenticRecord"
+                                                ],
+                            "guard":  "Supervisor gate satisfied; confirm one valid file; ignore repeated registration.",
+                            "effects":  "Record one ending: OfficialCut preserves the Director\u0027s false version; AuthenticRecord preserves the truth. Block Retake; trigger OnEndingTriggered."
+                        }
+                    ],
+    "event_policy":  [
+                         {
+                             "event":  "JackFound",
+                             "role":  "PhaseTransition"
+                         },
+                         {
+                             "event":  "EscapeRouteOpened",
+                             "role":  "PhaseTransition"
+                         },
+                         {
+                             "event":  "JackReachedRefuge",
+                             "role":  "PhaseTransition"
+                         },
+                         {
+                             "event":  "EvidenceCollected",
+                             "role":  "EvidenceRecord"
+                         },
+                         {
+                             "event":  "TruthRevealed",
+                             "role":  "PhaseTransition"
+                         },
+                         {
+                             "event":  "InterventorTurnedHostile",
+                             "role":  "EncounterNotification"
+                         },
+                         {
+                             "event":  "SupervisorEncounterStarted",
+                             "role":  "EncounterNotification"
+                         },
+                         {
+                             "event":  "SupervisorDefeated",
+                             "role":  "AccessGate"
+                         },
+                         {
+                             "event":  "FinalDocumentRegistered",
+                             "role":  "PhaseTransition"
+                         },
+                         {
+                             "event":  "EnemyNeutralized",
+                             "role":  "EncounterNotification"
+                         },
+                         {
+                             "event":  "PlayerDefeated",
+                             "role":  "CheckpointRecovery"
+                         },
+                         {
+                             "event":  "CheckpointReached",
+                             "role":  "CheckpointRecord"
+                         },
+                         {
+                             "event":  "ContinuityAltered",
+                             "role":  "PresentationNotice"
+                         },
+                         {
+                             "event":  "FutureMessageRead",
+                             "role":  "NarrativeRecord"
+                         }
+                     ],
+    "constraints":  [
+                        "Only the future BP_ObjectiveManager implementation may change phase.",
+                        "A duplicate evidence report never replaces the other evidence type.",
+                        "Supervisor defeat unlocks file registration without selecting an ending.",
+                        "Personal Retake does not undo persistent narrative facts.",
+                        "No shared interface, dispatcher, enum, struct or gameplay integration is implemented by this file.",
+                        "The rewritten framing/elimination checklist expresses the Director\u0027s orders; completing those entries is not a prerequisite for selecting AuthenticRecord."
+                    ],
+    "open_decisions":  [
+                           "[PROPUESTA] Accept evidence in either order; this file does not select a runtime collection policy.",
+                           "Agree Param encoding without changing the shared signature.",
+                           "A owns zero-health/Retake behavior; B owns enemy checkpoint restore behavior.",
+                           "The ordering of correction hostility and Supervisor revelation must follow the agreed playable sequence."
+                       ],
+    "narrative_invariants":  [
+                                 "Jack is innocent within this alternate fiction.",
+                                 "The Department keeps Jack alive while fabricating evidence to frame him as Jack the Ripper.",
+                                 "After the false case is complete, the Department intends his secret disappearance without revealing his identity.",
+                                 "The Director manufactures the official history.",
+                                 "Final registration chooses the official fabrication or preservation of the truth.",
+                                 "bJackSafe records reaching the refuge at that stage, not permanent survival."
+                             ]
+}

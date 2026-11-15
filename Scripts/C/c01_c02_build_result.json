@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager",
+    "/Game/Unscripted/Narrative/BP_GameState.BP_GameState"
+  ],
+  "dependencies": [
+    {
+      "asset": "/Game/Unscripted/Core/Interfaces/BPI_StoryEvents.BPI_StoryEvents",
+      "compiled": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager",
+      "compiled": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_GameState.BP_GameState",
+      "compiled": true
+    },
+    {
+      "asset": "/Game/Unscripted/Narrative/BP_GameMode.BP_GameMode",
+      "compiled": true
+    }
+  ]
+}

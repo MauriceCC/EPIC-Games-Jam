@@ -1,0 +1,879 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Enum preserves all original numeric values",
+      "passed": true
+    },
+    {
+      "name": "Encounter event appended at 13",
+      "passed": true
+    },
+    {
+      "name": "Default phase FindJack",
+      "passed": true
+    },
+    {
+      "name": "Default bJackFound",
+      "passed": true
+    },
+    {
+      "name": "Default bEscapeRouteOpen",
+      "passed": true
+    },
+    {
+      "name": "Default bJackSafe",
+      "passed": true
+    },
+    {
+      "name": "Default bEvidenceFound",
+      "passed": true
+    },
+    {
+      "name": "Default bFalseReportFound",
+      "passed": true
+    },
+    {
+      "name": "Default bSupervisorEncountered",
+      "passed": true
+    },
+    {
+      "name": "Default bSupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Default Ending None",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 0 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 0 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 1 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 1 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 2 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 2 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 3 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 3 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 4 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 4 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 JackFound",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 EvidenceCollected",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 TruthRevealed",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 InterventorTurnedHostile",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 SupervisorDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 FinalDocumentRegistered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 EnemyNeutralized",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 PlayerDefeated",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 CheckpointReached",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 ContinuityAltered",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 FutureMessageRead",
+      "passed": true
+    },
+    {
+      "name": "Phase/event guard 5 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Phase notification count 5 SupervisorEncounterStarted",
+      "passed": true
+    },
+    {
+      "name": "Sequence and duplicate JackFound",
+      "passed": true
+    },
+    {
+      "name": "Sequence and duplicate EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Sequence and duplicate JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Two multicast subscribers receive every transition",
+      "passed": true
+    },
+    {
+      "name": "Invalid evidence parameter ''",
+      "passed": true
+    },
+    {
+      "name": "Invalid evidence parameter 'Unknown'",
+      "passed": true
+    },
+    {
+      "name": "Invalid evidence parameter 'Nursing Record'",
+      "passed": true
+    },
+    {
+      "name": "Invalid evidence parameter 'OfficialCut'",
+      "passed": true
+    },
+    {
+      "name": "Duplicate evidence does not replace other record NursingRecord",
+      "passed": true
+    },
+    {
+      "name": "Both records do not auto-reveal NursingRecord",
+      "passed": true
+    },
+    {
+      "name": "Explicit reveal after distinct evidence NursingRecord",
+      "passed": true
+    },
+    {
+      "name": "Facts remain recorded NursingRecord",
+      "passed": true
+    },
+    {
+      "name": "Duplicate evidence does not replace other record FabricatedReport",
+      "passed": true
+    },
+    {
+      "name": "Both records do not auto-reveal FabricatedReport",
+      "passed": true
+    },
+    {
+      "name": "Explicit reveal after distinct evidence FabricatedReport",
+      "passed": true
+    },
+    {
+      "name": "Facts remain recorded FabricatedReport",
+      "passed": true
+    },
+    {
+      "name": "Premature evidence and boss reports are not banked",
+      "passed": true
+    },
+    {
+      "name": "Registration requires supervisor gate OfficialCut",
+      "passed": true
+    },
+    {
+      "name": "Encounter notification is idempotent OfficialCut",
+      "passed": true
+    },
+    {
+      "name": "Defeat unlocks but never selects ending OfficialCut",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration OfficialCut ",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration OfficialCut None",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration OfficialCut Official",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration OfficialCut Jack",
+      "passed": true
+    },
+    {
+      "name": "Valid registration selects exactly one ending OfficialCut",
+      "passed": true
+    },
+    {
+      "name": "GameEnded remains terminal OfficialCut",
+      "passed": true
+    },
+    {
+      "name": "Registration requires supervisor gate AuthenticRecord",
+      "passed": true
+    },
+    {
+      "name": "Encounter notification is idempotent AuthenticRecord",
+      "passed": true
+    },
+    {
+      "name": "Defeat unlocks but never selects ending AuthenticRecord",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration AuthenticRecord ",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration AuthenticRecord None",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration AuthenticRecord Official",
+      "passed": true
+    },
+    {
+      "name": "Invalid registration AuthenticRecord Jack",
+      "passed": true
+    },
+    {
+      "name": "Valid registration selects exactly one ending AuthenticRecord",
+      "passed": true
+    },
+    {
+      "name": "GameEnded remains terminal AuthenticRecord",
+      "passed": true
+    },
+    {
+      "name": "Synchronous reentrant report cannot skip a phase",
+      "passed": true
+    },
+    {
+      "name": "Normal report works after reentry guard releases",
+      "passed": true
+    },
+    {
+      "name": "Only CommitStoryPhase writes CurrentPhase",
+      "passed": true,
+      "details": [
+        "BP_ObjectiveManager.CommitStoryPhase"
+      ]
+    }
+  ],
+  "failed": [],
+  "check_count": 217,
+  "passed_count": 217
+}

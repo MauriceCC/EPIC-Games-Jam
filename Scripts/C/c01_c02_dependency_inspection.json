@@ -1,0 +1,621 @@
+{
+  "BP_GameMode": {
+    "class": "/Script/Engine.GameModeBase",
+    "variables": [
+      "/Script/Engine.GameModeBase.OptionsString",
+      "/Script/Engine.GameModeBase.GameSessionClass",
+      "/Script/Engine.GameModeBase.GameStateClass",
+      "/Script/Engine.GameModeBase.PlayerControllerClass",
+      "/Script/Engine.GameModeBase.PlayerStateClass",
+      "/Script/Engine.GameModeBase.HUDClass",
+      "/Script/Engine.GameModeBase.DefaultPawnClass",
+      "/Script/Engine.GameModeBase.SpectatorClass",
+      "/Script/Engine.GameModeBase.ReplaySpectatorPlayerControllerClass",
+      "/Script/Engine.GameModeBase.ServerStatReplicatorClass",
+      "/Script/Engine.GameModeBase.GameSession",
+      "/Script/Engine.GameModeBase.GameState",
+      "/Script/Engine.GameModeBase.ServerStatReplicator",
+      "/Script/Engine.GameModeBase.DefaultPlayerName",
+      "/Script/Engine.GameModeBase.bUseSeamlessTravel",
+      "/Script/Engine.GameModeBase.bStartPlayersAsSpectators",
+      "/Script/Engine.GameModeBase.bPauseable",
+      "/Script/Engine.GameModeBase.GameNetDriverReplicationSystem",
+      "/Script/Engine.Info.SpriteComponent",
+      "/Script/Engine.Actor.PrimaryActorTick",
+      "/Script/Engine.Actor.bNetTemporary",
+      "/Script/Engine.Actor.bOnlyRelevantToOwner",
+      "/Script/Engine.Actor.bAlwaysRelevant",
+      "/Script/Engine.Actor.bReplicateMovement",
+      "/Script/Engine.Actor.bCallPreReplication",
+      "/Script/Engine.Actor.bCallPreReplicationForReplay",
+      "/Script/Engine.Actor.bHidden",
+      "/Script/Engine.Actor.bTearOff",
+      "/Script/Engine.Actor.bForceNetAddressable",
+      "/Script/Engine.Actor.LevelInstanceType",
+      "/Script/Engine.Actor.LevelInstanceFlags",
+      "/Script/Engine.Actor.bIsMainWorldOnly",
+      "/Script/Engine.Actor.bIgnoreInPIE",
+      "/Script/Engine.Actor.bForceDuplicateInPIE",
+      "/Script/Engine.Actor.bExchangedRoles",
+      "/Script/Engine.Actor.bNetLoadOnClient",
+      "/Script/Engine.Actor.bNetUseOwnerRelevancy",
+      "/Script/Engine.Actor.bRelevantForNetworkReplays",
+      "/Script/Engine.Actor.bRelevantForLevelBounds",
+      "/Script/Engine.Actor.bReplayRewindable",
+      "/Script/Engine.Actor.bAllowTickBeforeBeginPlay",
+      "/Script/Engine.Actor.bAutoDestroyWhenFinished",
+      "/Script/Engine.Actor.bCanBeDamaged",
+      "/Script/Engine.Actor.bBlockInput",
+      "/Script/Engine.Actor.bCollideWhenPlacing",
+      "/Script/Engine.Actor.bFindCameraComponentWhenViewTarget",
+      "/Script/Engine.Actor.bGenerateOverlapEventsDuringLevelStreaming",
+      "/Script/Engine.Actor.bIgnoresOriginShifting",
+      "/Script/Engine.Actor.bEnableAutoLODGeneration",
+      "/Script/Engine.Actor.bIsEditorOnlyActor",
+      "/Script/Engine.Actor.bReplicates",
+      "/Script/Engine.Actor.bCanBeInCluster",
+      "/Script/Engine.Actor.bMigratingAsset",
+      "/Script/Engine.Actor.bAllowReceiveTickEventOnDedicatedServer",
+      "/Script/Engine.Actor.bReplicateUsingRegisteredSubObjectList",
+      "/Script/Engine.Actor.bActorEnableCollision",
+      "/Script/Engine.Actor.bActorIsBeingDestroyed",
+      "/Script/Engine.Actor.bAsyncPhysicsTickEnabled",
+      "/Script/Engine.Actor.UpdateOverlapsMethodDuringLevelStreaming",
+      "/Script/Engine.Actor.DefaultUpdateOverlapsMethodDuringLevelStreaming",
+      "/Script/Engine.Actor.RemoteRole",
+      "/Script/Engine.Actor.InitialLifeSpan",
+      "/Script/Engine.Actor.CustomTimeDilation",
+      "/Script/Engine.Actor.RayTracingGroupId",
+      "/Script/Engine.Actor.GridPlacement",
+      "/Script/Engine.Actor.RuntimeGrid",
+      "/Script/Engine.Actor.AttachmentReplication",
+      "/Script/Engine.Actor.ReplicatedMovement",
+      "/Script/Engine.Actor.Owner",
+      "/Script/Engine.Actor.NetDriverName",
+      "/Script/Engine.Actor.Role",
+      "/Script/Engine.Actor.NetDormancy",
+      "/Script/Engine.Actor.SpawnCollisionHandlingMethod",
+      "/Script/Engine.Actor.AutoReceiveInput",
+      "/Script/Engine.Actor.InputPriority",
+      "/Script/Engine.Actor.InputComponent",
+      "/Script/Engine.Actor.NetTag",
+      "/Script/Engine.Actor.NetCullDistanceSquared",
+      "/Script/Engine.Actor.NetUpdateFrequency",
+      "/Script/Engine.Actor.MinNetUpdateFrequency",
+      "/Script/Engine.Actor.NetPriority",
+      "/Script/Engine.Actor.PhysicsReplicationMode",
+      "/Script/Engine.Actor.Instigator",
+      "/Script/Engine.Actor.Children",
+      "/Script/Engine.Actor.RootComponent",
+      "/Script/Engine.Actor.PivotOffset",
+      "/Script/Engine.Actor.HLODLayer",
+      "/Script/Engine.Actor.ObjectsDetachedFromExternalPackage",
+      "/Script/Engine.Actor.Layers",
+      "/Script/Engine.Actor.ParentComponentActor",
+      "/Script/Engine.Actor.ParentComponent",
+      "/Script/Engine.Actor.ActorGuid",
+      "/Script/Engine.Actor.ActorInstanceGuid",
+      "/Script/Engine.Actor.ContentBundleGuid",
+      "/Script/Engine.Actor.DataLayers",
+      "/Script/Engine.Actor.DataLayerAssets",
+      "/Script/Engine.Actor.ExternalDataLayerAsset",
+      "/Script/Engine.Actor.GroupActor",
+      "/Script/Engine.Actor.SpriteScale",
+      "/Script/Engine.Actor.HiddenEditorViews",
+      "/Script/Engine.Actor.ActorLabel",
+      "/Script/Engine.Actor.FolderPath",
+      "/Script/Engine.Actor.FolderGuid",
+      "/Script/Engine.Actor.bHiddenEd",
+      "/Script/Engine.Actor.bIsEditorPreviewActor",
+      "/Script/Engine.Actor.bHiddenEdLayer",
+      "/Script/Engine.Actor.bHiddenEdLevel",
+      "/Script/Engine.Actor.bLockLocation",
+      "/Script/Engine.Actor.bActorLabelEditable",
+      "/Script/Engine.Actor.bEditable",
+      "/Script/Engine.Actor.bListedInSceneOutliner",
+      "/Script/Engine.Actor.bOptimizeBPComponentData",
+      "/Script/Engine.Actor.bCanPlayFromHere",
+      "/Script/Engine.Actor.bIsSpatiallyLoaded",
+      "/Script/Engine.Actor.bHiddenEdTemporary",
+      "/Script/Engine.Actor.bForceExternalActorLevelReferenceForPIE",
+      "/Script/Engine.Actor.Tags",
+      "/Script/Engine.Actor.OnTakeAnyDamage",
+      "/Script/Engine.Actor.OnTakePointDamage",
+      "/Script/Engine.Actor.OnTakeRadialDamage",
+      "/Script/Engine.Actor.OnActorBeginOverlap",
+      "/Script/Engine.Actor.OnActorEndOverlap",
+      "/Script/Engine.Actor.OnBeginCursorOver",
+      "/Script/Engine.Actor.OnEndCursorOver",
+      "/Script/Engine.Actor.OnClicked",
+      "/Script/Engine.Actor.OnReleased",
+      "/Script/Engine.Actor.OnInputTouchBegin",
+      "/Script/Engine.Actor.OnInputTouchEnd",
+      "/Script/Engine.Actor.OnInputTouchEnter",
+      "/Script/Engine.Actor.OnInputTouchLeave",
+      "/Script/Engine.Actor.OnActorHit",
+      "/Script/Engine.Actor.OnDestroyed",
+      "/Script/Engine.Actor.OnEndPlay",
+      "/Script/Engine.Actor.InstanceComponents",
+      "/Script/Engine.Actor.BlueprintCreatedComponents"
+    ],
+    "graphs": {
+      "UserConstructionScript": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "EventGraph": [
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.Actor'\",MemberName=\"ReceiveBeginPlay\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        },
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.Actor'\",MemberName=\"ReceiveTick\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "DeltaSeconds",
+              "type": "(PinCategory=\"real\",PinSubCategory=\"float\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ]
+    },
+    "defaults": {
+      "game_state_class": "<Object '/Game/Unscripted/Narrative/BP_GameState.BP_GameState_C' (0x000001C83CF1D200) Class 'BlueprintGeneratedClass'>",
+      "player_controller_class": "<Object '/Game/Unscripted/Player/BP_PlayerController.BP_PlayerController_C' (0x000001C83BD38C00) Class 'BlueprintGeneratedClass'>",
+      "default_pawn_class": "<Object '/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C' (0x000001C81B3D4600) Class 'BlueprintGeneratedClass'>",
+      "hud_class": "<Object '/Game/Unscripted/UI/BP_HUD.BP_HUD_C' (0x000001C83BD31500) Class 'BlueprintGeneratedClass'>"
+    }
+  },
+  "BP_GameState": {
+    "class": "/Script/Engine.GameStateBase",
+    "variables": [
+      "/Script/Engine.GameStateBase.GameModeClass",
+      "/Script/Engine.GameStateBase.AuthorityGameMode",
+      "/Script/Engine.GameStateBase.SpectatorClass",
+      "/Script/Engine.GameStateBase.PlayerArray",
+      "/Script/Engine.GameStateBase.bReplicatedHasBegunPlay",
+      "/Script/Engine.GameStateBase.ReplicatedWorldTimeSecondsDouble",
+      "/Script/Engine.GameStateBase.ServerWorldTimeSecondsDelta",
+      "/Script/Engine.GameStateBase.ServerWorldTimeSecondsUpdateFrequency",
+      "/Script/Engine.Info.SpriteComponent",
+      "/Script/Engine.Actor.PrimaryActorTick",
+      "/Script/Engine.Actor.bNetTemporary",
+      "/Script/Engine.Actor.bOnlyRelevantToOwner",
+      "/Script/Engine.Actor.bAlwaysRelevant",
+      "/Script/Engine.Actor.bReplicateMovement",
+      "/Script/Engine.Actor.bCallPreReplication",
+      "/Script/Engine.Actor.bCallPreReplicationForReplay",
+      "/Script/Engine.Actor.bHidden",
+      "/Script/Engine.Actor.bTearOff",
+      "/Script/Engine.Actor.bForceNetAddressable",
+      "/Script/Engine.Actor.LevelInstanceType",
+      "/Script/Engine.Actor.LevelInstanceFlags",
+      "/Script/Engine.Actor.bIsMainWorldOnly",
+      "/Script/Engine.Actor.bIgnoreInPIE",
+      "/Script/Engine.Actor.bForceDuplicateInPIE",
+      "/Script/Engine.Actor.bExchangedRoles",
+      "/Script/Engine.Actor.bNetLoadOnClient",
+      "/Script/Engine.Actor.bNetUseOwnerRelevancy",
+      "/Script/Engine.Actor.bRelevantForNetworkReplays",
+      "/Script/Engine.Actor.bRelevantForLevelBounds",
+      "/Script/Engine.Actor.bReplayRewindable",
+      "/Script/Engine.Actor.bAllowTickBeforeBeginPlay",
+      "/Script/Engine.Actor.bAutoDestroyWhenFinished",
+      "/Script/Engine.Actor.bCanBeDamaged",
+      "/Script/Engine.Actor.bBlockInput",
+      "/Script/Engine.Actor.bCollideWhenPlacing",
+      "/Script/Engine.Actor.bFindCameraComponentWhenViewTarget",
+      "/Script/Engine.Actor.bGenerateOverlapEventsDuringLevelStreaming",
+      "/Script/Engine.Actor.bIgnoresOriginShifting",
+      "/Script/Engine.Actor.bEnableAutoLODGeneration",
+      "/Script/Engine.Actor.bIsEditorOnlyActor",
+      "/Script/Engine.Actor.bReplicates",
+      "/Script/Engine.Actor.bCanBeInCluster",
+      "/Script/Engine.Actor.bMigratingAsset",
+      "/Script/Engine.Actor.bAllowReceiveTickEventOnDedicatedServer",
+      "/Script/Engine.Actor.bReplicateUsingRegisteredSubObjectList",
+      "/Script/Engine.Actor.bActorEnableCollision",
+      "/Script/Engine.Actor.bActorIsBeingDestroyed",
+      "/Script/Engine.Actor.bAsyncPhysicsTickEnabled",
+      "/Script/Engine.Actor.UpdateOverlapsMethodDuringLevelStreaming",
+      "/Script/Engine.Actor.DefaultUpdateOverlapsMethodDuringLevelStreaming",
+      "/Script/Engine.Actor.RemoteRole",
+      "/Script/Engine.Actor.InitialLifeSpan",
+      "/Script/Engine.Actor.CustomTimeDilation",
+      "/Script/Engine.Actor.RayTracingGroupId",
+      "/Script/Engine.Actor.GridPlacement",
+      "/Script/Engine.Actor.RuntimeGrid",
+      "/Script/Engine.Actor.AttachmentReplication",
+      "/Script/Engine.Actor.ReplicatedMovement",
+      "/Script/Engine.Actor.Owner",
+      "/Script/Engine.Actor.NetDriverName",
+      "/Script/Engine.Actor.Role",
+      "/Script/Engine.Actor.NetDormancy",
+      "/Script/Engine.Actor.SpawnCollisionHandlingMethod",
+      "/Script/Engine.Actor.AutoReceiveInput",
+      "/Script/Engine.Actor.InputPriority",
+      "/Script/Engine.Actor.InputComponent",
+      "/Script/Engine.Actor.NetTag",
+      "/Script/Engine.Actor.NetCullDistanceSquared",
+      "/Script/Engine.Actor.NetUpdateFrequency",
+      "/Script/Engine.Actor.MinNetUpdateFrequency",
+      "/Script/Engine.Actor.NetPriority",
+      "/Script/Engine.Actor.PhysicsReplicationMode",
+      "/Script/Engine.Actor.Instigator",
+      "/Script/Engine.Actor.Children",
+      "/Script/Engine.Actor.RootComponent",
+      "/Script/Engine.Actor.PivotOffset",
+      "/Script/Engine.Actor.HLODLayer",
+      "/Script/Engine.Actor.ObjectsDetachedFromExternalPackage",
+      "/Script/Engine.Actor.Layers",
+      "/Script/Engine.Actor.ParentComponentActor",
+      "/Script/Engine.Actor.ParentComponent",
+      "/Script/Engine.Actor.ActorGuid",
+      "/Script/Engine.Actor.ActorInstanceGuid",
+      "/Script/Engine.Actor.ContentBundleGuid",
+      "/Script/Engine.Actor.DataLayers",
+      "/Script/Engine.Actor.DataLayerAssets",
+      "/Script/Engine.Actor.ExternalDataLayerAsset",
+      "/Script/Engine.Actor.GroupActor",
+      "/Script/Engine.Actor.SpriteScale",
+      "/Script/Engine.Actor.HiddenEditorViews",
+      "/Script/Engine.Actor.ActorLabel",
+      "/Script/Engine.Actor.FolderPath",
+      "/Script/Engine.Actor.FolderGuid",
+      "/Script/Engine.Actor.bHiddenEd",
+      "/Script/Engine.Actor.bIsEditorPreviewActor",
+      "/Script/Engine.Actor.bHiddenEdLayer",
+      "/Script/Engine.Actor.bHiddenEdLevel",
+      "/Script/Engine.Actor.bLockLocation",
+      "/Script/Engine.Actor.bActorLabelEditable",
+      "/Script/Engine.Actor.bEditable",
+      "/Script/Engine.Actor.bListedInSceneOutliner",
+      "/Script/Engine.Actor.bOptimizeBPComponentData",
+      "/Script/Engine.Actor.bCanPlayFromHere",
+      "/Script/Engine.Actor.bIsSpatiallyLoaded",
+      "/Script/Engine.Actor.bHiddenEdTemporary",
+      "/Script/Engine.Actor.bForceExternalActorLevelReferenceForPIE",
+      "/Script/Engine.Actor.Tags",
+      "/Script/Engine.Actor.OnTakeAnyDamage",
+      "/Script/Engine.Actor.OnTakePointDamage",
+      "/Script/Engine.Actor.OnTakeRadialDamage",
+      "/Script/Engine.Actor.OnActorBeginOverlap",
+      "/Script/Engine.Actor.OnActorEndOverlap",
+      "/Script/Engine.Actor.OnBeginCursorOver",
+      "/Script/Engine.Actor.OnEndCursorOver",
+      "/Script/Engine.Actor.OnClicked",
+      "/Script/Engine.Actor.OnReleased",
+      "/Script/Engine.Actor.OnInputTouchBegin",
+      "/Script/Engine.Actor.OnInputTouchEnd",
+      "/Script/Engine.Actor.OnInputTouchEnter",
+      "/Script/Engine.Actor.OnInputTouchLeave",
+      "/Script/Engine.Actor.OnActorHit",
+      "/Script/Engine.Actor.OnDestroyed",
+      "/Script/Engine.Actor.OnEndPlay",
+      "/Script/Engine.Actor.InstanceComponents",
+      "/Script/Engine.Actor.BlueprintCreatedComponents"
+    ],
+    "graphs": {
+      "UserConstructionScript": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "EventGraph": [
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.Actor'\",MemberName=\"ReceiveBeginPlay\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        },
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.Actor'\",MemberName=\"ReceiveTick\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "DeltaSeconds",
+              "type": "(PinCategory=\"real\",PinSubCategory=\"float\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "GetCurrentPhase": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_FunctionResult_0:execute"
+              ]
+            }
+          ]
+        },
+        {
+          "class": "K2Node_FunctionResult",
+          "pins": [
+            {
+              "name": "execute",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_FunctionEntry_0:then"
+              ]
+            },
+            {
+              "name": "Result",
+              "type": "(PinCategory=\"byte\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.UserDefinedEnum'/Game/Unscripted/Core/Enums/EStoryPhase.EStoryPhase'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "GetObjectiveManager": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_FunctionResult_0:execute"
+              ]
+            }
+          ]
+        },
+        {
+          "class": "K2Node_FunctionResult",
+          "pins": [
+            {
+              "name": "execute",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_FunctionEntry_0:then"
+              ]
+            },
+            {
+              "name": "Result",
+              "type": "(PinCategory=\"object\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.BlueprintGeneratedClass'/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager_C'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_VariableGet_0:BP_ObjectiveManager"
+              ]
+            }
+          ]
+        },
+        {
+          "class": "K2Node_VariableGet",
+          "pins": [
+            {
+              "name": "BP_ObjectiveManager",
+              "type": "(PinCategory=\"object\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.BlueprintGeneratedClass'/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager_C'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": [
+                "K2Node_FunctionResult_0:Result"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "BP_ObjectiveManager": {
+    "class": "/Script/Engine.ActorComponent",
+    "variables": [
+      "OnStoryPhaseChanged",
+      "OnChecklistUpdated",
+      "OnDialogueStarted",
+      "OnDialogueFinished",
+      "OnEndingTriggered",
+      "/Script/Engine.ActorComponent.PrimaryComponentTick",
+      "/Script/Engine.ActorComponent.ComponentTags",
+      "/Script/Engine.ActorComponent.AssetUserData",
+      "/Script/Engine.ActorComponent.AssetUserDataEditorOnly",
+      "/Script/Engine.ActorComponent.UCSSerializationIndex",
+      "/Script/Engine.ActorComponent.bNetAddressable",
+      "/Script/Engine.ActorComponent.bReplicateUsingRegisteredSubObjectList",
+      "/Script/Engine.ActorComponent.bReplicates",
+      "/Script/Engine.ActorComponent.bCreatedByConstructionScript",
+      "/Script/Engine.ActorComponent.bInstanceComponent",
+      "/Script/Engine.ActorComponent.bAutoActivate",
+      "/Script/Engine.ActorComponent.bIsActive",
+      "/Script/Engine.ActorComponent.bEditableWhenInherited",
+      "/Script/Engine.ActorComponent.bCanEverAffectNavigation",
+      "/Script/Engine.ActorComponent.bIsEditorOnly",
+      "/Script/Engine.ActorComponent.bIsVisualizationComponent",
+      "/Script/Engine.ActorComponent.bNeedsUCSSerializationIndexEvaluted",
+      "/Script/Engine.ActorComponent.CreationMethod",
+      "/Script/Engine.ActorComponent.OnComponentActivated",
+      "/Script/Engine.ActorComponent.OnComponentDeactivated",
+      "/Script/Engine.ActorComponent.UCSModifiedProperties"
+    ],
+    "graphs": {
+      "EventGraph": [
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.ActorComponent'\",MemberName=\"ReceiveBeginPlay\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        },
+        {
+          "class": "K2Node_Event",
+          "pins": [
+            {
+              "name": "OutputDelegate",
+              "type": "(PinCategory=\"delegate\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=\"/Script/CoreUObject.Class'/Script/Engine.ActorComponent'\",MemberName=\"ReceiveTick\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "DeltaSeconds",
+              "type": "(PinCategory=\"real\",PinSubCategory=\"float\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "OnStoryPhaseChanged": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "NewPhase",
+              "type": "(PinCategory=\"byte\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.UserDefinedEnum'/Game/Unscripted/Core/Enums/EStoryPhase.EStoryPhase'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "OnChecklistUpdated": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "OnDialogueStarted": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "Row",
+              "type": "(PinCategory=\"name\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "OnDialogueFinished": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "Row",
+              "type": "(PinCategory=\"name\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "OnEndingTriggered": [
+        {
+          "class": "K2Node_FunctionEntry",
+          "pins": [
+            {
+              "name": "then",
+              "type": "(PinCategory=\"exec\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            },
+            {
+              "name": "Ending",
+              "type": "(PinCategory=\"byte\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.UserDefinedEnum'/Game/Unscripted/Core/Enums/EEndingType.EEndingType'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+              "links": []
+            }
+          ]
+        }
+      ]
+    },
+    "variable_metadata_error": "Blueprint: Failed to find property 'new_variables' for attribute 'new_variables' on 'Blueprint'",
+    "dispatcher_actions": [
+      "Predeterminado|BindEventtoOnStoryPhaseChanged",
+      "Predeterminado|AssignOnStoryPhaseChanged",
+      "Predeterminado|CallOnStoryPhaseChanged",
+      "Predeterminado|UnbindEventfromOnStoryPhaseChanged",
+      "Predeterminado|UnbindallEventsfromOnStoryPhaseChanged",
+      "Predeterminado|BindEventtoOnEndingTriggered",
+      "Predeterminado|AssignOnEndingTriggered",
+      "Predeterminado|CallOnEndingTriggered",
+      "Predeterminado|UnbindEventfromOnEndingTriggered",
+      "Predeterminado|UnbindallEventsfromOnEndingTriggered"
+    ]
+  },
+  "dirty_content": [],
+  "dirty_maps": []
+}

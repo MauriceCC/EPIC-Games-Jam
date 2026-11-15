@@ -1,0 +1,53 @@
+{
+    "status":  "[PROPUESTA] Future presentation-only widget cases; no widget assets created",
+    "data_scope":  "References existing C CSV rows and plain presentation values; no replacement shared types.",
+    "planned_assets":  [
+                           "/Game/Unscripted/UI/Test/WBP_DialoguePrototype_C",
+                           "/Game/Unscripted/UI/Test/WBP_ChecklistPrototype_C"
+                       ],
+    "dialogue_cases":  [
+                           {
+                               "id":  "JackConversation",
+                               "sequence":  "JackMeeting"
+                           },
+                           {
+                               "id":  "LongDialogue",
+                               "sequence":  "TruthRevelation"
+                           },
+                           {
+                               "id":  "CorrectionTerminal",
+                               "sequence":  "Correction"
+                           },
+                           {
+                               "id":  "Briefing",
+                               "sequence":  "Briefing"
+                           }
+                       ],
+    "checklist_cases":  [
+                            {
+                                "id":  "InitialOrders",
+                                "phase":  "FindJack",
+                                "expected_item_count":  3,
+                                "expected_completed_count":  0
+                            },
+                            {
+                                "id":  "RewrittenOrders",
+                                "phase":  "FinalChoice",
+                                "expected_item_count":  4,
+                                "expected_completed_count":  2
+                            }
+                        ],
+    "preserve_completed_prefix":  2,
+    "presentation_only":  true,
+    "automatic_gameplay_locks":  false,
+    "layout_profiles":  [
+                            {
+                                "width":  1280,
+                                "height":  720
+                            },
+                            {
+                                "width":  1920,
+                                "height":  1080
+                            }
+                        ]
+}

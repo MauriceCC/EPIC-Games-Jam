@@ -1,0 +1,720 @@
+{
+    "date":  "2026-11-14",
+    "branch":  "c/f0-narrative-preparation",
+    "revision":  "5f269ca6c3df5442d4eff79a4ee7380e3bd8791d",
+    "phase":  "F0",
+    "status":  "Blocked for F1 implementation",
+    "method":  "Live Unreal MCP graph/pin, dispatcher, parent-class, struct-schema and inventory inspection; C-only compilation checks.",
+    "phase_rule":  "Plan 00 sections 5.1-5.2 and the F0 -\u003e C1 dependency gate require the shared skeleton to be validated before F1.",
+    "gameplay_functionality_implemented":  [
+
+                                           ],
+    "components":  [
+                       {
+                           "asset":  "/Game/Unscripted/Narrative/BP_ObjectiveManager",
+                           "parent_class":  "/Script/Engine.ActorComponent",
+                           "declared_variables":  [
+
+                                                  ],
+                           "declared_dispatchers":  [
+
+                                                    ],
+                           "required_dispatchers":  [
+                                                        "OnStoryPhaseChanged",
+                                                        "OnChecklistUpdated",
+                                                        "OnDialogueStarted",
+                                                        "OnDialogueFinished",
+                                                        "OnEndingTriggered"
+                                                    ],
+                           "missing_dispatchers":  [
+                                                       "OnStoryPhaseChanged",
+                                                       "OnChecklistUpdated",
+                                                       "OnDialogueStarted",
+                                                       "OnDialogueFinished",
+                                                       "OnEndingTriggered"
+                                                   ],
+                           "graphs":  [
+                                          {
+                                              "name":  "EventGraph",
+                                              "node_count":  2,
+                                              "events":  [
+                                                             "BeginPlay",
+                                                             "Tick"
+                                                         ],
+                                              "output_connection_count":  0
+                                          }
+                                      ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Narrative/BP_InteractionComponent",
+                           "parent_class":  "/Script/Engine.ActorComponent",
+                           "declared_variables":  [
+
+                                                  ],
+                           "declared_dispatchers":  [
+
+                                                    ],
+                           "required_dispatchers":  [
+                                                        "OnFocusChanged"
+                                                    ],
+                           "missing_dispatchers":  [
+                                                       "OnFocusChanged"
+                                                   ],
+                           "graphs":  [
+                                          {
+                                              "name":  "EventGraph",
+                                              "node_count":  2,
+                                              "events":  [
+                                                             "BeginPlay",
+                                                             "Tick"
+                                                         ],
+                                              "output_connection_count":  0
+                                          }
+                                      ]
+                       }
+                   ],
+    "interfaces":  [
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_StoryEvents",
+                           "functions":  [
+                                             {
+                                                 "name":  "ReportStoryEvent",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Event",
+                                                                    "type":  "EStoryEvent"
+                                                                },
+                                                                {
+                                                                    "name":  "Source",
+                                                                    "type":  "ActorActionUtility"
+                                                                },
+                                                                {
+                                                                    "name":  "Param",
+                                                                    "type":  "Name"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "signature_mismatch"
+                                             },
+                                             {
+                                                 "name":  "GetCurrentPhase",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "EStoryPhase"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "GetObjectiveManager",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "BP_ObjectiveManager"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             }
+                                         ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_Interactable",
+                           "functions":  [
+                                             {
+                                                 "name":  "CanInteract",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Interactor",
+                                                                    "type":  "Actor"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "bool"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "GetInteractionText",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Interactor",
+                                                                    "type":  "Actor"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "Text"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "GetInteractionPriority",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "Text"
+                                                                 }
+                                                             ],
+                                                 "status":  "signature_mismatch"
+                                             },
+                                             {
+                                                 "name":  "Interact",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Interactor",
+                                                                    "type":  "ActorActionUtility"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "signature_mismatch"
+                                             }
+                                         ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_PlayerControl",
+                           "functions":  [
+                                             {
+                                                 "name":  "SetGameplayInputEnabled",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "bEnabled",
+                                                                    "type":  "bool"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "SetRetakeBlocked",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "bBlocked",
+                                                                    "type":  "bool"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "ClearRetakeHistory",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "RequestFinisher",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Target",
+                                                                    "type":  "ActorComponent"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "signature_mismatch"
+                                             },
+                                             {
+                                                 "name":  "GetStealthComponent",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "BP_StealthComponent"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             }
+                                         ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_CheckpointListener",
+                           "functions":  [
+                                             {
+                                                 "name":  "OnCheckpointRestore",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "CheckpointId",
+                                                                    "type":  "Name"
+                                                                },
+                                                                {
+                                                                    "name":  "RespawnTransform",
+                                                                    "type":  "Transform"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             }
+                                         ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_Damageable",
+                           "functions":  [
+                                             {
+                                                 "name":  "ReceiveHit",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "HitInfo",
+                                                                    "type":  "ST_HitInfo"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "EHitResult"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "IsDefeated",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "bool"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             }
+                                         ]
+                       },
+                       {
+                           "asset":  "/Game/Unscripted/Core/Interfaces/BPI_TimeAffectable",
+                           "functions":  [
+                                             {
+                                                 "name":  "CanBeTemporalCutTarget",
+                                                 "inputs":  [
+
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "bool"
+                                                                 }
+                                                             ],
+                                                 "status":  "matches_documented_signature"
+                                             },
+                                             {
+                                                 "name":  "ApplyTemporalFreeze",
+                                                 "inputs":  [
+                                                                {
+                                                                    "name":  "Duration",
+                                                                    "type":  "double"
+                                                                },
+                                                                {
+                                                                    "name":  "PostureDamage",
+                                                                    "type":  "double"
+                                                                }
+                                                            ],
+                                                 "outputs":  [
+                                                                 {
+                                                                     "name":  "Result",
+                                                                     "type":  "double"
+                                                                 }
+                                                             ],
+                                                 "status":  "precision_confirmation_required"
+                                             }
+                                         ]
+                       }
+                   ],
+    "blocking_signature_mismatches":  [
+                                          {
+                                              "interface":  "BPI_StoryEvents",
+                                              "function":  "ReportStoryEvent",
+                                              "pin":  "Source",
+                                              "direction":  "input",
+                                              "expected":  "Actor",
+                                              "observed":  "ActorActionUtility"
+                                          },
+                                          {
+                                              "interface":  "BPI_Interactable",
+                                              "function":  "GetInteractionPriority",
+                                              "pin":  "Result",
+                                              "direction":  "output",
+                                              "expected":  "int",
+                                              "observed":  "Text"
+                                          },
+                                          {
+                                              "interface":  "BPI_Interactable",
+                                              "function":  "Interact",
+                                              "pin":  "Interactor",
+                                              "direction":  "input",
+                                              "expected":  "Actor",
+                                              "observed":  "ActorActionUtility"
+                                          },
+                                          {
+                                              "interface":  "BPI_PlayerControl",
+                                              "function":  "RequestFinisher",
+                                              "pin":  "Target",
+                                              "direction":  "input",
+                                              "expected":  "Actor",
+                                              "observed":  "ActorComponent"
+                                          }
+                                      ],
+    "numeric_precision_review":  [
+                                     {
+                                         "interface":  "BPI_TimeAffectable",
+                                         "function":  "ApplyTemporalFreeze",
+                                         "pin":  "Duration",
+                                         "direction":  "input",
+                                         "expected":  "float",
+                                         "observed":  "double"
+                                     },
+                                     {
+                                         "interface":  "BPI_TimeAffectable",
+                                         "function":  "ApplyTemporalFreeze",
+                                         "pin":  "PostureDamage",
+                                         "direction":  "input",
+                                         "expected":  "float",
+                                         "observed":  "double"
+                                     },
+                                     {
+                                         "interface":  "BPI_TimeAffectable",
+                                         "function":  "ApplyTemporalFreeze",
+                                         "pin":  "Result",
+                                         "direction":  "output",
+                                         "expected":  "float",
+                                         "observed":  "double"
+                                     }
+                                 ],
+    "structs":  [
+                    {
+                        "asset":  "/Game/Unscripted/Core/Structs/ST_DialogueLine",
+                        "reflected_field_schema":  {
+                                                       "speaker":  {
+                                                                       "type":  "string",
+                                                                       "title":  "ESpeaker",
+                                                                       "enum":  [
+                                                                                    "Agent",
+                                                                                    "Jack",
+                                                                                    "Supervisor",
+                                                                                    "Director",
+                                                                                    "FutureSelf",
+                                                                                    "Interventor",
+                                                                                    "System"
+                                                                                ]
+                                                                   },
+                                                       "text":  {
+                                                                    "type":  "string"
+                                                                },
+                                                       "duration":  {
+                                                                        "type":  "number"
+                                                                    },
+                                                       "nextRow":  {
+                                                                       "type":  "string"
+                                                                   }
+                                                   },
+                        "note":  "Reflection schema keys are emitted by the MCP serializer. This does not constitute a DataTable import or verify native numeric precision/default values."
+                    },
+                    {
+                        "asset":  "/Game/Unscripted/Core/Structs/ST_ChecklistRow",
+                        "reflected_field_schema":  {
+                                                       "phase":  {
+                                                                     "type":  "string",
+                                                                     "title":  "EStoryPhase",
+                                                                     "enum":  [
+                                                                                  "FindJack",
+                                                                                  "OpenEscapeRoute",
+                                                                                  "ProtectJack",
+                                                                                  "DiscoverTruth",
+                                                                                  "FinalChoice",
+                                                                                  "GameEnded"
+                                                                              ]
+                                                                 },
+                                                       "items":  {
+                                                                     "type":  "array",
+                                                                     "items":  {
+                                                                                   "type":  "string"
+                                                                               }
+                                                                 },
+                                                       "completedMask":  {
+                                                                             "type":  "array",
+                                                                             "items":  {
+                                                                                           "type":  "boolean"
+                                                                                       }
+                                                                         },
+                                                       "bIsRewritten":  {
+                                                                            "type":  "boolean"
+                                                                        }
+                                                   },
+                        "note":  "Reflection schema keys are emitted by the MCP serializer. This does not constitute a DataTable import or verify native numeric precision/default values."
+                    },
+                    {
+                        "asset":  "/Game/Unscripted/Core/Structs/ST_HitInfo",
+                        "reflected_field_schema":  {
+                                                       "damage":  {
+                                                                      "type":  "number"
+                                                                  },
+                                                       "postureDamage":  {
+                                                                             "type":  "number"
+                                                                         },
+                                                       "attackType":  {
+                                                                          "type":  "string",
+                                                                          "title":  "EAttackType",
+                                                                          "enum":  [
+                                                                                       "Light1",
+                                                                                       "Light2",
+                                                                                       "Light3",
+                                                                                       "Heavy",
+                                                                                       "Finisher",
+                                                                                       "Stealth",
+                                                                                       "EnemyBasic",
+                                                                                       "EnemyCharged",
+                                                                                       "EnemySweep",
+                                                                                       "EnemyTemporal"
+                                                                                   ]
+                                                                      },
+                                                       "instigator":  {
+                                                                          "type":  "object",
+                                                                          "title":  "/Script/Engine.Actor",
+                                                                          "properties":  {
+                                                                                             "refPath":  {
+                                                                                                             "type":  "string"
+                                                                                                         }
+                                                                                         },
+                                                                          "required":  [
+                                                                                           "refPath"
+                                                                                       ]
+                                                                      },
+                                                       "hitLocation":  {
+                                                                           "title":  "Vector",
+                                                                           "type":  "object",
+                                                                           "properties":  {
+                                                                                              "x":  {
+                                                                                                        "type":  "number"
+                                                                                                    },
+                                                                                              "y":  {
+                                                                                                        "type":  "number"
+                                                                                                    },
+                                                                                              "z":  {
+                                                                                                        "type":  "number"
+                                                                                                    }
+                                                                                          },
+                                                                           "required":  [
+                                                                                            "x",
+                                                                                            "y",
+                                                                                            "z"
+                                                                                        ]
+                                                                       },
+                                                       "hitDirection":  {
+                                                                            "title":  "Vector",
+                                                                            "type":  "object",
+                                                                            "properties":  {
+                                                                                               "x":  {
+                                                                                                         "type":  "number"
+                                                                                                     },
+                                                                                               "y":  {
+                                                                                                         "type":  "number"
+                                                                                                     },
+                                                                                               "z":  {
+                                                                                                         "type":  "number"
+                                                                                                     }
+                                                                                           },
+                                                                            "required":  [
+                                                                                             "x",
+                                                                                             "y",
+                                                                                             "z"
+                                                                                         ]
+                                                                        },
+                                                       "bParryable":  {
+                                                                          "type":  "boolean"
+                                                                      },
+                                                       "bNonLethal":  {
+                                                                          "type":  "boolean"
+                                                                      }
+                                                   },
+                        "note":  "Reflection schema keys are emitted by the MCP serializer. This does not constitute a DataTable import or verify native numeric precision/default values."
+                    }
+                ],
+    "read_only_dependencies":  [
+                                   {
+                                       "asset":  "/Game/Unscripted/Player/BP_HealthComponent",
+                                       "declared_dispatchers":  [
+
+                                                                ],
+                                       "missing_dispatchers":  [
+                                                                   "OnHealthChanged",
+                                                                   "OnDepleted"
+                                                               ],
+                                       "custom_function_graphs":  [
+
+                                                                  ]
+                                   },
+                                   {
+                                       "asset":  "/Game/Unscripted/Player/BP_CombatComponent",
+                                       "declared_dispatchers":  [
+
+                                                                ],
+                                       "missing_dispatchers":  [
+                                                                   "OnStaminaChanged",
+                                                                   "OnCombatStateChanged"
+                                                               ],
+                                       "custom_function_graphs":  [
+
+                                                                  ]
+                                   },
+                                   {
+                                       "asset":  "/Game/Unscripted/Player/BP_TemporalComponent",
+                                       "declared_dispatchers":  [
+
+                                                                ],
+                                       "missing_dispatchers":  [
+                                                                   "OnRetakeChargesChanged",
+                                                                   "OnTemporalCutCooldown",
+                                                                   "OnRetakePerformed"
+                                                               ],
+                                       "custom_function_graphs":  [
+
+                                                                  ]
+                                   },
+                                   {
+                                       "asset":  "/Game/Unscripted/Enemies/BP_StealthComponent",
+                                       "declared_dispatchers":  [
+
+                                                                ],
+                                       "missing_dispatchers":  [
+                                                                   "OnDetectionChanged"
+                                                               ],
+                                       "custom_function_graphs":  [
+
+                                                                  ]
+                                   }
+                               ],
+    "missing_assets":  [
+                           "/Game/Unscripted/Narrative/BP_GameMode",
+                           "/Game/Unscripted/Narrative/BP_GameState",
+                           "/Game/Unscripted/UI/BP_HUD",
+                           "/Game/Unscripted/Narrative/BP_InteractableBase",
+                           "/Game/Unscripted/Narrative/BP_Door",
+                           "/Game/Unscripted/Narrative/BP_Hideout",
+                           "/Game/Unscripted/Narrative/BP_Evidence",
+                           "/Game/Unscripted/Narrative/BP_FinalChoice",
+                           "/Game/Unscripted/Narrative/BP_Checkpoint",
+                           "/Game/Unscripted/Narrative/BP_StoryTrigger",
+                           "/Game/Unscripted/Maps/Test/L_Test_C",
+                           "/Game/Unscripted/Maps/L_Whitechapel_Story"
+                       ],
+    "task_readiness":  [
+                           {
+                               "task":  "C-01",
+                               "scope":  "ObjectiveManager phase guards and narrative flags",
+                               "technical_state":  "Enums and the component class exist; required ObjectiveManager dispatchers are absent and ReportStoryEvent.Source has an incorrect type.",
+                               "allowed_now":  "No F1 implementation; F0 remains incomplete."
+                           },
+                           {
+                               "task":  "C-02",
+                               "scope":  "Decision-table preparation and source-data consistency",
+                               "technical_state":  "Existing C source data is independent of missing runtime assets.",
+                               "allowed_now":  "Documentation and source validation only."
+                           },
+                           {
+                               "task":  "C-03",
+                               "scope":  "Interaction selection, numeric priority and execution",
+                               "technical_state":  "Component is empty; OnFocusChanged is absent; priority is Text and Interact.Interactor is ActorActionUtility.",
+                               "allowed_now":  "No runtime implementation against incompatible shared signatures."
+                           },
+                           {
+                               "task":  "C-04/C-05",
+                               "scope":  "Interactables, hiding and evidence pickup",
+                               "technical_state":  "Base shells/test map are absent; Interact signature is incompatible and the Stealth shell has no custom function graphs.",
+                               "allowed_now":  "Source preparation only."
+                           },
+                           {
+                               "task":  "C-06/C-07",
+                               "scope":  "Dialogue/checklist tables and widgets",
+                               "technical_state":  "Struct field shapes and ESpeaker/EStoryPhase values are inspectable; table import and widget creation remain in F1.",
+                               "allowed_now":  "Source/schema comparison and preparation; no import or Widget Blueprint creation."
+                           },
+                           {
+                               "task":  "C-08",
+                               "scope":  "Reactive HUD",
+                               "technical_state":  "HUD/GameState shells and all required component dispatcher declarations are absent.",
+                               "allowed_now":  "Binding design only."
+                           },
+                           {
+                               "task":  "C-09",
+                               "scope":  "Checkpoint and respawn",
+                               "technical_state":  "Checkpoint interface graph matches the documented types, but GameMode/checkpoint shell/test map are missing.",
+                               "allowed_now":  "Acceptance preparation only."
+                           },
+                           {
+                               "task":  "C-10",
+                               "scope":  "Continuity notice",
+                               "technical_state":  "English notice data exists; runtime widget/host is unavailable under the current phase gate.",
+                               "allowed_now":  "Source validation only."
+                           }
+                       ],
+    "compile_checks":  [
+                           {
+                               "asset":  "/Game/Unscripted/Narrative/BP_ObjectiveManager",
+                               "passed":  true,
+                               "warnings_as_errors":  true,
+                               "dirty_before":  false,
+                               "dirty_after":  false,
+                               "saved":  false
+                           },
+                           {
+                               "asset":  "/Game/Unscripted/Narrative/BP_InteractionComponent",
+                               "passed":  true,
+                               "warnings_as_errors":  true,
+                               "dirty_before":  false,
+                               "dirty_after":  false,
+                               "saved":  false
+                           }
+                       ],
+    "limitations":  [
+                        "No Core, A, B or D assets were modified or compiled explicitly.",
+                        "No creation, graph editing, shared dispatcher declaration, import or save was performed.",
+                        "Native UFunction schema lookups were empty; function signatures were inspected from their actual graph pins.",
+                        "Numeric widths/default values are not proven by the generic struct JSON number type.",
+                        "CSV import, runtime behavior and gameplay acceptance were not tested."
+                    ],
+    "struct_shape_checks":  [
+                                {
+                                    "asset":  "/Game/Unscripted/Core/Structs/ST_DialogueLine",
+                                    "field_names_and_json_kinds_match_documentation":  true
+                                },
+                                {
+                                    "asset":  "/Game/Unscripted/Core/Structs/ST_ChecklistRow",
+                                    "field_names_and_json_kinds_match_documentation":  true
+                                },
+                                {
+                                    "asset":  "/Game/Unscripted/Core/Structs/ST_HitInfo",
+                                    "field_names_and_json_kinds_match_documentation":  true
+                                }
+                            ]
+}
