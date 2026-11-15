@@ -3,7 +3,7 @@
 "OpenEscapeRoute","System","Open the escape route.","0","None"
 "ProtectJack","System","Protect Jack on the way to the refuge.","0","None"
 "DiscoverTruth","System","Examine the two records.","0","None"
-"FinalChoice","System","Choose which account to archive.","0","None"
+"FinalChoice","System","Defeat the Interventor and Supervisor. Choose a file in Records.","0","None"
 "GameEnded","System","The record has been archived.","0","None"
 "RetakePrefix","System","Retake ","0","None"
 "DoorPrompt","System","Open escape route","0","None"
