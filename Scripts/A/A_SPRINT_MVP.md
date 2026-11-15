@@ -21,6 +21,18 @@ Consecuencias para otras divisiones:
 
 A6 ya se cumplía en parte: `DoRetake` exige muestras (`PosHistory > 0`), así que sin historial no gasta carga. Queda pendiente guardar/restaurar la resistencia (P1).
 
+## P1: A6 y A7 (segunda migración, solo `BP_PlayerCharacter`)
+
+| Tarea | Cambio |
+|---|---|
+| **A6** | La Retoma también rebobina la **resistencia**. El Tick guarda `CurrentStamina` en `StaminaHistory`, junto a posición y salud (cada 0,1 s, máximo 30 muestras). `DoRetake` aplica `SetStamina(StaminaHistory[0])` si el historial está alineado con `PosHistory` y luego lo vacía. `ClearRetakeHistory` también lo vacía. R sin muestras ya no gastaba carga |
+| **A6, corrección** | `B_ResumePlayerAtCheckpoint` no vaciaba el historial, así que **R justo después de reaparecer devolvía al jugador a un punto anterior a su muerte**, con la salud de entonces. Ahora, al reaparecer, se vacían los historiales y la resistencia vuelve al máximo. Las cargas no se tocan |
+| **A7** | El Corte (F) exige **línea de visión**: en el bucle de candidatos, después de `CanBeTemporalCutTarget` de B (que ya descarta derrotados y congelados), se traza una línea en el canal Visibility del agente al enemigo. Si choca con algo que no es un Pawn (muro, prop), ese enemigo no es elegible. Otros personajes en medio no bloquean. Si no queda ningún candidato, no se gasta el cooldown |
+
+- [Migración](implement_a_sprint_mvp_p1.py) → [resultado](a_sprint_mvp_p1_implementation_result.json): 37 comprobaciones de conservación del grafo.
+- [Parche](patch_a6_retake_condition.py) → [resultado](a6_patch_result.json): se retiró una condición `> 0` redundante. Ya está aplicado; no repetir.
+- [Validación](validate_a_sprint_mvp_p1.py) → [resultado](a_sprint_mvp_p1_validation_result.json): **15 comprobaciones**, ejecutadas con el editor completo ([runner](run_validate_a_sprint_mvp_p1_editor.py)). El commandlet no tiene colisión para actores transitorios, así que la prueba con pared necesita el editor completo. Casos: Retoma 40 → 70 de resistencia; historial desalineado sin restauración; respawn que vacía el historial, rellena la resistencia y deja R sin gastar carga; Corte que congela a un guardia visible; Corte con un muro en medio que no congela ni gasta el cooldown.
+
 ## Evidencia
 
 - [Migración](implement_a_sprint_mvp.py) (una sola ejecución; rechaza un proyecto ya migrado) → [resultado](a_sprint_mvp_implementation_result.json). Comprueba que cada nodo, valor y enlace previo se conserva salvo las aristas de entrada desviadas, los 4 literales de `Result` y los prints borrados. Copia de seguridad: ruta `backup` del resultado.
@@ -39,3 +51,6 @@ Límites: no es una sesión de Play. Falta la prueba manual de abajo.
 3. Hablar con Jack: durante el diálogo WASD, clic, F y R no hacen nada; al terminar vuelven a funcionar.
 4. Esc → aparece *Press Esc again to quit*; esperar 3 s y pulsar Esc otra vez → vuelve a pedir confirmación; dos Esc seguidos → se cierra la sesión de Play.
 5. Registros: registrar un expediente y pulsar R → nada, y el contador de cargas del HUD no cambia.
+6. A6: gastar resistencia con esquivas, esperar ~1 s y pulsar R → la resistencia vuelve al valor de hace unos 3 s.
+7. A6: morir, reaparecer y pulsar R enseguida → no pasa nada (no se rebobina a antes de morir) y no se gasta carga.
+8. A7: con un enemigo detrás de una esquina o un muro, pulsar F → no se congela y el Corte sigue disponible. Con el enemigo a la vista, se congela.

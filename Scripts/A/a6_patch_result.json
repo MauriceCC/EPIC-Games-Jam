@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Equality feeds the AND",
+      "passed": true
+    },
+    {
+      "name": "AND feeds the restore branch",
+      "passed": true
+    },
+    {
+      "name": "'>' is the AND's other input",
+      "passed": true
+    },
+    {
+      "name": "Second Length(StaminaHistory) only feeds the >",
+      "passed": true
+    },
+    {
+      "name": "Player compiles",
+      "passed": true
+    },
+    {
+      "name": "Save",
+      "passed": true
+    }
+  ]
+}

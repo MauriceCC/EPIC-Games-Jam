@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Player/BP_PlayerCharacter"
+  ],
+  "checks": [
+    {
+      "name": "A1-A4 already applied",
+      "passed": true
+    },
+    {
+      "name": "Migration not already applied",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with StaminaHistory",
+      "passed": true
+    },
+    {
+      "name": "EventGraph: K2Node_CallArrayFunction_1.then -> K2Node_IfThenElse_2.execute present",
+      "passed": true
+    },
+    {
+      "name": "HP Remove Index has a free then",
+      "passed": true
+    },
+    {
+      "name": "Player compiles after Tick sampling",
+      "passed": true
+    },
+    {
+      "name": "DoRetake: K2Node_CallFunction_7.then -> K2Node_VariableSet_0.execute present",
+      "passed": true
+    },
+    {
+      "name": "DoRetake: K2Node_CallArrayFunction_2.then -> K2Node_CallDelegate_0.execute present",
+      "passed": true
+    },
+    {
+      "name": "Player compiles after DoRetake restore",
+      "passed": true
+    },
+    {
+      "name": "B_ResumePlayerAtCheckpoint: K2Node_CallFunction_5.then -> K2Node_IfThenElse_0.execute present",
+      "passed": true
+    },
+    {
+      "name": "Player compiles after respawn fix",
+      "passed": true
+    },
+    {
+      "name": "DoTemporalCut: K2Node_IfThenElse_3.then -> K2Node_VariableSet_2.execute present",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with Cut line of sight",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: UserConstructionScript",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoMove",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: FaceCursor",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: RestartLevel",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: AttackHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: Die",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: TakeHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoLightAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: CutReadyAgain",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoTemporalCut",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoRetake",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: B_ResumePlayerAtCheckpoint",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: A_UpdateCursorFacing",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: ReceiveCombatHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: IsDefeated",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: GetStealthComponent",
+      "passed": true
+    },
+    {
+      "name": "Only the documented edges changed; all previous nodes and values kept",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerCharacter",
+      "passed": true
+    }
+  ],
+  "menus": {
+    "GetCurrentStamina": [
+      "Variables|Stamina|ObtenerCurrentStamina"
+    ],
+    "Add": [
+      "Utilidades|Matriz|Add",
+      "Utilidades|Operadores|Añadir"
+    ],
+    "RemoveIndex": [
+      "Utilidades|Matriz|RemoveIndex"
+    ],
+    "Clear": [
+      "Utilidades|Matriz|Clear"
+    ],
+    "Length.StaminaHistory": [
+      "Utilidades|Matriz|Length"
+    ],
+    "Length.PosHistory": [
+      "Utilidades|Matriz|Length"
+    ],
+    "GetCopy": [
+      "Utilidades|Matriz|Obtener(unacopia)"
+    ],
+    "GetMaxStamina": [
+      "Variables|Stamina|ObtenerMaxStamina"
+    ]
+  },
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A_SprintMVP_P1_m5a18wsm",
+  "trace_channel_default": "TraceTypeQuery1"
+}
