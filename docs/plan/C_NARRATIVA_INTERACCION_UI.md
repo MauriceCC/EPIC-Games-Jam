@@ -81,8 +81,8 @@ Textos revisados (ortografía), legibilidad a 1080p, ritmo de diálogos, comprob
 
 ## 5. Phase transition table (C-02 preparation)
 
-Status: F0 design preparation only; no runtime manager or integration.
-Only the future BP_ObjectiveManager owns phase changes through the existing contract.
+Status: C-01/C-02 Blueprint state progression implemented and locally validated; full F1 remains incomplete.
+Only BP_ObjectiveManager owns phase changes through the existing contract.
 
 | Current phase | Reported event and guard | Next phase | Narrative effects |
 |---|---|---|---|
@@ -241,3 +241,16 @@ Notas del día:
 - Source-only validation and the manual review are documented in
   [the narrative review](../../Scripts/C/NARRATIVE_PREMISE_REVIEW.md).
   No Blueprint, map, contract or other division's system was modified.
+
+### 2026-11-14 - C-01/C-02 implementation and limited dependency repair
+
+- Explicit user exception: corrected only ReportStoryEvent.Source to Actor and appended SupervisorEncounterStarted at value 13. Other Core signatures, enum values, shared structs, A/B systems, configuration, and maps were not changed.
+- C-01/C-02 state core is implemented in BP_ObjectiveManager and BP_GameState. BP_GameMode defaults and GetObjectiveManager already met the dependencies and were preserved.
+- Ten private state fields, one private phase writer, guarded event routing, idempotent facts, distinct evidence guards, supervisor access gate, terminal ending state, and synchronous reentry protection.
+- Existing dispatcher signatures were preserved. Narrative actors, dialogue playback, HUD, final-choice UI, controls, Retake, checkpoint logic, and later integrations remain unimplemented.
+- Added C-only Actor source and multicast observer fixtures in Narrative/Test; no saved map placement or production-to-test reference.
+- Validation: 217 Blueprint checks and 23 L_Test_C PIE checks passed. Expected phase/event behavior is read independently from the prepared transition table.
+- [PROPUESTA] Isolated C Param names use the existing NursingRecord/FabricatedReport and OfficialCut/AuthenticRecord tokens. Evidence facts may arrive in either order. Confirm these local conventions before external integration; no new shared signature was created.
+- The historical F0 requests above remain audit history. C-F0-02 is resolved only for ReportStoryEvent.Source; its other three signatures and C-F0-04 are unchanged. The five ObjectiveManager dispatchers required by C-01/C-02 are now verified.
+- [Implementation and reproduction](../../Scripts/C/C01_C02_IMPLEMENTATION.md). C-03 through C-10 and the full F1 milestone remain pending.
+- Branch c/f0-narrative-preparation; all changes local; no commit, push, merge, rebase, or PR.

@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "PIE uses L_Test_C",
+      "passed": true
+    },
+    {
+      "name": "Existing C GameMode",
+      "passed": true
+    },
+    {
+      "name": "Existing C GameState",
+      "passed": true
+    },
+    {
+      "name": "Existing ObjectiveManager component",
+      "passed": true
+    },
+    {
+      "name": "Primary state starts at FindJack",
+      "passed": true
+    },
+    {
+      "name": "Source is a normal C-owned Actor",
+      "passed": true
+    },
+    {
+      "name": "Interface rejects premature route report",
+      "passed": true
+    },
+    {
+      "name": "GameState forwards JackFound",
+      "passed": true
+    },
+    {
+      "name": "Stable manager identity JackFound",
+      "passed": true
+    },
+    {
+      "name": "GameState forwards EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "Stable manager identity EscapeRouteOpened",
+      "passed": true
+    },
+    {
+      "name": "GameState forwards JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Stable manager identity JackReachedRefuge",
+      "passed": true
+    },
+    {
+      "name": "Interface reveal waits for both evidence records",
+      "passed": true
+    },
+    {
+      "name": "Interface duplicate evidence cannot reveal truth",
+      "passed": true
+    },
+    {
+      "name": "Explicit reveal advances to FinalChoice",
+      "passed": true
+    },
+    {
+      "name": "Appended event reaches manager",
+      "passed": true
+    },
+    {
+      "name": "Registration blocked before supervisor defeat",
+      "passed": true
+    },
+    {
+      "name": "Defeat never selects ending",
+      "passed": true
+    },
+    {
+      "name": "Valid simulated registration ends session",
+      "passed": true
+    },
+    {
+      "name": "Exactly five phase notifications",
+      "passed": true
+    },
+    {
+      "name": "Exactly one ending notification",
+      "passed": true
+    },
+    {
+      "name": "Terminal phase and ending cannot be overwritten",
+      "passed": true
+    }
+  ],
+  "check_count": 23
+}

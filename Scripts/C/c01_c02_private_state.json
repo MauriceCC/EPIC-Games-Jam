@@ -1,0 +1,42 @@
+[
+    {
+        "variable":  "CurrentPhase",
+        "private":  true
+    },
+    {
+        "variable":  "Ending",
+        "private":  true
+    },
+    {
+        "variable":  "bJackFound",
+        "private":  true
+    },
+    {
+        "variable":  "bEscapeRouteOpen",
+        "private":  true
+    },
+    {
+        "variable":  "bJackSafe",
+        "private":  true
+    },
+    {
+        "variable":  "bEvidenceFound",
+        "private":  true
+    },
+    {
+        "variable":  "bFalseReportFound",
+        "private":  true
+    },
+    {
+        "variable":  "bSupervisorEncountered",
+        "private":  true
+    },
+    {
+        "variable":  "bSupervisorDefeated",
+        "private":  true
+    },
+    {
+        "variable":  "bIsProcessingStoryEvent",
+        "private":  true
+    }
+]
