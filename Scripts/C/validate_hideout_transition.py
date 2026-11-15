@@ -41,6 +41,7 @@ async def test():
  await press('E')
  await wait_for(lambda:p(hide,'bOccupied') and not p(hide,'bTransitioning'),12,OUT['entry_frames'])
  check('Entry reaches the hidden state',p(hide,'bOccupied') and p(mesh,'hidden_in_game'))
+ check('Hidden state displays the authored leave prompt',str(p(hide,'InteractionPromptRow'))=='HideoutLeavePrompt' and 'leave hideout' in str(p(view,'InteractionText').get_text()).lower())
  check('Entry uses actual walking velocity and the compatible Walk state',any(f['speed_xy']>5 and f['locomotion_state']==1 for f in OUT['entry_frames']))
  check('The pawn physically approached the wardrobe',pawn.get_actor_location().distance(unreal.Vector(*OUT['initial_position']))>50)
  check('The pawn stops at the dock without teleporting into the mesh',pawn.get_actor_location().distance(p(hide,'EntryDock').get_world_location())<14)
@@ -62,6 +63,7 @@ async def test():
  check('Capsule collision is restored unchanged',str(capsule.get_collision_enabled())==OUT['collision_before'])
  check('Focus is unlocked after exit',p(interact,'LockedFocusActor') is None)
  check('Exit leaves no black overlay',not p(view,'HideoutTransitionVeil').is_visible())
+ check('Exit restores the authored enter prompt',str(p(hide,'InteractionPromptRow'))=='HideoutEnterPrompt' and 'enter hideout' in str(p(view,'InteractionText').get_text()).lower())
  await press('R');await asyncio.sleep(.12);check('The real Retake ability is usable after exit',p(pawn,'RetakeCharges')==charges-1)
  # Repeat entry and exercise the existing checkpoint/reset cleanup path.
  pawn.set_actor_location(start,False,True);await asyncio.sleep(.1);interact.call_method('RefreshFocus');await press('E')
