@@ -19,7 +19,7 @@ try:
     check('Real-player HUD adapters and fade bridge persist',{'InitializePlayerPresentation','UseNarrativeInteraction','SetHideoutFade'}<=functions(hud))
     check('Dossier and transmission presentation functions persist',{'ToggleChecklist','StepChecklistTransition','CompleteTransmissionEntrance','SetHideoutFade'}<=functions(view))
     check('Progressive dialogue functions persist',{'PresentLine','FinishReveal','ApplyRevealProgress'}<=functions(asset('UI/WBP_Dialogue')))
-    check('Wardrobe movement and cleanup functions persist',{'BeginEntry','BeginExit','DriveToNextPoint','ReleaseOccupant','ValidateOccupant'}<=functions(hide))
+    check('Controlled wardrobe transition and recovery functions persist',{'BeginEntry','BeginExit','TryHiddenReposition','AbortTransition','ReleaseOccupant','ValidateOccupant'}<=functions(hide))
     for name in ('ChecklistDrawer','HideoutTransitionVeil'):
         widget=unreal.find_object(None,view.get_path_name()+':WidgetTree.'+name)
         check(name+' is saved collapsed',widget and widget.get_visibility()==unreal.SlateVisibility.COLLAPSED)

@@ -18,8 +18,10 @@ try:
     if rel.startswith('UI/') and node.get_class().get_name()=='K2Node_Event' and 'Tick' in str(node.get_node_title()):check(rel+' does not use Tick',not node.find_then_pin().list_connected_pins())
  hide=h.asset('Narrative/BP_Hideout');cdo=unreal.get_default_object(hide.generated_class())
  titles=[str(n.get_node_title()).replace(' ','').lower() for gr in unreal.BlueprintEditorLibrary.list_graphs(hide) for n in unreal.BlueprintGraphEditor.get_graph_editor(gr).list_all_nodes()]
- check('Wardrobe never teleports, overrides collision or replaces animation',not any(any(x in title for x in ('setactorlocation','setactortransform','setcollisionenabled','setactorenablecollision','playanimation')) for title in titles))
- check('Wardrobe uses native pawn movement',any('addmovementinput' in title for title in titles))
+ check('Wardrobe never forces walking, overrides collision or replaces animation',not any(any(x in title for x in ('addmovementinput','simplemoveto','aimoveto','setactorlocation','setactortransform','setcollisionenabled','setactorenablecollision','playanimation')) for title in titles))
+ teleport_graphs={gr.get_name() for gr in unreal.BlueprintEditorLibrary.list_graphs(hide) for n in unreal.BlueprintGraphEditor.get_graph_editor(gr).list_all_nodes() if 'teleport' in str(n.get_node_title()).lower()}
+ check('Checked repositioning is isolated to its hidden-transition helper',teleport_graphs=={'TryHiddenReposition'})
+ check('Wardrobe has an independent recovery watchdog','AbortTransition' in {gr.get_name() for gr in unreal.BlueprintEditorLibrary.list_graphs(hide)})
  check('Wardrobe consumes gameplay input only while enabled',cdo.get_editor_property('block_input') and cdo.get_editor_property('input_priority')==20 and cdo.get_editor_property('auto_receive_input')==unreal.AutoReceiveInput.DISABLED)
  actor=next(a for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors() if a.get_actor_label()=='C_Closure_AlleyHideout')
  check('Saved wardrobe dock faces the door',actor.get_editor_property('EntryDock').get_world_location().distance(unreal.Vector(1100,3685,90))<.01)

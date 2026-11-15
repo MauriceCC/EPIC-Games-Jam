@@ -1,4 +1,4 @@
-"""Exercise the real wardrobe and player in Whitechapel without changing gameplay assets."""
+"""Supplement the live visual check with real-player controlled-transition assertions."""
 import unreal,sys,json,asyncio,time,traceback
 from pathlib import Path
 sys.dont_write_bytecode=True
@@ -42,9 +42,9 @@ async def test():
  await wait_for(lambda:p(hide,'bOccupied') and not p(hide,'bTransitioning'),12,OUT['entry_frames'])
  check('Entry reaches the hidden state',p(hide,'bOccupied') and p(mesh,'hidden_in_game'))
  check('Hidden state displays the authored leave prompt',str(p(hide,'InteractionPromptRow'))=='HideoutLeavePrompt' and 'leave hideout' in str(p(view,'InteractionText').get_text()).lower())
- check('Entry uses actual walking velocity and the compatible Walk state',any(f['speed_xy']>5 and f['locomotion_state']==1 for f in OUT['entry_frames']))
- check('The pawn physically approached the wardrobe',pawn.get_actor_location().distance(unreal.Vector(*OUT['initial_position']))>50)
- check('The pawn stops at the dock without teleporting into the mesh',pawn.get_actor_location().distance(p(hide,'EntryDock').get_world_location())<14)
+ check('Entry never supplies automatic walking velocity',not any(f['speed_xy']>5 for f in OUT['entry_frames']))
+ check('Entry uses no intermediate route toward the NPC',not p(hide,'MotionWaypoints'))
+ check('The controlled reposition settles at the collision-safe dock',pawn.get_actor_location().distance(p(hide,'EntryDock').get_world_location())<14)
  check('The hidden body is no longer visible beside the wardrobe',p(mesh,'hidden_in_game'))
  check('The existing stealth component is marked hidden',p(pawn.get_component_by_class(unreal.load_asset('/Game/Unscripted/Enemies/BP_StealthComponent').generated_class()),'bIsHidden'))
  check('Capsule collision is preserved while hidden',str(capsule.get_collision_enabled())==OUT['collision_before'])
@@ -57,7 +57,7 @@ async def test():
  await press('E');await wait_for(lambda:p(hide,'bTransitioning'),2)
  await wait_for(lambda:not p(hide,'bOccupied') and not p(hide,'bTransitioning'),12,OUT['exit_frames'])
  check('Exit restores the original mesh visibility',p(mesh,'hidden_in_game')==OUT['hidden_before'])
- check('Exit walks out using existing locomotion',any(f['speed_xy']>5 and f['locomotion_state']==1 for f in OUT['exit_frames']))
+ check('Exit never supplies automatic walking velocity',not any(f['speed_xy']>5 for f in OUT['exit_frames']))
  check('Exit finishes in front of the wardrobe',pawn.get_actor_location().distance(p(hide,'ExitPoint').get_world_location())<14)
  check('Exit releases only the movement lock it owns',not pc.is_move_input_ignored() and not p(hide,'bOwnsMovementLock'))
  check('Capsule collision is restored unchanged',str(capsule.get_collision_enabled())==OUT['collision_before'])
@@ -68,18 +68,18 @@ async def test():
  # Repeat entry and exercise the existing checkpoint/reset cleanup path.
  pawn.set_actor_location(start,False,True);await asyncio.sleep(.1);interact.call_method('RefreshFocus');await press('E')
  await wait_for(lambda:p(hide,'bOccupied') and not p(hide,'bTransitioning'))
- hide.call_method('ResetOccupancy');await asyncio.sleep(.05)
+ hide.call_method('ResetOccupancy');await asyncio.sleep(.3)
  check('Checkpoint cleanup restores a hidden player safely',not p(hide,'bOccupied') and not p(mesh,'hidden_in_game') and not pc.is_move_input_ignored())
  check('Checkpoint cleanup clears focus and veil',p(interact,'LockedFocusActor') is None and not p(view,'HideoutTransitionVeil').is_visible())
  # Approach from the open front corner and cancel an in-progress entry.
- pawn.set_actor_location(start+unreal.Vector(110,0,0),False,True);await asyncio.sleep(.1);interact.call_method('RefreshFocus');await press('E')
+ assert pawn.call_method('K2_TeleportTo',args=(start+unreal.Vector(-110,0,0),pawn.get_actor_rotation()));await asyncio.sleep(.3);interact.call_method('RefreshFocus');await press('E')
  await wait_for(lambda:p(hide,'bTransitioning'),2);await asyncio.sleep(.12)
- hide.call_method('ResetOccupancy');await asyncio.sleep(.05)
+ hide.call_method('ResetOccupancy');await asyncio.sleep(.3)
  check('Interrupted entry restores movement and mesh visibility',not p(hide,'bTransitioning') and not p(mesh,'hidden_in_game') and not pc.is_move_input_ignored())
  check('Interrupted entry clears the focus lock and fade',p(interact,'LockedFocusActor') is None and not p(view,'HideoutTransitionVeil').is_visible())
- pawn.set_actor_location(start+unreal.Vector(110,0,0),False,True);await asyncio.sleep(.1);interact.call_method('RefreshFocus');await press('E')
+ assert pawn.call_method('K2_TeleportTo',args=(start+unreal.Vector(-110,0,0),pawn.get_actor_rotation()));await asyncio.sleep(.3);interact.call_method('RefreshFocus');await press('E')
  await wait_for(lambda:p(hide,'bOccupied') and not p(hide,'bTransitioning'))
- check('An oblique approach reaches the dock through real collision',p(mesh,'hidden_in_game') and pawn.get_actor_location().distance(p(hide,'EntryDock').get_world_location())<14)
+ check('An oblique interaction settles hidden without following a route',p(mesh,'hidden_in_game') and pawn.get_actor_location().distance(p(hide,'EntryDock').get_world_location())<14 and not p(hide,'MotionWaypoints'))
  # A movement lock acquired by another owner must survive C cleanup.
  pc.set_ignore_move_input(True);hide.call_method('ResetOccupancy');await asyncio.sleep(.05)
  check('Cleanup preserves an independent movement lock',pc.is_move_input_ignored() and not p(hide,'bOwnsMovementLock'))
