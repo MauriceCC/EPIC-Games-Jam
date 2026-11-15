@@ -1,0 +1,1399 @@
+{
+ "folder": "Streets_v3",
+ "tag": "D_Streets_v3",
+ "actors": [
+  {
+   "label": "SW_Start_H05_1",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 50.0,
+    "y": 1500.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 6.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Start_H05_1",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 89.0,
+    "y": 1500.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 6.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H05_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 90.0,
+    "y": 1308.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H05_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 90.0,
+    "y": 1380.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Start_H06_2",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 50.0,
+    "y": 2100.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 6.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Start_H06_2",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 89.0,
+    "y": 2100.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 6.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H06_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 90.0,
+    "y": 1908.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H06_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 90.0,
+    "y": 1980.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Start_H01_3",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 400,
+    "y": 1250.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 8,
+    "y": 1.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Start_H01_3",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 400,
+    "y": 1289.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 8,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H01_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 144.0,
+    "y": 1290.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H01_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 240.0,
+    "y": 1290.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Start_H08b_4",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 400,
+    "y": 2350.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 8,
+    "y": 1.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Start_H08b_4",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 400,
+    "y": 2311.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 8,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H08b_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 144.0,
+    "y": 2310.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H08b_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 240.0,
+    "y": 2310.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Square_H01_5",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 875.0,
+    "y": 900.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 6.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H01_5",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 939.0,
+    "y": 900.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 6.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_Square_H08b_6",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 875.0,
+    "y": 2500.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 2.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H08b_6",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 939.0,
+    "y": 2500.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 2.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_Square_H03_7",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1150.0,
+    "y": 675.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H03_7",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1150.0,
+    "y": 739.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_Square_H04_8",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1850.0,
+    "y": 675.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H04_8",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1850.0,
+    "y": 739.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H04_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 1626.0,
+    "y": 715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H04_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 1710.0,
+    "y": 715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Square_H09_9",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1075.0,
+    "y": 2525.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 5.5,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H09_9",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1075.0,
+    "y": 2461.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 5.5,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H09_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 899.0,
+    "y": 2485.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H09_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 965.0,
+    "y": 2485.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_Square_H19_10",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 2025.0,
+    "y": 2525.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_Square_H19_10",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 2025.0,
+    "y": 2461.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_WorkshopYard_H15_11",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 875.0,
+    "y": 5200,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 12,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_WorkshopYard_H15_11",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 939.0,
+    "y": 5200,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 12,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H15_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 915.0,
+    "y": 4816.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H15_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 915.0,
+    "y": 4960.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_WorkshopYard_H11_12",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1075.0,
+    "y": 4675.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 5.5,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_WorkshopYard_H11_12",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1075.0,
+    "y": 4739.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 5.5,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_WorkshopYard_H21_13",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 2025.0,
+    "y": 4675.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_WorkshopYard_H21_13",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 2025.0,
+    "y": 4739.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H21_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 1913.0,
+    "y": 4715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H21_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 1955.0,
+    "y": 4715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_WorkshopYard_H16_14",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1150.0,
+    "y": 5725.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_WorkshopYard_H16_14",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1150.0,
+    "y": 5661.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H16_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 926.0,
+    "y": 5685.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_WorkshopYard_H17_15",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 1850.0,
+    "y": 5725.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_WorkshopYard_H17_15",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 1850.0,
+    "y": 5661.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 7.0,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H17_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 1626.0,
+    "y": 5685.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H17_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 1710.0,
+    "y": 5685.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_CentralPass_H19_16",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 2275.0,
+    "y": 3000.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 8.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H19_16",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 2339.0,
+    "y": 3000.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 8.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H19_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 2315.0,
+    "y": 2744.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H19_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 2315.0,
+    "y": 2840.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_CentralPass_H20_17",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 2275.0,
+    "y": 3600.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 4.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H20_17",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 2339.0,
+    "y": 3600.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 4.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_CentralPass_H21_18",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 2275.0,
+    "y": 4300.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 6.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H21_18",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 2339.0,
+    "y": 4300.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 6.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H21_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 2315.0,
+    "y": 4108.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H21_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 2315.0,
+    "y": 4180.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_CentralPass_H34_19",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 3525.0,
+    "y": 4400.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.5,
+    "y": 4.0,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H34_19",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 3461.0,
+    "y": 4400.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 4.0,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_CentralPass_H25_20",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 3425.0,
+    "y": 2675.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H25_20",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 3425.0,
+    "y": 2739.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 3.5,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H25_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 3313.0,
+    "y": 2715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H25_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 3355.0,
+    "y": 2715.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "SW_CentralPass_H32_21",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 3500.0,
+    "y": 4525.0,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 2.0,
+    "y": 1.5,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_CentralPass_H32_21",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 3500.0,
+    "y": 4461.0,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 2.0,
+    "y": 0.22,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "SW_RefugePath_H25_22",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Flagstone_York",
+   "location": {
+    "x": 3150.0,
+    "y": 2000,
+    "z": 6.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 12,
+    "z": 0.12
+   }
+  },
+  {
+   "label": "KB_RefugePath_H25_22",
+   "asset": "/Engine/BasicShapes/Cube",
+   "material": "/Game/Unscripted/Materials/Blockout/MI_Kerb_Granite",
+   "location": {
+    "x": 3111.0,
+    "y": 2000,
+    "z": 8.5
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 0.22,
+    "y": 12,
+    "z": 0.17
+   }
+  },
+  {
+   "label": "PR_H25_0",
+   "asset": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A",
+   "location": {
+    "x": 3110.0,
+    "y": 1616.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  },
+  {
+   "label": "PR_H25_1",
+   "asset": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A",
+   "location": {
+    "x": 3110.0,
+    "y": 1760.0,
+    "z": 12.0
+   },
+   "rotation": {
+    "pitch": 0.0,
+    "yaw": 107.0,
+    "roll": 0.0
+   },
+   "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+   }
+  }
+ ]
+}
