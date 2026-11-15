@@ -16,6 +16,27 @@
 | `SM_Folder_Report` | Evidencia: informe fabricado (`BP_Evidence`) | Sale **inclinado** (~25 cm de alto) | Igual que el anterior |
 | `SM_RecordStation_Official` / `_Authentic` | Estaciones del expediente final (`BP_FinalChoice`) | ~1,6 × 1,0 × 1,4 m, emisivo cian | Ninguno |
 
+## Personajes (para A, B y C)
+
+Todos en `/Game/Unscripted/Art/Characters/SK_<Nombre>/`: malla esquelética (~25k vértices, pivote en los pies, mirando a +X), `SK_<Nombre>_Skeleton`, `SK_<Nombre>_PhysicsAsset`, material `M_<Nombre>` (PBR 4K: base color, normal y rugosidad) y en `Anims/` dos bucles: `A_SK_<Nombre>_Walk` y `A_SK_<Nombre>_Run` (~1 s cada uno).
+
+| Malla | Personaje | Altura | División que lo usa |
+|---|---|---|---|
+| `SK_Agent` | Agente (protagonista) | 1,80 m | A |
+| `SK_Jack` | Jack | 1,72 m | B (escolta) / C |
+| `SK_Pursuer_A`, `SK_Pursuer_B` | Perseguidores (civiles manipulados) | 1,80 / 1,76 m | B |
+| `SK_Interventor` | Interventor de la agencia | 1,88 m | B |
+| `SK_Supervisor` | Supervisor (jefe) | 1,95 m | B |
+| `SK_Nurse`, `SK_FlowerSeller`, `SK_Vagrant` | NPCs de época (enfermera, vendedora de flores, vagabundo) | 1,65 / 1,60 / 1,68 m | C (ambiente y diálogo) |
+
+Notas:
+
+- El esqueleto es el de Meshy (25 huesos: `Hips`, `Spine`…`Head`, brazos, piernas y `LeftToeBase`/`RightToeBase`; **sin dedos ni huesos IK**). Es el mismo en los 9, pero cada uno tiene su propio asset de esqueleto.
+- Para golpes, parry o muerte, **[PROPUESTA]**: crear un IK Rig de este esqueleto y otro de `SKM_Manny` y usar un IK Retargeter para pasar animaciones del maniquí de la plantilla. Alternativa: marcar los esqueletos como compatibles para compartir las animaciones de uno.
+- En `BP_` del personaje: asignar la malla al `Mesh` del Character con Z ≈ −90 y Yaw −90 (Unreal mira a +X; comprobar en la vista previa), y un Blend Space 1D Walk/Run para la locomoción.
+- Para los NPCs con diálogo (C), la conversación es **[PROPUESTA]** de C: D solo entrega la malla y las animaciones.
+- No hay animación de reposo (idle). Si hace falta, se puede pedir a Meshy (3 créditos por acción) o retargetear la del maniquí.
+
 ## Para D (colocación en `_Geo` / `_Light`)
 
 `SM_IronGate_A` (verja Plaza–Refugio, 3,4 × 2,5 m), `SM_Fountain_Square`, `SM_Cart_Overturned`, `SM_WorkshopTable_A`, `SM_ArchiveCabinet_A`, `SM_ArchivePillar_A`, barril, cajas, carretilla y `World/BP_GasLamp` (farol con luz).
