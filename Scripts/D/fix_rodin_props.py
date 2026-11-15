@@ -26,6 +26,9 @@ PROPS = {
     "SM_GasLamp_A": (1.685, 95.03 * 1.685, 4),
     "SM_RecordStation_Official": (0.85, 79.53 * 0.85, 6),
     "SM_RecordStation_Authentic": (0.85, 84.20 * 0.85, 6),
+    # P1 (2026-11-14): Fountain z [-95, 95] -> 1,3 m; Pillar z [-95, 95] -> 4 m
+    "SM_Fountain_Square": (0.684, 95.0 * 0.684, 4),
+    "SM_ArchivePillar_A": (2.105, 95.0 * 2.105, 4),
 }
 
 
