@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "saved": true,
+  "checks": [
+    {
+      "name": "Fresh target: helper is not already authored",
+      "passed": true
+    },
+    {
+      "name": "Tick has exactly one existing continuation",
+      "passed": true
+    },
+    {
+      "name": "FaceCursor existing trace and yaw implementation present",
+      "passed": true
+    },
+    {
+      "name": "Required existing bDead field present",
+      "passed": true
+    },
+    {
+      "name": "Helper compiles before event hookup",
+      "passed": true
+    },
+    {
+      "name": "Disconnect only original Tick edge",
+      "passed": true
+    },
+    {
+      "name": "PlayerCharacter compiles after Tick hookup",
+      "passed": true
+    },
+    {
+      "name": "Movement no longer overrides cursor yaw",
+      "passed": true
+    },
+    {
+      "name": "Controller yaw already disabled",
+      "passed": true
+    },
+    {
+      "name": "Every original graph/pin preserved except the single Tick edge",
+      "passed": true
+    },
+    {
+      "name": "Controller file unchanged",
+      "passed": true
+    },
+    {
+      "name": "Save only PlayerCharacter",
+      "passed": true
+    }
+  ],
+  "scope": "/Game/Unscripted/Player/BP_PlayerCharacter",
+  "base_commit": "b2ceb53",
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A03_q0aflob1\\BP_PlayerCharacter.uasset",
+  "sha256_before": "4018870de7a63301cfe21a628ec974ec337f86c0b26c1924fd16e81914021755",
+  "orient_rotation_to_movement_before": true,
+  "sha256_after": "1bcb495bc7f10f6da131815929ee322c51aec8df8609aab86f6703dad2d60a38",
+  "controller_sha256": "171008dd91d3b081c74971478b843c2347326ca8ad45bb21b6202b1842528b84",
+  "tick_node": "K2Node_Event_5",
+  "original_continuation": [
+    "K2Node_IfThenElse_0",
+    "execute"
+  ],
+  "update_call": "K2Node_CallFunction_0"
+}

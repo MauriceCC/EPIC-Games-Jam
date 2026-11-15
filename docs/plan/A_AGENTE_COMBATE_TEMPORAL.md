@@ -138,6 +138,8 @@ Las notas del día que siguen son historial de preparación.
 
 Notas del día:
 
+- 2026-11-15: A-03 implementado sobre `b2ceb53`, tras revisar los cambios del pull de C/D. Tick llama a `A_UpdateCursorFacing` (local y vivo), reutilizando `FaceCursor`; CharacterMovement deja de girar hacia WASD. Solo se guardó `BP_PlayerCharacter`. Compilación y 16 comprobaciones tras recarga correctas; pendiente aceptación visual con mouse y pendientes en `L_Test_A`. [Cambio, evidencia y prueba paso a paso](../../Scripts/A/A03_ORIENTACION_CONTINUA.md). No se marca F1 completo. El handoff nuevo de C sitúa la salud del componente instalado y checkpoints entre los siguientes pendientes de A.
+
 - 2026-11-15: auditoría de los assets guardados con Unreal 5.8.4, sin editar ni guardar paquetes. Confirmados BeginPlay/IMC y mappings; hay movimiento, salud y combate/poderes provisionales en PlayerCharacter. Detectadas diferencias de contrato, fuerte enlazado al ligero, ausencia de resistencia y Retoma sin destino seguro. [Informe y límites](../../Scripts/A/AUDITORIA_A_2026_11_15.md). No se ejecutó Play ni se marca A-01/F1 completo. Las notas anteriores son históricas.
 
 - 2026-11-14: A-01 iniciada como guía de implementación: [Input en Blueprint](../../Scripts/A/A01_INPUT_BLUEPRINT.md). Pendiente de crear assets y verificar en Unreal; no se marca terminada.
