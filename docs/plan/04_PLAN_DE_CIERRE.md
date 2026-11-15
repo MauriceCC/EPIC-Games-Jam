@@ -102,9 +102,66 @@ Tomar en el primer sync (propuesta entre corchetes):
 4. ¿El Interventor es opcional u obligatorio? **[Obligatorio en el Tramo al Refugio (`docs/05`).]**
 5. ¿Quién cierra A desde ahora? **[D, como hasta ahora; A-20/A-22 los prueba junto con B y C.]**
 
-## 6. Reglas para estas horas
+## 6. Asignación por persona y bloque
+
+Cada persona tiene trabajo en **todos** los bloques, siempre en sus carpetas y subniveles. Un bloque termina en una **puerta de integración**: todos suben lo suyo, se fusiona en `main` y se prueba junto. Nadie pasa al bloque siguiente con trabajo sin subir.
+
+| Persona | Rol en el cierre | Rama | Carpetas / subnivel |
+|---|---|---|---|
+| **Mauricio** | Integrador + apoyo de A (respawn, bloqueo de Retoma, pruebas de combate) | `main` (fusiona) y `a/…` para sus cambios | `Player/` (coordinado con Yizens), `Config/`, `L_Whitechapel` persistente solo para fusionar |
+| **Jesus** | B: enemigos, Jack, encuentros | `b/…` | `Enemies/`, `L_Whitechapel_AI` |
+| **Daniel** | C: historia, interacción, UI, finales | `c/…` | `Narrative/`, `UI/`, `L_Whitechapel_Story` |
+| **Yizens** (con IA) | D: nivel, arte, audio, build + A: combate del jugador | `d/…` | `Art/`, `Audio/`, `VFX/`, `World/`, `L_Whitechapel_Geo`, `L_Whitechapel_Light`, `Player/` (combate) |
+
+### Bloque 0 — Sincronizar (~45 min)
+
+| Persona | Tareas | Sube al terminar |
+|---|---|---|
+| Yizens | 0.1 traer `main` + rama de C a `d/props-p0`, compilar, Play · 0.3 Build Geometry · 0.4 probar combate con teclado y corregir | `d/props-p0` |
+| Mauricio | 0.2 fusionar `d/props-p0` en `main` · confirmar en el grupo el commit base · leer este plan y cerrar las decisiones de §5 | `main` |
+| Jesus | Con Unreal cerrado: `git pull` de `main`, abrir `L_Whitechapel`, jugar 2 min y anotar qué falla con sus enemigos frente al jugador real | Lista de fallos en el grupo |
+| Daniel | Igual que Jesus; además comprobar que su HUD aparece en `L_Whitechapel` con `BP_GameMode` | Lista de fallos en el grupo |
+
+**Puerta 0 (todos):** los 4 abren el mismo commit de `main`, `L_Whitechapel` arranca en Play sin errores y las decisiones de §5 quedan escritas en el grupo.
+
+### Bloque 1 — Acto I jugable (hasta ~12:00)
+
+| Persona | Tareas | Sube al terminar |
+|---|---|---|
+| Daniel | 1.1 transmisión del Director + checklist inicial en inglés + CP0 (Start) y CP1 (entrada del Callejón) en `_Story` · 1.2 `WBP_HUD` enlazado a `BP_HealthComponent` y `BP_TemporalComponent` del jugador · armario `BP_Hideout` en el rincón del Callejón | `c/…` |
+| Jesus | 1.3 los 2 Perseguidores de la Plaza contra el jugador real (`ReceiveCombatHit`, daño nativo, `ApplyTemporalFreeze`) · 1.4 patrullas del Callejón y del Patio en `_AI` · 1.5 Jack en el Taller con E → `JackFound` | `b/…` |
+| Mauricio | 1.6 con Daniel: `PlayerDefeated` → reaparecer en el último checkpoint (sustituir la recarga provisional del jugador) · probar el combate con Jesus y pasar ajustes de daño y alcance a Yizens | `a/…` |
+| Yizens | 1.7 recorrido con la cámara del juego y arreglo de oclusiones · luz del Archivo · música de exploración y combate de Mauricio (importar MP3 → WAV, `CREDITS`) · correcciones de combate que lleguen de Mauricio y Jesus | `d/…` |
+
+**Puerta 1 = hito F2:** Mauricio fusiona las 4 ramas en `main` y juega de Start hasta hablar con Jack: órdenes en pantalla, pelea en la Plaza, sigilo o pelea en el Callejón, morir y reaparecer, `JackFound`. Si algo falla, el dueño lo corrige antes de empezar el Bloque 2. **Yizens hace la primera build Development (D-22) con este commit.**
+
+### Bloque 2 — Actos II y III (hasta ~17:00)
+
+| Persona | Tareas | Sube al terminar |
+|---|---|---|
+| Daniel | 2.1 puerta lateral, verja del Archivo y puerta de Registros con condiciones de fase · 2.4 mensaje del yo futuro (Taller), 2 evidencias (Refugio), revelación, checklist reescrito, aviso *CONTINUITY ALTERED* · 2.6 dos `BP_FinalChoice` con confirmación + `WBP_Ending` A y B | `c/…` (en dos subidas: puertas y evidencias primero, finales después) |
+| Jesus | 2.2 hasta 3 Perseguidores en el Paso central + ruta de Jack Taller → Refugio · 2.3 Interventor en el Tramo, hostil con `Correction_Order` · 2.5 Supervisor en el Archivo → `SupervisorDefeated` | `b/…` (Jack y Paso central primero, Interventor y Supervisor después) |
+| Mauricio | 2.6 con Daniel: desactivar la Retoma al registrar el expediente (A-16) · checkpoints CP2–CP4 con respawn · integración intermedia a mitad del bloque (~14:30) | `a/…` y `main` |
+| Yizens | 2.7 fachadas, canalones, detalle de Plaza y Paso central, fondo de ciudad, NPCs de ambiente en `_Geo` · música de decisión para la fase final · build Development de la integración intermedia | `d/…` |
+
+**Integración intermedia (~14:30):** Mauricio fusiona lo que haya y comprueba que el Acto II llega al Refugio.
+**Puerta 2 = hito F3 (*feature freeze*):** dos partidas completas en `main`, una hasta cada final, sin tocar el editor. Lo que no funcione aquí se recorta, no se termina en el Bloque 3.
+
+### Bloque 3 — Pulido y entrega (17:00–20:59)
+
+| Persona | Tareas | Sube al terminar |
+|---|---|---|
+| Daniel | Revisión de idioma (todo en inglés) · créditos en pantalla o pantalla final con `CREDITS.md` · bugs de historia | `c/…` antes de las 17:59 |
+| Jesus | Ajuste rápido de salud y daño de enemigos según las partidas de prueba · bugs de IA | `b/…` antes de las 17:59 |
+| Mauricio | Fusión final y **code freeze a las 17:59** · partida completa de verificación · decide qué bug entra y cuál no | `main` final |
+| Yizens | D-40 rendimiento · D-41 build Shipping y prueba en otro PC · D-42 capturas, GIF o vídeo, página de la jam con herramientas de IA usadas · envío | Entrega antes de las 20:59 |
+
+**Puerta 3:** build Shipping probada fuera del PC de desarrollo y entrega confirmada en la plataforma de la jam.
+
+## 7. Reglas para estas horas
 
 - Cada uno coloca actores **solo en su subnivel** (`_AI` B, `_Story` C, `_Geo`/`_Light` D) para no pisar binarios.
-- Ventana de integración cada ~2 h: subir lo terminado, D fusiona y prueba 2 minutos en `L_Whitechapel`, Mauricio pasa a `main`.
+- Integración en cada puerta de bloque (y a mitad del Bloque 2): cada uno sube su rama, Mauricio fusiona en `main`, prueba en `L_Whitechapel` y avisa en el grupo del commit bueno. Todos hacen `git pull` con Unreal cerrado antes de seguir.
+- Si un bloque se retrasa, se recorta del bloque siguiente, nunca del Bloque 3.
 - Nada de mecánicas nuevas después del Bloque 2.
 - Posiciones de todo lo colocable: `SourceData/D/LEVEL_DESIGN.md §9` y `SourceData/D/HANDOFF_ASSETS.md`.
