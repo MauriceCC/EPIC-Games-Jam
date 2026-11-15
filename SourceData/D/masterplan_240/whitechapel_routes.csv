@@ -1,0 +1,57 @@
+Segment,Kind,xMin,yMin,xMax,yMax,SpecText,MinFreeRequiredM,MinFreeMeasuredM,OK
+W-SAV,street,84,2,124,14,"Avenida visual sur 12 m (tramo navegable, cerrado con barricadas en x=84 y x=124)",7.0,9.5,si
+W-Z01,street,99,0,109,24,Calle de llegada 10 m,7.0,8.0,si
+W-PS1,alley,95,14,99,24,Paso de servicio avenida-plaza 4 m,2.7,4.0,si
+W-PL,plaza,41,24,109,72,Plaza 68 x 48 (contiene Z03 46-99 x 29-70),,,
+W-STE,street,109,44,140,52,Corredor este plaza-taller 8 m,6.0,7.0,si
+W-PN,street,84,72,92,106,Calle norte plaza-antepatio 8 m (ruta amarilla de la imagen),5.5,7.25,si
+W-ALA1,alley,92,92,130,96.5,"Ruta azul A, tramo oeste 4,5 m",2.7,3.25,si
+W-PTCP,patio,130,92,142,102,Patio intermedio 12 x 10,,,
+W-ARCP,alley,134.25,102,137.75,112,"Pasaje cubierto 3,5 m (arco)",2.7,3.5,si
+W-ALA3,alley,142,98,166,102.5,"Ruta azul A, tramo este 4,5 m",2.7,4.5,si
+W-STCP,street,112,112,176,118,Paso central 6 m,5.0,5.25,si
+W-FC,arena-court,76,106,112,137,Antepatio del Supervisor 36 x 31,,,
+W-AC,patio,112,124,130,146,Patio de acceso al archivo 18 x 22 (reja N18),,,
+W-PAS,alley,156,40,160,58,Pasillo junto al taller 4 m,2.7,4.0,si
+W-PTW,patio,146,58,160,71,Patio trasero del taller 14 x 13,,,
+W-STX,street,160,60,179,67,Calle taller-escape 7 m,5.0,7.0,si
+W-ESC1,street,172,60,179,84,"Escape tramo 1, 7 m",5.0,5.5,si
+W-NK1,alley,174,84,178.5,91,"Estrechamiento 1: 4,5 m x 7 m",4.2,4.5,si
+W-ESCW,arena-court,166,91,183,106,Ensanche de combate 17 x 15,,,
+W-NK2,alley,176,106,180.5,113,"Estrechamiento 2: 4,5 m x 7 m",4.2,4.5,si
+W-ESC2,street,176,113,183,139,"Escape tramo 2, 7 m",5.0,6.0,si
+W-NI1,patio,179,72,183,78,Nicho de cobertura 4 x 6,,,
+W-NI2,patio,183,118,187,124,Nicho de cobertura 4 x 6,,,
+W-SV1,alley,179,80,182.5,91,"Pasadizo de servicio 3,5 m",2.2,3.5,si
+W-TR,street,176,139,210,145,Transito al refugio 6 m,5.0,5.0,si
+W-REFP,patio,202,145.5,222,162.5,Patio del refugio 20 x 17,,,
+W-REFY,patio,222,145.5,235,150,Patio de servicio del refugio,,,
+W-STEV,alley,224,64,228.5,145,"Corredor sur-norte de evidencias 4,5 m (ruta verde)",4.0,4.5,si
+W-ALB1,alley,179,64,224,68,"Ruta verde B, 4 m",3.0,4.0,si
+W-ALB2,alley,183,97,212,100.5,"Retorno evidencias-escape 3,5 m",2.7,3.5,si
+W-PTRP,patio,212,96,224,106,Patio de carga del informe 12 x 10,,,
+W-INFP,patio,213,133,224,142,Patio exterior de enfermeria 11 x 9,,,
+W-SW,scenic,23,14,29,100,"Calle escenografica oeste 6 m (sin NavMesh, cerrada)",,,
+
+Route,Nodes,MinWidthM,Phase,Connected,Legs(m),Description
+R-MAIN-1,N01-N02-N03-N04-N05-N06,1.0,Acto I,si,N01>N02:30.0; N02>N03:36.8; N03>N04:39.6; N04>N05:13.9; N05>N06:24.7,"Llegada, plaza y calle al taller"
+R-MAIN-2,N06-N07-N08-N09-N10-N11-N12,1.0,Acto II,si,N06>N07:27.6; N07>N08:28.4; N08>N09:35.2; N09>N10:29.2; N10>N11:41.2; N11>N12:20.8,"Escape con Jack (cuellos 4,5 m)"
+R-MAIN-3,N12-N13-N14-N15-N16,1.0,Acto II,si,N12>N13:60.3; N13>N14:55.4; N14>N15:75.0; N15>N16:44.9,Evidencias y regreso al eje
+R-MAIN-4,N16-N17-N18-N19-N20,1.0,Acto III,si,N16>N17:34.3; N17>N18:39.2; N18>N19:36.5; N19>N20:21.2,"Jefe, reja, archivo, eleccion"
+R-ALT-A,N09-N15,2.7,Acto II,si,N09>N15:27.7,Ruta azul: ensanche -> AL-A3 -> patio -> arco -> paso central
+R-ALT-B,N08-N14-N13-N12,2.2,Acto II tras Jack,si,N08>N14:71.5; N14>N13:57.8; N13>N12:61.4,Ruta verde: escape -> informe -> enfermeria -> refugio
+R-JACK,J0-N07-N08-N09-N10-N11-N12,2.4,Acto II,si,J0>N07:19.6; N07>N08:28.6; N08>N09:34.8; N09>N10:28.6; N10>N11:41.3; N11>N12:20.6,Trayecto de Jack desde su puesto en el taller (J0) al refugio
+
+Gate,xMin,yMin,xMax,yMax,UsefulWidthM,Owner,Behaviour
+G-07,159.75,62.5,160.25,65.5,3.0,"C/B (BP_Door, Jack)",Puerta lateral del taller (N07). Cerrada en Acto I; se abre al final del encuentro con Jack.
+G-PN-S,84,84,92,84.5,8.0,C (BP_Door),[PROPUESTA] Verja de la calle norte. Cerrada en Actos I-II (evita saltar al escape por la ruta azul).
+G-PN-N,84,105.5,92,106,8.0,C (BP_Door),[PROPUESTA] Reja al antepatio desde la calle norte. Abre en Acto III.
+G-CP,112,112,112.5,118,6.0,C (BP_Door),[PROPUESTA] Reja del antepatio en el paso central. Abre al registrar las dos evidencias.
+G-AC,111.75,128,112.25,132.5,4.5,C (BP_Door),Reja N18 (acceso lateral). Abre al derrotar al Supervisor; checkpoint.
+G-ARCH,90,145.4,94.5,145.9,4.5,C,[DECISION] Puertas frontales del archivo: bloqueo narrativo (selladas) o entrada principal.
+G-WING,113.5,145.6,116.5,146.1,3.0,C,Puerta del ala este (segundo porton hacia N19).
+G-REF-M,204,145,207,145.5,3.0,C,Porton principal del refugio (N11). Abierto en Acto II.
+G-REF-S,224.5,145,228,145.5,3.5,C,Porton de servicio del refugio. Cerrado hasta que Jack esta a salvo.
+G-A3,165.5,98,166,102.5,4.5,C,Puerta opcional de la ruta azul (abierta).
+G-B1,179,64,179.5,68,4.0,C,[PROPUESTA] Ruta verde desde el escape: cerrada hasta que Jack esta a salvo.
+G-B2,183,97,183.5,100.5,3.5,C,[PROPUESTA] Retorno evidencias-escape: cerrada hasta que Jack esta a salvo.
