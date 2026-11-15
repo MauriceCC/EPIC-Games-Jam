@@ -1,0 +1,39 @@
+{
+  "components": [
+    {
+      "name": "IsoCamera_GEN_VARIABLE",
+      "path": "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C:IsoCamera_GEN_VARIABLE",
+      "absolute_rotation": "False",
+      "relative_rotation": "<Struct 'Rotator' (0x0000029A03AC1998) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "name": "IsoCameraArm_GEN_VARIABLE",
+      "path": "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C:IsoCameraArm_GEN_VARIABLE",
+      "absolute_rotation": "False",
+      "relative_rotation": "<Struct 'Rotator' (0x000002996EAD3598) {pitch: -55.000000, yaw: 45.000000, roll: 0.000000}>",
+      "inherit_pitch": "False",
+      "inherit_yaw": "False",
+      "inherit_roll": "False"
+    },
+    {
+      "name": "IsoCamera_GEN_VARIABLE",
+      "path": "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C:IsoCamera_GEN_VARIABLE",
+      "absolute_rotation": "False",
+      "relative_rotation": "<Struct 'Rotator' (0x0000029A03AC1998) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "name": "CharMoveComp",
+      "path": "/Game/Unscripted/Player/BP_PlayerCharacter.Default__BP_PlayerCharacter_C:CharMoveComp",
+      "orient_rotation_to_movement": "True",
+      "use_controller_desired_rotation": "False"
+    }
+  ],
+  "api": {
+    "BlueprintGraphPin": {},
+    "BlueprintEditorLibrary": {
+      "compile_blueprint": "X.compile_blueprint(blueprint) -> bool\r\nCompiles the given blueprint.\r\n\r\nArgs:\r\n    blueprint (Blueprint): Blueprint to compile\r\n\r\nReturns:\r\n    bool: True if compilation succeeded with no errors",
+      "set_node_pos": "X.set_node_pos(node, pos) -> None\r\nSets this node's visual position in the graph\r\n\r\nArgs:\r\n    node (K2Node): \r\n    pos (IntPoint):"
+    },
+    "BlueprintGraphEditor": {}
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "bases": {
+    "main_commit": "d05b0eb",
+    "integration_commit": "3c42490",
+    "player_graph_sha256": {
+      "B_ResumePlayerAtCheckpoint": "e5e23fa691276b60778dc8d5518cab0c234e2a4cee0e75bf096432dbac578ec5",
+      "Die": "aece59beee7db0dec303e3a56d383efa81d756efca56b792649736464d9e58e7",
+      "ReceiveCombatHit": "265e30835bd5ff5a92dcad81d828840b9d021d1237889ec1af8e418dc461babc",
+      "GetStealthComponent": "7e2e1c31f817dc14cda233868e5ebe286e56fc1dc7c5651c4344f7a2d7fac6ca",
+      "FaceCursor": "aac105e976f5d93c3ab25537650484399855749012ed538922106fed2a0b6031",
+      "DoMove": "1e9d4d13117aae514fa046f261ef4698b9301141593ef39eb38bf4f3f0d143cd",
+      "AttackHit": "75db017ccfe47606c2469e7937f34b00fac091ad83aad40f70d393503f0f875d",
+      "DoRetake": "bb93f1b37cd374639abe705c115f04313d34758c946b8bfdb0e00e4798e16b6d"
+    },
+    "main_ai_labels": [
+      "BP_PatrolRoute",
+      "BP_Pursuer",
+      "BP_Pursuer2",
+      "BP_Pursuer2_Finisher",
+      "BP_Pursuer_Finisher",
+      "B_Alley_Pursuer",
+      "B_Alley_Pursuer_Finisher",
+      "B_Alley_Route",
+      "B_ArchiveGate",
+      "B_Central_01",
+      "B_Central_01_Finisher",
+      "B_Central_01_Route",
+      "B_Central_02",
+      "B_Central_02_Finisher",
+      "B_Central_02_Route",
+      "B_Central_03",
+      "B_Central_03_Finisher",
+      "B_Central_03_Route",
+      "B_Interventor",
+      "B_Jack_Workshop",
+      "B_Jack_Workshop_Interaction",
+      "B_Plaza_East_Route",
+      "B_RecordsDoor",
+      "B_Supervisor",
+      "B_WorkshopEscapeDoor",
+      "B_Yard_Pursuer",
+      "B_Yard_Pursuer_Finisher",
+      "B_Yard_Route"
+    ]
+  },
+  "combine": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "Fresh main player has checkpoint restoration and no A-03 yet",
+        "passed": true
+      },
+      {
+        "name": "A-03 preserves every main node, including locomotion and checkpoint logic",
+        "passed": true
+      },
+      {
+        "name": "Controller yaw does not compete with cursor",
+        "passed": true
+      },
+      {
+        "name": "DoLightAttack original guard edge",
+        "passed": true
+      },
+      {
+        "name": "DoDodge original guard edge",
+        "passed": true
+      },
+      {
+        "name": "DoParry original guard edge",
+        "passed": true
+      },
+      {
+        "name": "A-05 changes only the three authored action guard edges",
+        "passed": true
+      },
+      {
+        "name": "Whitechapel loads",
+        "passed": true
+      },
+      {
+        "name": "B encounters remain",
+        "passed": true
+      },
+      {
+        "name": "Replace the Archive instance with the existing B door subclass",
+        "passed": true
+      },
+      {
+        "name": "Select Story for the reconciled gate",
+        "passed": true
+      },
+      {
+        "name": "Encounter gate is placed in Story",
+        "passed": true
+      },
+      {
+        "name": "B_WorkshopEscapeDoor is the duplicate in the AI sublevel",
+        "passed": true
+      },
+      {
+        "name": "B_WorkshopEscapeDoor duplicate removed",
+        "passed": true
+      },
+      {
+        "name": "B_ArchiveGate is the duplicate in the AI sublevel",
+        "passed": true
+      },
+      {
+        "name": "B_ArchiveGate duplicate removed",
+        "passed": true
+      },
+      {
+        "name": "B_RecordsDoor is the duplicate in the AI sublevel",
+        "passed": true
+      },
+      {
+        "name": "B_RecordsDoor duplicate removed",
+        "passed": true
+      },
+      {
+        "name": "Save reconciled Story and AI only",
+        "passed": true
+      },
+      {
+        "name": "Merged HUD CSV imports",
+        "passed": true
+      },
+      {
+        "name": "Save HUD text table",
+        "passed": true
+      }
+    ],
+    "saved": [
+      "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter",
+      "/Game/Unscripted/Maps/L_Whitechapel_Story",
+      "/Game/Unscripted/Maps/L_Whitechapel_AI",
+      "/Game/Unscripted/Narrative/DT_HUDText.DT_HUDText"
+    ],
+    "removed_duplicates": [
+      "B_WorkshopEscapeDoor",
+      "B_ArchiveGate",
+      "B_RecordsDoor"
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "All production Blueprints compile without warnings or errors",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: B_ResumePlayerAtCheckpoint",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: Die",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: ReceiveCombatHit",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: GetStealthComponent",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: FaceCursor",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: DoMove",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: AttackHit",
+        "passed": true
+      },
+      {
+        "name": "main player graph retained: DoRetake",
+        "passed": true
+      },
+      {
+        "name": "Continuous cursor helper retained",
+        "passed": true
+      },
+      {
+        "name": "DoLightAttack uses the merged stamina component",
+        "passed": true
+      },
+      {
+        "name": "DoDodge uses the merged stamina component",
+        "passed": true
+      },
+      {
+        "name": "DoParry uses the merged stamina component",
+        "passed": true
+      },
+      {
+        "name": "Every main AI actor except the three duplicate doors remains",
+        "passed": true
+      },
+      {
+        "name": "Duplicate doors are absent",
+        "passed": true
+      },
+      {
+        "name": "Exactly two evidence interactables",
+        "passed": true
+      },
+      {
+        "name": "Exactly two final-choice interactables",
+        "passed": true
+      },
+      {
+        "name": "All C narrative placements retained",
+        "passed": true
+      },
+      {
+        "name": "Archive reuses B encounter gating with C door presentation",
+        "passed": true
+      },
+      {
+        "name": "HUD retains main objective and new C prompts",
+        "passed": true
+      },
+      {
+        "name": "validate_a04 passes against merged assets",
+        "passed": true
+      },
+      {
+        "name": "validate_a05 passes against merged assets",
+        "passed": true
+      }
+    ],
+    "compiled": [
+      "/Game/Unscripted/Art/Characters/Shared/BP_LocomotionAnim.BP_LocomotionAnim",
+      "/Game/Unscripted/Core/Interfaces/BPI_CheckpointListener.BPI_CheckpointListener",
+      "/Game/Unscripted/Core/Interfaces/BPI_Damageable.BPI_Damageable",
+      "/Game/Unscripted/Core/Interfaces/BPI_Interactable.BPI_Interactable",
+      "/Game/Unscripted/Core/Interfaces/BPI_PlayerControl.BPI_PlayerControl",
+      "/Game/Unscripted/Core/Interfaces/BPI_StoryEvents.BPI_StoryEvents",
+      "/Game/Unscripted/Core/Interfaces/BPI_TimeAffectable.BPI_TimeAffectable",
+      "/Game/Unscripted/Enemies/BP_ArchiveEncounterDoor.BP_ArchiveEncounterDoor",
+      "/Game/Unscripted/Enemies/BP_GuardBase.BP_GuardBase",
+      "/Game/Unscripted/Enemies/BP_GuardFinisher.BP_GuardFinisher",
+      "/Game/Unscripted/Enemies/BP_Interventor.BP_Interventor",
+      "/Game/Unscripted/Enemies/BP_PatrolRoute.BP_PatrolRoute",
+      "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer",
+      "/Game/Unscripted/Enemies/BP_StealthComponent.BP_StealthComponent",
+      "/Game/Unscripted/Enemies/BP_Supervisor.BP_Supervisor",
+      "/Game/Unscripted/Enemies/Jack/BP_Jack.BP_Jack",
+      "/Game/Unscripted/Enemies/Jack/BP_JackInteraction.BP_JackInteraction",
+      "/Game/Unscripted/Enemies/Jack/BP_WorkshopEscapeDoor.BP_WorkshopEscapeDoor",
+      "/Game/Unscripted/Narrative/BP_Checkpoint.BP_Checkpoint",
+      "/Game/Unscripted/Narrative/BP_Door.BP_Door",
+      "/Game/Unscripted/Narrative/BP_Evidence.BP_Evidence",
+      "/Game/Unscripted/Narrative/BP_FinalChoice.BP_FinalChoice",
+      "/Game/Unscripted/Narrative/BP_FutureMessage_C.BP_FutureMessage_C",
+      "/Game/Unscripted/Narrative/BP_GameMode.BP_GameMode",
+      "/Game/Unscripted/Narrative/BP_GameState.BP_GameState",
+      "/Game/Unscripted/Narrative/BP_Hideout.BP_Hideout",
+      "/Game/Unscripted/Narrative/BP_InteractableBase.BP_InteractableBase",
+      "/Game/Unscripted/Narrative/BP_InteractionComponent.BP_InteractionComponent",
+      "/Game/Unscripted/Narrative/BP_ObjectiveManager.BP_ObjectiveManager",
+      "/Game/Unscripted/Narrative/BP_StoryTrigger.BP_StoryTrigger",
+      "/Game/Unscripted/Player/BP_CombatComponent.BP_CombatComponent",
+      "/Game/Unscripted/Player/BP_HealthComponent.BP_HealthComponent",
+      "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter",
+      "/Game/Unscripted/Player/BP_PlayerController.BP_PlayerController",
+      "/Game/Unscripted/Player/BP_TemporalComponent.BP_TemporalComponent",
+      "/Game/Unscripted/UI/BP_HUD.BP_HUD",
+      "/Game/Unscripted/UI/WBP_Checklist.WBP_Checklist",
+      "/Game/Unscripted/UI/WBP_Dialogue.WBP_Dialogue",
+      "/Game/Unscripted/UI/WBP_Document.WBP_Document",
+      "/Game/Unscripted/UI/WBP_Ending.WBP_Ending",
+      "/Game/Unscripted/UI/WBP_HUD.WBP_HUD",
+      "/Game/Unscripted/World/BP_GasLamp.BP_GasLamp"
+    ],
+    "asset_saves_performed": false,
+    "validate_a04_checks": 59,
+    "validate_a05_checks": 140
+  },
+  "play_official": {
+    "passed": true,
+    "case": "official",
+    "checks": [
+      {
+        "name": "Real player starts with 100 health and stamina",
+        "passed": true
+      },
+      {
+        "name": "Both branch placements are reconciled in PIE",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Live parry spends A stamina",
+        "passed": true
+      },
+      {
+        "name": "Live parry rejects empty stamina",
+        "passed": true
+      },
+      {
+        "name": "Stamina regenerates in real PIE",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "main checkpoint restoration survives the A health merge",
+        "passed": true
+      },
+      {
+        "name": "Restored player can still move",
+        "passed": true
+      },
+      {
+        "name": "Side door starts phase-locked",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "JackFound unlocks the single side door",
+        "passed": true
+      },
+      {
+        "name": "Animated door opens and reports the real escape event",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "C revelation reaches FinalChoice without choosing an ending",
+        "passed": true
+      },
+      {
+        "name": "Archive still requires B Interventor defeat",
+        "passed": true
+      },
+      {
+        "name": "Defeating the actual Interventor unlocks the C archive gate",
+        "passed": true
+      },
+      {
+        "name": "Records still requires Supervisor defeat",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Actual B Supervisor defeat reaches the C objective manager",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "Records door opens after real boss-defeat event",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "Unconfirmed final cannot register",
+        "passed": true
+      },
+      {
+        "name": "C modal opens without choosing an ending",
+        "passed": true
+      },
+      {
+        "name": "Cancellation restores movement input",
+        "passed": true
+      },
+      {
+        "name": "Confirmed record selects the intended C ending exactly once",
+        "passed": true
+      },
+      {
+        "name": "Terminal ending pauses gameplay and shows its widget",
+        "passed": true
+      },
+      {
+        "name": "Opposite record cannot replace the final",
+        "passed": true
+      }
+    ],
+    "asset_saves_performed": false,
+    "mode": "real PIE; HUD/interaction calls; isolated Jack and evidence prerequisites; not native keyboard or visual QA",
+    "interventor_diagnostics": {
+      "health": 0,
+      "correction_done": true,
+      "can_run": true,
+      "defeated": true,
+      "archive_can_interact": true
+    }
+  },
+  "play_authentic": {
+    "passed": true,
+    "case": "authentic",
+    "checks": [
+      {
+        "name": "Real player starts with 100 health and stamina",
+        "passed": true
+      },
+      {
+        "name": "Both branch placements are reconciled in PIE",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Live parry spends A stamina",
+        "passed": true
+      },
+      {
+        "name": "Live parry rejects empty stamina",
+        "passed": true
+      },
+      {
+        "name": "Stamina regenerates in real PIE",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "main checkpoint restoration survives the A health merge",
+        "passed": true
+      },
+      {
+        "name": "Restored player can still move",
+        "passed": true
+      },
+      {
+        "name": "Side door starts phase-locked",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "JackFound unlocks the single side door",
+        "passed": true
+      },
+      {
+        "name": "Animated door opens and reports the real escape event",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "C revelation reaches FinalChoice without choosing an ending",
+        "passed": true
+      },
+      {
+        "name": "Archive still requires B Interventor defeat",
+        "passed": true
+      },
+      {
+        "name": "Defeating the actual Interventor unlocks the C archive gate",
+        "passed": true
+      },
+      {
+        "name": "Records still requires Supervisor defeat",
+        "passed": true
+      },
+      {
+        "name": "Dialogue drains through production HUD",
+        "passed": true
+      },
+      {
+        "name": "Actual B Supervisor defeat reaches the C objective manager",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "Records door opens after real boss-defeat event",
+        "passed": true
+      },
+      {
+        "name": "Collision-safe test approach",
+        "passed": true
+      },
+      {
+        "name": "Unconfirmed final cannot register",
+        "passed": true
+      },
+      {
+        "name": "C modal opens without choosing an ending",
+        "passed": true
+      },
+      {
+        "name": "Cancellation restores movement input",
+        "passed": true
+      },
+      {
+        "name": "Confirmed record selects the intended C ending exactly once",
+        "passed": true
+      },
+      {
+        "name": "Terminal ending pauses gameplay and shows its widget",
+        "passed": true
+      },
+      {
+        "name": "Opposite record cannot replace the final",
+        "passed": true
+      }
+    ],
+    "asset_saves_performed": false,
+    "mode": "real PIE; HUD/interaction calls; isolated Jack and evidence prerequisites; not native keyboard or visual QA",
+    "interventor_diagnostics": {
+      "health": 0,
+      "correction_done": true,
+      "can_run": true,
+      "defeated": true,
+      "archive_can_interact": true
+    }
+  }
+}

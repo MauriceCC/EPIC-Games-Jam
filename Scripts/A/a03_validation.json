@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Reloaded saved character",
+      "passed": true
+    },
+    {
+      "name": "PlayerCharacter compiles after reload",
+      "passed": true
+    },
+    {
+      "name": "Saved movement cannot rotate toward WASD",
+      "passed": true
+    },
+    {
+      "name": "Controller yaw cannot override cursor yaw",
+      "passed": true
+    },
+    {
+      "name": "Tick has one update call",
+      "passed": true
+    },
+    {
+      "name": "Tick invokes correct private helper",
+      "passed": true
+    },
+    {
+      "name": "Existing snapshot chain still follows helper",
+      "passed": true
+    },
+    {
+      "name": "Local control is required",
+      "passed": true
+    },
+    {
+      "name": "Dead guard retained",
+      "passed": true
+    },
+    {
+      "name": "Exactly one FaceCursor call in helper",
+      "passed": true
+    },
+    {
+      "name": "Existing hit-test based cursor function retained",
+      "passed": true
+    },
+    {
+      "name": "Existing FaceCursor rotates yaw only",
+      "passed": true
+    },
+    {
+      "name": "Movement graph retained",
+      "passed": true
+    },
+    {
+      "name": "Entire controller asset unchanged",
+      "passed": true
+    },
+    {
+      "name": "Unpossessed character leaves orientation unchanged",
+      "passed": true
+    },
+    {
+      "name": "Orientation helper never moves an unpossessed character",
+      "passed": true
+    }
+  ],
+  "mode": "fresh commandlet; no mouse/PIE validation",
+  "check_count": 16
+}

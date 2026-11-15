@@ -119,8 +119,8 @@
         }
       ],
       "defaults": {
-        "OnStaminaChanged": "<Delegate 'DelegateBase' (0x000001A5696EF230) <Unbound>>",
-        "OnCombatStateChanged": "<Delegate 'DelegateBase' (0x000001A5696EF248) <Unbound>>",
+        "OnStaminaChanged": "<Delegate 'DelegateBase' (0x0000025230E268B0) <Unbound>>",
+        "OnCombatStateChanged": "<Delegate 'DelegateBase' (0x0000025230E268C8) <Unbound>>",
         "/Script/Engine.ActorComponent.PrimaryComponentTick_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.PrimaryComponentTick' for attribute '/Script/Engine.ActorComponent.PrimaryComponentTick' on 'BP_CombatComponent_C'",
         "/Script/Engine.ActorComponent.ComponentTags_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.ComponentTags' for attribute '/Script/Engine.ActorComponent.ComponentTags' on 'BP_CombatComponent_C'",
         "/Script/Engine.ActorComponent.AssetUserData_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.AssetUserData' for attribute '/Script/Engine.ActorComponent.AssetUserData' on 'BP_CombatComponent_C'",
@@ -143,7 +143,7 @@
         "/Script/Engine.ActorComponent.OnComponentDeactivated_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.OnComponentDeactivated' for attribute '/Script/Engine.ActorComponent.OnComponentDeactivated' on 'BP_CombatComponent_C'",
         "/Script/Engine.ActorComponent.UCSModifiedProperties_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.UCSModifiedProperties' for attribute '/Script/Engine.ActorComponent.UCSModifiedProperties' on 'BP_CombatComponent_C'"
       },
-      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF453FF5EF0) Class 'Class'>",
+      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF3BB4D5EF0) Class 'Class'>",
       "variables": [
         "OnStaminaChanged",
         "OnCombatStateChanged",
@@ -1049,8 +1049,8 @@
         }
       ],
       "defaults": {
-        "OnHealthChanged": "<Delegate 'DelegateBase' (0x000001A567F88300) <Unbound>>",
-        "OnDepleted": "<Delegate 'DelegateBase' (0x000001A567F88318) <Unbound>>",
+        "OnHealthChanged": "<Delegate 'DelegateBase' (0x000002528D345100) <Unbound>>",
+        "OnDepleted": "<Delegate 'DelegateBase' (0x000002528D345118) <Unbound>>",
         "MaxHealth": "100.0",
         "CurrentHealth": "100.0",
         "/Script/Engine.ActorComponent.PrimaryComponentTick_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.PrimaryComponentTick' for attribute '/Script/Engine.ActorComponent.PrimaryComponentTick' on 'BP_HealthComponent_C'",
@@ -1075,7 +1075,7 @@
         "/Script/Engine.ActorComponent.OnComponentDeactivated_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.OnComponentDeactivated' for attribute '/Script/Engine.ActorComponent.OnComponentDeactivated' on 'BP_HealthComponent_C'",
         "/Script/Engine.ActorComponent.UCSModifiedProperties_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.UCSModifiedProperties' for attribute '/Script/Engine.ActorComponent.UCSModifiedProperties' on 'BP_HealthComponent_C'"
       },
-      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF453FF5EF0) Class 'Class'>",
+      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF3BB4D5EF0) Class 'Class'>",
       "variables": [
         "OnHealthChanged",
         "OnDepleted",
@@ -11293,12 +11293,12 @@
         "HPHistory": "[]",
         "HealthComp": "None",
         "TemporalComp": "None",
-        "AnimAttack1": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Attack1.A_SK_Agent_Attack1' (0x000001A579626200) Class 'AnimSequence'>",
-        "AnimAttack2": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Attack2.A_SK_Agent_Attack2' (0x000001A579626900) Class 'AnimSequence'>",
-        "AnimDodge": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Dodge.A_SK_Agent_Dodge' (0x000001A579627700) Class 'AnimSequence'>",
-        "AnimParry": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Parry.A_SK_Agent_Parry' (0x000001A579628C00) Class 'AnimSequence'>",
-        "AnimHit": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Hit.A_SK_Agent_Hit' (0x000001A579627E00) Class 'AnimSequence'>",
-        "AnimDeath": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Death.A_SK_Agent_Death' (0x000001A579627000) Class 'AnimSequence'>",
+        "AnimAttack1": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Attack1.A_SK_Agent_Attack1' (0x000002528EEF6200) Class 'AnimSequence'>",
+        "AnimAttack2": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Attack2.A_SK_Agent_Attack2' (0x000002528EEF6900) Class 'AnimSequence'>",
+        "AnimDodge": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Dodge.A_SK_Agent_Dodge' (0x000002528EEF7700) Class 'AnimSequence'>",
+        "AnimParry": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Parry.A_SK_Agent_Parry' (0x000002528EEF8C00) Class 'AnimSequence'>",
+        "AnimHit": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Hit.A_SK_Agent_Hit' (0x000002528EEF7E00) Class 'AnimSequence'>",
+        "AnimDeath": "<Object '/Game/Unscripted/Art/Characters/SK_Agent/Anims/A_SK_Agent_Death.A_SK_Agent_Death' (0x000002528EEF7000) Class 'AnimSequence'>",
         "CutBest": "0.0",
         "bCutFound": "False",
         "CutTarget": "None",
@@ -11484,7 +11484,7 @@
         "auto_possess_player": "<AutoReceiveInput.DISABLED: 0>",
         "use_controller_rotation_yaw": "False"
       },
-      "parent": "<Object '/Script/Engine.Character' (0x00007FF45401B970) Class 'Class'>",
+      "parent": "<Object '/Script/Engine.Character' (0x00007FF3BB4FB970) Class 'Class'>",
       "variables": [
         "bAttacking",
         "bInvulnerable",
@@ -11721,8 +11721,8 @@
         {
           "name": "IsoCamera_GEN_VARIABLE",
           "class": "/Script/Engine.CameraComponent",
-          "relative_location": "<Struct 'Vector' (0x000001A57D083180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
-          "relative_rotation": "<Struct 'Rotator' (0x000001A57D083198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_location": "<Struct 'Vector' (0x000002529285F180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000002529285F198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
           "projection_mode": "<CameraProjectionMode.PERSPECTIVE: 0>",
           "field_of_view": "40.0",
           "ortho_width": "1536.0",
@@ -11731,7 +11731,7 @@
         {
           "name": "IsoCameraArm_GEN_VARIABLE",
           "class": "/Script/Engine.SpringArmComponent",
-          "relative_rotation": "<Struct 'Rotator' (0x000001A4E4B07198) {pitch: -55.000000, yaw: 45.000000, roll: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000002521A301198) {pitch: -55.000000, yaw: 45.000000, roll: 0.000000}>",
           "target_arm_length": "1700.0",
           "use_pawn_control_rotation": "False",
           "do_collision_test": "False"
@@ -11743,8 +11743,8 @@
         {
           "name": "IsoCamera_GEN_VARIABLE",
           "class": "/Script/Engine.CameraComponent",
-          "relative_location": "<Struct 'Vector' (0x000001A57D083180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
-          "relative_rotation": "<Struct 'Rotator' (0x000001A57D083198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_location": "<Struct 'Vector' (0x000002529285F180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000002529285F198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
           "projection_mode": "<CameraProjectionMode.PERSPECTIVE: 0>",
           "field_of_view": "40.0",
           "ortho_width": "1536.0",
@@ -14714,7 +14714,7 @@
         "/Script/Engine.Actor.BlueprintCreatedComponents_error": "PlayerController: Failed to find property '/Script/Engine.Actor.BlueprintCreatedComponents' for attribute '/Script/Engine.Actor.BlueprintCreatedComponents' on 'BP_PlayerController_C'",
         "show_mouse_cursor": "False"
       },
-      "parent": "<Object '/Script/Engine.PlayerController' (0x00007FF4541EBF70) Class 'Class'>",
+      "parent": "<Object '/Script/Engine.PlayerController' (0x00007FF3BB6CBF70) Class 'Class'>",
       "variables": [
         "/Script/Engine.PlayerController.Player",
         "/Script/Engine.PlayerController.AcknowledgedPawn",
@@ -15061,9 +15061,9 @@
         }
       ],
       "defaults": {
-        "OnRetakeChargesChanged": "<Delegate 'DelegateBase' (0x000001A5794B27B0) <Unbound>>",
-        "OnTemporalCutCooldown": "<Delegate 'DelegateBase' (0x000001A5794B27C8) <Unbound>>",
-        "OnRetakePerformed": "<Delegate 'DelegateBase' (0x000001A5794B27E0) <Unbound>>",
+        "OnRetakeChargesChanged": "<Delegate 'DelegateBase' (0x000002528EB97B70) <Unbound>>",
+        "OnTemporalCutCooldown": "<Delegate 'DelegateBase' (0x000002528EB97B88) <Unbound>>",
+        "OnRetakePerformed": "<Delegate 'DelegateBase' (0x000002528EB97BA0) <Unbound>>",
         "/Script/Engine.ActorComponent.PrimaryComponentTick_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.PrimaryComponentTick' for attribute '/Script/Engine.ActorComponent.PrimaryComponentTick' on 'BP_TemporalComponent_C'",
         "/Script/Engine.ActorComponent.ComponentTags_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.ComponentTags' for attribute '/Script/Engine.ActorComponent.ComponentTags' on 'BP_TemporalComponent_C'",
         "/Script/Engine.ActorComponent.AssetUserData_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.AssetUserData' for attribute '/Script/Engine.ActorComponent.AssetUserData' on 'BP_TemporalComponent_C'",
@@ -15086,7 +15086,7 @@
         "/Script/Engine.ActorComponent.OnComponentDeactivated_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.OnComponentDeactivated' for attribute '/Script/Engine.ActorComponent.OnComponentDeactivated' on 'BP_TemporalComponent_C'",
         "/Script/Engine.ActorComponent.UCSModifiedProperties_error": "ActorComponent: Failed to find property '/Script/Engine.ActorComponent.UCSModifiedProperties' for attribute '/Script/Engine.ActorComponent.UCSModifiedProperties' on 'BP_TemporalComponent_C'"
       },
-      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF453FF5EF0) Class 'Class'>",
+      "parent": "<Object '/Script/Engine.ActorComponent' (0x00007FF3BB4D5EF0) Class 'Class'>",
       "variables": [
         "OnRetakeChargesChanged",
         "OnTemporalCutCooldown",
@@ -15321,9 +15321,9 @@
   },
   "errors": [],
   "game_mode_defaults": {
-    "default_pawn_class": "<Object '/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C' (0x000001A57AD0AF00) Class 'BlueprintGeneratedClass'>",
-    "player_controller_class": "<Object '/Game/Unscripted/Player/BP_PlayerController.BP_PlayerController_C' (0x000001A582CA3800) Class 'BlueprintGeneratedClass'>",
-    "game_state_class": "<Object '/Game/Unscripted/Narrative/BP_GameState.BP_GameState_C' (0x000001A57E2E3100) Class 'BlueprintGeneratedClass'>",
-    "hud_class": "<Object '/Game/Unscripted/UI/BP_HUD.BP_HUD_C' (0x000001A57DC1A100) Class 'BlueprintGeneratedClass'>"
+    "default_pawn_class": "<Object '/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C' (0x000002529054AF00) Class 'BlueprintGeneratedClass'>",
+    "player_controller_class": "<Object '/Game/Unscripted/Player/BP_PlayerController.BP_PlayerController_C' (0x0000025209BD3800) Class 'BlueprintGeneratedClass'>",
+    "game_state_class": "<Object '/Game/Unscripted/Narrative/BP_GameState.BP_GameState_C' (0x0000025298703100) Class 'BlueprintGeneratedClass'>",
+    "hud_class": "<Object '/Game/Unscripted/UI/BP_HUD.BP_HUD_C' (0x000002529349A100) Class 'BlueprintGeneratedClass'>"
   }
 }

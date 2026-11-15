@@ -15,6 +15,8 @@ def prop(obj,name):return obj.get_editor_property(name)
 def phase(m):return m.call_method("GetStoryPhase").value
 try:
     manager_bp=unreal.load_asset(ROOT+"Narrative/BP_ObjectiveManager")
+    fixture_bp=unreal.load_asset(ROOT+'Narrative/Test/BP_C30ProgressionFixture_C')
+    assert fixture_bp,'C-30 worldless state fixture is required; production never references it.'
     observer_bp=unreal.load_asset(ROOT+"Narrative/Test/BP_StoryProgressionObserver_C")
     source_bp=unreal.load_asset(ROOT+"Narrative/Test/BP_StoryEventTestSource_C")
     event_class=type(unreal.get_default_object(source_bp.generated_class()).get_editor_property("EventToReport"))
@@ -38,11 +40,13 @@ try:
         KEEP.append(obj)
         return obj
     def session(stage=0):
-        m=unreal.new_object(manager_bp.generated_class());KEEP.append(m)
+        m=unreal.new_object(fixture_bp.generated_class());KEEP.append(m)
         steps=[("JackFound",""),("EscapeRouteOpened",""),("JackReachedRefuge","")]
         for e,p in steps[:min(stage,3)]:report(m,e,p)
         if stage>=4:
-            report(m,"EvidenceCollected","NursingRecord");report(m,"EvidenceCollected","FabricatedReport");report(m,"TruthRevealed")
+            report(m,"EvidenceCollected","NursingRecord");report(m,"EvidenceCollected","FabricatedReport")
+            # Worldless state fixture: presentation is exercised with native E in C-30 PIE tests.
+            m.call_method('ConfirmRevelationForStateTest');report(m,"TruthRevealed")
         if stage>=5:
             report(m,"SupervisorDefeated");report(m,"FinalDocumentRegistered","OfficialCut")
         return m
@@ -50,6 +54,7 @@ try:
     for flag in ("bJackFound","bEscapeRouteOpen","bJackSafe","bEvidenceFound","bFalseReportFound","bSupervisorEncountered","bSupervisorDefeated"):
         check("Default "+flag,not prop(m,flag))
     check("Default Ending None",prop(m,"Ending").value==0)
+    check("Default revelation completion is false",not prop(m,'bTruthRevelationComplete'))
     rules=json.loads((Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())).parent/"SourceData/C/StoryTransitions.json").read_text(encoding="utf-8-sig"))
     phase_names=rules["phases"]
     # Cross-product expectations come from the independently prepared C transition table.
@@ -60,6 +65,7 @@ try:
         for rule in rules["transitions"]:
             if rule["phase"]!=phase_names[before] or rule["event"]!=event:continue
             if not all(prop(m,flag) for flag in rule["required_flags"]):continue
+            if rule.get('presentation_completion_row') and not prop(m,'bTruthRevelationComplete'):continue
             if rule["requires_supervisor_defeat"] and not prop(m,"bSupervisorDefeated"):continue
             if rule["allowed_endings"] and "InvalidParam" not in rule["allowed_endings"]:continue
             expected=phase_names.index(rule["next_phase"])
@@ -81,6 +87,8 @@ try:
         check("Duplicate evidence does not replace other record "+first,phase(m)==3 and prop(o,"ObservedChecklistCount")==1)
         report(m,"EvidenceCollected",second)
         check("Both records do not auto-reveal "+first,phase(m)==3)
+        report(m,'TruthRevealed');check('Evidence alone cannot bypass the Supervisor dialogue '+first,phase(m)==3)
+        m.call_method('ConfirmRevelationForStateTest')
         report(m,"TruthRevealed");report(m,"TruthRevealed")
         check("Explicit reveal after distinct evidence "+first,phase(m)==4 and prop(o,"ObservedPhaseChangeCount")==1)
         check("Facts remain recorded "+first,all(prop(m,f) for f in ("bJackFound","bEscapeRouteOpen","bJackSafe","bEvidenceFound","bFalseReportFound")))

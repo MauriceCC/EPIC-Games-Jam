@@ -1,0 +1,145 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Mode=ValidatePlatforms -OutputSDKs  -AllPlatforms  -project="C:/Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Unscripted.uproject" -log="C:/Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Saved/Logs/AutoSDKInfo.txt" -verbose -timestamps
+Log file: C:\Users\mauri\Proyectos\EPIC-Games-Jam\Unscripted\Saved\Logs\AutoSDKInfo.txt
+##PlatformValidate: Win64 VALID 10.0.22621.0
+##PlatformValidate: Mac INVALID 26.1.1
+##PlatformValidate: IOS INVALID 26.1.1
+##PlatformValidate: Android INVALID r27c
+##PlatformValidate: Linux INVALID v26_clang-20.1.8-rockylinux8
+##PlatformValidate: LinuxArm64 INVALID <UNKNOWN>
+##PlatformValidate: TVOS INVALID 26.1.1
+##PlatformValidate: VisionOS INVALID <UNKNOWN>
+Unable to find required SDK version 'MainVersion' for platform LinuxArm64. Check your SDK.json files
+Unable to find required SDK version 'MainVersion' for platform VisionOS. Check your SDK.json files
+Trace written to file C:\Users\mauri\AppData\Local\UnrealBuildTool\Trace.uba with size 323b
+[2026.11.15-17.57.32:928][  0]LogInit: Display: Running engine for game: Unscripted
+[2026.11.15-17.57.32:928][  0]LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+[2026.11.15-17.57.32:928][  0]LogTrace: Display: Control listening on port 1985
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : platform="Windows"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : config="Development"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.8-CL-58902052"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : engineversion="5.8.4-58902052+++UE5+Release-5.8"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : enginereleaseversion="5.8.4"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : os="Windows 11 (26H2) [10.0.26300.9818] "
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : cpu="GenuineIntel|12th Gen Intel(R) Core(TM) i5-12600KF"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : asan="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : mergedmodules="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : compacttset="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : commandline="" C:/Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Unscripted.uproject -run=pythonscript -script=C:/Users/mauri/Proyectos/EPIC-Games-Jam/Scripts/A/patch_a05_regen_guard.py -unattended -nullrhi -nosound -NoSplash""
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : loginid="7165d26b4ab69a8d4aaa6085d7bcb0ee"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : llm="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : zenstreaming="0"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+[2026.11.15-17.57.32:928][  0]LogAudio: Display: Audio Device Manager not initializing due to all audio being disabled. If this is not intentional, please check command line arguments for "-nosound".
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading VulkanPC ini files took 0.05 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading Mac ini files took 0.05 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading Android ini files took 0.05 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading IOS ini files took 0.05 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading Unix ini files took 0.06 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading TVOS ini files took 0.06 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading VisionOS ini files took 0.06 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading Windows ini files took 0.06 seconds
+[2026.11.15-17.57.32:928][  0]LogConfig: Display: Loading Linux ini files took 0.07 seconds
+[2026.11.15-17.57.32:928][  0]LogAsyncCompilation: Display: MemorySharingInfo: UsedMemory=340MiB, MaxMemoryAvailable=35647MiB
+[2026.11.15-17.57.32:928][  0]RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.Log is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.CSV is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.Horde is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.Log is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.CSV is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogAnalytics: Display: Provider StudioTelemetry.Provider.Horde is disabled for this application
+[2026.11.15-17.57.32:928][  0]LogStreaming: Display: AsyncLoading2 - Created: Async Loading Thread: false, Async Post Load: false, Multithreaded: false
+[2026.11.15-17.57.32:928][  0]LogHAL: Display: Platform has ~ 32 GB [34183196672 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.15-17.57.32:928][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2026.11.15-17.57.32:928][  0]LogObj: Display: Attempting to load config data for Default__DownlinkBandwidthManagerConfig before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.11.15-17.57.33:256][  0]LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.11.15-17.57.33:359][  0]LogCsvProfiler: Display: Metadata set : verbatimrhiname="Null"
+[2026.11.15-17.57.33:360][  0]LogCsvProfiler: Display: Metadata set : rhiname="Null"
+[2026.11.15-17.57.33:360][  0]LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM6"
+[2026.11.15-17.57.33:360][  0]LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM6"
+[2026.11.15-17.57.33:360][  0]LogCsvProfiler: Display: Metadata set : gpu=""
+[2026.11.15-17.57.33:360][  0]LogCsvProfiler: Display: Metadata set : gpudriver=""
+[2026.11.15-17.57.33:367][  0]LogTextureFormatASTC: Display: ASTCEnc version 5.0.1 library loaded
+[2026.11.15-17.57.33:367][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+[2026.11.15-17.57.33:367][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+[2026.11.15-17.57.33:367][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+[2026.11.15-17.57.33:367][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+[2026.11.15-17.57.33:367][  0]LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.16
+[2026.11.15-17.57.33:367][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.16.dll
+[2026.11.15-17.57.33:368][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+[2026.11.15-17.57.33:368][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+[2026.11.15-17.57.33:400][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Android'
+[2026.11.15-17.57.33:420][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'IOS'
+[2026.11.15-17.57.33:440][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Linux'
+[2026.11.15-17.57.33:458][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Mac'
+[2026.11.15-17.57.33:460][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'TVOS'
+[2026.11.15-17.57.33:479][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2026.11.15-17.57.33:479][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+[2026.11.15-17.57.33:479][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2026.11.15-17.57.33:479][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2026.11.15-17.57.33:479][  0]LogTargetPlatformManager: Display: Building Assets For WindowsEditor
+[2026.11.15-17.57.33:483][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2026.11.15-17.57.33:759][  0]LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (1666 MiB)
+[2026.11.15-17.57.33:760][  0]LogZenServiceInstance: Display: Launching zen utility 'C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/zen.exe service status'.
+[2026.11.15-17.57.34:166][  0]LogZenServiceInstance: Display: Writing plugin version info to 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/zen_plugin_versions.json'
+[2026.11.15-17.57.34:167][  0]LogZenServiceInstance: Display: Read zen version cache file from 'C:/Users/mauri/AppData/Local/UnrealEngine/5.8/Saved/Zen/zen.version', version: '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.11.15-17.57.34:167][  0]LogZenServiceInstance: Display: Read zen version cache file from 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/zen.version', version: '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.11.15-17.57.34:167][  0]LogZenServiceInstance: Display: Installed service at 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe' is up to date
+[2026.11.15-17.57.34:167][  0]LogZenServiceInstance: Display: Launching executable 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe', working dir 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install', data dir 'C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Data', args '--port 8558 --data-dir C:\Users\mauri\AppData\Local\UnrealEngine\Common\Zen\Data --http asio --gc-cache-duration-seconds 1209600 --gc-interval-seconds 21600 --gc-low-diskspace-threshold 2147483648 --cache-bucket-limit-overwrites --quiet --restrict-content-types --allow-external-oidctoken-exe=false --plugins-config "C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/zen_plugins_v1.json" --security-config-path "C:/Users/mauri/AppData/Local/UnrealEngine/Common/Zen/Install/security-config.json" --owner-pid 26136  --child-id Zen_26136_Startup'
+[2026.11.15-17.57.36:349][  0]LogZenServiceInstance: Display: Unreal Zen Storage Server HTTP service at http://[::1]:8558 status: OK!.
+[2026.11.15-17.57.36:359][  0]LogDerivedDataCache: Display: ZenLocal: Using ZenServer HTTP service at [::1] with namespace ue.ddc. Status: OK!.
+[2026.11.15-17.57.36:377][  0]LogDerivedDataCache: Display: C:/Users/mauri/AppData/Local/UnrealEngine/Common/DerivedDataCache: Performance: Latency=0.15ms. RandomReadSpeed=216.72MBs, RandomWriteSpeed=75.57MBs. Assigned SpeedClass 'Local'
+[2026.11.15-17.57.36:386][  0]LogUbaHorde: Display: UBA/Horde Configuration [Uba.Provider.Horde]: Not Enabled
+[2026.11.15-17.57.36:394][  0]LogXGEController: Display: Initialized XGE controller. XGE tasks will be spawned on this machine.
+[2026.11.15-17.57.36:394][  0]LogShaderCompilers: Display: Using XGE Controller for shader compilation
+[2026.11.15-17.57.36:403][  0]LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Intermediate/ShaderAutogen/PCD3D_SM6/AutogenShaderHeaders.ush
+[2026.11.15-17.57.36:403][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.11.15-17.57.38:103][  0]LogEditorDomain: Display: EditorDomain is Disabled
+[2026.11.15-17.57.38:563][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2026.11.15-17.57.38:563][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2026.11.15-17.57.38:640][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+[2026.11.15-17.57.38:645][  0]LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+[2026.11.15-17.57.38:675][  0]LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+[2026.11.15-17.57.38:675][  0]LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2026.11.15-17.57.38:675][  0]LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2026.11.15-17.57.38:709][  0]LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+[2026.11.15-17.57.38:709][  0]LogMeshReduction: Display: Using SkeletalMeshReduction for automatic skeletal mesh reduction
+[2026.11.15-17.57.38:709][  0]LogMeshReduction: Display: Using ProxyLODMeshReduction for automatic mesh merging
+[2026.11.15-17.57.38:709][  0]LogMeshReduction: Display: No distributed automatic mesh merging module available
+[2026.11.15-17.57.38:940][  0]LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2026.11.15-17.57.38:941][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.11.15-17.57.38:941][  0]LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+[2026.11.15-17.57.38:941][  0]LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2026.11.15-17.57.39:071][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+[2026.11.15-17.57.39:074][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 3.265 ms
+[2026.11.15-17.57.39:645][  0]LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+[2026.11.15-17.57.39:651][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2026.11.15-17.57.40:268][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.15-17.57.40:268][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.15-17.57.40:768][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles (PreLoad): 1 .ref files found, 1 referenced binaries
+[2026.11.15-17.57.40:769][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles: 1 total binaries, 1 referenced (kept), 0 old-style pre-migration (kept), 0 orphans deleted, 0 orphans locked (kept)
+[2026.11.15-17.57.40:771][  0]LogAssetRegistry: Display: FindShardedCacheFiles: 1 via .ref, 0 via migration fallback, 1 total
+[2026.11.15-17.57.40:771][  0]LogAssetRegistry: Display: LoadCacheFiles: loading 1 cache files, memory-mapping=enabled
+[2026.11.15-17.57.40:930][  0]LogAssetRegistry: Display: Asset registry cache read as 125.6 MiB from ../../../../../../Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Intermediate/CachedAssetRegistry/CachedAssetRegistry_0_AD73FE514F9C2A9C1E8B549E342D48CC.bin (memory-mapped=yes)
+[2026.11.15-17.57.40:931][  0]LogAssetRegistry: Display: AssetDataGatherer spent 0.163s loading caches from ../../../../../../Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Intermediate/CachedAssetRegistry.
+[2026.11.15-17.57.41:024][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.11.15-17.57.41:111][  0]LogPython: Display: No pip-enabled plugins with python dependencies found, skipping
+[2026.11.15-17.57.41:828][  0]LogCsvProfiler: Display: Metadata set : raytracing="0"
+[2026.11.15-17.57.42:039][  0]LogPython: Display: Ejecutando secuencia de comandos de inicio C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/IKRig/Content/Python/init_unreal.py… started...
+[2026.11.15-17.57.42:055][  0]LogPython: Display: Ejecutando secuencia de comandos de inicio C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/IKRig/Content/Python/init_unreal.py… took 15.194 ms
+[2026.11.15-17.57.42:055][  0]LogPython: Display: Ejecutando secuencia de comandos de inicio C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py… started...
+[2026.11.15-17.57.42:085][  0]LogPython: Display: Ejecutando secuencia de comandos de inicio C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py… took 30.661 ms (total: 45.855 ms)
+[2026.11.15-17.57.42:086][  0]LogPythonScriptCommandlet: Display: Running Python script: C:/Users/mauri/Proyectos/EPIC-Games-Jam/Scripts/A/patch_a05_regen_guard.py
+[2026.11.15-17.57.42:252][  0]LogSourceControl: Display: Uncontrolled Changelist persistency file loaded ../../../../../../Users/mauri/Proyectos/EPIC-Games-Jam/Unscripted/Saved/SourceControl/UncontrolledChangelists.json
+[2026.11.15-17.57.42:253][  0]LogPythonScriptCommandlet: Display: Python script executed successfully
+[2026.11.15-17.57.42:253][  0]LogInit: Display: 
+[2026.11.15-17.57.42:253][  0]LogInit: Display: Success - 0 error(s), 0 warning(s)
+[2026.11.15-17.57.42:253][  0]LogInit: Display: 
+Execution of commandlet took:  0.21 seconds, PeakPhysMemoryMB=1669 MB, PeakVirtMemoryMB=1475 MB
+[2026.11.15-17.57.42:424][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles (PostWrite): 1 .ref files found, 1 referenced binaries
+[2026.11.15-17.57.42:424][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles: 1 total binaries, 1 referenced (kept), 0 old-style pre-migration (kept), 0 orphans deleted, 0 orphans locked (kept)
+[2026.11.15-17.57.42:549][  0]LogShaderCompilers: Display: Exiting ShaderCompilingThread-Distributed
