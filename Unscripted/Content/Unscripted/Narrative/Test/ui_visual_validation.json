@@ -1,0 +1,17 @@
+﻿{
+  "method": "Unreal MCP SlateInspector",
+  "render_session": "D3D11 (runtime flag only; D3D12 Slate crashed on restoring the editor)",
+  "passed": true,
+  "checks": [
+    "Meet Jack button displays the JackFound_01 source line.",
+    "Continue click advances to the agent's reply.",
+    "Continue reaches JackFound_03 and becomes disabled.",
+    "Restart preview restores the briefing.",
+    "Rewrite orders preserves the completed prefix and displays the framing and disappearance orders.",
+    "Complete next changes the displayed completed count.",
+    "Keyboard activation reaches 4 / 4 and disables Complete next.",
+    "Reset initial orders restores three pending objectives."
+  ],
+  "protectedFilesChecked": 28,
+  "protectedFilesChanged": 0
+}

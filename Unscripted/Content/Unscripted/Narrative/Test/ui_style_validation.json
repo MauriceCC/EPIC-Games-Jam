@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "scope": [
+    "/Game/Unscripted/UI/Test/WBP_DialoguePrototype_C",
+    "/Game/Unscripted/UI/Test/WBP_ChecklistPrototype_C",
+    "/Game/Unscripted/UI/Test/EUW_NarrativeTestLauncher_C"
+  ],
+  "logic_unchanged": true,
+  "before": {
+    "WBP_DialoguePrototype_C": {
+      "sha256": "425c7f8118fdbd5ed52d36e353612ca2483f07ba3a6bd7f2d9dba0684ad76e63",
+      "node_count": 314,
+      "graph_count": 4,
+      "primitive_defaults": {
+        "NextLineIndex": 1,
+        "CurrentLineIndex": 0
+      }
+    },
+    "WBP_ChecklistPrototype_C": {
+      "sha256": "364ceeb4ee9b2494d02da9fd58b0aca018f254abf87cd99f9e74b451e825d10e",
+      "node_count": 148,
+      "graph_count": 5,
+      "primitive_defaults": {
+        "CompletedCount": 0,
+        "IsRewritten": false
+      }
+    },
+    "EUW_NarrativeTestLauncher_C": {
+      "sha256": "ef441386e8d89bf8bb290594eb9f88272c5889524829ee18f7f101a18093c433",
+      "node_count": 0,
+      "graph_count": 1,
+      "primitive_defaults": {}
+    }
+  },
+  "after": {
+    "WBP_DialoguePrototype_C": {
+      "sha256": "425c7f8118fdbd5ed52d36e353612ca2483f07ba3a6bd7f2d9dba0684ad76e63",
+      "node_count": 314,
+      "graph_count": 4,
+      "primitive_defaults": {
+        "NextLineIndex": 1,
+        "CurrentLineIndex": 0
+      }
+    },
+    "WBP_ChecklistPrototype_C": {
+      "sha256": "364ceeb4ee9b2494d02da9fd58b0aca018f254abf87cd99f9e74b451e825d10e",
+      "node_count": 148,
+      "graph_count": 5,
+      "primitive_defaults": {
+        "CompletedCount": 0,
+        "IsRewritten": false
+      }
+    },
+    "EUW_NarrativeTestLauncher_C": {
+      "sha256": "ef441386e8d89bf8bb290594eb9f88272c5889524829ee18f7f101a18093c433",
+      "node_count": 0,
+      "graph_count": 1,
+      "primitive_defaults": {}
+    }
+  },
+  "compile": "All three up to date without warnings",
+  "save": "All three saved explicitly",
+  "presentation": [
+    "Charcoal, brass, ivory and muted cyan",
+    "Two separate preview cards in adjacent columns",
+    "Consistent control sizing, padding, alignment and interaction states",
+    "Dedicated reading and orders panels",
+    "Existing narrative text preserved"
+  ]
+}
