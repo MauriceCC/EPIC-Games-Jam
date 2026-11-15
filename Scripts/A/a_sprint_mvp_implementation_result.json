@@ -1,0 +1,276 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter",
+    "/Game/Unscripted/Player/BP_PlayerController.BP_PlayerController"
+  ],
+  "checks": [
+    {
+      "name": "Migration not already applied",
+      "passed": true
+    },
+    {
+      "name": "Result_1 follows the bDead branch",
+      "passed": true
+    },
+    {
+      "name": "Result_2 follows the bInvulnerable branch",
+      "passed": true
+    },
+    {
+      "name": "Result_3 follows the parry sound",
+      "passed": true
+    },
+    {
+      "name": "Result_4 follows TakeHit",
+      "passed": true
+    },
+    {
+      "name": "EHitResult has the contract values",
+      "passed": true
+    },
+    {
+      "name": "Player compiles after A3",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with new flags",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with entry gates",
+      "passed": true
+    },
+    {
+      "name": "SetRetakeBlocked event created",
+      "passed": true
+    },
+    {
+      "name": "ClearRetakeHistory event created",
+      "passed": true
+    },
+    {
+      "name": "SetGameplayInputEnabled event created",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with BPI_PlayerControl events",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: UserConstructionScript",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoMove",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: FaceCursor",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: RestartLevel",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: AttackHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: Die",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: TakeHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoLightAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: CutReadyAgain",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoTemporalCut",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoRetake",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: B_ResumePlayerAtCheckpoint",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: A_UpdateCursorFacing",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: ReceiveCombatHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: IsDefeated",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: GetStealthComponent",
+      "passed": true
+    },
+    {
+      "name": "Player: only documented edits in pre-existing graphs",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_1 returns Ignored",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_2 returns Dodged",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_3 returns Parried",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_4 returns Hit",
+      "passed": true
+    },
+    {
+      "name": "Six debug prints found",
+      "passed": true
+    },
+    {
+      "name": "LookMouse ToString found",
+      "passed": true
+    },
+    {
+      "name": "Controller compiles without prints",
+      "passed": true
+    },
+    {
+      "name": "Controller compiles with A_HandlePause shell",
+      "passed": true
+    },
+    {
+      "name": "IA_Pause.Started is free after removing its print",
+      "passed": true
+    },
+    {
+      "name": "Controller compiles with Esc handler",
+      "passed": true
+    },
+    {
+      "name": "Controller graph kept: UserConstructionScript",
+      "passed": true
+    },
+    {
+      "name": "Controller graph kept: EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Controller: only prints removed and Esc rewired",
+      "passed": true
+    },
+    {
+      "name": "No PrintString left in controller EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerCharacter",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerController",
+      "passed": true
+    }
+  ],
+  "base_commit": "83ee5bf",
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A_SprintMVP_vantebua",
+  "ehitresult_values": [
+    "Hit",
+    "Blocked",
+    "Parried",
+    "Dodged",
+    "Ignored"
+  ],
+  "event_pins": {
+    "K2Node_Event_0": [
+      "OutputDelegate",
+      "then",
+      "bBlocked"
+    ],
+    "K2Node_Event_1": [
+      "OutputDelegate",
+      "then"
+    ],
+    "K2Node_Event_2": [
+      "OutputDelegate",
+      "then",
+      "bEnabled"
+    ]
+  },
+  "clear_menu": {
+    "PosHistory": [
+      "Utilidades|Matriz|Clear"
+    ],
+    "HPHistory": [
+      "Utilidades|Matriz|Clear"
+    ]
+  },
+  "removed_prints": [
+    [
+      "K2Node_CallFunction_12",
+      "Checklist"
+    ],
+    [
+      "K2Node_CallFunction_8",
+      "Crouch"
+    ],
+    [
+      "K2Node_CallFunction_10",
+      "Interact"
+    ],
+    [
+      "K2Node_CallFunction_14",
+      "Pause requested"
+    ],
+    [
+      "K2Node_CallFunction_18",
+      "Hello"
+    ],
+    [
+      "K2Node_CallFunction_15",
+      "Mouse stopped"
+    ]
+  ]
+}

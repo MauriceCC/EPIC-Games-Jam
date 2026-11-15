@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "All Unscripted Blueprints compile (58)",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_1 -> Ignored",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_2 -> Dodged",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_3 -> Parried",
+      "passed": true
+    },
+    {
+      "name": "ReceiveCombatHit K2Node_FunctionResult_4 -> Hit",
+      "passed": true
+    },
+    {
+      "name": "No PrintString in controller EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Controller has A_HandlePause",
+      "passed": true
+    },
+    {
+      "name": "IA_Pause.Started calls A_HandlePause",
+      "passed": true
+    },
+    {
+      "name": "IA_Interact node kept (no extra consumer added)",
+      "passed": true
+    },
+    {
+      "name": "Player recompiles for the in-memory test",
+      "passed": true
+    },
+    {
+      "name": "Transient player spawned",
+      "passed": true
+    },
+    {
+      "name": "Flags start cleared",
+      "passed": true
+    },
+    {
+      "name": "SetRetakeBlocked(true) sets the flag",
+      "passed": true
+    },
+    {
+      "name": "Blocked retake keeps both charges",
+      "passed": true
+    },
+    {
+      "name": "Blocked retake keeps history",
+      "passed": true
+    },
+    {
+      "name": "Blocked retake does not move the player",
+      "passed": true
+    },
+    {
+      "name": "SetRetakeBlocked(false) clears the flag",
+      "passed": true
+    },
+    {
+      "name": "SetGameplayInputEnabled(false) blocks gameplay",
+      "passed": true
+    },
+    {
+      "name": "Retake ignored while gameplay input is disabled",
+      "passed": true
+    },
+    {
+      "name": "Dodge ignored while gameplay input is disabled",
+      "passed": true
+    },
+    {
+      "name": "SetGameplayInputEnabled(true) restores gameplay",
+      "passed": true
+    },
+    {
+      "name": "ClearRetakeHistory empties position samples",
+      "passed": true
+    },
+    {
+      "name": "ClearRetakeHistory empties health samples",
+      "passed": true
+    },
+    {
+      "name": "ClearRetakeHistory resets the sample timer",
+      "passed": true
+    },
+    {
+      "name": "Retake with empty history does not spend a charge",
+      "passed": true
+    },
+    {
+      "name": "Unblocked retake still works (spends one charge)",
+      "passed": true
+    },
+    {
+      "name": "Unblocked retake rewinds to the oldest sample",
+      "passed": true
+    }
+  ],
+  "compile_failures": [],
+  "mode": "commandlet; editor world; not PIE",
+  "blueprints_compiled": 58
+}
