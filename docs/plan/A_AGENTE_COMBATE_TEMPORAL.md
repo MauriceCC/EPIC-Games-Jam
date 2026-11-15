@@ -138,6 +138,8 @@ Las notas del día que siguen son historial de preparación.
 
 Notas del día:
 
+- 2026-11-15: **A-03 confirmado funcional por Mauricio**, commit `e95d5b9`. **A-04 implementado y validado técnicamente**: Health instalado 100/100; actualización acotada y notificación con valores capturados; OnDepleted solo en transición positiva→cero. Probado en dos actores dummy transitorios con dos observadores reales, tras recargar los assets. Firmas compartidas y grafos del jugador preservados. [Guía, propuestas locales, evidencia y prueba visual](../../Scripts/A/A04_SALUD.md). Pendiente aceptación visual del HUD en Play; no implica cierre de A-18/A-22 ni F1. Siguiente: A-05, resistencia.
+
 - 2026-11-15: A-03 implementado sobre `b2ceb53`, tras revisar los cambios del pull de C/D. Tick llama a `A_UpdateCursorFacing` (local y vivo), reutilizando `FaceCursor`; CharacterMovement deja de girar hacia WASD. Solo se guardó `BP_PlayerCharacter`. Compilación y 16 comprobaciones tras recarga correctas; pendiente aceptación visual con mouse y pendientes en `L_Test_A`. [Cambio, evidencia y prueba paso a paso](../../Scripts/A/A03_ORIENTACION_CONTINUA.md). No se marca F1 completo. El handoff nuevo de C sitúa la salud del componente instalado y checkpoints entre los siguientes pendientes de A.
 
 - 2026-11-15: auditoría de los assets guardados con Unreal 5.8.4, sin editar ni guardar paquetes. Confirmados BeginPlay/IMC y mappings; hay movimiento, salud y combate/poderes provisionales en PlayerCharacter. Detectadas diferencias de contrato, fuerte enlazado al ligero, ausencia de resistencia y Retoma sin destino seguro. [Informe y límites](../../Scripts/A/AUDITORIA_A_2026_11_15.md). No se ejecutó Play ni se marca A-01/F1 completo. Las notas anteriores son históricas.
