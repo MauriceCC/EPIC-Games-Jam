@@ -1,0 +1,35 @@
+id,manzana,arquetipo,u0,u1,v0,v1,plantas,tejado,cubierta,fachada,chimeneas,buhardillas,escaparate,ventanas_luz,fundido,notas
+H01,SO,SHOP,0,12,0,8,1,dos_aguas_EO,pizarra,E,1,0,si,0.6,si,Tienda en esquina Start/Plaza; toldo a rayas hacia Start
+H02,SO,FILLER,-6,0,0,8,1,dos_aguas_NS,pizarra,-,1,0,no,0.2,si,Relleno de borde
+H03,SO,BRICK,-6,6,8,15,1,dos_aguas_NS,pizarra,E,1,0,no,0.5,si,Lado cámara de la Plaza: bajo
+H04,SO,SHOP,-6,6,15,22,1,dos_aguas_NS,pizarra,E,1,0,si,0.6,si,Puesto de mercado delante (prop)
+H05,Sur,SHOP,12,18,-6,0,1,dos_aguas_EO,pizarra,N,1,0,si,0.7,si,Escaparate de Start mirando al norte
+H06,Sur,SHOP,18,24,-6,0,1,dos_aguas_EO,pizarra,N,0,0,si,0.7,si,Segundo escaparate de Start
+H07,Sur,FILLER,-6,12,-6,0,1,dos_aguas_EO,pizarra,-,1,0,no,0.2,si,Relleno de borde
+H08,Rincon,SHOP,26,34,0,8,2,dos_aguas_NS,teja_roja,O,1,0,si,0.5,no,Casa roja con humo al este de Start (referencia)
+H08b,Rincon,SHOP,24,26,0,8,1,dos_aguas_NS,pizarra,O,0,0,si,0.6,si,Tienda baja mirando a Start (fachada hacia cámara)
+H09,Rincon,SHOP,26,34,8,14,1,dos_aguas_NS,pizarra,O,1,0,si,0.6,si,Tienda baja mirando a la Plaza (fachada hacia cámara); bajo por el Callejón
+H10,Rincon,CORNER,34,38,0,10,1,dos_aguas_NS,pizarra,N,0,0,no,0.1,si,Cierra el Rincón (fondo sin salida)
+H11,Rincon,BRICK,38,46,8,14,1,dos_aguas_EO,pizarra,N,1,0,no,0.4,si,Lado sur del Callejón: bajo
+H12,Rincon,SHOP,38,46,0,8,1,dos_aguas_EO,pizarra,S,1,0,si,0.6,si,Escaparate hacia el borde sur (vista de cámara)
+H13,Sur,FILLER,24,46,-6,0,1,dos_aguas_EO,pizarra,-,2,0,no,0.2,si,Relleno de borde
+H14,Sur,FILLER,46,66,-6,0,1,dos_aguas_EO,pizarra,-,2,0,no,0.2,si,Relleno de borde
+H15,Patio,SHOP,46,58,0,8,1,dos_aguas_EO,pizarra,S,1,0,si,0.7,si,Fila de tiendas bajo el Patio (referencia)
+H16,Patio,SHOP,58,66,8,15,2,dos_aguas_NS,teja_roja,O,1,0,si,0.5,no,Tejado rojo al este del Patio
+H17,Patio,SHOP,58,66,15,22,2,dos_aguas_NS,teja_roja,O,1,1,si,0.6,no,Tienda de 2 plantas al este del Patio (fachada hacia cámara)
+H18,Patio,FILLER,58,66,0,8,1,dos_aguas_NS,pizarra,-,1,0,no,0.2,si,Relleno de borde
+H19,Callejon,SHOP,26,34,18,22,1,dos_aguas_EO,teja_roja,S,1,0,si,0.6,si,Entre Callejón y Paso central: bajo (lado cámara del Paso)
+H20,Callejon,SHOP,34,38,18,22,1,dos_aguas_EO,teja_roja,S,0,0,si,0.6,si,Entre Callejón y Paso central
+H21,Callejon,SHOP,40,46,18,22,1,dos_aguas_EO,teja_roja,S,1,0,si,0.6,si,Entre Callejón y Paso central
+H22,Refugio,BRICK,-6,2,22,36,1,dos_aguas_NS,pizarra,-,1,0,no,0.3,si,Cuerpo oeste del Refugio (lado cámara)
+H24,Refugio,BRICK,-6,14,36,48,3,dos_aguas_EO,pizarra,S,3,2,no,0.5,no,Casa alta tras el Refugio; buhardillas
+H25,Tramo,SHOP,14,26,32,36,1,dos_aguas_EO,pizarra,S,1,0,si,0.5,si,Norte del Tramo y sur del Archivo: bajo
+H26,Archivo,BRICK,14,18,36,48,1,dos_aguas_NS,pizarra,-,1,0,no,0.3,si,Oeste del Archivo: bajo
+H27,Norte,FILLER,-6,18,48,60,3,dos_aguas_EO,pizarra,S,3,2,no,0.4,no,Fondo alto
+H28,Agencia,AGENCY,18,24,48,54,1,plano_pretil,pizarra,-,0,0,no,0.2,si,Ala oeste de Registros: baja
+H29,Agencia,AGENCY,36,42,48,54,3,a_cuatro,pizarra,O,1,0,no,0.4,no,Ala este de Registros
+H30,Agencia,AGENCY,18,42,54,60,3,a_cuatro,pizarra,S,2,3,no,0.6,no,Edificio principal de la agencia; remates cian
+H31,Taller,BRICK,58,66,22,34,3,dos_aguas_NS,pizarra,O,2,1,no,0.5,no,Este del Taller
+H32,Taller,WORKSHOP,46,66,34,48,3,dos_aguas_EO,pizarra,S,3,2,no,0.4,no,Nave trasera del Taller con chimeneas
+H34,Taller,FILLER,42,46,36,48,3,dos_aguas_NS,pizarra,-,1,0,no,0.3,no,Este del Archivo
+H35,Norte,FILLER,42,66,48,60,3,dos_aguas_EO,pizarra,S,3,2,no,0.4,no,Fondo alto

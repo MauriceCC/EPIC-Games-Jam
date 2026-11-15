@@ -2,7 +2,7 @@
 
 > **Base confirmada:** Unscripted · UE 5.8.4 · Blueprint. Todo contenido para el jugador debe estar en inglés, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
 
-**Persona:** _(nombre)_ · **Rama:** `a/<tarea>` · **Commits:** `[A] …`
+**Persona:** Mauricio (confirmado 2026-11-15) · **Rama:** `a/<tarea>` · **Commits:** `[A] …`
 
 ## 1. Misión
 
@@ -137,6 +137,8 @@ Las notas del día que siguen son historial de preparación.
 - [ ] F4 cerrado
 
 Notas del día:
+
+- 2026-11-15: auditoría de los assets guardados con Unreal 5.8.4, sin editar ni guardar paquetes. Confirmados BeginPlay/IMC y mappings; hay movimiento, salud y combate/poderes provisionales en PlayerCharacter. Detectadas diferencias de contrato, fuerte enlazado al ligero, ausencia de resistencia y Retoma sin destino seguro. [Informe y límites](../../Scripts/A/AUDITORIA_A_2026_11_15.md). No se ejecutó Play ni se marca A-01/F1 completo. Las notas anteriores son históricas.
 
 - 2026-11-14: A-01 iniciada como guía de implementación: [Input en Blueprint](../../Scripts/A/A01_INPUT_BLUEPRINT.md). Pendiente de crear assets y verificar en Unreal; no se marca terminada.
 - **[PROPUESTA]** Mientras F0 no exista, probar input con `BP_InputTestController_A` y `BP_InputTestGameMode_A` en `Player/Test/`, usando solo `L_Test_A`. No sustituye F0 ni modifica contratos. Tras F0, llevar las conexiones al controlador de A.

@@ -1,0 +1,28 @@
+id,zona,tipo,u,v,color,notas
+L01,Start,farol,16,6,ambar,Farol único: calma
+L02,Plaza,farol,8,10,ambar,Esquina
+L03,Plaza,farol,24,10,ambar,Esquina
+L04,Plaza,farol,8,20,ambar,Esquina
+L05,Plaza,farol,24,20,ambar,Esquina
+L06,Plaza,farol,13,15,ambar,Junto a la estatua (luz dominante)
+L07,Plaza,farol,19,15,ambar,Junto a la estatua
+L08,Callejon,farol_pared,28,14.3,ambar,Isla de luz pequeña
+L09,Callejon,farol_pared,44,17.7,ambar,Isla de luz pequeña
+L10,Rincon,farol_pared,36,10.4,ambar_tenue,Casi a oscuras: escondite
+L11,Patio,farol,47,20,ambar,Isla de luz
+L12,Patio,farol_grua,57,9,ambar,Lámpara colgada de la grúa
+L13,Taller,lampara,50,28,ambar,Interior cálido
+L14,Taller,hogar,56,32,naranja,Fragua o chimenea
+L15,PasoCentral,farol,27,35,ambar,Lateral; niebla
+L16,PasoCentral,farol,45,35,ambar,Lateral; niebla
+L17,PasoCentral,farol,27,23,ambar,Lateral
+L18,PasoCentral,farol,45,23,ambar,Lateral
+L19,Tramo,farol,20,31,ambar,Único
+L20,Refugio,vela,4,34,ambar_tenue,Interior tenue
+L21,Refugio,lampara,10,24,ambar_tenue,Interior tenue
+L22,Archivo,tecnologia,20,46,cian,Agencia
+L23,Archivo,tecnologia,40,46,cian,Agencia
+L24,Archivo,lampara_mesa,26,40,ambar,Mesa de trabajo
+L25,Archivo,lampara_mesa,34,40,ambar,Mesa de trabajo
+L26,Registros,capsula,25,53,cian,Cápsula
+L27,Registros,capsula,35,53,cian,Cápsula
