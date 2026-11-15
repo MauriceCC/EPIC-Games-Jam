@@ -37,6 +37,20 @@ Notas:
 - Para los NPCs con diálogo (C), la conversación es **[PROPUESTA]** de C: D solo entrega la malla y las animaciones.
 - Más animaciones (golpes, esquivar, sentado, etc.): Meshy tiene una biblioteca de presets (3 créditos por acción y personaje); pedírselas a D.
 
+### Personajes ya asignados (2026-11-15)
+
+- `BP_PlayerCharacter` → `SK_Agent`; `BP_Pursuer` → `SK_Pursuer_A`; `BP_Jack` → `SK_Jack`; `BP_Interventor` → `SK_Interventor`; `BP_Supervisor` → `SK_Supervisor`. Malla en Z = −88 y Yaw −90; modo de animación *Single Node*.
+- Componente `Art/Characters/Shared/BP_LocomotionAnim`: reproduce Idle/Walk/Run según la velocidad (umbrales 15 y 320 cm/s). Para una acción puntual (golpe, muerte…) llamar `PlayOneShot(Anim)`: reproduce la animación una vez y vuelve a la locomoción.
+- **[PROPUESTA] para B:** para el segundo Perseguidor con otro aspecto, cambiar en la instancia del nivel la malla a `SK_Pursuer_B` y las tres animaciones de su `LocomotionAnim` a las de `SK_Pursuer_B`.
+
+## Nivel `L_Whitechapel` (2026-11-15)
+
+- `_Geo`: blockout de las 11 zonas generado desde `SourceData/D/blockout_layout.json` (82 piezas con etiqueta `D_Blockout`) y 37 props de vestido (etiqueta `D_Dressing`). Origen (0,0) en la esquina suroeste; el nivel ocupa X −100…5500 y Y 100…5900 cm.
+- `_Light`: 18 `BP_GasLamp`, luces cálidas en Taller y Refugio, cian en Archivo y Registros, niebla volumétrica y ambiente de lluvia y viento (etiqueta `D_Light`).
+- Persistente: luna fría (0,8 lux), SkyLight 0,2, `PP_Whitechapel_Night` (exposición fija, viñeta, grano) y `NavMeshBoundsVolume` ampliado a todo el nivel.
+- **Movido por integración (revisar B y C):** `PlayerStart` a (300, 1800) en la zona Start; los dos `BP_Pursuer` a (1200, 2200) y (1900, 1200) y `BP_PatrolRoute` a (1500, 2000), en la Plaza. Resto de posiciones sugeridas en `LEVEL_DESIGN.md §9`.
+- Pendiente: **Build → Build Geometry** para eliminar el suelo BSP provisional que aún se ve en el centro.
+
 ## Para D (colocación en `_Geo` / `_Light`)
 
 `SM_IronGate_A` (verja Plaza–Refugio, 3,4 × 2,5 m), `SM_Fountain_Square`, `SM_Cart_Overturned`, `SM_WorkshopTable_A`, `SM_ArchiveCabinet_A`, `SM_ArchivePillar_A`, barril, cajas, carretilla y `World/BP_GasLamp` (farol con luz).
