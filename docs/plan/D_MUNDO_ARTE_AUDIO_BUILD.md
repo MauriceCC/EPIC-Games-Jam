@@ -118,6 +118,13 @@ Entrégame: (1) los pasos en el editor o un script de Python del editor cuando s
 
 ## 9. Estado
 
+### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
+
+- D-01: placeholders entregados en `ab23129` y presentes. Ya hay props, `BP_GasLamp`, materiales de blockout, Sound Cues/Waves y VFX; ver [handoff](../../SourceData/D/HANDOFF_ASSETS.md). `MS_Ambience_Whitechapel` figura aún vacío, con loops de lluvia/viento como alternativa disponible.
+- D-02–05: existen mapas, layout/script y commits de blockout/navegación. Falta acreditar recorrido completo, cobertura y oclusión con el jugador real; no se marca todavía el hito de blockout navegable.
+- La configuración actual de NavMesh (`DynamicModifiersOnly`) difiere del contrato (`Dynamic`): revisar con INT. No se cambia aquí la configuración ni el acuerdo.
+- D-22/D-41: sin evidencia localizada de build probada en otro PC o entrega final. **[PROPUESTA]** Priorizar validación del mundo e integración de los recursos ya entregados; preparar empaquetado Development a más tardar en F2. Ver [informe y orden de trabajo](03_ESTADO_Y_SIGUIENTES_PASOS.md).
+
 - [ ] F0 esqueleto publicado (si integrador)
 - [ ] Blockout navegable en `main`
 - [ ] Layout congelado + build de prueba

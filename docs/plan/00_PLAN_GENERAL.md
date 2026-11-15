@@ -4,6 +4,8 @@
 
 ## 1. La idea en una frase
 
+**Estado revisado (2026-11-14, `main` @ `4afcd57`):** F1 en desarrollo, cierre de F0 aún por acreditar y avances parciales de integración. Ya existen esqueleto, movimiento integrado, pruebas locales de B y entregas de mundo/arte/audio/VFX. Ver [avance por división, bloqueos y siguiente secuencia de trabajo](03_ESTADO_Y_SIGUIENTES_PASOS.md). Las fases siguientes conservan sus criterios; no se consideran cerradas por la mera presencia de assets.
+
 **Cada persona es dueña de un conjunto de carpetas y solo edita lo suyo; las divisiones se comunican únicamente a través de contratos (enums, structs, interfaces y eventos) creados al principio y congelados.** En Unreal los `.uasset` y `.umap` son binarios: **Git no puede fusionarlos**. Si dos personas tocan el mismo asset, una de las dos pierde su trabajo. Por eso el plan evita conflictos por diseño, no por suerte.
 
 ## 2. Las cuatro divisiones
@@ -59,6 +61,8 @@ Estas decisiones afectan a todos. Se toman juntos en los primeros minutos y se a
 **Objetivo:** que, al terminar, existan *todos* los archivos compartidos y los "cascarones" de cada sistema, para que cada persona solo **rellene** sus propios assets y nunca necesite crear algo que otro también vaya a crear.
 
 ### 5.1 Integrador (orden recomendado)
+
+**Aplicación al estado actual:** esta lista describe la creación original. Auditar y completar lo existente; no recrear contratos, cascarones ni mapas. Consultar [cierre F0 pendiente](02_ARRANQUE_F0.md) y las discrepancias del informe actualizado antes de ejecutar scripts de preparación.
 
 1. Abrir el proyecto existente `Unscripted/Unscripted.uproject` con UE 5.8.4; verificar apertura y Play de la plantilla. No crear otro proyecto. Seguir también `02_ARRANQUE_F0.md`.
 2. Verificar que `.gitignore` y `.gitattributes` del repo están en la raíz **antes del primer commit con `.uasset`**. Ejecutar `git lfs install` una vez.
