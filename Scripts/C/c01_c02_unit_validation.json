@@ -46,6 +46,10 @@
       "passed": true
     },
     {
+      "name": "Default revelation completion is false",
+      "passed": true
+    },
+    {
       "name": "Phase/event guard 0 JackFound",
       "passed": true
     },
@@ -758,6 +762,10 @@
       "passed": true
     },
     {
+      "name": "Evidence alone cannot bypass the Supervisor dialogue NursingRecord",
+      "passed": true
+    },
+    {
       "name": "Explicit reveal after distinct evidence NursingRecord",
       "passed": true
     },
@@ -771,6 +779,10 @@
     },
     {
       "name": "Both records do not auto-reveal FabricatedReport",
+      "passed": true
+    },
+    {
+      "name": "Evidence alone cannot bypass the Supervisor dialogue FabricatedReport",
       "passed": true
     },
     {
@@ -874,6 +886,6 @@
     }
   ],
   "failed": [],
-  "check_count": 217,
-  "passed_count": 217
+  "check_count": 220,
+  "passed_count": 220
 }

@@ -11,3 +11,6 @@
 "HideoutLeavePrompt","System","Leave hideout","0","None"
 "EvidencePrompt","System","Read evidence","0","None"
 "CheckpointPrompt","System","Record checkpoint","0","None"
+"FutureMessagePrompt","System","Read future message","0","None"
+"OfficialFilePrompt","System","Examine official file","0","None"
+"AuthenticFilePrompt","System","Examine authentic file","0","None"

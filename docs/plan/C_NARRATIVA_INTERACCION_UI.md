@@ -79,6 +79,8 @@ Que el tema *Director's Cut* **se juegue**: las órdenes aparecen, se reescriben
 
 Textos revisados (ortografía), legibilidad a 1080p, ritmo de diálogos, comprobar que nunca se puede quedar bloqueada la historia.
 
+**Local closure update (Daniel / C):** C-31/C-32 are implemented on `c/hud-hideout-polish`: two guarded record stations, explicit confirmation, one immutable registration and the two cinematic ending presentations. Native real-player E tests cover both outcomes. A-16 snapshot-history clearing and the natural B escort/boss event flow still require owner integration. See [the ending handoff](../../SourceData/C/CLOSURE_ENDINGS_STATUS.md). No additional team integration or publication is implied.
+
 ## 5. Phase transition table (C-02 preparation)
 
 Status: C-01/C-02 Blueprint state progression implemented and locally validated; full F1 remains incomplete.
@@ -86,10 +88,10 @@ Only BP_ObjectiveManager owns phase changes through the existing contract.
 
 | Current phase | Reported event and guard | Next phase | Narrative effects |
 |---|---|---|---|
-| FindJack | `JackFound` - Current phase is FindJack; ignore a duplicate JackFound. | OpenEscapeRoute | Record bJackFound; queue Jack dialogue and the future-self message. |
+| FindJack | `JackFound` - Current phase is FindJack; ignore a duplicate JackFound. | OpenEscapeRoute | Record bJackFound; queue Jack dialogue. The Workshop interaction then queues the future-self message once. |
 | OpenEscapeRoute | `EscapeRouteOpened` - Jack has been found and the route-opening report is valid for this phase. | ProtectJack | Record bEscapeRouteOpen; show the protection/escort objective. |
 | ProtectJack | `JackReachedRefuge` - Jack was found and the route was opened before the refuge report. | DiscoverTruth | Record bJackSafe; show the truth-discovery objective. |
-| DiscoverTruth | `TruthRevealed` - Jack has reached the refuge; both distinct evidence records have been registered. | FinalChoice | Reveal the Director's fabrication and why innocent Jack was protected until the false case was ready; queue the Supervisor revelation, checklist rewrite and Correction_Order. |
+| DiscoverTruth | `TruthRevealed` - Jack has reached the refuge; both distinct evidence records have been registered; the final Supervisor revelation line has been confirmed. | FinalChoice | The Supervisor exposes the fabrication before this event. Rewrite the checklist, queue Correction_Order and report ContinuityAltered once. |
 | FinalChoice | `SupervisorDefeated` - Current phase is FinalChoice; do not select an ending. | FinalChoice | Unlock the two final files; Ending remains None. |
 | FinalChoice | `FinalDocumentRegistered` - Supervisor gate satisfied; confirm one valid file; ignore repeated registration. | GameEnded | Record one ending: OfficialCut preserves the Director's false version; AuthenticRecord preserves the truth. Block Retake; trigger OnEndingTriggered. |
 
