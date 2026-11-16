@@ -1,0 +1,102 @@
+{
+ "SM_Barrel_A": {
+  "sx": 0.72,
+  "sy": 0.72,
+  "h": 0.9
+ },
+ "SM_CrateStack_A": {
+  "sx": 1.22,
+  "sy": 1.22,
+  "h": 1.2
+ },
+ "SM_Cart_Overturned": {
+  "sx": 2.82,
+  "sy": 1.96,
+  "h": 1.2
+ },
+ "SM_Cart_Victorian": {
+  "sx": 4.5,
+  "sy": 2.38,
+  "h": 1.99
+ },
+ "SM_Handcart_A": {
+  "sx": 2.72,
+  "sy": 1.67,
+  "h": 1.3
+ },
+ "SM_DebrisPile_A": {
+  "sx": 2.88,
+  "sy": 2.88,
+  "h": 0.8
+ },
+ "SM_WorkshopTable_A": {
+  "sx": 1.46,
+  "sy": 0.96,
+  "h": 0.9
+ },
+ "SM_Cot_A": {
+  "sx": 1.45,
+  "sy": 2.44,
+  "h": 1.1
+ },
+ "SM_Chair_A": {
+  "sx": 0.46,
+  "sy": 0.42,
+  "h": 0.9
+ },
+ "SM_Shelf_A": {
+  "sx": 0.61,
+  "sy": 0.3,
+  "h": 1.8
+ },
+ "SM_Wardrobe_A": {
+  "sx": 1.3,
+  "sy": 0.65,
+  "h": 2.1
+ },
+ "SM_Ledger_Nursing": {
+  "sx": 0.42,
+  "sy": 0.38,
+  "h": 0.3
+ },
+ "SM_Folder_Report": {
+  "sx": 0.26,
+  "sy": 0.3,
+  "h": 0.25
+ },
+ "SM_GasLamp_A": {
+  "sx": 0.81,
+  "sy": 0.8,
+  "h": 3.2
+ },
+ "SM_LowWall_Stone_A": {
+  "sx": 3.08,
+  "sy": 0.7,
+  "h": 1.0
+ },
+ "SM_ArchiveCabinet_A": {
+  "sx": 0.44,
+  "sy": 0.47,
+  "h": 1.5
+ },
+ "SM_ArchivePillar_A": {
+  "sx": 1.63,
+  "sy": 1.58,
+  "h": 4.0
+ },
+ "SM_Drainpipe_A": {
+  "sx": 0.64,
+  "sy": 0.79,
+  "h": 3.0
+ },
+ "SM_Market_FlowerCart": {
+  "sx": 2.16,
+  "sy": 1.6,
+  "h": 2.85
+ },
+ "SM_Market_SoupCart": {
+  "sx": 2.6,
+  "sy": 1.44,
+  "h": 1.93
+ }
+}

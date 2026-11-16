@@ -1,0 +1,1758 @@
+{
+ "meta": {
+  "version": "deco v1 [PROPUESTA]",
+  "tag": "MP240_DECO",
+  "folder": "MP240_DECO",
+  "count": 82,
+  "report": [
+   "1 Plaza: 12/12",
+   "2 Calle al taller: 5/5",
+   "3 SM_DebrisPile_A: sin hueco válido",
+   "3 SM_Barrel_A: sin hueco válido",
+   "3 Puerta del taller: 4/6",
+   "4 SM_Cart_Overturned: sin hueco válido",
+   "4 SM_DebrisPile_A: sin hueco válido",
+   "4 SM_CrateStack_A: sin hueco válido",
+   "4 SM_CrateStack_A: sin hueco válido",
+   "4 Ensanche de escape: 6/10",
+   "5 SM_DebrisPile_A: sin hueco válido",
+   "5 Estrechamiento 2: 3/4",
+   "6 Registro de enfermería: 8/8",
+   "7 Informe fabricado: 8/8",
+   "8 Tránsito al refugio: 5/5",
+   "9 SM_DebrisPile_A: sin hueco válido",
+   "9 Refugio (barricada): 9/10",
+   "10 SM_DebrisPile_A: sin hueco válido",
+   "10 SM_Handcart_A: sin hueco válido",
+   "10 SM_CrateStack_A: sin hueco válido",
+   "10 Paso central: 3/6",
+   "11 Reja del archivo: 5/5",
+   "12 Antepatio (jefe): 8/8",
+   "13 Sala de elección: 6/6"
+  ]
+ },
+ "items": [
+  {
+   "spot": "1",
+   "asset": "SM_Market_FlowerCart",
+   "path": "/Game/Unscripted/Art/Market/FlowerCart/SM_Market_FlowerCart.SM_Market_FlowerCart",
+   "x": 107.81,
+   "y": 50.77,
+   "z_m": 0.0,
+   "yaw": 96.3,
+   "rect": [
+    106.9,
+    49.61,
+    108.72,
+    51.93
+   ],
+   "tall": true,
+   "ue": {
+    "x": 5077.0,
+    "y": 22781.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Market_FlowerCart",
+   "path": "/Game/Unscripted/Art/Market/FlowerCart/SM_Market_FlowerCart.SM_Market_FlowerCart",
+   "x": 107.73,
+   "y": 44.4,
+   "z_m": 0.0,
+   "yaw": 88.0,
+   "rect": [
+    106.89,
+    43.29,
+    108.57,
+    45.51
+   ],
+   "tall": true,
+   "ue": {
+    "x": 4440.0,
+    "y": 22773.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Market_SoupCart",
+   "path": "/Game/Unscripted/Art/Market/SoupCart/SM_Market_SoupCart.SM_Market_SoupCart",
+   "x": 106.86,
+   "y": 41.03,
+   "z_m": 0.0,
+   "yaw": 94.5,
+   "rect": [
+    106.04,
+    39.68,
+    107.68,
+    42.38
+   ],
+   "tall": true,
+   "ue": {
+    "x": 4103.0,
+    "y": 22686.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Cart_Overturned",
+   "path": "/Game/Unscripted/Art/Props/SM_Cart_Overturned/SM_Cart_Overturned.SM_Cart_Overturned",
+   "x": 93.37,
+   "y": 56.74,
+   "z_m": 0.0,
+   "yaw": -0.4,
+   "rect": [
+    91.96,
+    55.75,
+    94.79,
+    57.73
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5674.0,
+    "y": 21337.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 96.27,
+   "y": 56.43,
+   "z_m": 0.0,
+   "yaw": 172.8,
+   "rect": [
+    95.59,
+    55.75,
+    96.95,
+    57.11
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5643.0,
+    "y": 21627.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 97.68,
+   "y": 39.5,
+   "z_m": 0.0,
+   "yaw": 72.8,
+   "rect": [
+    96.92,
+    38.73,
+    98.45,
+    40.26
+   ],
+   "tall": false,
+   "ue": {
+    "x": 3950.0,
+    "y": 21768.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 86.34,
+   "y": 51.02,
+   "z_m": 0.0,
+   "yaw": 19.7,
+   "rect": [
+    85.56,
+    50.24,
+    87.12,
+    51.8
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5102.0,
+    "y": 20634.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 95.91,
+   "y": 39.67,
+   "z_m": 0.0,
+   "yaw": 207.5,
+   "rect": [
+    95.43,
+    39.19,
+    96.4,
+    40.16
+   ],
+   "tall": false,
+   "ue": {
+    "x": 3967.0,
+    "y": 21591.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 90.56,
+   "y": 56.13,
+   "z_m": 0.0,
+   "yaw": 200.4,
+   "rect": [
+    90.1,
+    55.67,
+    91.03,
+    56.59
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5613.0,
+    "y": 21056.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 86.76,
+   "y": 45.6,
+   "z_m": 0.0,
+   "yaw": 274.5,
+   "rect": [
+    86.37,
+    45.21,
+    87.14,
+    45.98
+   ],
+   "tall": false,
+   "ue": {
+    "x": 4560.0,
+    "y": 20676.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 98.47,
+   "y": 55.9,
+   "z_m": 0.0,
+   "yaw": 273.6,
+   "rect": [
+    98.09,
+    55.52,
+    98.86,
+    56.28
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5590.0,
+    "y": 21847.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "1",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 107.79,
+   "y": 53.16,
+   "z_m": 0.0,
+   "yaw": 85.2,
+   "rect": [
+    107.36,
+    52.72,
+    108.22,
+    53.6
+   ],
+   "tall": true,
+   "ue": {
+    "x": 5316.0,
+    "y": 22779.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "2",
+   "asset": "SM_Drainpipe_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Drainpipe_A/SM_Drainpipe_A.SM_Drainpipe_A",
+   "x": 129.89,
+   "y": 44.44,
+   "z_m": 0.0,
+   "yaw": 5.7,
+   "rect": [
+    129.54,
+    44.01,
+    130.25,
+    44.86
+   ],
+   "tall": true,
+   "ue": {
+    "x": 4444.0,
+    "y": 24989.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "2",
+   "asset": "SM_Drainpipe_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Drainpipe_A/SM_Drainpipe_A.SM_Drainpipe_A",
+   "x": 127.9,
+   "y": 51.4,
+   "z_m": 0.0,
+   "yaw": 5.9,
+   "rect": [
+    127.54,
+    50.98,
+    128.26,
+    51.83
+   ],
+   "tall": true,
+   "ue": {
+    "x": 5140.0,
+    "y": 24790.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "2",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 127.25,
+   "y": 44.4,
+   "z_m": 0.0,
+   "yaw": 267.3,
+   "rect": [
+    126.87,
+    44.02,
+    127.62,
+    44.77
+   ],
+   "tall": false,
+   "ue": {
+    "x": 4440.0,
+    "y": 24725.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "2",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 129.87,
+   "y": 51.52,
+   "z_m": 0.0,
+   "yaw": 254.4,
+   "rect": [
+    129.43,
+    51.08,
+    130.32,
+    51.96
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5152.0,
+    "y": 24987.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "2",
+   "asset": "SM_Handcart_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Handcart_A/SM_Handcart_A.SM_Handcart_A",
+   "x": 116.83,
+   "y": 51.07,
+   "z_m": 0.0,
+   "yaw": -2.9,
+   "rect": [
+    115.43,
+    50.16,
+    118.23,
+    51.97
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5107.0,
+    "y": 23683.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "3",
+   "asset": "SM_WorkshopTable_A",
+   "path": "/Game/Unscripted/Art/Props/SM_WorkshopTable_A/SM_WorkshopTable_A.SM_WorkshopTable_A",
+   "x": 133.27,
+   "y": 51.36,
+   "z_m": 0.0,
+   "yaw": 7.3,
+   "rect": [
+    132.48,
+    50.79,
+    134.05,
+    51.93
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5136.0,
+    "y": 25327.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "3",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 131.33,
+   "y": 51.33,
+   "z_m": 0.0,
+   "yaw": 1.8,
+   "rect": [
+    130.71,
+    50.7,
+    131.96,
+    51.96
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5133.0,
+    "y": 25133.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "3",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 135.74,
+   "y": 51.17,
+   "z_m": 0.0,
+   "yaw": 12.0,
+   "rect": [
+    135.02,
+    50.45,
+    136.47,
+    51.89
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5117.0,
+    "y": 25574.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "3",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 139.48,
+   "y": 51.48,
+   "z_m": 0.0,
+   "yaw": 285.9,
+   "rect": [
+    139.04,
+    51.03,
+    139.93,
+    51.92
+   ],
+   "tall": false,
+   "ue": {
+    "x": 5148.0,
+    "y": 25948.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_LowWall_Stone_A",
+   "path": "/Game/Unscripted/Art/Props/SM_LowWall_Stone_A/SM_LowWall_Stone_A.SM_LowWall_Stone_A",
+   "x": 165.1,
+   "y": 98.69,
+   "z_m": 0.0,
+   "yaw": -0.8,
+   "rect": [
+    163.56,
+    98.32,
+    166.64,
+    99.06
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9869.0,
+    "y": 28510.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 179.09,
+   "y": 90.76,
+   "z_m": 0.0,
+   "yaw": 19.7,
+   "rect": [
+    178.31,
+    89.98,
+    179.87,
+    91.54
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9076.0,
+    "y": 29909.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 179.7,
+   "y": 89.18,
+   "z_m": 0.0,
+   "yaw": 16.8,
+   "rect": [
+    179.25,
+    88.73,
+    180.14,
+    89.63
+   ],
+   "tall": false,
+   "ue": {
+    "x": 8918.0,
+    "y": 29970.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 171.88,
+   "y": 91.41,
+   "z_m": 0.0,
+   "yaw": 181.7,
+   "rect": [
+    171.51,
+    91.04,
+    172.25,
+    91.78
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9141.0,
+    "y": 29188.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 166.42,
+   "y": 102.11,
+   "z_m": 0.0,
+   "yaw": 275.7,
+   "rect": [
+    166.02,
+    101.72,
+    166.81,
+    102.51
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10211.0,
+    "y": 28642.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "4",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 173.82,
+   "y": 105.35,
+   "z_m": 0.0,
+   "yaw": 124.0,
+   "rect": [
+    173.32,
+    104.85,
+    174.32,
+    105.85
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10535.0,
+    "y": 29382.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "5",
+   "asset": "SM_Handcart_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Handcart_A/SM_Handcart_A.SM_Handcart_A",
+   "x": 182.52,
+   "y": 119.71,
+   "z_m": 0.0,
+   "yaw": 94.4,
+   "rect": [
+    181.59,
+    118.29,
+    183.46,
+    121.13
+   ],
+   "tall": false,
+   "ue": {
+    "x": 11971.0,
+    "y": 30252.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "5",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 182.87,
+   "y": 122.07,
+   "z_m": 0.0,
+   "yaw": 145.1,
+   "rect": [
+    182.37,
+    121.57,
+    183.37,
+    122.57
+   ],
+   "tall": false,
+   "ue": {
+    "x": 12207.0,
+    "y": 30287.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "5",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 183.19,
+   "y": 123.39,
+   "z_m": 0.0,
+   "yaw": 303.7,
+   "rect": [
+    182.69,
+    122.89,
+    183.69,
+    123.89
+   ],
+   "tall": false,
+   "ue": {
+    "x": 12339.0,
+    "y": 30319.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Cot_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Cot_A/SM_Cot_A.SM_Cot_A",
+   "x": 216.94,
+   "y": 140.69,
+   "z_m": 0.0,
+   "yaw": 6.7,
+   "rect": [
+    216.08,
+    139.4,
+    217.8,
+    141.99
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14069.0,
+    "y": 33694.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Cot_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Cot_A/SM_Cot_A.SM_Cot_A",
+   "x": 218.29,
+   "y": 134.31,
+   "z_m": 0.0,
+   "yaw": 6.9,
+   "rect": [
+    217.42,
+    133.01,
+    219.16,
+    135.61
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13431.0,
+    "y": 33829.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Cot_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Cot_A/SM_Cot_A.SM_Cot_A",
+   "x": 220.39,
+   "y": 134.31,
+   "z_m": 0.0,
+   "yaw": -4.1,
+   "rect": [
+    219.58,
+    133.04,
+    221.2,
+    135.58
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13431.0,
+    "y": 34039.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_WorkshopTable_A",
+   "path": "/Game/Unscripted/Art/Props/SM_WorkshopTable_A/SM_WorkshopTable_A.SM_WorkshopTable_A",
+   "x": 223.75,
+   "y": 135.99,
+   "z_m": 0.0,
+   "yaw": 95.1,
+   "rect": [
+    223.21,
+    135.22,
+    224.29,
+    136.76
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13599.0,
+    "y": 34375.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Ledger_Nursing",
+   "path": "/Game/Unscripted/Art/Props/SM_Ledger_Nursing/SM_Ledger_Nursing.SM_Ledger_Nursing",
+   "x": 223.9,
+   "y": 135.99,
+   "z_m": 0.9,
+   "yaw": 107.1,
+   "rect": [
+    223.21,
+    135.22,
+    224.29,
+    136.76
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13599.0,
+    "y": 34390.0,
+    "z": 90.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Chair_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Chair_A/SM_Chair_A.SM_Chair_A",
+   "x": 218.12,
+   "y": 136.59,
+   "z_m": 0.0,
+   "yaw": -5.2,
+   "rect": [
+    217.87,
+    136.36,
+    218.37,
+    136.82
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13659.0,
+    "y": 33812.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Chair_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Chair_A/SM_Chair_A.SM_Chair_A",
+   "x": 217.7,
+   "y": 137.5,
+   "z_m": 0.0,
+   "yaw": 5.3,
+   "rect": [
+    217.45,
+    137.27,
+    217.95,
+    137.73
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13750.0,
+    "y": 33770.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "6",
+   "asset": "SM_Shelf_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Shelf_A/SM_Shelf_A.SM_Shelf_A",
+   "x": 224.01,
+   "y": 138.38,
+   "z_m": 0.0,
+   "yaw": 89.2,
+   "rect": [
+    223.85,
+    138.08,
+    224.16,
+    138.69
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13838.0,
+    "y": 34401.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 219.89,
+   "y": 97.02,
+   "z_m": 0.0,
+   "yaw": 112.4,
+   "rect": [
+    219.1,
+    96.22,
+    220.69,
+    97.82
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9702.0,
+    "y": 33989.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 217.01,
+   "y": 104.95,
+   "z_m": 0.0,
+   "yaw": 298.1,
+   "rect": [
+    216.18,
+    104.13,
+    217.83,
+    105.78
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10495.0,
+    "y": 33701.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 223.55,
+   "y": 97.02,
+   "z_m": 0.0,
+   "yaw": 215.2,
+   "rect": [
+    222.7,
+    96.17,
+    224.4,
+    97.87
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9702.0,
+    "y": 34355.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_Wardrobe_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Wardrobe_A/SM_Wardrobe_A.SM_Wardrobe_A",
+   "x": 224.0,
+   "y": 99.02,
+   "z_m": 0.0,
+   "yaw": 97.6,
+   "rect": [
+    223.59,
+    98.33,
+    224.41,
+    99.71
+   ],
+   "tall": true,
+   "ue": {
+    "x": 9902.0,
+    "y": 34400.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_Handcart_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Handcart_A/SM_Handcart_A.SM_Handcart_A",
+   "x": 223.0,
+   "y": 104.34,
+   "z_m": 0.0,
+   "yaw": 95.0,
+   "rect": [
+    222.05,
+    102.91,
+    223.95,
+    105.77
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10434.0,
+    "y": 34300.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_WorkshopTable_A",
+   "path": "/Game/Unscripted/Art/Props/SM_WorkshopTable_A/SM_WorkshopTable_A.SM_WorkshopTable_A",
+   "x": 223.99,
+   "y": 101.36,
+   "z_m": 0.0,
+   "yaw": 89.5,
+   "rect": [
+    223.5,
+    100.63,
+    224.47,
+    102.09
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10136.0,
+    "y": 34399.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_Folder_Report",
+   "path": "/Game/Unscripted/Art/Props/SM_Folder_Report/SM_Folder_Report.SM_Folder_Report",
+   "x": 224.14000000000001,
+   "y": 101.36,
+   "z_m": 0.9,
+   "yaw": 101.5,
+   "rect": [
+    223.5,
+    100.63,
+    224.47,
+    102.09
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10136.0,
+    "y": 34414.0,
+    "z": 90.0
+   }
+  },
+  {
+   "spot": "7",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 215.76,
+   "y": 96.51,
+   "z_m": 0.0,
+   "yaw": 17.3,
+   "rect": [
+    215.3,
+    96.06,
+    216.21,
+    96.96
+   ],
+   "tall": false,
+   "ue": {
+    "x": 9651.0,
+    "y": 33576.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "8",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 200.39,
+   "y": 144.55,
+   "z_m": 0.0,
+   "yaw": -6.7,
+   "rect": [
+    199.94,
+    144.11,
+    200.83,
+    145.0
+   ],
+   "tall": true,
+   "ue": {
+    "x": 14455.0,
+    "y": 32039.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "8",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 202.5,
+   "y": 147.93,
+   "z_m": 0.0,
+   "yaw": 85.9,
+   "rect": [
+    202.07,
+    147.5,
+    202.93,
+    148.36
+   ],
+   "tall": true,
+   "ue": {
+    "x": 14793.0,
+    "y": 32250.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "8",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 202.4,
+   "y": 146.5,
+   "z_m": 0.0,
+   "yaw": 96.6,
+   "rect": [
+    202.0,
+    146.1,
+    202.8,
+    146.89
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14650.0,
+    "y": 32240.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "8",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 188.27,
+   "y": 144.52,
+   "z_m": 0.0,
+   "yaw": 22.6,
+   "rect": [
+    187.8,
+    144.05,
+    188.74,
+    144.99
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14452.0,
+    "y": 30827.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "8",
+   "asset": "SM_LowWall_Stone_A",
+   "path": "/Game/Unscripted/Art/Props/SM_LowWall_Stone_A/SM_LowWall_Stone_A.SM_LowWall_Stone_A",
+   "x": 185.47,
+   "y": 144.56,
+   "z_m": 0.0,
+   "yaw": -3.4,
+   "rect": [
+    183.91,
+    144.12,
+    187.02,
+    145.0
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14456.0,
+    "y": 30547.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Cart_Victorian",
+   "path": "/Game/Unscripted/Art/Props/SM_Cart_Victorian/SM_Cart_Victorian.SM_Cart_Victorian",
+   "x": 208.59,
+   "y": 157.06,
+   "z_m": 0.0,
+   "yaw": 5.1,
+   "rect": [
+    206.24,
+    155.67,
+    210.94,
+    158.44
+   ],
+   "tall": true,
+   "ue": {
+    "x": 15706.0,
+    "y": 32859.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Cart_Overturned",
+   "path": "/Game/Unscripted/Art/Props/SM_Cart_Overturned/SM_Cart_Overturned.SM_Cart_Overturned",
+   "x": 207.86,
+   "y": 153.46,
+   "z_m": 0.0,
+   "yaw": 90.5,
+   "rect": [
+    206.87,
+    152.04,
+    208.85,
+    154.88
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15346.0,
+    "y": 32786.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 204.32,
+   "y": 147.34,
+   "z_m": 0.0,
+   "yaw": 89.4,
+   "rect": [
+    203.71,
+    146.72,
+    204.94,
+    147.95
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14734.0,
+    "y": 32432.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 203.92,
+   "y": 149.55,
+   "z_m": 0.0,
+   "yaw": 85.3,
+   "rect": [
+    203.26,
+    148.89,
+    204.58,
+    150.2
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14955.0,
+    "y": 32392.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_CrateStack_A",
+   "path": "/Game/Unscripted/Art/Props/SM_CrateStack_A/SM_CrateStack_A.SM_CrateStack_A",
+   "x": 203.08,
+   "y": 152.09,
+   "z_m": 0.0,
+   "yaw": 55.8,
+   "rect": [
+    202.23,
+    151.24,
+    203.93,
+    152.94
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15209.0,
+    "y": 32308.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Wardrobe_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Wardrobe_A/SM_Wardrobe_A.SM_Wardrobe_A",
+   "x": 215.4,
+   "y": 149.81,
+   "z_m": 0.0,
+   "yaw": -1.3,
+   "rect": [
+    214.74,
+    149.47,
+    216.05,
+    150.15
+   ],
+   "tall": true,
+   "ue": {
+    "x": 14981.0,
+    "y": 33540.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 207.15,
+   "y": 150.71,
+   "z_m": 0.0,
+   "yaw": 300.4,
+   "rect": [
+    206.66,
+    150.22,
+    207.64,
+    151.2
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15071.0,
+    "y": 32715.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 208.44,
+   "y": 144.48,
+   "z_m": 0.0,
+   "yaw": 91.0,
+   "rect": [
+    208.08,
+    144.11,
+    208.81,
+    144.85
+   ],
+   "tall": false,
+   "ue": {
+    "x": 14448.0,
+    "y": 32844.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "9",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 205.31,
+   "y": 150.92,
+   "z_m": 0.0,
+   "yaw": 184.5,
+   "rect": [
+    204.92,
+    150.53,
+    205.7,
+    151.31
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15092.0,
+    "y": 32531.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "10",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 136.44,
+   "y": 117.51,
+   "z_m": 0.0,
+   "yaw": 274.0,
+   "rect": [
+    136.06,
+    117.12,
+    136.83,
+    117.89
+   ],
+   "tall": false,
+   "ue": {
+    "x": 11751.0,
+    "y": 25644.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "10",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 131.75,
+   "y": 117.52,
+   "z_m": 0.0,
+   "yaw": 288.7,
+   "rect": [
+    131.29,
+    117.06,
+    132.2,
+    117.97
+   ],
+   "tall": false,
+   "ue": {
+    "x": 11752.0,
+    "y": 25175.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "10",
+   "asset": "SM_Barrel_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Barrel_A/SM_Barrel_A.SM_Barrel_A",
+   "x": 133.96,
+   "y": 112.5,
+   "z_m": 0.0,
+   "yaw": 286.6,
+   "rect": [
+    133.51,
+    112.05,
+    134.41,
+    112.95
+   ],
+   "tall": false,
+   "ue": {
+    "x": 11250.0,
+    "y": 25396.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "11",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 129.48,
+   "y": 132.86,
+   "z_m": 0.0,
+   "yaw": 93.6,
+   "rect": [
+    129.06,
+    132.43,
+    129.91,
+    133.28
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13286.0,
+    "y": 24948.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "11",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 129.57,
+   "y": 131.47,
+   "z_m": 0.0,
+   "yaw": 87.2,
+   "rect": [
+    129.15,
+    131.05,
+    129.98,
+    131.9
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13147.0,
+    "y": 24957.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "11",
+   "asset": "SM_LowWall_Stone_A",
+   "path": "/Game/Unscripted/Art/Props/SM_LowWall_Stone_A/SM_LowWall_Stone_A.SM_LowWall_Stone_A",
+   "x": 129.4,
+   "y": 136.52,
+   "z_m": 0.0,
+   "yaw": 87.8,
+   "rect": [
+    128.99,
+    134.96,
+    129.8,
+    138.07
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13652.0,
+    "y": 24940.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "11",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 129.31,
+   "y": 134.18,
+   "z_m": 0.0,
+   "yaw": 82.7,
+   "rect": [
+    129.05,
+    133.93,
+    129.57,
+    134.43
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13418.0,
+    "y": 24931.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "11",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 128.81,
+   "y": 130.08,
+   "z_m": 0.0,
+   "yaw": 91.0,
+   "rect": [
+    128.57,
+    129.85,
+    129.04,
+    130.3
+   ],
+   "tall": false,
+   "ue": {
+    "x": 13008.0,
+    "y": 24881.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_ArchivePillar_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A.SM_ArchivePillar_A",
+   "x": 110.91,
+   "y": 126.8,
+   "z_m": 0.0,
+   "yaw": 84.3,
+   "rect": [
+    110.05,
+    125.91,
+    111.78,
+    127.69
+   ],
+   "tall": true,
+   "ue": {
+    "x": 12680.0,
+    "y": 23091.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_ArchivePillar_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A.SM_ArchivePillar_A",
+   "x": 101.69,
+   "y": 135.98,
+   "z_m": 0.0,
+   "yaw": -7.7,
+   "rect": [
+    100.78,
+    135.09,
+    102.6,
+    136.87
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13598.0,
+    "y": 22169.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_ArchivePillar_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A.SM_ArchivePillar_A",
+   "x": 111.04,
+   "y": 123.87,
+   "z_m": 0.0,
+   "yaw": 96.9,
+   "rect": [
+    110.15,
+    122.96,
+    111.92,
+    124.77
+   ],
+   "tall": true,
+   "ue": {
+    "x": 12387.0,
+    "y": 23104.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_ArchivePillar_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchivePillar_A/SM_ArchivePillar_A.SM_ArchivePillar_A",
+   "x": 97.99,
+   "y": 136.07,
+   "z_m": 0.0,
+   "yaw": -7.2,
+   "rect": [
+    97.09,
+    135.19,
+    98.9,
+    136.96
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13607.0,
+    "y": 21799.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 83.56,
+   "y": 136.47,
+   "z_m": 0.0,
+   "yaw": 4.8,
+   "rect": [
+    83.12,
+    136.03,
+    84.0,
+    136.9
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13647.0,
+    "y": 20356.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_GasLamp_A",
+   "path": "/Game/Unscripted/Art/Props/SM_GasLamp_A/SM_GasLamp_A.SM_GasLamp_A",
+   "x": 84.94,
+   "y": 136.39,
+   "z_m": 0.0,
+   "yaw": -5.4,
+   "rect": [
+    84.5,
+    135.95,
+    85.38,
+    136.82
+   ],
+   "tall": true,
+   "ue": {
+    "x": 13639.0,
+    "y": 20494.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_LowWall_Stone_A",
+   "path": "/Game/Unscripted/Art/Props/SM_LowWall_Stone_A/SM_LowWall_Stone_A.SM_LowWall_Stone_A",
+   "x": 91.18,
+   "y": 105.1,
+   "z_m": 0.0,
+   "yaw": 93.5,
+   "rect": [
+    90.73,
+    103.55,
+    91.62,
+    106.66
+   ],
+   "tall": false,
+   "ue": {
+    "x": 10510.0,
+    "y": 21118.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "12",
+   "asset": "SM_LowWall_Stone_A",
+   "path": "/Game/Unscripted/Art/Props/SM_LowWall_Stone_A/SM_LowWall_Stone_A.SM_LowWall_Stone_A",
+   "x": 76.56,
+   "y": 120.13,
+   "z_m": 0.0,
+   "yaw": 84.7,
+   "rect": [
+    76.07,
+    118.56,
+    77.05,
+    121.69
+   ],
+   "tall": false,
+   "ue": {
+    "x": 12013.0,
+    "y": 19656.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 65.87,
+   "y": 159.48,
+   "z_m": 0.0,
+   "yaw": 89.9,
+   "rect": [
+    65.64,
+    159.26,
+    66.11,
+    159.7
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15948.0,
+    "y": 18587.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 73.27,
+   "y": 167.23,
+   "z_m": 0.0,
+   "yaw": 6.1,
+   "rect": [
+    73.03,
+    166.97,
+    73.52,
+    167.48
+   ],
+   "tall": false,
+   "ue": {
+    "x": 16723.0,
+    "y": 19327.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 67.52,
+   "y": 151.88,
+   "z_m": 0.0,
+   "yaw": -6.0,
+   "rect": [
+    67.28,
+    151.62,
+    67.77,
+    152.14
+   ],
+   "tall": false,
+   "ue": {
+    "x": 15188.0,
+    "y": 18752.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_ArchiveCabinet_A",
+   "path": "/Game/Unscripted/Art/Props/SM_ArchiveCabinet_A/SM_ArchiveCabinet_A.SM_ArchiveCabinet_A",
+   "x": 77.32,
+   "y": 167.23,
+   "z_m": 0.0,
+   "yaw": -7.3,
+   "rect": [
+    77.08,
+    166.97,
+    77.57,
+    167.49
+   ],
+   "tall": false,
+   "ue": {
+    "x": 16723.0,
+    "y": 19732.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_Shelf_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Shelf_A/SM_Shelf_A.SM_Shelf_A",
+   "x": 88.32,
+   "y": 160.62,
+   "z_m": 0.0,
+   "yaw": 95.6,
+   "rect": [
+    88.14,
+    160.3,
+    88.49,
+    160.94
+   ],
+   "tall": false,
+   "ue": {
+    "x": 16062.0,
+    "y": 20832.0,
+    "z": 0.0
+   }
+  },
+  {
+   "spot": "13",
+   "asset": "SM_Shelf_A",
+   "path": "/Game/Unscripted/Art/Props/SM_Shelf_A/SM_Shelf_A.SM_Shelf_A",
+   "x": 80.95,
+   "y": 167.29,
+   "z_m": 0.0,
+   "yaw": -4.9,
+   "rect": [
+    80.63,
+    167.11,
+    81.27,
+    167.46
+   ],
+   "tall": false,
+   "ue": {
+    "x": 16729.0,
+    "y": 20095.0,
+    "z": 0.0
+   }
+  }
+ ]
+}
