@@ -52,7 +52,6 @@ def read_fbx(path):
 
 def sample():
     path=REPO/'SourceData/A/Uppercut/SurpriseUppercut.fbx'
-    if not path.is_file():path=REPO/'Surprise Uppercut.fbx'
     nodes=read_fbx(path)
     objects=next(n['children'] for n in nodes if n['name']=='Objects')
     connections=[n['props'] for n in next(n['children'] for n in nodes if n['name']=='Connections')]
