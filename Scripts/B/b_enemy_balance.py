@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import math
 from pathlib import Path
 
 REQUIRED_COLUMNS = {
@@ -18,11 +19,14 @@ REQUIRED_COLUMNS = {
     'NeutralizeWindowSeconds',
     'Priority',
     'Notes',
+    'MaxPosture',
+    'WindupSeconds',
+    'CutDurationPercent',
 }
 
 
 def validate_balance(path: Path) -> list[dict[str, str]]:
-    with path.open('r', newline='', encoding='utf-8') as handle:
+    with path.open('r', newline='', encoding='utf-8-sig') as handle:
         reader = csv.DictReader(handle)
         if reader.fieldnames is None:
             raise ValueError(f'{path}: empty CSV file')
@@ -35,10 +39,28 @@ def validate_balance(path: Path) -> list[dict[str, str]]:
         if not rows:
             raise ValueError(f'{path}: no rows found')
 
+        seen = set()
         for row in rows:
             name = (row.get('Name') or '').strip()
             if not name:
                 raise ValueError(f'{path}: row with empty Name')
+            if name in seen:
+                raise ValueError(f'{path}: repeated enemy {name}')
+            seen.add(name)
+            for field in REQUIRED_COLUMNS - {'Name', 'Notes'}:
+                value = float(row.get(field) or 'nan')
+                if not math.isfinite(value) or value < 0:
+                    raise ValueError(f'{path}: {name}.{field} must be a finite nonnegative number')
+                if field in {'Health', 'Priority', 'CutDurationPercent'} and not value.is_integer():
+                    raise ValueError(f'{path}: {name}.{field} must be an integer')
+            if float(row['Health']) <= 0 or not 0 < float(row['WalkSpeed']) <= float(row['RunSpeed']):
+                raise ValueError(f'{path}: {name} has invalid health or movement speeds')
+            if float(row['CutDurationPercent']) > 100:
+                raise ValueError(f'{path}: {name}.CutDurationPercent cannot exceed 100')
+
+        expected = {'Pursuer', 'Interventor', 'Supervisor', 'Jack'}
+        if missing := expected - seen:
+            raise ValueError(f'{path}: missing rows: {sorted(missing)}')
 
         return rows
 

@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "error": null,
+  "checks": [
+    {
+      "name": "Pursuer_A idle is defeated",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle is defeated",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack is defeated",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze is defeated",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun is defeated",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "death player is marked dead",
+      "passed": true
+    },
+    {
+      "name": "Agent death evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent death owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Agent death uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "restore player is marked dead",
+      "passed": true
+    },
+    {
+      "name": "Agent restore evaluates skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent restore owns final pose",
+      "passed": true
+    },
+    {
+      "name": "Agent restore uses its death clip",
+      "passed": true
+    },
+    {
+      "name": "Repeated lethal callback does not restart fall",
+      "passed": true
+    },
+    {
+      "name": "Early checkpoint clears dead flag",
+      "passed": true
+    },
+    {
+      "name": "Early checkpoint releases held animation",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle playback progressed",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle bones actually collapse",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle holds after old timers expire",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle body stays at defeat location",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle playback progressed",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle bones actually collapse",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle holds after old timers expire",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle body stays at defeat location",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack playback progressed",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack bones actually collapse",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack holds after old timers expire",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack body stays at defeat location",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze playback progressed",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze bones actually collapse",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze holds after old timers expire",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze body stays at defeat location",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun playback progressed",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun bones actually collapse",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun holds after old timers expire",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun body stays at defeat location",
+      "passed": true
+    },
+    {
+      "name": "Player remains defeated while fall plays",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle reaches final frame",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle keeps final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A idle cannot be frozen again",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle reaches final frame",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle keeps final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B idle cannot be frozen again",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack reaches final frame",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack keeps final pose",
+      "passed": true
+    },
+    {
+      "name": "Interventor attack cannot be frozen again",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze reaches final frame",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze keeps final pose",
+      "passed": true
+    },
+    {
+      "name": "Supervisor freeze cannot be frozen again",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun reaches final frame",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun keeps final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A stun cannot be frozen again",
+      "passed": true
+    },
+    {
+      "name": "Cancelled death cannot fire after checkpoint",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint restored movement",
+      "passed": true
+    }
+  ]
+}

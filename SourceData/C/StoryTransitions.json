@@ -28,7 +28,7 @@
 
                                                 ],
                             "guard":  "Current phase is FindJack; ignore a duplicate JackFound.",
-                            "effects":  "Record bJackFound; queue Jack dialogue and the future-self message."
+                            "effects":  "Record bJackFound; queue Jack dialogue. The Workshop interaction then queues the future-self message once."
                         },
                         {
                             "phase":  "OpenEscapeRoute",
@@ -72,8 +72,9 @@
                             "allowed_endings":  [
 
                                                 ],
-                            "guard":  "Jack has reached the refuge; both distinct evidence records have been registered.",
-                            "effects":  "Reveal the Director\u0027s fabrication and why innocent Jack was protected until the false case was ready; queue the Supervisor revelation, checklist rewrite and Correction_Order."
+                            "guard":  "Jack has reached the refuge; both distinct evidence records have been registered; the final Supervisor revelation line has been confirmed.",
+                            "presentation_completion_row": "Truth_05",
+                            "effects":  "The Supervisor exposes the Director\u0027s fabrication before this event is reported. Rewrite the checklist, queue Correction_Order and report ContinuityAltered once."
                         },
                         {
                             "phase":  "FinalChoice",

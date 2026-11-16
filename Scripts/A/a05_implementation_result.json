@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Player/BP_CombatComponent.BP_CombatComponent",
+    "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter",
+    "/Game/Unscripted/Player/Test/BP_StaminaHUDTest_A.BP_StaminaHUDTest_A",
+    "/Game/Unscripted/Maps/Test/L_Test_A"
+  ],
+  "checks": [
+    {
+      "name": "Migration not already applied",
+      "passed": true
+    },
+    {
+      "name": "No HUD test fixture overwritten",
+      "passed": true
+    },
+    {
+      "name": "Combat starts as F0 shell (BeginPlay/Tick unconnected)",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher pins are real",
+      "passed": true
+    },
+    {
+      "name": "Stamina fields and signatures compile",
+      "passed": true
+    },
+    {
+      "name": "Stamina functions compile",
+      "passed": true
+    },
+    {
+      "name": "Combat component compiles",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher declarations unchanged",
+      "passed": true
+    },
+    {
+      "name": "Player compiles against new combat",
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack guard -> action edge found",
+      "passed": true
+    },
+    {
+      "name": "DoDodge guard -> action edge found",
+      "passed": true
+    },
+    {
+      "name": "DoParry guard -> action edge found",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with stamina gates",
+      "passed": true
+    },
+    {
+      "name": "No player graph added or removed",
+      "passed": true
+    },
+    {
+      "name": "Only the three gated edges changed in pre-existing player graphs",
+      "passed": true
+    },
+    {
+      "name": "Exactly one installed Combat template",
+      "passed": true
+    },
+    {
+      "name": "HUD fixture skeleton compiles",
+      "passed": true
+    },
+    {
+      "name": "HUD fixture compiles",
+      "passed": true
+    },
+    {
+      "name": "Load L_Test_A",
+      "passed": true
+    },
+    {
+      "name": "No fixture already placed",
+      "passed": true
+    },
+    {
+      "name": "Save BP_CombatComponent",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerCharacter",
+      "passed": true
+    },
+    {
+      "name": "Save BP_StaminaHUDTest_A",
+      "passed": true
+    },
+    {
+      "name": "Save L_Test_A",
+      "passed": true
+    }
+  ],
+  "base_commit": "be77859",
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A05_jc8g7stz",
+  "menu": {
+    "CallOnStaminaChanged": [
+      "Predeterminado|CallOnStaminaChanged"
+    ],
+    "DoLightAttack.LightAttackStaminaCost": [
+      "Variables|Stamina|ObtenerLightAttackStaminaCost"
+    ],
+    "DoDodge.DodgeStaminaCost": [
+      "Variables|Stamina|ObtenerDodgeStaminaCost"
+    ],
+    "DoParry.ParryStaminaCost": [
+      "Variables|Stamina|ObtenerParryStaminaCost"
+    ],
+    "BindOnStaminaChanged": [
+      "Predeterminado|BindEventtoOnStaminaChanged"
+    ],
+    "CreateEvent": [
+      "DistribuidoresDeEventos|Crearevento"
+    ],
+    "GetCurrentStamina": [
+      "Variables|Stamina|ObtenerCurrentStamina"
+    ],
+    "GetMaxStamina": [
+      "Variables|Stamina|ObtenerMaxStamina"
+    ]
+  },
+  "template_before": {
+    "MaxStamina": 100.0,
+    "StaminaRegenRate": 30.0,
+    "StaminaRegenDelay": 0.6,
+    "LightAttackStaminaCost": 10.0,
+    "HeavyAttackStaminaCost": 25.0,
+    "DodgeStaminaCost": 20.0,
+    "ParryStaminaCost": 10.0,
+    "CurrentStamina": 100.0
+  },
+  "compatible_delegate_functions": [
+    "A_ShowStamina"
+  ],
+  "map_game_mode_override": "<Object '/Game/Unscripted/Narrative/BP_GameMode.BP_GameMode_C' (0x0000027D645F8C00) Class 'BlueprintGeneratedClass'>"
+}

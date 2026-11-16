@@ -8,15 +8,16 @@ mode=unreal.GameplayStatics.get_game_mode(world);state=unreal.GameplayStatics.ge
 if globals().get('C_SAVED_STAGE')=='focus':
  assert view.is_in_viewport()
  assert str(manager.get_editor_property('CurrentDialogueRow'))=='Briefing_01'
+ view.call_method('HideDialogue');hud.call_method('SyncDialogue')
  unreal.get_default_object(unreal.load_class(None,'/Script/UMG.WidgetBlueprintLibrary')).call_method('SetFocusToGameViewport')
 else:
  out={
   'real_player':unreal.GameplayStatics.get_player_pawn(world,0).get_class().get_path_name()=='/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter_C',
   'hud_visible':view.is_in_viewport(),
-  'native_e_advances':str(manager.get_editor_property('CurrentDialogueRow'))=='Briefing_02',
-  'native_tab_hides':not view.get_editor_property('ChecklistView').is_visible(),
+  'native_e_reveals_without_skipping':str(manager.get_editor_property('CurrentDialogueRow'))=='Briefing_01' and str(view.get_editor_property('DialogueView').get_editor_property('BodyText').get_text())==str(view.get_editor_property('DialogueView').get_editor_property('FullLine')),
+  'native_tab_opens':view.get_editor_property('bChecklistRequested') and view.get_editor_property('ChecklistDrawer').is_visible(),
   'cp0_saved':str(mode.get_editor_property('CheckpointId'))=='CP0',
-  'health_problem_is_reported':str(view.get_editor_property('HealthValueText').get_text())=='UNAVAILABLE',
+  'health_problem_is_reported':str(view.get_editor_property('HealthValueText').get_text())=='NO VITALS DATA',
   'phase_preserved':state.call_method('GetCurrentPhase').value==0,
  }
  out['passed']=all(out.values())

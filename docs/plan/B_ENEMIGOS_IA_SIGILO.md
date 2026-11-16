@@ -313,6 +313,36 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 ## 9. Estado
 
+### Prioridad de integración de B
+
+Este trabajo corresponde a Jesús (división B). Al integrar en `main`, conserven
+estos cambios de `L_Whitechapel`:
+
+- `BP_GuardBase`: los enemigos persiguen al jugador visible mientras se genera
+  el NavMesh. El checkpoint invalida los ataques pendientes.
+- `BP_Jack`: durante la escolta usa el límite de velocidad actual del
+  protagonista y puede seguirlo a la vista mientras se genera el NavMesh.
+- `BP_GuardBase` y `BP_PlayerCharacter`: se mantienen las cinco animaciones de
+  muerte aportadas por el equipo en `c58a9e6`.
+
+Si hay conflicto en alguno de estos Blueprints binarios, usen como base la
+versión integrada de `main` y reapliquen encima los cambios compatibles.
+Coordinen con Jesús antes de sustituir el asset y prueben en Play la
+persecución, la escolta y el checkpoint.
+
+
+### Caídas articuladas — 2026-11-15
+
+Autorización puntual de integración A/B. **[PROPUESTA]** Se sustituye el giro
+rígido de muerte por clips adaptados a Perseguidor A/B, Interventor y Supervisor.
+Se conserva la neutralización no letal y la pose final, incluso tras atacar,
+congelarse o quedar aturdido. Detalles, pruebas y límites en
+[`Scripts/A/DEATH_PRESENTATION.md`](../../Scripts/A/DEATH_PRESENTATION.md).
+
+### Ataques animados — 2026-11-15
+
+Autorización puntual del usuario para A y B. **[PROPUESTA]** `BP_GuardBase` reproduce un golpe adaptado a la malla de Perseguidor A/B, Interventor o Supervisor al comenzar la telegráfica. El contacto se sincroniza con `B_WindupSeconds`; interrupciones por congelación, aturdimiento y caída liberan la reproducción pendiente. Clips propios en `Enemies/Animation/Polish/`, sin modificar originales de D, contratos, daño ni mapas. Implementación y límites: [`Scripts/A/ANIMATION_POLISH.md`](../../Scripts/A/ANIMATION_POLISH.md). Compilación y compatibilidad verificadas; valoración visual integrada pendiente. No declara B-23 ni F4 cerrados por la sola existencia de clips.
+
 **Git LFS (2026-11-14):** se liberó el bloqueo de `L_Whitechapel.umap`. La consulta posterior a `origin` confirmó que el repositorio no tenía bloqueos activos. D/Integración puede volver a bloquear el mapa persistente cuando vaya a editarlo.
 
 ### Revisión documental 2026-11-14 (`main` @ `4afcd57`)

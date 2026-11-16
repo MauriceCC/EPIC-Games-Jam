@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Player/CS_PlayerHit_A.CS_PlayerHit_A",
+    "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter"
+  ],
+  "checks": [
+    {
+      "name": "A1-A7 already applied",
+      "passed": true
+    },
+    {
+      "name": "Migration not already applied",
+      "passed": true
+    },
+    {
+      "name": "No shake asset overwritten",
+      "passed": true
+    },
+    {
+      "name": "LegacyCameraShake available",
+      "passed": true
+    },
+    {
+      "name": "Shake asset created",
+      "passed": true
+    },
+    {
+      "name": "Shake compiles",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with hit-stop shell",
+      "passed": true
+    },
+    {
+      "name": "ForEachLoop macro available",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with A_EndHitStop",
+      "passed": true
+    },
+    {
+      "name": "AttackHit: K2Node_CallFunction_7.then -> K2Node_CallFunction_8.execute present",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with hit-stop in AttackHit",
+      "passed": true
+    },
+    {
+      "name": "TakeHit: K2Node_CallFunction_0.then -> K2Node_IfThenElse_0.execute present",
+      "passed": true
+    },
+    {
+      "name": "Player compiles with camera shake",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: UserConstructionScript",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoMove",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: FaceCursor",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EndParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: RestartLevel",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: AttackHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: Die",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: TakeHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoLightAttack",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoDodge",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoParry",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: CutReadyAgain",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoTemporalCut",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: DoRetake",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: B_ResumePlayerAtCheckpoint",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: A_UpdateCursorFacing",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: EventGraph",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: ReceiveCombatHit",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: IsDefeated",
+      "passed": true
+    },
+    {
+      "name": "Graph kept: GetStealthComponent",
+      "passed": true
+    },
+    {
+      "name": "Only the documented edges changed; all previous nodes and values kept",
+      "passed": true
+    },
+    {
+      "name": "Save CS_PlayerHit_A",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerCharacter",
+      "passed": true
+    }
+  ],
+  "menus": {
+    "SetCustomTimeDilation": [
+      "Variables|Actor|EstablecerCustomTimeDilation"
+    ],
+    "Clear": [
+      "Utilidades|Matriz|Clear"
+    ],
+    "AddUnique": [
+      "Utilidades|Matriz|AddUnique"
+    ]
+  },
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A_SprintMVP_A8_qpmvz_ri",
+  "shake": {
+    "duration": 0.18000000715255737
+  }
+}

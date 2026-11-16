@@ -1,0 +1,1483 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "BP_CombatComponent compiles",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "BP_PlayerCharacter compiles",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "BP_StaminaHUDTest_A compiles",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "BP_CombatComponent has no node errors/warnings",
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "BP_PlayerCharacter has no node errors/warnings",
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "BP_StaminaHUDTest_A has no node errors/warnings",
+      "actual": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "name": "Class defaults (docs/03)",
+      "actual": [
+        100.0,
+        100.0,
+        30.0,
+        0.6,
+        10.0,
+        25.0,
+        20.0,
+        10.0
+      ],
+      "expected": [
+        100,
+        100,
+        30,
+        0.6,
+        10,
+        25,
+        20,
+        10
+      ],
+      "passed": true
+    },
+    {
+      "name": "One installed Combat on player",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "Player template values",
+      "actual": [
+        100.0,
+        100.0,
+        30.0,
+        0.6,
+        10.0,
+        25.0,
+        20.0,
+        10.0
+      ],
+      "expected": [
+        100,
+        100,
+        30,
+        0.6,
+        10,
+        25,
+        20,
+        10
+      ],
+      "passed": true
+    },
+    {
+      "name": "A-04 Health template preserved",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "A-03 rotation setting preserved",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Bind shows current value",
+      "actual": [
+        100.0,
+        100.0,
+        1
+      ],
+      "expected": [
+        100,
+        100,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "name": "BeginPlay fills and publishes stored",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "BeginPlay fills and publishes observer 0",
+      "actual": [
+        100.0,
+        100.0,
+        2
+      ],
+      "expected": [
+        100,
+        100,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "name": "BeginPlay fills and publishes observer 1",
+      "actual": [
+        100.0,
+        100.0,
+        2
+      ],
+      "expected": [
+        100,
+        100,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "name": "BeginPlay fills and publishes regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Light attack cost accepted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Light attack 100-10 stored",
+      "actual": [
+        90.0,
+        100.0
+      ],
+      "expected": [
+        90,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Light attack 100-10 observer 0",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "Light attack 100-10 observer 1",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "Light attack 100-10 regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "No regen during pause stored",
+      "actual": [
+        90.0,
+        100.0
+      ],
+      "expected": [
+        90,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "No regen during pause observer 0",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "No regen during pause observer 1",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "No regen during pause regen pause",
+      "actual": 0.35,
+      "expected": 0.35,
+      "passed": true
+    },
+    {
+      "name": "Pause expires stored",
+      "actual": [
+        90.0,
+        100.0
+      ],
+      "expected": [
+        90,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Pause expires observer 0",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "Pause expires observer 1",
+      "actual": [
+        90.0,
+        100.0,
+        3
+      ],
+      "expected": [
+        90,
+        100,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "name": "Pause expires regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Regen 30/s after pause stored",
+      "actual": [
+        93.0,
+        100.0
+      ],
+      "expected": [
+        93,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen 30/s after pause observer 0",
+      "actual": [
+        93.0,
+        100.0,
+        4
+      ],
+      "expected": [
+        93,
+        100,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen 30/s after pause observer 1",
+      "actual": [
+        93.0,
+        100.0,
+        4
+      ],
+      "expected": [
+        93,
+        100,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen 30/s after pause regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Dodge accepted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Dodge 93-20 stored",
+      "actual": [
+        73.0,
+        100.0
+      ],
+      "expected": [
+        73,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dodge 93-20 observer 0",
+      "actual": [
+        73.0,
+        100.0,
+        5
+      ],
+      "expected": [
+        73,
+        100,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dodge 93-20 observer 1",
+      "actual": [
+        73.0,
+        100.0,
+        5
+      ],
+      "expected": [
+        73,
+        100,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dodge 93-20 regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Heavy accepted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Heavy 73-25 stored",
+      "actual": [
+        48.0,
+        100.0
+      ],
+      "expected": [
+        48,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Heavy 73-25 observer 0",
+      "actual": [
+        48.0,
+        100.0,
+        6
+      ],
+      "expected": [
+        48,
+        100,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "name": "Heavy 73-25 observer 1",
+      "actual": [
+        48.0,
+        100.0,
+        6
+      ],
+      "expected": [
+        48,
+        100,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "name": "Heavy 73-25 regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Parry accepted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Parry 48-10 stored",
+      "actual": [
+        38.0,
+        100.0
+      ],
+      "expected": [
+        38,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Parry 48-10 observer 0",
+      "actual": [
+        38.0,
+        100.0,
+        7
+      ],
+      "expected": [
+        38,
+        100,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "Parry 48-10 observer 1",
+      "actual": [
+        38.0,
+        100.0,
+        7
+      ],
+      "expected": [
+        38,
+        100,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "Parry 48-10 regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Dodge accepted again",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "38-20 stored",
+      "actual": [
+        18.0,
+        100.0
+      ],
+      "expected": [
+        18,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "38-20 observer 0",
+      "actual": [
+        18.0,
+        100.0,
+        8
+      ],
+      "expected": [
+        18,
+        100,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "38-20 observer 1",
+      "actual": [
+        18.0,
+        100.0,
+        8
+      ],
+      "expected": [
+        18,
+        100,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "38-20 regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "HasStamina(20) false at 18",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "HasStamina(18) true at 18",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Dodge refused without full cost",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Refusal changes nothing (no notify, pause kept) stored",
+      "actual": [
+        18.0,
+        100.0
+      ],
+      "expected": [
+        18,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Refusal changes nothing (no notify, pause kept) observer 0",
+      "actual": [
+        18.0,
+        100.0,
+        8
+      ],
+      "expected": [
+        18,
+        100,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "Refusal changes nothing (no notify, pause kept) observer 1",
+      "actual": [
+        18.0,
+        100.0,
+        8
+      ],
+      "expected": [
+        18,
+        100,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "Refusal changes nothing (no notify, pause kept) regen pause",
+      "actual": 0.3,
+      "expected": 0.3,
+      "passed": true
+    },
+    {
+      "name": "Exact cost accepted",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Drained to zero stored",
+      "actual": [
+        0.0,
+        100.0
+      ],
+      "expected": [
+        0,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Drained to zero observer 0",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Drained to zero observer 1",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Drained to zero regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Refused at zero: 10.0",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Refused at zero: 20.0",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Refused at zero: 25.0",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Zero stays zero stored",
+      "actual": [
+        0.0,
+        100.0
+      ],
+      "expected": [
+        0,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero stays zero observer 0",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero stays zero observer 1",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero stays zero regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Zero cost accepted, no spend",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Negative cost accepted, no spend",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Free actions do not notify or reset pause stored",
+      "actual": [
+        0.0,
+        100.0
+      ],
+      "expected": [
+        0,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Free actions do not notify or reset pause observer 0",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Free actions do not notify or reset pause observer 1",
+      "actual": [
+        0.0,
+        100.0,
+        9
+      ],
+      "expected": [
+        0,
+        100,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "Free actions do not notify or reset pause regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "One second of regen from zero stored",
+      "actual": [
+        30.0,
+        100.0
+      ],
+      "expected": [
+        30,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "One second of regen from zero observer 0",
+      "actual": [
+        30.0,
+        100.0,
+        10
+      ],
+      "expected": [
+        30,
+        100,
+        10
+      ],
+      "passed": true
+    },
+    {
+      "name": "One second of regen from zero observer 1",
+      "actual": [
+        30.0,
+        100.0,
+        10
+      ],
+      "expected": [
+        30,
+        100,
+        10
+      ],
+      "passed": true
+    },
+    {
+      "name": "One second of regen from zero regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Regen clamps at max stored",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen clamps at max observer 0",
+      "actual": [
+        100.0,
+        100.0,
+        13
+      ],
+      "expected": [
+        100,
+        100,
+        13
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen clamps at max observer 1",
+      "actual": [
+        100.0,
+        100.0,
+        13
+      ],
+      "expected": [
+        100,
+        100,
+        13
+      ],
+      "passed": true
+    },
+    {
+      "name": "Regen clamps at max regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "No notifications while full stored",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "No notifications while full observer 0",
+      "actual": [
+        100.0,
+        100.0,
+        13
+      ],
+      "expected": [
+        100,
+        100,
+        13
+      ],
+      "passed": true
+    },
+    {
+      "name": "No notifications while full observer 1",
+      "actual": [
+        100.0,
+        100.0,
+        13
+      ],
+      "expected": [
+        100,
+        100,
+        13
+      ],
+      "passed": true
+    },
+    {
+      "name": "No notifications while full regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "SetStamina upper clamp stored",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina upper clamp observer 0",
+      "actual": [
+        100.0,
+        100.0,
+        14
+      ],
+      "expected": [
+        100,
+        100,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina upper clamp observer 1",
+      "actual": [
+        100.0,
+        100.0,
+        14
+      ],
+      "expected": [
+        100,
+        100,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina lower clamp stored",
+      "actual": [
+        0.0,
+        100.0
+      ],
+      "expected": [
+        0,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina lower clamp observer 0",
+      "actual": [
+        0.0,
+        100.0,
+        15
+      ],
+      "expected": [
+        0,
+        100,
+        15
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina lower clamp observer 1",
+      "actual": [
+        0.0,
+        100.0,
+        15
+      ],
+      "expected": [
+        0,
+        100,
+        15
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina restore stored",
+      "actual": [
+        50.0,
+        100.0
+      ],
+      "expected": [
+        50,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina restore observer 0",
+      "actual": [
+        50.0,
+        100.0,
+        16
+      ],
+      "expected": [
+        50,
+        100,
+        16
+      ],
+      "passed": true
+    },
+    {
+      "name": "SetStamina restore observer 1",
+      "actual": [
+        50.0,
+        100.0,
+        16
+      ],
+      "expected": [
+        50,
+        100,
+        16
+      ],
+      "passed": true
+    },
+    {
+      "name": "Spend during notification target",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Reentrant TryConsume refused",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "Reentry did not mutate stored",
+      "actual": [
+        40.0,
+        100.0
+      ],
+      "expected": [
+        40,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Reentry did not mutate observer 0",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Reentry did not mutate observer 1",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Reentry did not mutate regen pause",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "Negative rate never drains nor re-notifies stored",
+      "actual": [
+        40.0,
+        100.0
+      ],
+      "expected": [
+        40,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Negative rate never drains nor re-notifies observer 0",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Negative rate never drains nor re-notifies observer 1",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Negative rate never drains nor re-notifies regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Zero rate never re-notifies stored",
+      "actual": [
+        40.0,
+        100.0
+      ],
+      "expected": [
+        40,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero rate never re-notifies observer 0",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero rate never re-notifies observer 1",
+      "actual": [
+        40.0,
+        100.0,
+        17
+      ],
+      "expected": [
+        40,
+        100,
+        17
+      ],
+      "passed": true
+    },
+    {
+      "name": "Zero rate never re-notifies regen pause",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Custom max stored",
+      "actual": [
+        150.0,
+        150.0
+      ],
+      "expected": [
+        150,
+        150
+      ],
+      "passed": true
+    },
+    {
+      "name": "Custom max observer 0",
+      "actual": [
+        150.0,
+        150.0,
+        18
+      ],
+      "expected": [
+        150,
+        150,
+        18
+      ],
+      "passed": true
+    },
+    {
+      "name": "Custom max observer 1",
+      "actual": [
+        150.0,
+        150.0,
+        18
+      ],
+      "expected": [
+        150,
+        150,
+        18
+      ],
+      "passed": true
+    },
+    {
+      "name": "Other component untouched",
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "expected": [
+        100,
+        100
+      ],
+      "passed": true
+    },
+    {
+      "name": "Second component independent",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Second component value",
+      "actual": 70.0,
+      "expected": 70,
+      "passed": true
+    },
+    {
+      "name": "First observers not notified by second",
+      "actual": 18,
+      "expected": 18,
+      "passed": true
+    },
+    {
+      "name": "Spawned player has Combat",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "DoParry flag starts clear",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoParry starts with stamina and spends its cost",
+      "actual": [
+        true,
+        90.0
+      ],
+      "expected": [
+        true,
+        90
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoParry pauses regeneration",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "EndParry clears flag",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoParry blocked without full stamina",
+      "actual": [
+        false,
+        9.0
+      ],
+      "expected": [
+        false,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoParry blocked at zero",
+      "actual": [
+        false,
+        0.0
+      ],
+      "expected": [
+        false,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoDodge flag starts clear",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoDodge starts with stamina and spends its cost",
+      "actual": [
+        true,
+        80.0
+      ],
+      "expected": [
+        true,
+        80
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoDodge pauses regeneration",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "EndDodge clears flag",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoDodge blocked without full stamina",
+      "actual": [
+        false,
+        19.0
+      ],
+      "expected": [
+        false,
+        19
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoDodge blocked at zero",
+      "actual": [
+        false,
+        0.0
+      ],
+      "expected": [
+        false,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack flag starts clear",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack starts with stamina and spends its cost",
+      "actual": [
+        true,
+        90.0
+      ],
+      "expected": [
+        true,
+        90
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack pauses regeneration",
+      "actual": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "name": "EndAttack clears flag",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack blocked without full stamina",
+      "actual": [
+        false,
+        9.0
+      ],
+      "expected": [
+        false,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "name": "DoLightAttack blocked at zero",
+      "actual": [
+        false,
+        0.0
+      ],
+      "expected": [
+        false,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "Second click during an attack spends nothing (existing guard first)",
+      "actual": 90.0,
+      "expected": 90,
+      "passed": true
+    }
+  ],
+  "regen_trace": [
+    [
+      60.000000044703484,
+      11
+    ],
+    [
+      90.00000004470348,
+      12
+    ],
+    [
+      100.0,
+      13
+    ],
+    [
+      100.0,
+      13
+    ],
+    [
+      100.0,
+      13
+    ]
+  ]
+}

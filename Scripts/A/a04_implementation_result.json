@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "saved": [
+    "/Game/Unscripted/Player/BP_HealthComponent.BP_HealthComponent",
+    "/Game/Unscripted/Player/BP_PlayerCharacter.BP_PlayerCharacter",
+    "/Game/Unscripted/Player/Test/BP_HealthObserver_A.BP_HealthObserver_A"
+  ],
+  "checks": [
+    {
+      "name": "Migration not already applied",
+      "passed": true
+    },
+    {
+      "name": "No observer overwritten",
+      "passed": true
+    },
+    {
+      "name": "Guard field is new",
+      "passed": true
+    },
+    {
+      "name": "Helper signature registered",
+      "passed": true
+    },
+    {
+      "name": "Private commit function compiles",
+      "passed": true
+    },
+    {
+      "name": "Health public functions compile",
+      "passed": true
+    },
+    {
+      "name": "Dispatcher graphs and signatures unchanged",
+      "passed": true
+    },
+    {
+      "name": "SetHealth signature unchanged",
+      "passed": true
+    },
+    {
+      "name": "ApplyHealthDamage signature unchanged",
+      "passed": true
+    },
+    {
+      "name": "Player compiles against updated health",
+      "passed": true
+    },
+    {
+      "name": "Exactly one installed Health template",
+      "passed": true
+    },
+    {
+      "name": "A-03 and all player graphs untouched",
+      "passed": true
+    },
+    {
+      "name": "Observer fields compile",
+      "passed": true
+    },
+    {
+      "name": "Observer compiles",
+      "passed": true
+    },
+    {
+      "name": "Save BP_HealthComponent",
+      "passed": true
+    },
+    {
+      "name": "Save BP_PlayerCharacter",
+      "passed": true
+    },
+    {
+      "name": "Save BP_HealthObserver_A",
+      "passed": true
+    }
+  ],
+  "base_commit": "e95d5b9",
+  "backup": "C:\\Users\\mauri\\AppData\\Local\\Temp\\Unscripted_A04_84zfr7g2",
+  "dispatcher_menu": {
+    "OnHealthChanged": [
+      "Clase|BPHUD|OnHealthChangedEvent",
+      "Predeterminado|BindEventtoOnHealthChanged",
+      "Predeterminado|CallOnHealthChanged",
+      "Predeterminado|UnbindEventfromOnHealthChanged",
+      "Predeterminado|UnbindallEventsfromOnHealthChanged"
+    ],
+    "OnDepleted": [
+      "Predeterminado|BindEventtoOnDepleted",
+      "Predeterminado|CallOnDepleted",
+      "Predeterminado|UnbindEventfromOnDepleted",
+      "Predeterminado|UnbindallEventsfromOnDepleted"
+    ]
+  },
+  "player_health_before": {
+    "MaxHealth": 0.0,
+    "CurrentHealth": 0.0
+  }
+}

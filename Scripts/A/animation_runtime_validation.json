@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "error": null,
+  "checks": [
+    {
+      "name": "Pursuer normal takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Pursuer normal uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Pursuer normal completion",
+      "passed": true
+    },
+    {
+      "name": "Interventor normal takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Interventor normal uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Interventor normal completion",
+      "passed": true
+    },
+    {
+      "name": "Supervisor normal takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Supervisor normal uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Supervisor normal completion",
+      "passed": true
+    },
+    {
+      "name": "Pursuer freeze takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Pursuer freeze uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Pursuer freeze completion",
+      "passed": true
+    },
+    {
+      "name": "Pursuer stun takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Pursuer stun uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Stun releases attack ownership",
+      "passed": true
+    },
+    {
+      "name": "Pursuer stun completion",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack completion",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Player DoLightAttack completion",
+      "passed": true
+    },
+    {
+      "name": "Player DoDodge takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Player DoDodge uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Player DoDodge completion",
+      "passed": true
+    },
+    {
+      "name": "Player DoParry takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Player DoParry uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Player DoParry completion",
+      "passed": true
+    },
+    {
+      "name": "Player death takes animation ownership",
+      "passed": true
+    },
+    {
+      "name": "Player death uses polished clip",
+      "passed": true
+    },
+    {
+      "name": "Player death completion",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Literal is the 30-sample cap",
+      "passed": true
+    },
+    {
+      "name": "Literal feeds Length(PosHistory) > cap",
+      "passed": true
+    },
+    {
+      "name": "Set to 50",
+      "passed": true
+    },
+    {
+      "name": "Player compiles",
+      "passed": true
+    },
+    {
+      "name": "Value saved as 50",
+      "passed": true
+    },
+    {
+      "name": "Save",
+      "passed": true
+    }
+  ]
+}

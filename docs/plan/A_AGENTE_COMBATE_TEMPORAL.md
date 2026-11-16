@@ -1,5 +1,11 @@
 # División A — Agente: jugador, combate y poderes temporales
 
+**Pulido de muerte (2026-11-15):** autorización puntual de integración A/B.
+**[PROPUESTA]** Caída articulada con trayectoria corregida, velocidad normal,
+protección frente a llamadas repetidas y notificación de derrota tras 2,05 s.
+Checkpoint cancela la presentación pendiente. Implementación y validación:
+[`Scripts/A/DEATH_PRESENTATION.md`](../../Scripts/A/DEATH_PRESENTATION.md).
+
 > **Base confirmada:** Unscripted · UE 5.8.4 · Blueprint. Todo contenido para el jugador debe estar en inglés, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
 
 **Persona:** Mauricio (confirmado 2026-11-15) · **Rama:** `a/<tarea>` · **Commits:** `[A] …`
@@ -123,6 +129,10 @@ Evidencia A-CON-01: capturas del usuario muestran `ReceiveHit` en la interfaz y 
 
 ## 9. Estado
 
+### Pulido de animaciones — 2026-11-15
+
+Autorización puntual del usuario para A y B. **[PROPUESTA]** Implementadas seis copias locales de clips de acción, entrada/recuperación suavizadas, contacto de ambos ataques a 0,30 s y fin de reproducción alineado con el bloqueo. Corregida la selección alternada y la liberación prematura de la pose de muerte por un temporizador anterior. Se conserva la locomoción continua de pie/agachado existente. Detalles, límites y pruebas: [`Scripts/A/ANIMATION_POLISH.md`](../../Scripts/A/ANIMATION_POLISH.md). Validación: 48 comprobaciones de assets, cinco Blueprints compilados sin errores ni warnings y 31 comprobaciones en PIE. Valoración visual en cámara isométrica pendiente; no declara F4 cerrado.
+
 ### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
 
 - A-01–03: Input Actions e `IMC_Default` ya presentes; el historial registra movimiento base (`8b0c65f`), mensajes (`8e6dd52`) e integración. El log local muestra Play en `L_Test_A`. Falta verificar cada criterio de input, cámara y orientación; la nota antigua «pendiente de crear assets» ya no describe el inventario actual.
@@ -137,6 +147,16 @@ Las notas del día que siguen son historial de preparación.
 - [ ] F4 cerrado
 
 Notas del día:
+
+- 2026-11-15: **Sprint MVP (`05_SPRINT_MVP_2H §4.1`) A1–A4 implementados y validados técnicamente** en `a/sprint-mvp`. A1 (A-16 mínimo): `SetRetakeBlocked`, `ClearRetakeHistory` y `SetGameplayInputEnabled` con efecto real en el jugador. A2: sin `PrintString` de depuración en el controlador. A3: `ReceiveCombatHit` devuelve `Ignored`/`Dodged`/`Parried`/`Hit`. A4 **[PROPUESTA]**: Esc dos veces → salir, hasta que exista `WBP_Pause`. Compilan las 58 Blueprints; 27 comprobaciones tras recarga. Pendiente la prueba en Play. [Detalle y prueba](../../Scripts/A/A_SPRINT_MVP.md).
+- 2026-11-15: **Sprint MVP A6 y A7 (P1) implementados y validados técnicamente.** A6: la Retoma rebobina también la resistencia. Corregido además que, tras reaparecer en un checkpoint, R rebobinaba a antes de la muerte: ahora el respawn vacía el historial. A7: el Corte exige línea de visión (Visibility; los Pawns no bloquean). 15 comprobaciones funcionales con el editor completo; A1–A4 siguen en 27/27 y las 58 Blueprints compilan. A8 (P2) sin empezar.
+- 2026-11-15: **Sprint MVP A8 (P2) [PROPUESTA] implementado y validado técnicamente:** hit-stop de 0,06 s solo en el enemigo golpeado y sacudida de cámara `CS_PlayerHit_A` al recibir daño. 15 comprobaciones; sin regresiones en A1–A7. **Parte A del sprint completa** salvo A4 con `WBP_Pause` (depende de C3) y A5 (integración manual). Pendiente la prueba en Play.
+
+- 2026-11-15: **A-05 implementado y validado técnicamente** sobre `be77859`, por petición de Mauricio, aunque `04_PLAN_DE_CIERRE §4` proponía recortarlo. `BP_CombatComponent` tiene resistencia 100, regeneración de 30/s tras una pausa de 0,6 s **[PROPUESTA]** y costes de docs/03. Usa `SetStamina`, `HasStamina` y `TryConsumeStamina`, y emite `OnStaminaChanged`. Ligero, esquiva y parry del jugador requieren el coste completo; sin él no se ejecutan. HUD de prueba `Player/Test/BP_StaminaHUDTest_A` colocado en `L_Test_A`. 140 comprobaciones tras recarga; firmas compartidas y resto de grafos del jugador preservados. [Guía, evidencia y prueba visual](../../Scripts/A/A05_RESISTENCIA.md). Pendiente aceptación visual en Play. El coste del fuerte espera a A-09 y la resistencia en Retoma, a A-14/15. Para C-21: `OnStaminaChanged` del Combat del jugador ya emite valores reales.
+
+- 2026-11-15: **A-03 confirmado funcional por Mauricio**, commit `e95d5b9`. **A-04 implementado y validado técnicamente**: Health instalado 100/100; actualización acotada y notificación con valores capturados; OnDepleted solo en transición positiva→cero. Probado en dos actores dummy transitorios con dos observadores reales, tras recargar los assets. Firmas compartidas y grafos del jugador preservados. [Guía, propuestas locales, evidencia y prueba visual](../../Scripts/A/A04_SALUD.md). Pendiente aceptación visual del HUD en Play; no implica cierre de A-18/A-22 ni F1. Siguiente: A-05, resistencia.
+
+- 2026-11-15: A-03 implementado sobre `b2ceb53`, tras revisar los cambios del pull de C/D. Tick llama a `A_UpdateCursorFacing` (local y vivo), reutilizando `FaceCursor`; CharacterMovement deja de girar hacia WASD. Solo se guardó `BP_PlayerCharacter`. Compilación y 16 comprobaciones tras recarga correctas; pendiente aceptación visual con mouse y pendientes en `L_Test_A`. [Cambio, evidencia y prueba paso a paso](../../Scripts/A/A03_ORIENTACION_CONTINUA.md). No se marca F1 completo. El handoff nuevo de C sitúa la salud del componente instalado y checkpoints entre los siguientes pendientes de A.
 
 - 2026-11-15: auditoría de los assets guardados con Unreal 5.8.4, sin editar ni guardar paquetes. Confirmados BeginPlay/IMC y mappings; hay movimiento, salud y combate/poderes provisionales en PlayerCharacter. Detectadas diferencias de contrato, fuerte enlazado al ligero, ausencia de resistencia y Retoma sin destino seguro. [Informe y límites](../../Scripts/A/AUDITORIA_A_2026_11_15.md). No se ejecutó Play ni se marca A-01/F1 completo. Las notas anteriores son históricas.
 
