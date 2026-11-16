@@ -87,13 +87,19 @@ def main():
         ('Attack1',0.6,0.5,20/30,1.5),
         ('Attack2',0.75,0.4,25/30,65/30),
         ('Dodge',0.6,None,None,None),('Parry',0.6,None,None,None),
-        ('Hit',0.6,None,None,None),('Death',2.5,None,None,None)):
+        ('Hit',0.6,None,None,None)):
         clip=bake(u.load_asset(base+action),idle,ROOT+'Player/Animation/Polish/A_Agent_'+action,seconds,contact,source_contact,end,action=='Death')
         report.append(clip.get_path_name())
     for who in ('Pursuer_A','Pursuer_B','Interventor','Supervisor'):
         idle=u.load_asset(ROOT+'Art/Characters/SK_'+who+'/Anims/A_SK_'+who+'_Idle')
         clip=bake(u.load_asset(base+'Attack1'),idle,ROOT+'Enemies/Animation/Polish/A_'+who+'_Attack',1.0,0.6,20/30,1.5)
         report.append(clip.get_path_name())
+    # Death has its own grounded trajectory/contact pass. A generic rebake would
+    # reintroduce the imported offset and launch into every future animation rebuild.
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent))
+    from a_build_death_motion import main as build_deaths
+    build_deaths()
     Path(u.Paths.project_saved_dir(),'animation_polish_assets.json').write_text(json.dumps(report,indent=2))
     print('ANIMATION_POLISH_ASSETS_OK')
 

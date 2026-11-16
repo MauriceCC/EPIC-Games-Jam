@@ -174,8 +174,8 @@ jack_pos = position(g)
 threat = h.get(g, threat_name)
 in_danger = h.is_valid(g, threat)
 escort_start = updated.find_then_pin()
-if h.edit(jack, 'B_ApplyEscortPace'):
-    escort_start = h.invoke(g, escort_start, jack, 'B_ApplyEscortPace', InDanger=in_danger).find_then_pin()
+if h.edit(jack, 'B_SyncEscortSpeed'):
+    escort_start = h.invoke(g, escort_start, jack, 'B_SyncEscortSpeed').find_then_pin()
 flee, safe = h.branch(g, escort_start, in_danger)
 enemy_pos = position(g, threat)
 enemy_gap = distance(g, jack_pos, enemy_pos)
