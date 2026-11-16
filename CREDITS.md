@@ -4,12 +4,14 @@
 
 ## Equipo
 
-| Persona | División |
-|---|---|
-| | A · Agente |
-| | B · Oposición |
-| | C · Relato |
-| | D · Mundo |
+| Persona | División | Rol en los créditos del juego (inglés) |
+|---|---|---|
+| Mauricio (MauriceCC) | A · Agente + integración | Player combat, temporal powers, animation & integration |
+| Jesús (Jesus A) | B · Oposición | Enemies, AI, stealth & Jack |
+| Daniel (Daniel Josué Guillén Valcárcel) | C · Relato | Narrative, interaction & UI |
+| Yizens | D · Mundo | World, art, VFX, audio & build |
+
+> Nombres tomados de los autores de Git; cada persona confirma cómo quiere aparecer antes de pasarlo a `WBP_Ending` (C5).
 
 ## Assets de terceros
 
