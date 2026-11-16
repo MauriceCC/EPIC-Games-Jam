@@ -1,0 +1,3 @@
+newmtl ClothesStall
+Kd 1 1 1
+map_Kd ClothesStall_textures/base_color.png

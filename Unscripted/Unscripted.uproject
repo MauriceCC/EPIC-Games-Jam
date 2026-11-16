@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{9396AD39-41BD-8BEF-659F-3991F8E83A19}",
+	"EngineAssociation": "{5D5CDF88-413F-72A7-B97C-6D83EEFB4716}",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -21,6 +21,22 @@
 		},
 		{
 			"Name": "GameplayStateTree",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorToolset",
+			"Enabled": true
+		},
+		{
+			"Name": "NiagaraToolsets",
+			"Enabled": true
+		},
+		{
+			"Name": "AllToolsets",
 			"Enabled": true
 		}
 	]

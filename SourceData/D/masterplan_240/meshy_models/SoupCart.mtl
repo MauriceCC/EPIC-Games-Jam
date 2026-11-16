@@ -1,0 +1,3 @@
+newmtl SoupCart
+Kd 1 1 1
+map_Kd SoupCart_textures/base_color.png

@@ -1,0 +1,3 @@
+newmtl FishStall
+Kd 1 1 1
+map_Kd FishStall_textures/base_color.png

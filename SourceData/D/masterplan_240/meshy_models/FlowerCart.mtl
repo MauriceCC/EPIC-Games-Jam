@@ -1,0 +1,3 @@
+newmtl FlowerCart
+Kd 1 1 1
+map_Kd FlowerCart_textures/base_color.png
