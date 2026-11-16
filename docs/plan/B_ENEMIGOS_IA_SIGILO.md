@@ -320,6 +320,10 @@ estos cambios de `L_Whitechapel`:
 
 - `BP_GuardBase`: los enemigos persiguen al jugador visible mientras se genera
   el NavMesh. El checkpoint invalida los ataques pendientes.
+- **B6 — `36e1c6d`:** el golpe cuerpo a cuerpo y el pulso del Supervisor deben
+  comprobar `Visibility` al resolver el impacto. Con un muro de por medio no
+  hacen daño. Conserven esta comprobación en ambos ataques si hay un conflicto
+  en `BP_GuardBase`.
 - `BP_Jack`: durante la escolta usa el límite de velocidad actual del
   protagonista y puede seguirlo a la vista mientras se genera el NavMesh.
 - `BP_GuardBase` y `BP_PlayerCharacter`: se mantienen las cinco animaciones de
@@ -328,7 +332,7 @@ estos cambios de `L_Whitechapel`:
 Si hay conflicto en alguno de estos Blueprints binarios, usen como base la
 versión integrada de `main` y reapliquen encima los cambios compatibles.
 Coordinen con Jesús antes de sustituir el asset y prueben en Play la
-persecución, la escolta y el checkpoint.
+persecución, la escolta, el checkpoint y ambos ataques con y sin muro.
 
 
 ### Caídas articuladas — 2026-11-15
