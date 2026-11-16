@@ -2,4 +2,4 @@ Name,Health,AttackDamage,PostureDamage,VisionRange,DetectionRange,WalkSpeed,RunS
 Pursuer,45,12,8,18,8,180,600,1.2,1.8,0.8,1.6,100,"Basic patrol and chase unit",30,0.45,100
 Interventor,80,18,12,20,9,180,600,1.0,1.8,1.2,2.0,120,"Mid-tier combat controller",50,0.85,100
 Supervisor,180,26,18,24,10,180,600,0.8,1.8,1.5,2.2,150,"Elite encounter controller",90,0.55,35
-Jack,30,0,0,12,6,230,330,0.6,0,0,0,80,"Escape route. Sprint follows 97% of player movement speed",0,0,0
+Jack,30,0,0,12,6,230,330,0.6,0,0,0,80,"Escape route. During escort uses the player current movement speed",0,0,0

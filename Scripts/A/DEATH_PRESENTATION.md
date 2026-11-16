@@ -4,15 +4,12 @@ Autorización puntual del usuario: integrador para A y B. **[PROPUESTA]** Pulido
 de presentación sobre animaciones existentes. Los civiles conservan su
 neutralización no letal. No se modifican contratos, originales de arte ni mapas.
 
-> **Integración en `main` (2026-11-15):** solo se integraron los cinco clips,
-> los scripts y esta documentación. Los cambios de `BP_GuardBase` y
-> `BP_PlayerCharacter` de la rama `animations` **no** se integraron porque, con
-> ellos, los enemigos dejaban de perseguir al jugador. Por eso, en `main`
-> todavía no se cumplen los puntos de este documento que dependen de esos
-> Blueprints (selección del clip en `B_PlayKnockoutFall`, retraso de 2,05 s de
-> `PlayerDefeated`). Antes de volver a ejecutar `a_install_death_presentation.py`
-> o `a_rebuild_death_presentation.py`, hay que averiguar por qué se rompía la
-> persecución, y siempre coordinándolo con B (Jesús), dueño de `BP_GuardBase`.
+> **Integración en `main` (2026-11-15):** los cinco clips de muerte son los de
+> la rama `animations` (`c58a9e6`). B (Jesús) aplicó la presentación de este
+> documento a `BP_GuardBase` y `BP_PlayerCharacter` en `a89eaa9`, conservando la
+> persecución, el checkpoint y la orientación. Esos Blueprints son la referencia:
+> no volver a ejecutar `a_install_death_presentation.py` ni
+> `a_rebuild_death_presentation.py` sobre ellos sin coordinarlo con B.
 
 ## Cambios
 

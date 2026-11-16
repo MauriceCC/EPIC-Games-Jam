@@ -20,6 +20,8 @@
 
 **Decisión sobre el mapa [PROPUESTA]:** volver a **`L_Whitechapel` como mapa por defecto** para el MVP. Pasar el distrito nuevo de `L_Test_D` a `_Geo` y recolocar todo lo de B y C lleva mucho más de 1 hora y cambia rutas que ya se probaron. Queda para después de la entrega.
 
+> **Decisión del usuario (2026-11-15), reemplaza la propuesta anterior y la tarea M1:** el mapa por defecto **sigue siendo `L_Test_D`** (`EditorStartupMap` y `GameDefaultMap`). No se añaden mapas a `MapsToCook`. Para probar la historia, abrir `L_Whitechapel` a mano en el editor.
+
 ## 2. Tareas (cada una cabe en 1 hora, solo en las carpetas de cada uno)
 
 Prioridad: **P0** = sin esto el MVP no se puede jugar ni entregar · **P1** = si sobra tiempo.

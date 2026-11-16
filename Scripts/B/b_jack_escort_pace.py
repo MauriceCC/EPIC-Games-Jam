@@ -1,7 +1,8 @@
-"""Match Jack's escort sprint to the player's current movement speed."""
+"""Sync Jack's movement limit with the player for the entire active escort."""
 import csv
 from pathlib import Path
 import sys
+
 import unreal as u
 
 repo = Path(u.Paths.project_dir()).resolve().parent
@@ -11,40 +12,45 @@ import blueprint_helpers_c as h
 
 assert not u.get_editor_subsystem(u.UnrealEditorSubsystem).get_game_world()
 with (repo / 'SourceData/B/DT_EnemyBalance.csv').open(newline='', encoding='utf-8') as data:
-    speeds = next(row for row in csv.DictReader(data) if row['Name'] == 'Jack')
-walk, run = float(speeds['WalkSpeed']), float(speeds['RunSpeed'])
-assert run > walk > 0
+    walk = float(next(row for row in csv.DictReader(data) if row['Name'] == 'Jack')['WalkSpeed'])
 
 jack = h.asset('Enemies/Jack/BP_Jack')
-name = 'B_ApplyEscortPace'
+name = 'B_SyncEscortSpeed'
+old_name = 'B_ApplyEscortPace'
 pace = h.edit(jack, name)
 if pace is None:
-    pace = h.function(jack, name, inputs=(('InDanger', h.basic('bool')),))
+    pace = h.function(jack, name)
 else:
     h.clear_body(pace)
+
 target = h.get(pace, 'CharacterMovement')
 movement_class = u.CharacterMovementComponent.static_class()
-in_danger, safe = h.branch(pace, pace.find_graph_entry_pin(), h.param(pace, 'InDanger'))
+active, idle = h.branch(pace, pace.find_graph_entry_pin(), h.get(pace, 'bEscaping'))
 player = h.call(pace, '/Script/Engine.GameplayStatics:GetPlayerCharacter').find_result_pin()
-has_player, missing = h.branch(pace, in_danger, h.is_valid(pace, player))
+has_player, missing = h.branch(pace, active, h.is_valid(pace, player))
 player_movement = h.call(pace, '/Script/Engine.Pawn:GetMovementComponent', target=player).find_result_pin()
+has_movement, no_movement = h.branch(pace, has_player, h.is_valid(pace, player_movement))
 player_speed = h.call(pace, '/Script/Engine.MovementComponent:GetMaxSpeed', target=player_movement).find_result_pin()
-sprint = h.math(pace, 'Multiply_DoubleDouble', player_speed, 0.97)
-h.setvar(pace, has_player, 'MaxWalkSpeed', sprint, target=target, cls=movement_class)
-normal = h.setvar(pace, safe, 'MaxWalkSpeed', walk, target=target, cls=movement_class)
+h.setvar(pace, has_movement, 'MaxWalkSpeed', player_speed, target=target, cls=movement_class)
+normal = h.setvar(pace, idle, 'MaxWalkSpeed', walk, target=target, cls=movement_class)
 h.connect(missing, normal.get_owning_node().find_execute_pin())
+h.connect(no_movement, normal.get_owning_node().find_execute_pin())
 h.layout(jack, {name})
-assert u.BlueprintEditorLibrary.compile_blueprint(jack)
+h.compile_blueprint(jack, warnings_as_errors=True)
 
 
-def insert_pace(graph, source, in_danger=None):
+def insert_pace(graph, source):
     successor, = source.list_connected_pins()
-    if str(successor.get_owning_node().get_node_title()) == name:
+    old_call = successor.get_owning_node()
+    title = str(old_call.get_node_title())
+    if title == name:
         return
-    if in_danger is None:
-        in_danger = h.is_valid(graph, h.get(graph, 'B_ClosestEscortThreat'))
-    source.break_pin_links()
-    change = h.invoke(graph, source, jack, name, InDanger=in_danger)
+    if title == old_name:
+        successor, = old_call.find_then_pin().list_connected_pins()
+        graph.remove_nodes([old_call])
+    else:
+        source.break_pin_links()
+    change = h.invoke(graph, source, jack, name)
     h.connect(change.find_then_pin(), successor)
 
 
@@ -55,6 +61,10 @@ insert_pace(movement, scan.find_then_pin())
 events = h.edit(jack, 'EventGraph')
 arrived = next(node for node in events.list_all_nodes() if node.get_name() == 'K2Node_VariableSet_2')
 assert 'bReachedRefuge' in str(arrived.get_node_title())
-insert_pace(events, arrived.find_then_pin(), False)
+insert_pace(events, arrived.find_then_pin())
+
+old_pace = h.edit(jack, old_name)
+if old_pace:
+    u.BlueprintEditorLibrary.remove_graph(jack, old_pace.get_graph())
 h.save(jack)
-u.log(f'B_JACK_ESCORT_PACE_SAVED walk={walk:g}, danger pace=97% of player max speed')
+u.log(f'B_JACK_ESCORT_PACE_SAVED fallback={walk:g}; escort matches player max speed')
