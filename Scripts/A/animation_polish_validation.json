@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Player/BP_PlayerCharacter compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_GuardBase compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Pursuer compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Interventor compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Supervisor compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack1 skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack1 recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack1 recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack1 recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack2 skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack2 recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack2 recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Attack2 recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Dodge skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent Dodge recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Agent Dodge recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Dodge recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Parry skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent Parry recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Agent Parry recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Parry recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Hit skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent Hit recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Agent Hit recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Hit recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Agent Death skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A Attack skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A Attack recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A Attack recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A Attack recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B Attack skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B Attack recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B Attack recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B Attack recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Interventor Attack skeleton",
+      "passed": true
+    },
+    {
+      "name": "Interventor Attack recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Interventor Attack recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Interventor Attack recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Supervisor Attack skeleton",
+      "passed": true
+    },
+    {
+      "name": "Supervisor Attack recovers hips",
+      "passed": true
+    },
+    {
+      "name": "Supervisor Attack recovers lefthand",
+      "passed": true
+    },
+    {
+      "name": "Supervisor Attack recovers righthand",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Attack1",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Attack2",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Dodge",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Parry",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Hit",
+      "passed": true
+    },
+    {
+      "name": "Player uses polished Death",
+      "passed": true
+    }
+  ]
+}

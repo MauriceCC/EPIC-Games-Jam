@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Remote animation validation passed",
+    "Checkpoint attack cancellation variables preserved",
+    "Enemy attack visuals installed",
+    "Player checkpoint recovery preserved",
+    "Movement facing preserved"
+  ]
+}

@@ -123,6 +123,10 @@ Evidencia A-CON-01: capturas del usuario muestran `ReceiveHit` en la interfaz y 
 
 ## 9. Estado
 
+### Pulido de animaciones — 2026-11-15
+
+Autorización puntual del usuario para A y B. **[PROPUESTA]** Implementadas seis copias locales de clips de acción, entrada/recuperación suavizadas, contacto de ambos ataques a 0,30 s y fin de reproducción alineado con el bloqueo. Corregida la selección alternada y la liberación prematura de la pose de muerte por un temporizador anterior. Se conserva la locomoción continua de pie/agachado existente. Detalles, límites y pruebas: [`Scripts/A/ANIMATION_POLISH.md`](../../Scripts/A/ANIMATION_POLISH.md). Validación: 48 comprobaciones de assets, cinco Blueprints compilados sin errores ni warnings y 31 comprobaciones en PIE. Valoración visual en cámara isométrica pendiente; no declara F4 cerrado.
+
 ### Revisión documental 2026-11-14 (`main` @ `4afcd57`)
 
 - A-01–03: Input Actions e `IMC_Default` ya presentes; el historial registra movimiento base (`8b0c65f`), mensajes (`8e6dd52`) e integración. El log local muestra Play en `L_Test_A`. Falta verificar cada criterio de input, cámara y orientación; la nota antigua «pendiente de crear assets» ya no describe el inventario actual.
