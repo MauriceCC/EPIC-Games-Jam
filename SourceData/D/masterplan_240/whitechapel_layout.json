@@ -1,0 +1,4892 @@
+{
+ "meta": {
+  "version": "masterplan240 v1 [PROPUESTA]",
+  "date": "2026-11-15",
+  "units": "m",
+  "axes": "x=este, y=norte, origen SO",
+  "district": [
+   0,
+   0,
+   240,
+   180
+  ],
+  "ue_transform": {
+   "formula": "UE_X = OffX + 100*y ; UE_Y = OffY + 100*x ; yaw_UE = 90 - heading",
+   "offsets_cm": {
+    "recommended": [
+     0.0,
+     12000.0,
+     0.0
+    ],
+    "spawn_aligned": [
+     -600.0,
+     -8600.0,
+     0.0
+    ]
+   },
+   "recommended": "recommended"
+  }
+ },
+ "zones": {
+  "Z01": {
+   "name": "Calle de llegada / inicio",
+   "rect": [
+    94,
+    0,
+    114,
+    27
+   ]
+  },
+  "Z02": {
+   "name": "Plaza y mercado (envolvente)",
+   "rect": [
+    29,
+    16,
+    113,
+    83
+   ]
+  },
+  "Z03": {
+   "name": "Plaza despejada interior",
+   "rect": [
+    46,
+    29,
+    99,
+    70
+   ]
+  },
+  "Z04": {
+   "name": "Taller + patio de Jack",
+   "rect": [
+    122,
+    17,
+    168,
+    69
+   ]
+  },
+  "Z05": {
+   "name": "Calle taller-escape",
+   "rect": [
+    151,
+    61,
+    181,
+    79
+   ]
+  },
+  "Z06": {
+   "name": "Corredor de escape",
+   "rect": [
+    158,
+    70,
+    192,
+    135
+   ]
+  },
+  "Z07": {
+   "name": "Ruta alternativa central",
+   "rect": [
+    108,
+    87,
+    175,
+    112
+   ]
+  },
+  "Z08": {
+   "name": "Transito al refugio",
+   "rect": [
+    175,
+    125,
+    209,
+    151
+   ]
+  },
+  "Z09": {
+   "name": "Refugio y patio secreto",
+   "rect": [
+    194,
+    139,
+    235,
+    176
+   ]
+  },
+  "Z10": {
+   "name": "Registro medico",
+   "rect": [
+    193,
+    105,
+    236,
+    140
+   ]
+  },
+  "Z11": {
+   "name": "Informe fabricado",
+   "rect": [
+    193,
+    68,
+    237,
+    106
+   ]
+  },
+  "Z12": {
+   "name": "Paso central hacia archivo",
+   "rect": [
+    107,
+    100,
+    165,
+    126
+   ]
+  },
+  "Z13": {
+   "name": "Antepatio del Supervisor",
+   "rect": [
+    65,
+    108,
+    113,
+    144
+   ]
+  },
+  "Z14": {
+   "name": "Acceso lateral al archivo",
+   "rect": [
+    111,
+    120,
+    151,
+    149
+   ]
+  },
+  "Z15": {
+   "name": "Complejo del archivo",
+   "rect": [
+    33,
+    137,
+    130,
+    179
+   ]
+  },
+  "Z16": {
+   "name": "Sala de eleccion",
+   "rect": [
+    65,
+    151,
+    89,
+    168
+   ]
+  },
+  "Z17": {
+   "name": "Calles escenograficas oeste",
+   "rect": [
+    0,
+    16,
+    29,
+    176
+   ]
+  },
+  "Z18": {
+   "name": "Calles escenograficas este",
+   "rect": [
+    237,
+    16,
+    240,
+    176
+   ]
+  }
+ },
+ "nodes": {
+  "N01": {
+   "xy": [
+    104,
+    9
+   ],
+   "ue": [
+    900,
+    22400
+   ],
+   "note": ""
+  },
+  "N02": {
+   "xy": [
+    104,
+    32
+   ],
+   "ue": [
+    3200,
+    22400
+   ],
+   "note": ""
+  },
+  "N03": {
+   "xy": [
+    78,
+    48
+   ],
+   "ue": [
+    4800,
+    19800
+   ],
+   "note": "La fuente se centra en (75,48); N03 queda en su anillo libre (se ajusta solo el punto de prueba si cae en solido)."
+  },
+  "N04": {
+   "xy": [
+    106,
+    48
+   ],
+   "ue": [
+    4800,
+    22600
+   ],
+   "note": ""
+  },
+  "N05": {
+   "xy": [
+    117,
+    48
+   ],
+   "ue": [
+    4800,
+    23700
+   ],
+   "note": ""
+  },
+  "N06": {
+   "xy": [
+    140,
+    45
+   ],
+   "ue": [
+    4500,
+    26000
+   ],
+   "note": ""
+  },
+  "N07": {
+   "xy": [
+    158,
+    64
+   ],
+   "ue": [
+    6400,
+    27800
+   ],
+   "note": ""
+  },
+  "N08": {
+   "xy": [
+    176,
+    75
+   ],
+   "ue": [
+    7500,
+    29600
+   ],
+   "note": ""
+  },
+  "N09": {
+   "xy": [
+    176,
+    103
+   ],
+   "ue": [
+    10300,
+    29600
+   ],
+   "note": ""
+  },
+  "N10": {
+   "xy": [
+    181,
+    127
+   ],
+   "ue": [
+    12700,
+    30100
+   ],
+   "note": ""
+  },
+  "N11": {
+   "xy": [
+    205.5,
+    143
+   ],
+   "ue": [
+    14300,
+    32550
+   ],
+   "note": "(203,146) -> (205.5,143): el porton queda en el muro sur del recinto (y=145); el nodo se pone delante."
+  },
+  "N12": {
+   "xy": [
+    214,
+    158
+   ],
+   "ue": [
+    15800,
+    33400
+   ],
+   "note": ""
+  },
+  "N13": {
+   "xy": [
+    211,
+    122
+   ],
+   "ue": [
+    12200,
+    33100
+   ],
+   "note": ""
+  },
+  "N14": {
+   "xy": [
+    212,
+    87
+   ],
+   "ue": [
+    8700,
+    33200
+   ],
+   "note": ""
+  },
+  "N15": {
+   "xy": [
+    161,
+    115
+   ],
+   "ue": [
+    11500,
+    28100
+   ],
+   "note": "(161,111) -> (161,115): y=111 cae en la hilera de casas norte de la ruta azul; se centra en el paso central."
+  },
+  "N16": {
+   "xy": [
+    120,
+    115
+   ],
+   "ue": [
+    11500,
+    24000
+   ],
+   "note": ""
+  },
+  "N17": {
+   "xy": [
+    94,
+    122
+   ],
+   "ue": [
+    12200,
+    21400
+   ],
+   "note": ""
+  },
+  "N18": {
+   "xy": [
+    122,
+    137
+   ],
+   "ue": [
+    13700,
+    24200
+   ],
+   "note": ""
+  },
+  "N19": {
+   "xy": [
+    92,
+    149
+   ],
+   "ue": [
+    14900,
+    21200
+   ],
+   "note": ""
+  },
+  "N20": {
+   "xy": [
+    77,
+    160
+   ],
+   "ue": [
+    16000,
+    19700
+   ],
+   "note": ""
+  }
+ },
+ "walkable": [
+  {
+   "id": "W-SAV",
+   "kind": "street",
+   "rect": [
+    84,
+    2,
+    124,
+    14
+   ],
+   "axis": "x",
+   "minFree": 7.0,
+   "spec": "Avenida visual sur 12 m (tramo navegable, cerrado con barricadas en x=84 y x=124)"
+  },
+  {
+   "id": "W-Z01",
+   "kind": "street",
+   "rect": [
+    99,
+    0,
+    109,
+    24
+   ],
+   "axis": "y",
+   "minFree": 7.0,
+   "spec": "Calle de llegada 10 m"
+  },
+  {
+   "id": "W-PS1",
+   "kind": "alley",
+   "rect": [
+    95,
+    14,
+    99,
+    24
+   ],
+   "axis": "y",
+   "minFree": 2.7,
+   "spec": "Paso de servicio avenida-plaza 4 m"
+  },
+  {
+   "id": "W-PL",
+   "kind": "plaza",
+   "rect": [
+    41,
+    24,
+    109,
+    72
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Plaza 68 x 48 (contiene Z03 46-99 x 29-70)"
+  },
+  {
+   "id": "W-STE",
+   "kind": "street",
+   "rect": [
+    109,
+    44,
+    140,
+    52
+   ],
+   "axis": "x",
+   "minFree": 6.0,
+   "spec": "Corredor este plaza-taller 8 m"
+  },
+  {
+   "id": "W-PN",
+   "kind": "street",
+   "rect": [
+    84,
+    72,
+    92,
+    106
+   ],
+   "axis": "y",
+   "minFree": 5.5,
+   "spec": "Calle norte plaza-antepatio 8 m (ruta amarilla de la imagen)"
+  },
+  {
+   "id": "W-ALA1",
+   "kind": "alley",
+   "rect": [
+    92,
+    92,
+    130,
+    96.5
+   ],
+   "axis": "x",
+   "minFree": 2.7,
+   "spec": "Ruta azul A, tramo oeste 4,5 m"
+  },
+  {
+   "id": "W-PTCP",
+   "kind": "patio",
+   "rect": [
+    130,
+    92,
+    142,
+    102
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio intermedio 12 x 10"
+  },
+  {
+   "id": "W-ARCP",
+   "kind": "alley",
+   "rect": [
+    134.25,
+    102,
+    137.75,
+    112
+   ],
+   "axis": "y",
+   "minFree": 2.7,
+   "spec": "Pasaje cubierto 3,5 m (arco)"
+  },
+  {
+   "id": "W-ALA3",
+   "kind": "alley",
+   "rect": [
+    142,
+    98,
+    166,
+    102.5
+   ],
+   "axis": "x",
+   "minFree": 2.7,
+   "spec": "Ruta azul A, tramo este 4,5 m"
+  },
+  {
+   "id": "W-STCP",
+   "kind": "street",
+   "rect": [
+    112,
+    112,
+    176,
+    118
+   ],
+   "axis": "x",
+   "minFree": 5.0,
+   "spec": "Paso central 6 m"
+  },
+  {
+   "id": "W-FC",
+   "kind": "arena-court",
+   "rect": [
+    76,
+    106,
+    112,
+    137
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Antepatio del Supervisor 36 x 31"
+  },
+  {
+   "id": "W-AC",
+   "kind": "patio",
+   "rect": [
+    112,
+    124,
+    130,
+    146
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio de acceso al archivo 18 x 22 (reja N18)"
+  },
+  {
+   "id": "W-PAS",
+   "kind": "alley",
+   "rect": [
+    156,
+    40,
+    160,
+    58
+   ],
+   "axis": "y",
+   "minFree": 2.7,
+   "spec": "Pasillo junto al taller 4 m"
+  },
+  {
+   "id": "W-PTW",
+   "kind": "patio",
+   "rect": [
+    146,
+    58,
+    160,
+    71
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio trasero del taller 14 x 13"
+  },
+  {
+   "id": "W-STX",
+   "kind": "street",
+   "rect": [
+    160,
+    60,
+    179,
+    67
+   ],
+   "axis": "x",
+   "minFree": 5.0,
+   "spec": "Calle taller-escape 7 m"
+  },
+  {
+   "id": "W-ESC1",
+   "kind": "street",
+   "rect": [
+    172,
+    60,
+    179,
+    84
+   ],
+   "axis": "y",
+   "minFree": 5.0,
+   "spec": "Escape tramo 1, 7 m"
+  },
+  {
+   "id": "W-NK1",
+   "kind": "alley",
+   "rect": [
+    174,
+    84,
+    178.5,
+    91
+   ],
+   "axis": "y",
+   "minFree": 4.2,
+   "spec": "Estrechamiento 1: 4,5 m x 7 m"
+  },
+  {
+   "id": "W-ESCW",
+   "kind": "arena-court",
+   "rect": [
+    166,
+    91,
+    183,
+    106
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Ensanche de combate 17 x 15"
+  },
+  {
+   "id": "W-NK2",
+   "kind": "alley",
+   "rect": [
+    176,
+    106,
+    180.5,
+    113
+   ],
+   "axis": "y",
+   "minFree": 4.2,
+   "spec": "Estrechamiento 2: 4,5 m x 7 m"
+  },
+  {
+   "id": "W-ESC2",
+   "kind": "street",
+   "rect": [
+    176,
+    113,
+    183,
+    139
+   ],
+   "axis": "y",
+   "minFree": 5.0,
+   "spec": "Escape tramo 2, 7 m"
+  },
+  {
+   "id": "W-NI1",
+   "kind": "patio",
+   "rect": [
+    179,
+    72,
+    183,
+    78
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Nicho de cobertura 4 x 6"
+  },
+  {
+   "id": "W-NI2",
+   "kind": "patio",
+   "rect": [
+    183,
+    118,
+    187,
+    124
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Nicho de cobertura 4 x 6"
+  },
+  {
+   "id": "W-SV1",
+   "kind": "alley",
+   "rect": [
+    179,
+    80,
+    182.5,
+    91
+   ],
+   "axis": "y",
+   "minFree": 2.2,
+   "spec": "Pasadizo de servicio 3,5 m"
+  },
+  {
+   "id": "W-TR",
+   "kind": "street",
+   "rect": [
+    176,
+    139,
+    210,
+    145
+   ],
+   "axis": "x",
+   "minFree": 5.0,
+   "spec": "Transito al refugio 6 m"
+  },
+  {
+   "id": "W-REFP",
+   "kind": "patio",
+   "rect": [
+    202,
+    145.5,
+    222,
+    162.5
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio del refugio 20 x 17"
+  },
+  {
+   "id": "W-REFY",
+   "kind": "patio",
+   "rect": [
+    222,
+    145.5,
+    235,
+    150
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio de servicio del refugio"
+  },
+  {
+   "id": "W-STEV",
+   "kind": "alley",
+   "rect": [
+    224,
+    64,
+    228.5,
+    145
+   ],
+   "axis": "y",
+   "minFree": 4.0,
+   "spec": "Corredor sur-norte de evidencias 4,5 m (ruta verde)"
+  },
+  {
+   "id": "W-ALB1",
+   "kind": "alley",
+   "rect": [
+    179,
+    64,
+    224,
+    68
+   ],
+   "axis": "x",
+   "minFree": 3.0,
+   "spec": "Ruta verde B, 4 m"
+  },
+  {
+   "id": "W-ALB2",
+   "kind": "alley",
+   "rect": [
+    183,
+    97,
+    212,
+    100.5
+   ],
+   "axis": "x",
+   "minFree": 2.7,
+   "spec": "Retorno evidencias-escape 3,5 m"
+  },
+  {
+   "id": "W-PTRP",
+   "kind": "patio",
+   "rect": [
+    212,
+    96,
+    224,
+    106
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio de carga del informe 12 x 10"
+  },
+  {
+   "id": "W-INFP",
+   "kind": "patio",
+   "rect": [
+    213,
+    133,
+    224,
+    142
+   ],
+   "axis": null,
+   "minFree": null,
+   "spec": "Patio exterior de enfermeria 11 x 9"
+  },
+  {
+   "id": "W-SW",
+   "kind": "scenic",
+   "rect": [
+    23,
+    14,
+    29,
+    100
+   ],
+   "axis": "y",
+   "minFree": null,
+   "spec": "Calle escenografica oeste 6 m (sin NavMesh, cerrada)"
+  }
+ ],
+ "buildings": [
+  {
+   "id": "SP-TALLER",
+   "group": "HITO",
+   "fam": "AR06",
+   "rect": [
+    140,
+    40,
+    156,
+    58
+   ],
+   "front": "W",
+   "special": true,
+   "interior": [
+    [
+     140.4,
+     40.4,
+     155.6,
+     57.6
+    ]
+   ],
+   "doors": [
+    [
+     139.4,
+     44,
+     140.6,
+     46.5
+    ],
+    [
+     147.8,
+     57.4,
+     150.8,
+     58.6
+    ],
+    [
+     155.4,
+     48,
+     156.6,
+     50.5
+    ]
+   ],
+   "note": "Entrada N06 al oeste (calle este); puerta trasera 3 m al patio (paso de Jack); puerta lateral al pasillo"
+  },
+  {
+   "id": "SP-ANEXO",
+   "group": "HITO",
+   "fam": "AR10",
+   "rect": [
+    160,
+    40,
+    168,
+    50
+   ],
+   "front": "W",
+   "special": true,
+   "interior": [],
+   "doors": [],
+   "note": "Anexo de almacen 8 x 10; puerta al pasillo"
+  },
+  {
+   "id": "SP-REFUGIO",
+   "group": "HITO",
+   "fam": "AR07",
+   "rect": [
+    222,
+    150,
+    235,
+    162
+   ],
+   "front": "W",
+   "special": true,
+   "interior": [
+    [
+     222.4,
+     150.4,
+     234.6,
+     161.6
+    ]
+   ],
+   "doors": [
+    [
+     221.4,
+     154,
+     222.6,
+     156.6
+    ]
+   ],
+   "note": "Estancia usable 8 x 7 dentro; puerta al patio"
+  },
+  {
+   "id": "SP-COBERTIZO",
+   "group": "HITO",
+   "fam": "AR10",
+   "rect": [
+    197,
+    146,
+    202,
+    153
+   ],
+   "front": "E",
+   "special": true,
+   "interior": [],
+   "doors": [],
+   "note": "Cobertizo 5 x 7 pegado al muro oeste"
+  },
+  {
+   "id": "SP-ENFERMERIA",
+   "group": "HITO",
+   "fam": "AR08",
+   "rect": [
+    206,
+    113,
+    224,
+    133
+   ],
+   "front": "E",
+   "special": true,
+   "interior": [
+    [
+     207,
+     118,
+     215,
+     127
+    ],
+    [
+     215,
+     120,
+     223.6,
+     122.6
+    ]
+   ],
+   "doors": [
+    [
+     223.4,
+     120,
+     224.6,
+     122.6
+    ]
+   ],
+   "note": "Sala del registro 8 x 9 + pasillo 2,6 m hacia el corredor de evidencias"
+  },
+  {
+   "id": "SP-INFORME",
+   "group": "HITO",
+   "fam": "AR05",
+   "rect": [
+    206,
+    78,
+    220,
+    96
+   ],
+   "front": "N",
+   "special": true,
+   "interior": [
+    [
+     208,
+     84,
+     217,
+     94
+    ],
+    [
+     213,
+     94,
+     215.6,
+     95.6
+    ]
+   ],
+   "doors": [
+    [
+     213,
+     95.4,
+     215.6,
+     96.6
+    ]
+   ],
+   "note": "Sala de archivo de la agencia 9 x 10; acceso por el patio de carga"
+  },
+  {
+   "id": "SP-ARCH-CENTRAL",
+   "group": "HITO",
+   "fam": "AR09",
+   "rect": [
+    56,
+    146,
+    94,
+    170
+   ],
+   "front": "S",
+   "special": true,
+   "interior": [
+    [
+     84.4,
+     146.4,
+     93.6,
+     151
+    ],
+    [
+     65,
+     151,
+     89,
+     168
+    ]
+   ],
+   "doors": [
+    [
+     90,
+     145.4,
+     94.5,
+     146.6
+    ],
+    [
+     93.4,
+     148.4,
+     94.6,
+     151.6
+    ]
+   ],
+   "note": "Cuerpo central 38 x 24; vestibulo N19 y sala de eleccion Z16 24 x 17"
+  },
+  {
+   "id": "SP-ARCH-ALA-O",
+   "group": "HITO",
+   "fam": "AR09",
+   "rect": [
+    37,
+    146,
+    56,
+    168
+   ],
+   "front": "S",
+   "special": true,
+   "interior": [],
+   "doors": [],
+   "note": "Ala oeste 19 x 22, fachada"
+  },
+  {
+   "id": "SP-ARCH-ALA-E",
+   "group": "HITO",
+   "fam": "AR09",
+   "rect": [
+    100,
+    146,
+    118,
+    166
+   ],
+   "front": "S",
+   "special": true,
+   "interior": [
+    [
+     100.4,
+     146.4,
+     117.6,
+     152
+    ]
+   ],
+   "doors": [
+    [
+     113.5,
+     145.4,
+     116.5,
+     146.6
+    ],
+    [
+     99.4,
+     148.4,
+     100.6,
+     151.6
+    ]
+   ],
+   "note": "Ala este 18 x 20; entrada desde el patio de acceso (N18) y galeria hacia el vestibulo"
+  },
+  {
+   "id": "SP-ARCH-PORTICO",
+   "group": "HITO",
+   "fam": "AR09",
+   "rect": [
+    84,
+    137,
+    100,
+    146
+   ],
+   "front": "S",
+   "special": true,
+   "interior": [
+    [
+     86,
+     137.6,
+     98,
+     145.6
+    ]
+   ],
+   "doors": [
+    [
+     88,
+     136.4,
+     96,
+     137.6
+    ],
+    [
+     90,
+     145.4,
+     94.5,
+     146.6
+    ]
+   ],
+   "note": "Portico 16 x 9 con hueco de 8 m bajo cubierta; puertas del archivo (4,5 m) al fondo"
+  },
+  {
+   "id": "CX-ARCH-GALERIA",
+   "group": "CONECTOR",
+   "fam": "AR09",
+   "rect": [
+    94,
+    148,
+    100,
+    152
+   ],
+   "front": "S",
+   "special": true,
+   "interior": [
+    [
+     93.4,
+     148.4,
+     100.6,
+     151.6
+    ]
+   ],
+   "doors": [],
+   "note": "Galeria interior 3,2 m entre ala este y vestibulo"
+  },
+  {
+   "id": "MA-01",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    24,
+    41,
+    30
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-02",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    30,
+    41,
+    36
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-03",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    36,
+    41,
+    42
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-04",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    42,
+    41,
+    48
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-05",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    48,
+    41,
+    54
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-06",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    30,
+    54,
+    41,
+    60
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B02 incluidas"
+  },
+  {
+   "id": "MA-07",
+   "group": "M-A",
+   "fam": "AR03",
+   "rect": [
+    29,
+    60,
+    41,
+    68
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B01 comercio occidental 8 x 12"
+  },
+  {
+   "id": "MA-08",
+   "group": "M-A",
+   "fam": "AR04",
+   "rect": [
+    29,
+    68,
+    41,
+    76
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Esquina NO de la plaza"
+  },
+  {
+   "id": "MA-N01",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    72,
+    87,
+    84,
+    93
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Frente oeste de la calle norte"
+  },
+  {
+   "id": "MA-N02",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    72,
+    93,
+    84,
+    99
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Frente oeste de la calle norte"
+  },
+  {
+   "id": "MA-N03",
+   "group": "M-A",
+   "fam": "AR01",
+   "rect": [
+    72,
+    99,
+    84,
+    105
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Frente oeste de la calle norte"
+  },
+  {
+   "id": "MB-01",
+   "group": "M-B",
+   "fam": "AR05",
+   "rect": [
+    41,
+    72,
+    53,
+    87
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B04 almacen norte 12 x 15"
+  },
+  {
+   "id": "MB-02",
+   "group": "M-B",
+   "fam": "AR03",
+   "rect": [
+    53,
+    72,
+    62,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B03 comercio norte 9 x 13"
+  },
+  {
+   "id": "MB-R01",
+   "group": "M-B",
+   "fam": "AR03",
+   "rect": [
+    62,
+    72,
+    70,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MB-R02",
+   "group": "M-B",
+   "fam": "AR03",
+   "rect": [
+    70,
+    72,
+    78,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MB-05",
+   "group": "M-B",
+   "fam": "AR01",
+   "rect": [
+    78,
+    72,
+    84,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Remate junto a la calle norte"
+  },
+  {
+   "id": "MB-E01",
+   "group": "M-B",
+   "fam": "AR03",
+   "rect": [
+    92,
+    72,
+    100,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Al este de la calle norte"
+  },
+  {
+   "id": "MB-E02",
+   "group": "M-B",
+   "fam": "AR03",
+   "rect": [
+    100,
+    72,
+    108,
+    85
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Al este de la calle norte"
+  },
+  {
+   "id": "MC-S01",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    41,
+    14,
+    47,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S02",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    47,
+    14,
+    53,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S03",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    53,
+    14,
+    59,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S04",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    59,
+    14,
+    65,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S05",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    65,
+    14,
+    71,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S06",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    71,
+    14,
+    77,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S07",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    77,
+    14,
+    83,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S08",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    83,
+    14,
+    89,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-S09",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    89,
+    14,
+    95,
+    24
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B06 incluidas; lado camara"
+  },
+  {
+   "id": "MC-E01",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    109,
+    14,
+    119,
+    20
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fachada este de la llegada y de la plaza"
+  },
+  {
+   "id": "MC-E02",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    109,
+    20,
+    119,
+    26
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fachada este de la llegada y de la plaza"
+  },
+  {
+   "id": "MC-E03",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    109,
+    26,
+    119,
+    32
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fachada este de la llegada y de la plaza"
+  },
+  {
+   "id": "MC-E04",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    109,
+    32,
+    119,
+    38
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fachada este de la llegada y de la plaza"
+  },
+  {
+   "id": "MC-E05",
+   "group": "M-C",
+   "fam": "AR01",
+   "rect": [
+    109,
+    38,
+    119,
+    44
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fachada este de la llegada y de la plaza"
+  },
+  {
+   "id": "MC-P",
+   "group": "M-C",
+   "fam": "AR03",
+   "rect": [
+    109,
+    64,
+    121,
+    72
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "PL-B05 frente este de la plaza"
+  },
+  {
+   "id": "MD-S01",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    122,
+    32,
+    128,
+    44
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle este; lado camara"
+  },
+  {
+   "id": "MD-S02",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    128,
+    32,
+    134,
+    44
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle este; lado camara"
+  },
+  {
+   "id": "MD-S03",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    134,
+    32,
+    140,
+    44
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle este; lado camara"
+  },
+  {
+   "id": "MD-N01",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    109,
+    52,
+    115,
+    64
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la calle este"
+  },
+  {
+   "id": "MD-N02",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    115,
+    52,
+    121,
+    64
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la calle este"
+  },
+  {
+   "id": "MD-N03",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    121,
+    52,
+    127,
+    64
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la calle este"
+  },
+  {
+   "id": "MD-N04",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    127,
+    52,
+    133,
+    64
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la calle este"
+  },
+  {
+   "id": "MD-N05",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    133,
+    52,
+    139,
+    64
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la calle este"
+  },
+  {
+   "id": "MD-W",
+   "group": "M-D",
+   "fam": "AR05",
+   "rect": [
+    124,
+    16,
+    139,
+    27
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Almacen 15 x 11 (11 x 15 girado)"
+  },
+  {
+   "id": "MD-T",
+   "group": "M-D",
+   "fam": "AR01",
+   "rect": [
+    140,
+    28,
+    146,
+    40
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Edificio falso que cierra el taller por el sur"
+  },
+  {
+   "id": "ME-S01",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    108,
+    81,
+    113.5,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-S02",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    113.5,
+    81,
+    119.0,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-S03",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    119.0,
+    81,
+    124.5,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-S04",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    124.5,
+    81,
+    130.0,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-S05",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    130.0,
+    81,
+    135.5,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-S06",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    135.5,
+    81,
+    141.0,
+    92
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul; lado camara"
+  },
+  {
+   "id": "ME-N01",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    92,
+    96.5,
+    98,
+    105.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul (espalda al antepatio)"
+  },
+  {
+   "id": "ME-N02",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    98,
+    96.5,
+    104,
+    105.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul (espalda al antepatio)"
+  },
+  {
+   "id": "ME-N03",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    104,
+    96.5,
+    110,
+    105.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul (espalda al antepatio)"
+  },
+  {
+   "id": "ME-M01",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    112,
+    96.5,
+    117.5,
+    107.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "ME-M02",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    117.5,
+    96.5,
+    123.0,
+    107.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "ME-M03",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    123.0,
+    96.5,
+    128.5,
+    107.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "ME-A1",
+   "group": "M-E",
+   "fam": "AR10",
+   "rect": [
+    130,
+    102,
+    134.25,
+    112
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Flanco oeste del arco"
+  },
+  {
+   "id": "ME-A01",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    137.75,
+    102.5,
+    143.75,
+    112
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul este"
+  },
+  {
+   "id": "ME-A02",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    143.75,
+    102.5,
+    149.75,
+    112
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul este"
+  },
+  {
+   "id": "ME-A03",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    149.75,
+    102.5,
+    155.75,
+    112
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul este"
+  },
+  {
+   "id": "ME-A04",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    155.75,
+    102.5,
+    161.75,
+    112
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta azul este"
+  },
+  {
+   "id": "ME-B01",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    142,
+    88,
+    148,
+    98
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul este"
+  },
+  {
+   "id": "ME-B02",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    148,
+    88,
+    154,
+    98
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul este"
+  },
+  {
+   "id": "ME-B03",
+   "group": "M-E",
+   "fam": "AR01",
+   "rect": [
+    154,
+    88,
+    160,
+    98
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta azul este"
+  },
+  {
+   "id": "ME-C",
+   "group": "M-E",
+   "fam": "AR04",
+   "rect": [
+    160,
+    91,
+    166,
+    98
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Esquina hacia el ensanche"
+  },
+  {
+   "id": "MF-W01",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    160,
+    67,
+    172,
+    73
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del tramo 1; lado camara"
+  },
+  {
+   "id": "MF-W02",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    160,
+    73,
+    172,
+    79
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del tramo 1; lado camara"
+  },
+  {
+   "id": "MF-W03",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    160,
+    79,
+    172,
+    85
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del tramo 1; lado camara"
+  },
+  {
+   "id": "MF-W04",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    160,
+    85,
+    172,
+    91
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del tramo 1; lado camara"
+  },
+  {
+   "id": "MF-X01",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    160,
+    50,
+    166,
+    60
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle taller-escape; lado camara"
+  },
+  {
+   "id": "MF-X02",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    166,
+    50,
+    172,
+    60
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle taller-escape; lado camara"
+  },
+  {
+   "id": "MF-X03",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    172,
+    50,
+    178,
+    60
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la calle taller-escape; lado camara"
+  },
+  {
+   "id": "MF-E01",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    68,
+    195,
+    74
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 1"
+  },
+  {
+   "id": "MF-E02",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    74,
+    195,
+    80
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 1"
+  },
+  {
+   "id": "MF-E03",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    80,
+    195,
+    86
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 1"
+  },
+  {
+   "id": "MF-E04",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    86,
+    195,
+    92
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 1"
+  },
+  {
+   "id": "MF-D1",
+   "group": "M-F",
+   "fam": "AR05",
+   "rect": [
+    195,
+    84,
+    205,
+    97
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Deposito 10 x 13"
+  },
+  {
+   "id": "MF-N01",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    100.5,
+    189,
+    110.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MF-N02",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    189,
+    100.5,
+    195,
+    110.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MF-D2",
+   "group": "M-F",
+   "fam": "AR05",
+   "rect": [
+    199,
+    100.5,
+    212,
+    110.5
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Deposito 13 x 10"
+  },
+  {
+   "id": "MF-R01",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    124,
+    195,
+    130
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 2"
+  },
+  {
+   "id": "MF-R02",
+   "group": "M-F",
+   "fam": "AR01",
+   "rect": [
+    183,
+    130,
+    195,
+    136
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del tramo 2"
+  },
+  {
+   "id": "MG-S01",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    206,
+    68,
+    212,
+    78
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta verde"
+  },
+  {
+   "id": "MG-S02",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    212,
+    68,
+    218,
+    78
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta verde"
+  },
+  {
+   "id": "MG-S03",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    218,
+    68,
+    224,
+    78
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte de la ruta verde"
+  },
+  {
+   "id": "MG-B01",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    179,
+    52,
+    185,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B02",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    185,
+    52,
+    191,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B03",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    191,
+    52,
+    197,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B04",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    197,
+    52,
+    203,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B05",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    203,
+    52,
+    209,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B06",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    209,
+    52,
+    215,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-B07",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    215,
+    52,
+    221,
+    64
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur de la ruta verde; lado camara"
+  },
+  {
+   "id": "MG-E01",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    64,
+    238.5,
+    70
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del corredor de evidencias"
+  },
+  {
+   "id": "MG-E02",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    70,
+    238.5,
+    76
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del corredor de evidencias"
+  },
+  {
+   "id": "MG-E03",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    76,
+    238.5,
+    82
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del corredor de evidencias"
+  },
+  {
+   "id": "MG-E04",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    82,
+    238.5,
+    88
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del corredor de evidencias"
+  },
+  {
+   "id": "MG-E05",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    88,
+    238.5,
+    94
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del corredor de evidencias"
+  },
+  {
+   "id": "MG-F01",
+   "group": "M-G",
+   "fam": "AR05",
+   "rect": [
+    228.5,
+    94,
+    238.5,
+    107
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Depositos al este del corredor"
+  },
+  {
+   "id": "MG-F02",
+   "group": "M-G",
+   "fam": "AR05",
+   "rect": [
+    228.5,
+    107,
+    238.5,
+    120
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Depositos al este del corredor"
+  },
+  {
+   "id": "MG-F03",
+   "group": "M-G",
+   "fam": "AR05",
+   "rect": [
+    228.5,
+    120,
+    238.5,
+    132
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Depositos al este del corredor"
+  },
+  {
+   "id": "MG-G01",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    132,
+    238.5,
+    138
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MG-G02",
+   "group": "M-G",
+   "fam": "AR01",
+   "rect": [
+    228.5,
+    138,
+    238.5,
+    144
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": ""
+  },
+  {
+   "id": "MH-01",
+   "group": "M-H",
+   "fam": "AR02",
+   "rect": [
+    176,
+    146,
+    183,
+    158
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del transito"
+  },
+  {
+   "id": "MH-02",
+   "group": "M-H",
+   "fam": "AR02",
+   "rect": [
+    183,
+    146,
+    190,
+    158
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del transito"
+  },
+  {
+   "id": "MH-03",
+   "group": "M-H",
+   "fam": "AR02",
+   "rect": [
+    190,
+    146,
+    197,
+    158
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del transito"
+  },
+  {
+   "id": "MH-04",
+   "group": "M-H",
+   "fam": "AR02",
+   "rect": [
+    196,
+    127,
+    203,
+    139
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Sur del transito"
+  },
+  {
+   "id": "MI-W01",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    24,
+    137,
+    37,
+    144
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del archivo"
+  },
+  {
+   "id": "MI-W02",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    24,
+    144,
+    37,
+    151
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del archivo"
+  },
+  {
+   "id": "MI-W03",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    24,
+    151,
+    37,
+    158
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del archivo"
+  },
+  {
+   "id": "MI-W04",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    24,
+    158,
+    37,
+    165
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del archivo"
+  },
+  {
+   "id": "MI-W05",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    24,
+    165,
+    37,
+    172
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del archivo"
+  },
+  {
+   "id": "MI-F01",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    64,
+    106,
+    76,
+    112
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del antepatio (graderio/fachada); lado camara"
+  },
+  {
+   "id": "MI-F02",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    64,
+    112,
+    76,
+    118
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del antepatio (graderio/fachada); lado camara"
+  },
+  {
+   "id": "MI-F03",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    64,
+    118,
+    76,
+    124
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del antepatio (graderio/fachada); lado camara"
+  },
+  {
+   "id": "MI-F04",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    64,
+    124,
+    76,
+    130
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del antepatio (graderio/fachada); lado camara"
+  },
+  {
+   "id": "MI-F05",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    64,
+    130,
+    76,
+    136
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Oeste del antepatio (graderio/fachada); lado camara"
+  },
+  {
+   "id": "MI-C01",
+   "group": "M-I",
+   "fam": "AR10",
+   "rect": [
+    112,
+    118,
+    118,
+    124
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Cobertizos entre paso central y patio de acceso"
+  },
+  {
+   "id": "MI-C02",
+   "group": "M-I",
+   "fam": "AR10",
+   "rect": [
+    118,
+    118,
+    124,
+    124
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Cobertizos entre paso central y patio de acceso"
+  },
+  {
+   "id": "MI-C03",
+   "group": "M-I",
+   "fam": "AR10",
+   "rect": [
+    124,
+    118,
+    130,
+    124
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Cobertizos entre paso central y patio de acceso"
+  },
+  {
+   "id": "MI-P01",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    130,
+    118,
+    136,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P02",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    136,
+    118,
+    142,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P03",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    142,
+    118,
+    148,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P04",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    148,
+    118,
+    154,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P05",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    154,
+    118,
+    160,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P06",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    160,
+    118,
+    166,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-P07",
+   "group": "M-I",
+   "fam": "AR01",
+   "rect": [
+    166,
+    118,
+    172,
+    130
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Norte del paso central"
+  },
+  {
+   "id": "MI-A01",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    130,
+    130,
+    143,
+    138
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del patio de acceso"
+  },
+  {
+   "id": "MI-A02",
+   "group": "M-I",
+   "fam": "AR02",
+   "rect": [
+    130,
+    138,
+    143,
+    146
+   ],
+   "front": "W",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Este del patio de acceso"
+  },
+  {
+   "id": "MJ-W01",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    12,
+    28,
+    23,
+    34
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo oeste tras la calle escenografica"
+  },
+  {
+   "id": "MJ-W02",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    12,
+    34,
+    23,
+    40
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo oeste tras la calle escenografica"
+  },
+  {
+   "id": "MJ-W03",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    12,
+    40,
+    23,
+    46
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo oeste tras la calle escenografica"
+  },
+  {
+   "id": "MJ-W04",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    12,
+    46,
+    23,
+    52
+   ],
+   "front": "E",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo oeste tras la calle escenografica"
+  },
+  {
+   "id": "MJ-N01",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    58,
+    170,
+    64,
+    179
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo norte tras el archivo"
+  },
+  {
+   "id": "MJ-N02",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    64,
+    170,
+    70,
+    179
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo norte tras el archivo"
+  },
+  {
+   "id": "MJ-N03",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    70,
+    170,
+    76,
+    179
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo norte tras el archivo"
+  },
+  {
+   "id": "MJ-N04",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    76,
+    170,
+    82,
+    179
+   ],
+   "front": "S",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo norte tras el archivo"
+  },
+  {
+   "id": "MJ-S01",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    146,
+    30,
+    152,
+    40
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo sureste tras el taller"
+  },
+  {
+   "id": "MJ-S02",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    152,
+    30,
+    158,
+    40
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo sureste tras el taller"
+  },
+  {
+   "id": "MJ-S03",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    158,
+    30,
+    164,
+    40
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo sureste tras el taller"
+  },
+  {
+   "id": "MJ-S04",
+   "group": "M-J",
+   "fam": "AR01",
+   "rect": [
+    164,
+    30,
+    170,
+    40
+   ],
+   "front": "N",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Fondo sureste tras el taller"
+  },
+  {
+   "id": "SIL-01",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    170,
+    18,
+    230,
+    33
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  },
+  {
+   "id": "SIL-02",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    0,
+    100,
+    22,
+    176
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  },
+  {
+   "id": "SIL-03",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    130,
+    163,
+    196,
+    179
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  },
+  {
+   "id": "SIL-04",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    118,
+    167,
+    130,
+    179
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  },
+  {
+   "id": "SIL-05",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    0,
+    16,
+    11,
+    100
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  },
+  {
+   "id": "SIL-06",
+   "group": "SIL",
+   "fam": "SIL",
+   "rect": [
+    237,
+    16,
+    240,
+    176
+   ],
+   "front": "-",
+   "special": false,
+   "interior": [],
+   "doors": [],
+   "note": "Masa de tejados/silueta lejana, sin NavMesh"
+  }
+ ],
+ "walls": [
+  {
+   "id": "WL-REF-S1",
+   "rect": [
+    197,
+    145,
+    204,
+    145.5
+   ]
+  },
+  {
+   "id": "WL-REF-S2",
+   "rect": [
+    207,
+    145,
+    224.5,
+    145.5
+   ]
+  },
+  {
+   "id": "WL-REF-S3",
+   "rect": [
+    228,
+    145,
+    235.5,
+    145.5
+   ]
+  },
+  {
+   "id": "WL-REF-W",
+   "rect": [
+    196.5,
+    145,
+    197,
+    174
+   ]
+  },
+  {
+   "id": "WL-REF-N",
+   "rect": [
+    196.5,
+    173.5,
+    235.5,
+    174
+   ]
+  },
+  {
+   "id": "WL-REF-E",
+   "rect": [
+    235,
+    145,
+    235.5,
+    174
+   ]
+  },
+  {
+   "id": "WL-REF-I",
+   "rect": [
+    202,
+    162.5,
+    222,
+    163
+   ]
+  },
+  {
+   "id": "WL-FC-E1",
+   "rect": [
+    111.75,
+    124,
+    112.25,
+    128
+   ]
+  },
+  {
+   "id": "WL-FC-E2",
+   "rect": [
+    111.75,
+    132.5,
+    112.25,
+    137
+   ]
+  },
+  {
+   "id": "WL-FC-STEP",
+   "rect": [
+    100,
+    137,
+    112,
+    146
+   ]
+  },
+  {
+   "id": "WL-FC-SW",
+   "rect": [
+    76,
+    137,
+    84,
+    146
+   ]
+  },
+  {
+   "id": "WL-PTW-W",
+   "rect": [
+    145.5,
+    58,
+    146,
+    71
+   ]
+  },
+  {
+   "id": "WL-PTW-N",
+   "rect": [
+    146,
+    71,
+    160,
+    71.5
+   ]
+  },
+  {
+   "id": "WL-PTW-E1",
+   "rect": [
+    159.75,
+    58,
+    160.25,
+    62.5
+   ]
+  },
+  {
+   "id": "WL-PTW-E2",
+   "rect": [
+    159.75,
+    65.5,
+    160.25,
+    71
+   ]
+  },
+  {
+   "id": "WL-SAV-W",
+   "rect": [
+    83.5,
+    2,
+    84,
+    14
+   ]
+  },
+  {
+   "id": "WL-SAV-E",
+   "rect": [
+    124,
+    2,
+    124.5,
+    14
+   ]
+  },
+  {
+   "id": "WL-ESC-A",
+   "rect": [
+    179,
+    68,
+    183,
+    72
+   ]
+  },
+  {
+   "id": "WL-ESC-B",
+   "rect": [
+    179,
+    78,
+    183,
+    80
+   ]
+  },
+  {
+   "id": "WL-ESC-C",
+   "rect": [
+    182.5,
+    84,
+    183,
+    91
+   ]
+  },
+  {
+   "id": "WL-SW-S",
+   "rect": [
+    29,
+    14,
+    30,
+    24
+   ]
+  }
+ ],
+ "gates": [
+  {
+   "id": "G-07",
+   "rect": [
+    159.75,
+    62.5,
+    160.25,
+    65.5
+   ],
+   "width": 3.0,
+   "owner": "C/B (BP_Door, Jack)",
+   "behaviour": "Puerta lateral del taller (N07). Cerrada en Acto I; se abre al final del encuentro con Jack."
+  },
+  {
+   "id": "G-PN-S",
+   "rect": [
+    84,
+    84,
+    92,
+    84.5
+   ],
+   "width": 8.0,
+   "owner": "C (BP_Door)",
+   "behaviour": "[PROPUESTA] Verja de la calle norte. Cerrada en Actos I-II (evita saltar al escape por la ruta azul)."
+  },
+  {
+   "id": "G-PN-N",
+   "rect": [
+    84,
+    105.5,
+    92,
+    106
+   ],
+   "width": 8.0,
+   "owner": "C (BP_Door)",
+   "behaviour": "[PROPUESTA] Reja al antepatio desde la calle norte. Abre en Acto III."
+  },
+  {
+   "id": "G-CP",
+   "rect": [
+    112,
+    112,
+    112.5,
+    118
+   ],
+   "width": 6.0,
+   "owner": "C (BP_Door)",
+   "behaviour": "[PROPUESTA] Reja del antepatio en el paso central. Abre al registrar las dos evidencias."
+  },
+  {
+   "id": "G-AC",
+   "rect": [
+    111.75,
+    128,
+    112.25,
+    132.5
+   ],
+   "width": 4.5,
+   "owner": "C (BP_Door)",
+   "behaviour": "Reja N18 (acceso lateral). Abre al derrotar al Supervisor; checkpoint."
+  },
+  {
+   "id": "G-ARCH",
+   "rect": [
+    90,
+    145.4,
+    94.5,
+    145.9
+   ],
+   "width": 4.5,
+   "owner": "C",
+   "behaviour": "[DECISION] Puertas frontales del archivo: bloqueo narrativo (selladas) o entrada principal."
+  },
+  {
+   "id": "G-WING",
+   "rect": [
+    113.5,
+    145.6,
+    116.5,
+    146.1
+   ],
+   "width": 3.0,
+   "owner": "C",
+   "behaviour": "Puerta del ala este (segundo porton hacia N19)."
+  },
+  {
+   "id": "G-REF-M",
+   "rect": [
+    204,
+    145,
+    207,
+    145.5
+   ],
+   "width": 3.0,
+   "owner": "C",
+   "behaviour": "Porton principal del refugio (N11). Abierto en Acto II."
+  },
+  {
+   "id": "G-REF-S",
+   "rect": [
+    224.5,
+    145,
+    228,
+    145.5
+   ],
+   "width": 3.5,
+   "owner": "C",
+   "behaviour": "Porton de servicio del refugio. Cerrado hasta que Jack esta a salvo."
+  },
+  {
+   "id": "G-A3",
+   "rect": [
+    165.5,
+    98,
+    166,
+    102.5
+   ],
+   "width": 4.5,
+   "owner": "C",
+   "behaviour": "Puerta opcional de la ruta azul (abierta)."
+  },
+  {
+   "id": "G-B1",
+   "rect": [
+    179,
+    64,
+    179.5,
+    68
+   ],
+   "width": 4.0,
+   "owner": "C",
+   "behaviour": "[PROPUESTA] Ruta verde desde el escape: cerrada hasta que Jack esta a salvo."
+  },
+  {
+   "id": "G-B2",
+   "rect": [
+    183,
+    97,
+    183.5,
+    100.5
+   ],
+   "width": 3.5,
+   "owner": "C",
+   "behaviour": "[PROPUESTA] Retorno evidencias-escape: cerrada hasta que Jack esta a salvo."
+  }
+ ],
+ "phases": [
+  {
+   "name": "Acto I",
+   "closed": [
+    "G-07",
+    "G-AC",
+    "G-ARCH",
+    "G-B1",
+    "G-B2",
+    "G-CP",
+    "G-PN-N",
+    "G-PN-S",
+    "G-REF-S",
+    "G-WING"
+   ],
+   "expectedReachable": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07"
+   ]
+  },
+  {
+   "name": "Acto II escape",
+   "closed": [
+    "G-AC",
+    "G-ARCH",
+    "G-B1",
+    "G-B2",
+    "G-CP",
+    "G-PN-N",
+    "G-PN-S",
+    "G-REF-S",
+    "G-WING"
+   ],
+   "expectedReachable": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N15",
+    "N16"
+   ]
+  },
+  {
+   "name": "Acto II evidencias",
+   "closed": [
+    "G-AC",
+    "G-ARCH",
+    "G-CP",
+    "G-PN-N",
+    "G-PN-S",
+    "G-WING"
+   ],
+   "expectedReachable": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16"
+   ]
+  },
+  {
+   "name": "Acto III jefe",
+   "closed": [
+    "G-AC",
+    "G-ARCH",
+    "G-PN-S",
+    "G-WING"
+   ],
+   "expectedReachable": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17"
+   ]
+  },
+  {
+   "name": "Acto III archivo",
+   "closed": [
+    "G-ARCH",
+    "G-PN-S"
+   ],
+   "expectedReachable": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20"
+   ]
+  }
+ ],
+ "props": [
+  {
+   "id": "PR-FOUNT",
+   "kind": "fuente",
+   "rect": [
+    72.5,
+    45.5,
+    77.5,
+    50.5
+   ],
+   "asset": "SM_Fountain_Square + base nueva"
+  },
+  {
+   "id": "PR-STALL-N1",
+   "kind": "puesto",
+   "rect": [
+    47.0,
+    67.0,
+    52.0,
+    70.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-N2",
+   "kind": "puesto",
+   "rect": [
+    55.0,
+    67.0,
+    60.0,
+    70.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-N3",
+   "kind": "puesto",
+   "rect": [
+    63.0,
+    67.0,
+    68.0,
+    70.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-S1",
+   "kind": "puesto",
+   "rect": [
+    47.0,
+    26.0,
+    52.0,
+    29.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-S2",
+   "kind": "puesto",
+   "rect": [
+    55.0,
+    26.0,
+    60.0,
+    29.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-S3",
+   "kind": "puesto",
+   "rect": [
+    63.0,
+    26.0,
+    68.0,
+    29.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-STALL-S4",
+   "kind": "puesto",
+   "rect": [
+    71.0,
+    26.0,
+    76.0,
+    29.5
+   ],
+   "asset": "SM_MarketStall (generar)"
+  },
+  {
+   "id": "PR-CART-PL",
+   "kind": "carro",
+   "rect": [
+    41.8,
+    42.0,
+    44.0,
+    46.5
+   ],
+   "asset": "SM_Cart_Victorian (generar)"
+  },
+  {
+   "id": "PR-LAMP-01",
+   "kind": "farola",
+   "rect": [
+    43.2,
+    32.7,
+    43.8,
+    33.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-02",
+   "kind": "farola",
+   "rect": [
+    43.2,
+    63.7,
+    43.8,
+    64.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-03",
+   "kind": "farola",
+   "rect": [
+    106.2,
+    26.7,
+    106.8,
+    27.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-04",
+   "kind": "farola",
+   "rect": [
+    106.2,
+    68.7,
+    106.8,
+    69.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-05",
+   "kind": "farola",
+   "rect": [
+    100.2,
+    11.7,
+    100.8,
+    12.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-06",
+   "kind": "farola",
+   "rect": [
+    119.7,
+    51.1,
+    120.3,
+    51.699999999999996
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-07",
+   "kind": "farola",
+   "rect": [
+    172.29999999999998,
+    81.7,
+    172.9,
+    82.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-08",
+   "kind": "farola",
+   "rect": [
+    182.1,
+    116.2,
+    182.70000000000002,
+    116.8
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-09",
+   "kind": "farola",
+   "rect": [
+    176.29999999999998,
+    134.7,
+    176.9,
+    135.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-10",
+   "kind": "farola",
+   "rect": [
+    185.7,
+    144.1,
+    186.3,
+    144.70000000000002
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-11",
+   "kind": "farola",
+   "rect": [
+    129.7,
+    112.10000000000001,
+    130.3,
+    112.7
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-12",
+   "kind": "farola",
+   "rect": [
+    149.7,
+    117.3,
+    150.3,
+    117.89999999999999
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-13",
+   "kind": "farola",
+   "rect": [
+    76.7,
+    107.7,
+    77.3,
+    108.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-14",
+   "kind": "farola",
+   "rect": [
+    110.2,
+    135.2,
+    110.8,
+    135.8
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-15",
+   "kind": "farola",
+   "rect": [
+    203.7,
+    161.2,
+    204.3,
+    161.8
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-16",
+   "kind": "farola",
+   "rect": [
+    223.1,
+    103.7,
+    223.70000000000002,
+    104.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-LAMP-17",
+   "kind": "farola",
+   "rect": [
+    84.10000000000001,
+    78.7,
+    84.7,
+    79.3
+   ],
+   "asset": "BP_GasLamp / SM_GasLamp_A"
+  },
+  {
+   "id": "PR-COV-PL1",
+   "kind": "caja",
+   "rect": [
+    42.0,
+    36.4,
+    43.2,
+    37.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-PL2",
+   "kind": "caja",
+   "rect": [
+    42.0,
+    57.4,
+    43.2,
+    58.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-PL3",
+   "kind": "barril",
+   "rect": [
+    107.0,
+    37.6,
+    107.80000000000001,
+    38.4
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-PL4",
+   "kind": "caja",
+   "rect": [
+    106.80000000000001,
+    59.4,
+    108.0,
+    60.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-PL5",
+   "kind": "caja",
+   "rect": [
+    79.4,
+    24.599999999999998,
+    80.6,
+    25.8
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-PL6",
+   "kind": "barril",
+   "rect": [
+    91.6,
+    24.6,
+    92.4,
+    25.4
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-PL7",
+   "kind": "caja",
+   "rect": [
+    74.4,
+    70.4,
+    75.6,
+    71.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-PL8",
+   "kind": "barril",
+   "rect": [
+    99.6,
+    70.8,
+    100.4,
+    71.60000000000001
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-ES1",
+   "kind": "caja",
+   "rect": [
+    172.1,
+    73.4,
+    173.29999999999998,
+    74.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-ES2",
+   "kind": "barril",
+   "rect": [
+    178.1,
+    62.1,
+    178.9,
+    62.9
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-ES3",
+   "kind": "caja",
+   "rect": [
+    180.9,
+    74.4,
+    182.1,
+    75.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-ES4",
+   "kind": "barril",
+   "rect": [
+    181.2,
+    72.6,
+    182.0,
+    73.4
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-ES5",
+   "kind": "caja",
+   "rect": [
+    184.4,
+    120.4,
+    185.6,
+    121.6
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-ES6",
+   "kind": "barril",
+   "rect": [
+    182.1,
+    129.6,
+    182.9,
+    130.4
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-ES7",
+   "kind": "caja",
+   "rect": [
+    99.4,
+    95.30000000000001,
+    100.6,
+    96.5
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-ES8",
+   "kind": "barril",
+   "rect": [
+    127.6,
+    92.1,
+    128.4,
+    92.9
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-RF1",
+   "kind": "caja",
+   "rect": [
+    202.6,
+    159.9,
+    203.79999999999998,
+    161.1
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-RF2",
+   "kind": "barril",
+   "rect": [
+    202.79999999999998,
+    158.1,
+    203.6,
+    158.9
+   ],
+   "asset": "SM_Barrel_A"
+  },
+  {
+   "id": "PR-COV-RF3",
+   "kind": "caja",
+   "rect": [
+    220.6,
+    146.0,
+    221.79999999999998,
+    147.2
+   ],
+   "asset": "SM_CrateStack_A"
+  },
+  {
+   "id": "PR-COV-RF4",
+   "kind": "carretilla",
+   "rect": [
+    219.95,
+    159.6,
+    221.05,
+    161.4
+   ],
+   "asset": "SM_Handcart_A (escala 0,65)"
+  },
+  {
+   "id": "PR-PILLAR-1",
+   "kind": "pilar",
+   "rect": [
+    77.5,
+    112.0,
+    79.5,
+    114.0
+   ],
+   "asset": "SM_ArchivePillar_A"
+  },
+  {
+   "id": "PR-PILLAR-2",
+   "kind": "pilar",
+   "rect": [
+    77.5,
+    130.0,
+    79.5,
+    132.0
+   ],
+   "asset": "SM_ArchivePillar_A"
+  },
+  {
+   "id": "PR-PILLAR-3",
+   "kind": "pilar",
+   "rect": [
+    108.5,
+    112.0,
+    110.5,
+    114.0
+   ],
+   "asset": "SM_ArchivePillar_A"
+  },
+  {
+   "id": "PR-PILLAR-4",
+   "kind": "pilar",
+   "rect": [
+    108.5,
+    130.0,
+    110.5,
+    132.0
+   ],
+   "asset": "SM_ArchivePillar_A"
+  },
+  {
+   "id": "PR-TABLE-W",
+   "kind": "mesa",
+   "rect": [
+    142.0,
+    55.05,
+    144.0,
+    55.95
+   ],
+   "asset": "SM_WorkshopTable_A"
+  },
+  {
+   "id": "PR-SHELF-W1",
+   "kind": "estante",
+   "rect": [
+    155.05,
+    42.5,
+    155.55,
+    44.5
+   ],
+   "asset": "SM_Shelf_A"
+  },
+  {
+   "id": "PR-SHELF-W2",
+   "kind": "estante",
+   "rect": [
+    155.05,
+    52.5,
+    155.55,
+    54.5
+   ],
+   "asset": "SM_Shelf_A"
+  },
+  {
+   "id": "PR-DESK-INF",
+   "kind": "escritorio",
+   "rect": [
+    209.1,
+    125.075,
+    210.9,
+    125.925
+   ],
+   "asset": "SM_Desk_Infirmary (generar)"
+  },
+  {
+   "id": "PR-DESK-RPT",
+   "kind": "escritorio",
+   "rect": [
+    211.2,
+    92.1,
+    212.8,
+    92.9
+   ],
+   "asset": "SM_WorkshopTable_A o SM_Desk_Agency"
+  },
+  {
+   "id": "PR-ST-OFF",
+   "kind": "estacion",
+   "rect": [
+    73.5,
+    162.8,
+    75.5,
+    164.2
+   ],
+   "asset": "SM_RecordStation_Official + base"
+  },
+  {
+   "id": "PR-ST-AUT",
+   "kind": "estacion",
+   "rect": [
+    78.5,
+    162.8,
+    80.5,
+    164.2
+   ],
+   "asset": "SM_RecordStation_Authentic + base"
+  },
+  {
+   "id": "PR-COT",
+   "kind": "catre",
+   "rect": [
+    231.775,
+    157.275,
+    233.225,
+    159.725
+   ],
+   "asset": "SM_Cot_A"
+  }
+ ],
+ "mustStayClear": [
+  {
+   "name": "Arena plaza A 18x16",
+   "rect": [
+    46,
+    40,
+    64,
+    56
+   ]
+  },
+  {
+   "name": "Arena plaza B 16x14",
+   "rect": [
+    88,
+    41,
+    104,
+    55
+   ]
+  },
+  {
+   "name": "Ensanche de escape 17x15",
+   "rect": [
+    166,
+    91,
+    183,
+    106
+   ]
+  },
+  {
+   "name": "Arena Supervisor 26x24",
+   "rect": [
+    81,
+    110,
+    107,
+    134
+   ]
+  },
+  {
+   "name": "Sala final libre 15x10",
+   "rect": [
+    69.5,
+    151.5,
+    84.5,
+    161.5
+   ]
+  },
+  {
+   "name": "Espera de Jack 5x5 (refugio)",
+   "rect": [
+    211.5,
+    155.5,
+    216.5,
+    160.5
+   ]
+  },
+  {
+   "name": "Interaccion Jack r2,5 (taller)",
+   "rect": [
+    147.5,
+    49.5,
+    152.5,
+    54.5
+   ]
+  },
+  {
+   "name": "Spawn r3",
+   "rect": [
+    101,
+    6,
+    107,
+    12
+   ]
+  },
+  {
+   "name": "Frente estacion oficial 2,5",
+   "rect": [
+    73.5,
+    160.5,
+    75.5,
+    162.8
+   ]
+  },
+  {
+   "name": "Frente estacion autentica 2,5",
+   "rect": [
+    78.5,
+    160.5,
+    80.5,
+    162.8
+   ]
+  },
+  {
+   "name": "Frente escritorio informe 2x2",
+   "rect": [
+    211,
+    90.1,
+    213,
+    92.1
+   ]
+  },
+  {
+   "name": "Patio intermedio 12x10",
+   "rect": [
+    130,
+    92,
+    142,
+    102
+   ]
+  },
+  {
+   "name": "Patio trasero taller 14x13 (sin la mesa)",
+   "rect": [
+    146,
+    58,
+    160,
+    71
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "id": "R-MAIN-1",
+   "nodes": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06"
+   ],
+   "minWidth": 1.0,
+   "phase": "Acto I",
+   "desc": "Llegada, plaza y calle al taller"
+  },
+  {
+   "id": "R-MAIN-2",
+   "nodes": [
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12"
+   ],
+   "minWidth": 1.0,
+   "phase": "Acto II",
+   "desc": "Escape con Jack (cuellos 4,5 m)"
+  },
+  {
+   "id": "R-MAIN-3",
+   "nodes": [
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16"
+   ],
+   "minWidth": 1.0,
+   "phase": "Acto II",
+   "desc": "Evidencias y regreso al eje"
+  },
+  {
+   "id": "R-MAIN-4",
+   "nodes": [
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20"
+   ],
+   "minWidth": 1.0,
+   "phase": "Acto III",
+   "desc": "Jefe, reja, archivo, eleccion"
+  },
+  {
+   "id": "R-ALT-A",
+   "nodes": [
+    "N09",
+    "N15"
+   ],
+   "minWidth": 2.7,
+   "phase": "Acto II",
+   "desc": "Ruta azul: ensanche -> AL-A3 -> patio -> arco -> paso central"
+  },
+  {
+   "id": "R-ALT-B",
+   "nodes": [
+    "N08",
+    "N14",
+    "N13",
+    "N12"
+   ],
+   "minWidth": 2.2,
+   "phase": "Acto II tras Jack",
+   "desc": "Ruta verde: escape -> informe -> enfermeria -> refugio"
+  },
+  {
+   "id": "R-JACK",
+   "nodes": [
+    "J0",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12"
+   ],
+   "minWidth": 2.4,
+   "phase": "Acto II",
+   "desc": "Trayecto de Jack desde su puesto en el taller (J0) al refugio"
+  }
+ ],
+ "families": {
+  "AR01": {
+   "name": "Vivienda pequena 5,5-6 x 10-12",
+   "hMin": 6.5,
+   "hMax": 7.5,
+   "candidate": "SM_House_Brick"
+  },
+  "AR02": {
+   "name": "Vivienda mediana 7 x 12-13",
+   "hMin": 8.0,
+   "hMax": 10.0,
+   "candidate": "SM_House_Filler"
+  },
+  "AR03": {
+   "name": "Comercio 8-9 x 12-13",
+   "hMin": 8.5,
+   "hMax": 11.0,
+   "candidate": "SM_House_Shop"
+  },
+  "AR04": {
+   "name": "Esquina de manzana",
+   "hMin": 7.0,
+   "hMax": 9.0,
+   "candidate": "SM_House_Corner"
+  },
+  "AR05": {
+   "name": "Almacen / deposito 10-15 x 11-18",
+   "hMin": 7.5,
+   "hMax": 10.0,
+   "candidate": "SM_House_Filler / SM_House_Workshop"
+  },
+  "AR06": {
+   "name": "Taller de Jack 16 x 18",
+   "hMin": 6.0,
+   "hMax": 7.0,
+   "candidate": "SM_House_Workshop"
+  },
+  "AR07": {
+   "name": "Casa-refugio 13 x 12",
+   "hMin": 7.0,
+   "hMax": 9.0,
+   "candidate": "SM_House_Brick / SM_House_ShopLow"
+  },
+  "AR08": {
+   "name": "Enfermeria 18 x 20",
+   "hMin": 9.0,
+   "hMax": 11.0,
+   "candidate": "-"
+  },
+  "AR09": {
+   "name": "Archivo (cuerpos)",
+   "hMin": 10.0,
+   "hMax": 14.0,
+   "candidate": "SM_House_Agency"
+  },
+  "AR10": {
+   "name": "Cobertizo / anexo 4-6 x 6-9",
+   "hMin": 3.0,
+   "hMax": 4.5,
+   "candidate": "-"
+  }
+ }
+}
