@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "preserved_graphs": [
+    "UserConstructionScript",
+    "DoMove",
+    "FaceCursor",
+    "EndAttack",
+    "EndDodge",
+    "EndParry",
+    "RestartLevel",
+    "AttackHit",
+    "Die",
+    "TakeHit",
+    "DoLightAttack",
+    "DoDodge",
+    "DoParry",
+    "CutReadyAgain",
+    "DoTemporalCut",
+    "DoRetake",
+    "B_ResumePlayerAtCheckpoint",
+    "A_UpdateCursorFacing",
+    "A_EndHitStop",
+    "A_PrepareDeathVisual",
+    "A_FinishDeathPresentation",
+    "A_CancelDeathPresentation",
+    "EventGraph",
+    "ReceiveCombatHit",
+    "IsDefeated",
+    "GetStealthComponent"
+  ],
+  "changed_graphs": [
+    "DoHeavyAttack",
+    "A_HeavyHit",
+    "A_EndHeavyAttack",
+    "A_CancelHeavyAttack",
+    "A_CancelHeavyIfBlocked"
+  ],
+  "added_graphs": [
+    "A_HeavyImpactFX"
+  ]
+}
