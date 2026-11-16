@@ -1,0 +1,218 @@
+{
+  "passed": true,
+  "error": null,
+  "checks": [
+    {
+      "name": "Player/BP_PlayerCharacter compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_GuardBase compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Pursuer compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Interventor compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Enemies/BP_Supervisor compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Agent compatible skeleton",
+      "passed": true
+    },
+    {
+      "name": "Agent two second nonlooping presentation",
+      "passed": true
+    },
+    {
+      "name": "Agent no imported entry displacement",
+      "passed": true
+    },
+    {
+      "name": "Agent restrained vertical recoil",
+      "passed": true
+    },
+    {
+      "name": "Agent hips finish near ground",
+      "passed": true
+    },
+    {
+      "name": "Agent head finishes near ground",
+      "passed": true
+    },
+    {
+      "name": "Agent no joint below floor",
+      "passed": true
+    },
+    {
+      "name": "Agent held final pose",
+      "passed": true
+    },
+    {
+      "name": "Agent continuous pelvis trajectory",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A compatible skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A two second nonlooping presentation",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A no imported entry displacement",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A restrained vertical recoil",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A hips finish near ground",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A head finishes near ground",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A no joint below floor",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A held final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_A continuous pelvis trajectory",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B compatible skeleton",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B two second nonlooping presentation",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B no imported entry displacement",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B restrained vertical recoil",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B hips finish near ground",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B head finishes near ground",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B no joint below floor",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B held final pose",
+      "passed": true
+    },
+    {
+      "name": "Pursuer_B continuous pelvis trajectory",
+      "passed": true
+    },
+    {
+      "name": "Interventor compatible skeleton",
+      "passed": true
+    },
+    {
+      "name": "Interventor two second nonlooping presentation",
+      "passed": true
+    },
+    {
+      "name": "Interventor no imported entry displacement",
+      "passed": true
+    },
+    {
+      "name": "Interventor restrained vertical recoil",
+      "passed": true
+    },
+    {
+      "name": "Interventor hips finish near ground",
+      "passed": true
+    },
+    {
+      "name": "Interventor head finishes near ground",
+      "passed": true
+    },
+    {
+      "name": "Interventor no joint below floor",
+      "passed": true
+    },
+    {
+      "name": "Interventor held final pose",
+      "passed": true
+    },
+    {
+      "name": "Interventor continuous pelvis trajectory",
+      "passed": true
+    },
+    {
+      "name": "Supervisor compatible skeleton",
+      "passed": true
+    },
+    {
+      "name": "Supervisor two second nonlooping presentation",
+      "passed": true
+    },
+    {
+      "name": "Supervisor no imported entry displacement",
+      "passed": true
+    },
+    {
+      "name": "Supervisor restrained vertical recoil",
+      "passed": true
+    },
+    {
+      "name": "Supervisor hips finish near ground",
+      "passed": true
+    },
+    {
+      "name": "Supervisor head finishes near ground",
+      "passed": true
+    },
+    {
+      "name": "Supervisor no joint below floor",
+      "passed": true
+    },
+    {
+      "name": "Supervisor held final pose",
+      "passed": true
+    },
+    {
+      "name": "Supervisor continuous pelvis trajectory",
+      "passed": true
+    },
+    {
+      "name": "Enemy death keeps mesh evaluating",
+      "passed": true
+    },
+    {
+      "name": "Player death defers story event until presentation ends",
+      "passed": true
+    },
+    {
+      "name": "Checkpoint cancels pending death notification",
+      "passed": true
+    }
+  ]
+}

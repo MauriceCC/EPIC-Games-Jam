@@ -1,5 +1,10 @@
 # Pulido de animaciones A/B — 2026-11-15
 
+**Actualización de muertes:** la caída genérica de este pase queda sustituida
+por el [pulido específico de muerte](DEATH_PRESENTATION.md). El generador general
+delega ahora los cinco clips a `a_build_death_motion.py`; aplicar también
+`a_install_death_presentation.py` para el cableado de derrota y checkpoint.
+
 Autorización del usuario: A y B para esta tarea. **[PROPUESTA]** Ajustes de presentación con clips existentes; no modifica contratos, mapas ni originales de D.
 
 ## Cambios
