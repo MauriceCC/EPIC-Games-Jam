@@ -1,5 +1,11 @@
 # División A — Agente: jugador, combate y poderes temporales
 
+**Pulido de muerte (2026-11-15):** autorización puntual de integración A/B.
+**[PROPUESTA]** Caída articulada con trayectoria corregida, velocidad normal,
+protección frente a llamadas repetidas y notificación de derrota tras 2,05 s.
+Checkpoint cancela la presentación pendiente. Implementación y validación:
+[`Scripts/A/DEATH_PRESENTATION.md`](../../Scripts/A/DEATH_PRESENTATION.md).
+
 > **Base confirmada:** Unscripted · UE 5.8.4 · Blueprint. Todo contenido para el jugador debe estar en inglés, incluidos placeholders visibles. Ver [arranque F0](02_ARRANQUE_F0.md). Las rutas de contenido son relativas a `Unscripted/`; `Scripts/` y `SourceData/` parten del repositorio.
 
 **Persona:** Mauricio (confirmado 2026-11-15) · **Rama:** `a/<tarea>` · **Commits:** `[A] …`
