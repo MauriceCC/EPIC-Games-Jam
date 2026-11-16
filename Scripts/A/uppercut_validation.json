@@ -1,0 +1,471 @@
+{
+  "passed": true,
+  "error": null,
+  "checks": [
+    {
+      "name": "BP_PlayerCharacter compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "BP_PlayerController compiles without warnings",
+      "passed": true
+    },
+    {
+      "name": "Uppercut uses agent skeleton",
+      "passed": true
+    },
+    {
+      "name": "Uppercut length matches lock",
+      "passed": true
+    },
+    {
+      "name": "Uppercut does not move gameplay root",
+      "passed": true
+    },
+    {
+      "name": "Recovery returns hips to idle",
+      "passed": true
+    },
+    {
+      "name": "Recovery returns lefthand to idle",
+      "passed": true
+    },
+    {
+      "name": "Recovery returns righthand to idle",
+      "passed": true
+    },
+    {
+      "name": "Recovery returns leftfoot to idle",
+      "passed": true
+    },
+    {
+      "name": "Recovery returns rightfoot to idle",
+      "passed": true
+    },
+    {
+      "name": "normal starts heavy",
+      "passed": true
+    },
+    {
+      "name": "normal spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "normal owns animation",
+      "passed": true
+    },
+    {
+      "name": "normal plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "normal repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "normal no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "normal front target damage",
+      "passed": true
+    },
+    {
+      "name": "normal rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "normal distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "normal wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "normal cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "normal attack lock released",
+      "passed": true
+    },
+    {
+      "name": "Normal recovery releases locomotion",
+      "passed": true
+    },
+    {
+      "name": "Insufficient stamina rejects heavy",
+      "passed": true
+    },
+    {
+      "name": "Rejected heavy spends no stamina",
+      "passed": true
+    },
+    {
+      "name": "insufficient no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "insufficient front target damage",
+      "passed": true
+    },
+    {
+      "name": "insufficient rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "insufficient distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "insufficient wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "insufficient cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "insufficient attack lock released",
+      "passed": true
+    },
+    {
+      "name": "damage starts heavy",
+      "passed": true
+    },
+    {
+      "name": "damage spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "damage owns animation",
+      "passed": true
+    },
+    {
+      "name": "damage plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "damage repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "damage no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "damage cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "damage clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "damage front target damage",
+      "passed": true
+    },
+    {
+      "name": "damage rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "damage distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "damage wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "damage cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "damage attack lock released",
+      "passed": true
+    },
+    {
+      "name": "blocked starts heavy",
+      "passed": true
+    },
+    {
+      "name": "blocked spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "blocked owns animation",
+      "passed": true
+    },
+    {
+      "name": "blocked plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "blocked repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "blocked no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "blocked cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "blocked clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "blocked front target damage",
+      "passed": true
+    },
+    {
+      "name": "blocked rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "blocked distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "blocked wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "blocked cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "blocked attack lock released",
+      "passed": true
+    },
+    {
+      "name": "retake starts heavy",
+      "passed": true
+    },
+    {
+      "name": "retake spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "retake owns animation",
+      "passed": true
+    },
+    {
+      "name": "retake plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "retake repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "retake no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "retake cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "retake clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "retake front target damage",
+      "passed": true
+    },
+    {
+      "name": "retake rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "retake distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "retake wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "retake cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "retake attack lock released",
+      "passed": true
+    },
+    {
+      "name": "dodge starts heavy",
+      "passed": true
+    },
+    {
+      "name": "dodge spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "dodge owns animation",
+      "passed": true
+    },
+    {
+      "name": "dodge plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "dodge repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "dodge no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "dodge cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "dodge clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "dodge front target damage",
+      "passed": true
+    },
+    {
+      "name": "dodge rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "dodge distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "dodge wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "dodge cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "dodge attack lock released",
+      "passed": true
+    },
+    {
+      "name": "parry starts heavy",
+      "passed": true
+    },
+    {
+      "name": "parry spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "parry owns animation",
+      "passed": true
+    },
+    {
+      "name": "parry plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "parry repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "parry no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "parry cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "parry clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "parry front target damage",
+      "passed": true
+    },
+    {
+      "name": "parry rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "parry distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "parry wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "parry cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "parry attack lock released",
+      "passed": true
+    },
+    {
+      "name": "death starts heavy",
+      "passed": true
+    },
+    {
+      "name": "death spends 25 stamina",
+      "passed": true
+    },
+    {
+      "name": "death owns animation",
+      "passed": true
+    },
+    {
+      "name": "death plays supplied uppercut",
+      "passed": true
+    },
+    {
+      "name": "death repeated input does not spend twice",
+      "passed": true
+    },
+    {
+      "name": "death no damage during windup",
+      "passed": true
+    },
+    {
+      "name": "death cancels active heavy",
+      "passed": true
+    },
+    {
+      "name": "death clears pending hit",
+      "passed": true
+    },
+    {
+      "name": "death front target damage",
+      "passed": true
+    },
+    {
+      "name": "death rear target untouched",
+      "passed": true
+    },
+    {
+      "name": "death distant target untouched",
+      "passed": true
+    },
+    {
+      "name": "death wall blocks hit",
+      "passed": true
+    },
+    {
+      "name": "death cannot apply damage twice",
+      "passed": true
+    },
+    {
+      "name": "death attack lock released",
+      "passed": true
+    }
+  ],
+  "mode": "Full editor PIE, NullRHI; no rendered visual acceptance"
+}

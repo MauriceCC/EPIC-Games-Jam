@@ -129,6 +129,25 @@ Evidencia A-CON-01: capturas del usuario muestran `ReceiveHit` en la interfaz y 
 
 ## 9. Estado
 
+### Golpe fuerte con Surprise Uppercut — 2026-11-16
+
+Animación elegida por Mauricio, integrada en clic derecho mediante `DoHeavyAttack`.
+**[PROPUESTA]** Duración 1,067 s, impacto a 0,467 s, daño 28, resistencia 25,
+arco frontal de 120 grados y alcance 190 cm. Clip adaptado al esqueleto del agente,
+sin movimiento de raíz y con entrada/recuperación suavizadas. Interrupciones limpian
+el impacto y los temporizadores pendientes. Solo se guardan PlayerCharacter,
+PlayerController y el clip nuevo en Player/Animation/Uppercut.
+
+**Validación:** 116 comprobaciones aprobadas, incluidas compilación estricta y PIE
+para coste, golpe único, dirección, alcance, pared e interrupciones. NullRHI; revisión
+visual humana pendiente. [Fuente, reproducción y límites](../../Scripts/A/UPPERCUT.md).
+
+**Dependencia observada:** el GuardBase guardado no implementa BPI_Damageable,
+aunque ya contiene B_ReceiveCombatHit. El fuerte conserva la vía AnyDamage del
+combate actual; usa ReceiveCombatHit si el objetivo implementa la interfaz. No se
+modifican B ni Core. Postura/ruptura de bloqueo no se acreditan en la vía provisional;
+no se declara A-09 completo por esta integración de animación.
+
 ### Pulido de animaciones — 2026-11-15
 
 Autorización puntual del usuario para A y B. **[PROPUESTA]** Implementadas seis copias locales de clips de acción, entrada/recuperación suavizadas, contacto de ambos ataques a 0,30 s y fin de reproducción alineado con el bloqueo. Corregida la selección alternada y la liberación prematura de la pose de muerte por un temporizador anterior. Se conserva la locomoción continua de pie/agachado existente. Detalles, límites y pruebas: [`Scripts/A/ANIMATION_POLISH.md`](../../Scripts/A/ANIMATION_POLISH.md). Validación: 48 comprobaciones de assets, cinco Blueprints compilados sin errores ni warnings y 31 comprobaciones en PIE. Valoración visual en cámara isométrica pendiente; no declara F4 cerrado.
