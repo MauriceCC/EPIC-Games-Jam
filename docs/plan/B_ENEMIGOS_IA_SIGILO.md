@@ -313,6 +313,24 @@ Entrégame: (1) los pasos para construirlo en Blueprint, nodo a nodo, indicando 
 
 ## 9. Estado
 
+### Prioridad de integración de B
+
+Este trabajo corresponde a Jesús (división B). Al integrar en `main`, conserven
+estos cambios de `L_Whitechapel`:
+
+- `BP_GuardBase`: los enemigos persiguen al jugador visible mientras se genera
+  el NavMesh. El checkpoint invalida los ataques pendientes.
+- `BP_Jack`: durante la escolta usa el límite de velocidad actual del
+  protagonista y puede seguirlo a la vista mientras se genera el NavMesh.
+- `BP_GuardBase` y `BP_PlayerCharacter`: se mantienen las cinco animaciones de
+  muerte aportadas por el equipo en `c58a9e6`.
+
+Si hay conflicto en alguno de estos Blueprints binarios, usen como base la
+versión integrada de `main` y reapliquen encima los cambios compatibles.
+Coordinen con Jesús antes de sustituir el asset y prueben en Play la
+persecución, la escolta y el checkpoint.
+
+
 ### Caídas articuladas — 2026-11-15
 
 Autorización puntual de integración A/B. **[PROPUESTA]** Se sustituye el giro
