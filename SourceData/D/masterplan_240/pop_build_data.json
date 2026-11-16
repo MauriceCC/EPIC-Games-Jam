@@ -1,0 +1,650 @@
+{
+ "civ": [
+  {
+   "kind": "civ",
+   "label": "POP_Civ_00_Vagrant",
+   "loc": {
+    "x": 1642.1,
+    "y": 22128.1,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Vagrant/SK_Vagrant.SK_Vagrant",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Idle.A_SK_Vagrant_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Walk.A_SK_Vagrant_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_01_Pursuer_A",
+   "loc": {
+    "x": 1614.7,
+    "y": 22536.4,
+    "z": 0.0
+   },
+   "yaw": 270,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_02_Pursuer_A",
+   "loc": {
+    "x": 2104.1,
+    "y": 22643.3,
+    "z": 0.0
+   },
+   "yaw": 90,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_03_Pursuer_B",
+   "loc": {
+    "x": 2140.8,
+    "y": 22243.6,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_04_FlowerSeller",
+   "loc": {
+    "x": 2997.2,
+    "y": 16712.3,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/SK_FlowerSeller.SK_FlowerSeller",
+   "idle": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Idle.A_SK_FlowerSeller_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Walk.A_SK_FlowerSeller_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_05_FlowerSeller",
+   "loc": {
+    "x": 3590.2,
+    "y": 21469.4,
+    "z": 0.0
+   },
+   "yaw": 45,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/SK_FlowerSeller.SK_FlowerSeller",
+   "idle": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Idle.A_SK_FlowerSeller_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Walk.A_SK_FlowerSeller_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_06_FlowerSeller",
+   "loc": {
+    "x": 3237.9,
+    "y": 17337.4,
+    "z": 0.0
+   },
+   "yaw": 45,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/SK_FlowerSeller.SK_FlowerSeller",
+   "idle": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Idle.A_SK_FlowerSeller_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_FlowerSeller/Anims/A_SK_FlowerSeller_Walk.A_SK_FlowerSeller_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_07_Pursuer_A",
+   "loc": {
+    "x": 4460.8,
+    "y": 19870.0,
+    "z": 0.0
+   },
+   "yaw": 315,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_08_Pursuer_A",
+   "loc": {
+    "x": 6277.7,
+    "y": 16921.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_09_Pursuer_A",
+   "loc": {
+    "x": 4369.7,
+    "y": 22701.6,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_10_Pursuer_A",
+   "loc": {
+    "x": 3437.5,
+    "y": 20525.1,
+    "z": 0.0
+   },
+   "yaw": 315,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_11_Pursuer_B",
+   "loc": {
+    "x": 4245.6,
+    "y": 20283.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_12_Pursuer_B",
+   "loc": {
+    "x": 6414.2,
+    "y": 22385.9,
+    "z": 0.0
+   },
+   "yaw": 0,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_13_Pursuer_B",
+   "loc": {
+    "x": 6559.4,
+    "y": 19035.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_14_Nurse",
+   "loc": {
+    "x": 2709.3,
+    "y": 19069.7,
+    "z": 0.0
+   },
+   "yaw": 45,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Nurse/SK_Nurse.SK_Nurse",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Idle.A_SK_Nurse_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Walk.A_SK_Nurse_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_15_Pursuer_A",
+   "loc": {
+    "x": 4750.7,
+    "y": 19695.4,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_16_Pursuer_A",
+   "loc": {
+    "x": 5089.0,
+    "y": 19157.9,
+    "z": 0.0
+   },
+   "yaw": 225,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_17_Pursuer_B",
+   "loc": {
+    "x": 5027.0,
+    "y": 19716.5,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_18_Pursuer_B",
+   "loc": {
+    "x": 4767.1,
+    "y": 25217.6,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_19_Pursuer_A",
+   "loc": {
+    "x": 6537.0,
+    "y": 28225.1,
+    "z": 0.0
+   },
+   "yaw": 315,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_20_Vagrant",
+   "loc": {
+    "x": 6366.7,
+    "y": 28778.3,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Vagrant/SK_Vagrant.SK_Vagrant",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Idle.A_SK_Vagrant_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Walk.A_SK_Vagrant_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_21_Pursuer_B",
+   "loc": {
+    "x": 12213.9,
+    "y": 29896.2,
+    "z": 0.0
+   },
+   "yaw": 225,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_22_Nurse",
+   "loc": {
+    "x": 15572.3,
+    "y": 33816.9,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Nurse/SK_Nurse.SK_Nurse",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Idle.A_SK_Nurse_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Walk.A_SK_Nurse_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_23_Nurse",
+   "loc": {
+    "x": 13784.7,
+    "y": 34190.5,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Nurse/SK_Nurse.SK_Nurse",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Idle.A_SK_Nurse_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Nurse/Anims/A_SK_Nurse_Walk.A_SK_Nurse_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_24_Vagrant",
+   "loc": {
+    "x": 13504.7,
+    "y": 34207.9,
+    "z": 0.0
+   },
+   "yaw": 90,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Vagrant/SK_Vagrant.SK_Vagrant",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Idle.A_SK_Vagrant_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Walk.A_SK_Vagrant_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_25_Pursuer_A",
+   "loc": {
+    "x": 11340.8,
+    "y": 26518.9,
+    "z": 0.0
+   },
+   "yaw": 225,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_26_Pursuer_A",
+   "loc": {
+    "x": 11698.9,
+    "y": 28980.8,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "role": 0,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_27_Pursuer_B",
+   "loc": {
+    "x": 11414.4,
+    "y": 25413.4,
+    "z": 0.0
+   },
+   "yaw": 90,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_28_Pursuer_B",
+   "loc": {
+    "x": 11605.7,
+    "y": 25644.0,
+    "z": 0.0
+   },
+   "yaw": 90,
+   "role": 2,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_29_Pursuer_A",
+   "loc": {
+    "x": 3272.1,
+    "y": 14626.3,
+    "z": 0.0
+   },
+   "yaw": 0,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_30_Pursuer_A",
+   "loc": {
+    "x": 8498.6,
+    "y": 14706.5,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_31_Pursuer_A",
+   "loc": {
+    "x": 9446.2,
+    "y": 14655.7,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/SK_Pursuer_A.SK_Pursuer_A",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Idle.A_SK_Pursuer_A_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_A/Anims/A_SK_Pursuer_A_Walk.A_SK_Pursuer_A_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_32_Pursuer_B",
+   "loc": {
+    "x": 9750.7,
+    "y": 14793.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_33_Pursuer_B",
+   "loc": {
+    "x": 3708.2,
+    "y": 14715.4,
+    "z": 0.0
+   },
+   "yaw": 225,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/SK_Pursuer_B.SK_Pursuer_B",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Idle.A_SK_Pursuer_B_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Pursuer_B/Anims/A_SK_Pursuer_B_Walk.A_SK_Pursuer_B_Walk"
+  },
+  {
+   "kind": "civ",
+   "label": "POP_Civ_34_Vagrant",
+   "loc": {
+    "x": 9697.9,
+    "y": 14532.3,
+    "z": 0.0
+   },
+   "yaw": 0,
+   "role": 1,
+   "mesh": "/Game/Unscripted/Art/Characters/SK_Vagrant/SK_Vagrant.SK_Vagrant",
+   "idle": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Idle.A_SK_Vagrant_Idle",
+   "walk": "/Game/Unscripted/Art/Characters/SK_Vagrant/Anims/A_SK_Vagrant_Walk.A_SK_Vagrant_Walk"
+  }
+ ],
+ "ene": [
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 4600.0,
+    "y": 21200.0,
+    "z": 0.0
+   },
+   "zone": "Z03 Plaza — primera pelea",
+   "act": "I"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 5000.0,
+    "y": 21800.0,
+    "z": 0.0
+   },
+   "zone": "Z03 Plaza — primera pelea",
+   "act": "I"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 4800.0,
+    "y": 23200.0,
+    "z": 0.0
+   },
+   "zone": "Z04 Calle al taller — patrulla (sigilo opcional)",
+   "act": "I",
+   "patrol": [
+    {
+     "x": 4800.0,
+     "y": 23200.0,
+     "z": 0.0
+    },
+    {
+     "x": 4800.0,
+     "y": 25800.0,
+     "z": 0.0
+    },
+    {
+     "x": 5000.0,
+     "y": 25800.0,
+     "z": 0.0
+    },
+    {
+     "x": 5000.0,
+     "y": 23200.0,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "kind": "enemy",
+   "type": "Jack",
+   "bp": "/Game/Unscripted/Enemies/Jack/BP_Jack.BP_Jack_C",
+   "loc": {
+    "x": 5200.0,
+    "y": 27000.0,
+    "z": 0.0
+   },
+   "zone": "Z04 Taller — Jack",
+   "act": "I"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 9600.0,
+    "y": 29000.0,
+    "z": 0.0
+   },
+   "zone": "Z06 Ensanche de escape — grupo",
+   "act": "II"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 10100.0,
+    "y": 29600.0,
+    "z": 0.0
+   },
+   "zone": "Z06 Ensanche de escape — grupo",
+   "act": "II"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 9500.0,
+    "y": 30000.0,
+    "z": 0.0
+   },
+   "zone": "Z06 Ensanche de escape — grupo",
+   "act": "II"
+  },
+  {
+   "kind": "enemy",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "loc": {
+    "x": 11500.0,
+    "y": 23500.0,
+    "z": 0.0
+   },
+   "zone": "Z07 Ruta central — patrulla alternativa",
+   "act": "II",
+   "patrol": [
+    {
+     "x": 11500.0,
+     "y": 23500.0,
+     "z": 0.0
+    },
+    {
+     "x": 11500.0,
+     "y": 29200.0,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "kind": "enemy",
+   "type": "Interventor",
+   "bp": "/Game/Unscripted/Enemies/BP_Interventor.BP_Interventor_C",
+   "loc": {
+    "x": 14200.0,
+    "y": 31500.0,
+    "z": 0.0
+   },
+   "zone": "Z08 Tránsito al refugio — Interventor",
+   "act": "II"
+  },
+  {
+   "kind": "enemy",
+   "type": "Supervisor",
+   "bp": "/Game/Unscripted/Enemies/BP_Supervisor.BP_Supervisor_C",
+   "loc": {
+    "x": 12400.0,
+    "y": 21400.0,
+    "z": 0.0
+   },
+   "zone": "Z13 Antepatio — Supervisor (jefe)",
+   "act": "III"
+  }
+ ]
+}

@@ -1,0 +1,972 @@
+{
+ "meta": {
+  "version": "population v1 [PROPUESTA]",
+  "map": "/Game/Unscripted/Maps/Test/L_Test_D",
+  "folder_civilians": "MP240_POP/Civiles",
+  "folder_enemies": "MP240_POP/Enemigos",
+  "tag": "MP240_POP",
+  "transform": "UE_X = 100*y ; UE_Y = 12000 + 100*x (m -> cm); z se proyecta al NavMesh",
+  "counts": {
+   "civilians": 35,
+   "enemies_and_jack": 10
+  }
+ },
+ "civilians": [
+  {
+   "zone": "Z01 Llegada",
+   "role": "idle",
+   "look": "SK_Vagrant",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    101.28,
+    16.42
+   ],
+   "location": {
+    "x": 1642.1,
+    "y": 22128.1,
+    "z": 0.0
+   },
+   "yaw": 135
+  },
+  {
+   "zone": "Z01 Llegada",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    105.36,
+    16.15
+   ],
+   "location": {
+    "x": 1614.7,
+    "y": 22536.4,
+    "z": 0.0
+   },
+   "yaw": 270,
+   "wander_points": [
+    {
+     "x": 1664.5,
+     "y": 22029.4,
+     "z": 0.0
+    },
+    {
+     "x": 2018.5,
+     "y": 22748.2,
+     "z": 0.0
+    },
+    {
+     "x": 1680.7,
+     "y": 22098.7,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z01 Llegada",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    106.43,
+    21.04
+   ],
+   "location": {
+    "x": 2104.1,
+    "y": 22643.3,
+    "z": 0.0
+   },
+   "yaw": 90,
+   "wander_points": [
+    {
+     "x": 1553.5,
+     "y": 22573.5,
+     "z": 0.0
+    },
+    {
+     "x": 995.6,
+     "y": 22011.9,
+     "z": 0.0
+    },
+    {
+     "x": 1389.0,
+     "y": 22562.2,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z01 Llegada",
+   "role": "wander",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    102.44,
+    21.41
+   ],
+   "location": {
+    "x": 2140.8,
+    "y": 22243.6,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "wander_points": [
+    {
+     "x": 318.5,
+     "y": 22577.4,
+     "z": 0.0
+    },
+    {
+     "x": 1387.4,
+     "y": 22427.6,
+     "z": 0.0
+    },
+    {
+     "x": 1618.9,
+     "y": 22310.6,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "idle",
+   "look": "SK_FlowerSeller",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    47.12,
+    29.97
+   ],
+   "location": {
+    "x": 2997.2,
+    "y": 16712.3,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "idle",
+   "look": "SK_FlowerSeller",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    94.69,
+    35.9
+   ],
+   "location": {
+    "x": 3590.2,
+    "y": 21469.4,
+    "z": 0.0
+   },
+   "yaw": 45
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "idle",
+   "look": "SK_FlowerSeller",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    53.37,
+    32.38
+   ],
+   "location": {
+    "x": 3237.9,
+    "y": 17337.4,
+    "z": 0.0
+   },
+   "yaw": 45
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    78.7,
+    44.61
+   ],
+   "location": {
+    "x": 4460.8,
+    "y": 19870.0,
+    "z": 0.0
+   },
+   "yaw": 315,
+   "wander_points": [
+    {
+     "x": 5488.8,
+     "y": 22714.3,
+     "z": 0.0
+    },
+    {
+     "x": 6444.3,
+     "y": 17052.6,
+     "z": 0.0
+    },
+    {
+     "x": 4695.5,
+     "y": 22580.2,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    49.22,
+    62.78
+   ],
+   "location": {
+    "x": 6277.7,
+    "y": 16921.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "wander_points": [
+    {
+     "x": 3247.9,
+     "y": 18092.1,
+     "z": 0.0
+    },
+    {
+     "x": 6264.5,
+     "y": 20042.0,
+     "z": 0.0
+    },
+    {
+     "x": 5066.2,
+     "y": 19322.7,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    107.02,
+    43.7
+   ],
+   "location": {
+    "x": 4369.7,
+    "y": 22701.6,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "wander_points": [
+    {
+     "x": 3589.3,
+     "y": 16545.1,
+     "z": 0.0
+    },
+    {
+     "x": 3891.7,
+     "y": 20000.3,
+     "z": 0.0
+    },
+    {
+     "x": 3490.7,
+     "y": 20399.8,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    85.25,
+    34.38
+   ],
+   "location": {
+    "x": 3437.5,
+    "y": 20525.1,
+    "z": 0.0
+   },
+   "yaw": 315,
+   "wander_points": [
+    {
+     "x": 2522.6,
+     "y": 17131.5,
+     "z": 0.0
+    },
+    {
+     "x": 3096.7,
+     "y": 19602.9,
+     "z": 0.0
+    },
+    {
+     "x": 4346.8,
+     "y": 20519.1,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    82.84,
+    42.46
+   ],
+   "location": {
+    "x": 4245.6,
+    "y": 20283.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "wander_points": [
+    {
+     "x": 5636.5,
+     "y": 20775.0,
+     "z": 0.0
+    },
+    {
+     "x": 6517.1,
+     "y": 22209.7,
+     "z": 0.0
+    },
+    {
+     "x": 6487.2,
+     "y": 17502.6,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    103.86,
+    64.14
+   ],
+   "location": {
+    "x": 6414.2,
+    "y": 22385.9,
+    "z": 0.0
+   },
+   "yaw": 0,
+   "wander_points": [
+    {
+     "x": 5702.4,
+     "y": 18880.5,
+     "z": 0.0
+    },
+    {
+     "x": 6578.8,
+     "y": 20838.3,
+     "z": 0.0
+    },
+    {
+     "x": 4181.8,
+     "y": 20707.9,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "wander",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    70.36,
+    65.59
+   ],
+   "location": {
+    "x": 6559.4,
+    "y": 19035.8,
+    "z": 0.0
+   },
+   "yaw": 180,
+   "wander_points": [
+    {
+     "x": 5971.7,
+     "y": 17202.4,
+     "z": 0.0
+    },
+    {
+     "x": 6238.4,
+     "y": 22556.9,
+     "z": 0.0
+    },
+    {
+     "x": 5360.7,
+     "y": 18952.7,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z02 Mercado (borde)",
+   "role": "flee",
+   "look": "SK_Nurse",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    70.7,
+    27.09
+   ],
+   "location": {
+    "x": 2709.3,
+    "y": 19069.7,
+    "z": 0.0
+   },
+   "yaw": 45
+  },
+  {
+   "zone": "Z02 Fuente (corrillo)",
+   "role": "flee",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    76.95,
+    47.51
+   ],
+   "location": {
+    "x": 4750.7,
+    "y": 19695.4,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z02 Fuente (corrillo)",
+   "role": "flee",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    71.58,
+    50.89
+   ],
+   "location": {
+    "x": 5089.0,
+    "y": 19157.9,
+    "z": 0.0
+   },
+   "yaw": 225
+  },
+  {
+   "zone": "Z02 Fuente (corrillo)",
+   "role": "flee",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    77.17,
+    50.27
+   ],
+   "location": {
+    "x": 5027.0,
+    "y": 19716.5,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z04 Calle al taller",
+   "role": "flee",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    132.18,
+    47.67
+   ],
+   "location": {
+    "x": 4767.1,
+    "y": 25217.6,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z05 Calle taller-escape",
+   "role": "flee",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    162.25,
+    65.37
+   ],
+   "location": {
+    "x": 6537.0,
+    "y": 28225.1,
+    "z": 0.0
+   },
+   "yaw": 315
+  },
+  {
+   "zone": "Z05 Calle taller-escape",
+   "role": "flee",
+   "look": "SK_Vagrant",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    167.78,
+    63.67
+   ],
+   "location": {
+    "x": 6366.7,
+    "y": 28778.3,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z06 Escape tramo 2",
+   "role": "flee",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    178.96,
+    122.14
+   ],
+   "location": {
+    "x": 12213.9,
+    "y": 29896.2,
+    "z": 0.0
+   },
+   "yaw": 225
+  },
+  {
+   "zone": "Z09 Refugio",
+   "role": "idle",
+   "look": "SK_Nurse",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    218.17,
+    155.72
+   ],
+   "location": {
+    "x": 15572.3,
+    "y": 33816.9,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z10 Enfermería",
+   "role": "idle",
+   "look": "SK_Nurse",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    221.9,
+    137.85
+   ],
+   "location": {
+    "x": 13784.7,
+    "y": 34190.5,
+    "z": 0.0
+   },
+   "yaw": 135
+  },
+  {
+   "zone": "Z10 Enfermería",
+   "role": "idle",
+   "look": "SK_Vagrant",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    222.08,
+    135.05
+   ],
+   "location": {
+    "x": 13504.7,
+    "y": 34207.9,
+    "z": 0.0
+   },
+   "yaw": 90
+  },
+  {
+   "zone": "Z12 Paso central",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    145.19,
+    113.41
+   ],
+   "location": {
+    "x": 11340.8,
+    "y": 26518.9,
+    "z": 0.0
+   },
+   "yaw": 225,
+   "wander_points": [
+    {
+     "x": 11658.2,
+     "y": 25620.9,
+     "z": 0.0
+    },
+    {
+     "x": 11411.3,
+     "y": 27775.1,
+     "z": 0.0
+    },
+    {
+     "x": 11583.8,
+     "y": 23945.8,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z12 Paso central",
+   "role": "wander",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    169.81,
+    116.99
+   ],
+   "location": {
+    "x": 11698.9,
+    "y": 28980.8,
+    "z": 0.0
+   },
+   "yaw": 135,
+   "wander_points": [
+    {
+     "x": 11352.5,
+     "y": 28582.9,
+     "z": 0.0
+    },
+    {
+     "x": 11549.8,
+     "y": 25930.0,
+     "z": 0.0
+    },
+    {
+     "x": 11524.4,
+     "y": 28304.8,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "zone": "Z12 Paso central",
+   "role": "flee",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    134.13,
+    114.14
+   ],
+   "location": {
+    "x": 11414.4,
+    "y": 25413.4,
+    "z": 0.0
+   },
+   "yaw": 90
+  },
+  {
+   "zone": "Z12 Paso central",
+   "role": "flee",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    136.44,
+    116.06
+   ],
+   "location": {
+    "x": 11605.7,
+    "y": 25644.0,
+    "z": 0.0
+   },
+   "yaw": 90
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    26.26,
+    32.72
+   ],
+   "location": {
+    "x": 3272.1,
+    "y": 14626.3,
+    "z": 0.0
+   },
+   "yaw": 0
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    27.07,
+    84.99
+   ],
+   "location": {
+    "x": 8498.6,
+    "y": 14706.5,
+    "z": 0.0
+   },
+   "yaw": 135
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Pursuer_A",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    26.56,
+    94.46
+   ],
+   "location": {
+    "x": 9446.2,
+    "y": 14655.7,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    27.94,
+    97.51
+   ],
+   "location": {
+    "x": 9750.7,
+    "y": 14793.8,
+    "z": 0.0
+   },
+   "yaw": 180
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Pursuer_B",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    27.15,
+    37.08
+   ],
+   "location": {
+    "x": 3708.2,
+    "y": 14715.4,
+    "z": 0.0
+   },
+   "yaw": 225
+  },
+  {
+   "zone": "Z17 Fondo oeste",
+   "role": "idle",
+   "look": "SK_Vagrant",
+   "bp": "/Game/Unscripted/World/NPC/BP_AmbientCivilian.BP_AmbientCivilian_C",
+   "xy_m": [
+    25.32,
+    96.98
+   ],
+   "location": {
+    "x": 9697.9,
+    "y": 14532.3,
+    "z": 0.0
+   },
+   "yaw": 0
+  }
+ ],
+ "enemies": [
+  {
+   "act": "I",
+   "zone": "Z03 Plaza — primera pelea",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    92,
+    46
+   ],
+   "location": {
+    "x": 4600.0,
+    "y": 21200.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "I",
+   "zone": "Z03 Plaza — primera pelea",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    98,
+    50
+   ],
+   "location": {
+    "x": 5000.0,
+    "y": 21800.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "I",
+   "zone": "Z04 Calle al taller — patrulla (sigilo opcional)",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    112,
+    48
+   ],
+   "location": {
+    "x": 4800.0,
+    "y": 23200.0,
+    "z": 0.0
+   },
+   "patrol_route": {
+    "bp": "/Game/Unscripted/Enemies/BP_PatrolRoute.BP_PatrolRoute_C",
+    "points": [
+     {
+      "x": 4800.0,
+      "y": 23200.0,
+      "z": 0.0
+     },
+     {
+      "x": 4800.0,
+      "y": 25800.0,
+      "z": 0.0
+     },
+     {
+      "x": 5000.0,
+      "y": 25800.0,
+      "z": 0.0
+     },
+     {
+      "x": 5000.0,
+      "y": 23200.0,
+      "z": 0.0
+     }
+    ]
+   }
+  },
+  {
+   "act": "I",
+   "zone": "Z04 Taller — Jack",
+   "type": "Jack",
+   "bp": "/Game/Unscripted/Enemies/Jack/BP_Jack.BP_Jack_C",
+   "xy_m": [
+    150,
+    52
+   ],
+   "location": {
+    "x": 5200.0,
+    "y": 27000.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "II",
+   "zone": "Z06 Ensanche de escape — grupo",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    170,
+    96
+   ],
+   "location": {
+    "x": 9600.0,
+    "y": 29000.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "II",
+   "zone": "Z06 Ensanche de escape — grupo",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    176,
+    101
+   ],
+   "location": {
+    "x": 10100.0,
+    "y": 29600.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "II",
+   "zone": "Z06 Ensanche de escape — grupo",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    180,
+    95
+   ],
+   "location": {
+    "x": 9500.0,
+    "y": 30000.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "II",
+   "zone": "Z07 Ruta central — patrulla alternativa",
+   "type": "Pursuer",
+   "bp": "/Game/Unscripted/Enemies/BP_Pursuer.BP_Pursuer_C",
+   "xy_m": [
+    115,
+    115
+   ],
+   "location": {
+    "x": 11500.0,
+    "y": 23500.0,
+    "z": 0.0
+   },
+   "patrol_route": {
+    "bp": "/Game/Unscripted/Enemies/BP_PatrolRoute.BP_PatrolRoute_C",
+    "points": [
+     {
+      "x": 11500.0,
+      "y": 23500.0,
+      "z": 0.0
+     },
+     {
+      "x": 11500.0,
+      "y": 29200.0,
+      "z": 0.0
+     }
+    ]
+   }
+  },
+  {
+   "act": "II",
+   "zone": "Z08 Tránsito al refugio — Interventor",
+   "type": "Interventor",
+   "bp": "/Game/Unscripted/Enemies/BP_Interventor.BP_Interventor_C",
+   "xy_m": [
+    195,
+    142
+   ],
+   "location": {
+    "x": 14200.0,
+    "y": 31500.0,
+    "z": 0.0
+   }
+  },
+  {
+   "act": "III",
+   "zone": "Z13 Antepatio — Supervisor (jefe)",
+   "type": "Supervisor",
+   "bp": "/Game/Unscripted/Enemies/BP_Supervisor.BP_Supervisor_C",
+   "xy_m": [
+    94,
+    124
+   ],
+   "location": {
+    "x": 12400.0,
+    "y": 21400.0,
+    "z": 0.0
+   }
+  }
+ ]
+}
