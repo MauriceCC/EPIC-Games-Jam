@@ -86,7 +86,7 @@ def main():
     for action,seconds,contact,source_contact,end in (
         ('Attack1',0.6,0.5,20/30,1.5),
         ('Attack2',0.75,0.4,25/30,65/30),
-        ('Dodge',0.6,None,None,None),('Parry',0.6,None,None,None),
+        ('Parry',0.6,None,None,None),
         ('Hit',0.6,None,None,None)):
         clip=bake(u.load_asset(base+action),idle,ROOT+'Player/Animation/Polish/A_Agent_'+action,seconds,contact,source_contact,end,action=='Death')
         report.append(clip.get_path_name())
@@ -100,6 +100,8 @@ def main():
     sys.path.insert(0, str(Path(__file__).parent))
     from a_build_death_motion import main as build_deaths
     build_deaths()
+    from a_build_roll_dodge import main as build_roll
+    report.append(build_roll().get_path_name())
     Path(u.Paths.project_saved_dir(),'animation_polish_assets.json').write_text(json.dumps(report,indent=2))
     print('ANIMATION_POLISH_ASSETS_OK')
 
